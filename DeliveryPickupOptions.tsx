@@ -16,7 +16,6 @@ export default class DeliveryPickupOptions extends React.Component<any, any> {
             selectedVenue: false,
             isChecked1: false,
             isChecked2: false,
-            isChecked3: false,
             isChecked4: false,
         };
     }
