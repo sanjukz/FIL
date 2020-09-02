@@ -1,29 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Utilities/FIL.Utilities.csproj": {}
+    "E:\\FIL\\FIL.Utilities\\FIL.Utilities.csproj": {}
   },
   "projects": {
-    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Caching.Contracts/FIL.Caching.Contracts.csproj": {
+    "E:\\FIL\\FIL.Caching.Contracts\\FIL.Caching.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Caching.Contracts/FIL.Caching.Contracts.csproj",
+        "projectUniqueName": "E:\\FIL\\FIL.Caching.Contracts\\FIL.Caching.Contracts.csproj",
         "projectName": "FIL.Caching.Contracts",
-        "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Caching.Contracts/FIL.Caching.Contracts.csproj",
-        "packagesPath": "/Users/sanjiv/.nuget/packages/",
-        "outputPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Caching.Contracts/obj/",
+        "projectPath": "E:\\FIL\\FIL.Caching.Contracts\\FIL.Caching.Contracts.csproj",
+        "packagesPath": "C:\\Users\\kz_tech\\.nuget\\packages\\",
+        "outputPath": "E:\\FIL\\FIL.Caching.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/sanjiv/.config/NuGet/NuGet.Config"
+          "C:\\Users\\kz_tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,36 +59,38 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Contracts/FIL.Configuration.Contracts.csproj": {
+    "E:\\FIL\\FIL.Configuration.Contracts\\FIL.Configuration.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Contracts/FIL.Configuration.Contracts.csproj",
+        "projectUniqueName": "E:\\FIL\\FIL.Configuration.Contracts\\FIL.Configuration.Contracts.csproj",
         "projectName": "FIL.Configuration.Contracts",
-        "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Contracts/FIL.Configuration.Contracts.csproj",
-        "packagesPath": "/Users/sanjiv/.nuget/packages/",
-        "outputPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Contracts/obj/",
+        "projectPath": "E:\\FIL\\FIL.Configuration.Contracts\\FIL.Configuration.Contracts.csproj",
+        "packagesPath": "C:\\Users\\kz_tech\\.nuget\\packages\\",
+        "outputPath": "E:\\FIL\\FIL.Configuration.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/sanjiv/.config/NuGet/NuGet.Config"
+          "C:\\Users\\kz_tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Contracts/FIL.Contracts.csproj": {
-                "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Contracts/FIL.Contracts.csproj"
+              "E:\\FIL\\FIL.Contracts\\FIL.Contracts.csproj": {
+                "projectPath": "E:\\FIL\\FIL.Contracts\\FIL.Contracts.csproj"
               }
             }
           }
@@ -125,39 +129,41 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration/FIL.Configuration.csproj": {
+    "E:\\FIL\\FIL.Configuration\\FIL.Configuration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration/FIL.Configuration.csproj",
+        "projectUniqueName": "E:\\FIL\\FIL.Configuration\\FIL.Configuration.csproj",
         "projectName": "FIL.Configuration",
-        "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration/FIL.Configuration.csproj",
-        "packagesPath": "/Users/sanjiv/.nuget/packages/",
-        "outputPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration/obj/",
+        "projectPath": "E:\\FIL\\FIL.Configuration\\FIL.Configuration.csproj",
+        "packagesPath": "C:\\Users\\kz_tech\\.nuget\\packages\\",
+        "outputPath": "E:\\FIL\\FIL.Configuration\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/sanjiv/.config/NuGet/NuGet.Config"
+          "C:\\Users\\kz_tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Contracts/FIL.Configuration.Contracts.csproj": {
-                "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Contracts/FIL.Configuration.Contracts.csproj"
+              "E:\\FIL\\FIL.Configuration.Contracts\\FIL.Configuration.Contracts.csproj": {
+                "projectPath": "E:\\FIL\\FIL.Configuration.Contracts\\FIL.Configuration.Contracts.csproj"
               },
-              "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Http/FIL.Http.csproj": {
-                "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Http/FIL.Http.csproj"
+              "E:\\FIL\\FIL.Http\\FIL.Http.csproj": {
+                "projectPath": "E:\\FIL\\FIL.Http\\FIL.Http.csproj"
               }
             }
           }
@@ -220,40 +226,42 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Contracts/FIL.Contracts.csproj": {
+    "E:\\FIL\\FIL.Contracts\\FIL.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Contracts/FIL.Contracts.csproj",
+        "projectUniqueName": "E:\\FIL\\FIL.Contracts\\FIL.Contracts.csproj",
         "projectName": "FIL.Contracts",
-        "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Contracts/FIL.Contracts.csproj",
-        "packagesPath": "/Users/sanjiv/.nuget/packages/",
-        "outputPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Contracts/obj/",
+        "projectPath": "E:\\FIL\\FIL.Contracts\\FIL.Contracts.csproj",
+        "packagesPath": "C:\\Users\\kz_tech\\.nuget\\packages\\",
+        "outputPath": "E:\\FIL\\FIL.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/sanjiv/.config/NuGet/NuGet.Config"
+          "C:\\Users\\kz_tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Caching.Contracts/FIL.Caching.Contracts.csproj": {
-                "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Caching.Contracts/FIL.Caching.Contracts.csproj"
+              "E:\\FIL\\FIL.Caching.Contracts\\FIL.Caching.Contracts.csproj": {
+                "projectPath": "E:\\FIL\\FIL.Caching.Contracts\\FIL.Caching.Contracts.csproj"
               },
-              "/Volumes/Zoonga/Sanjiv/My Proj/FIL/ThirdParty/HubSpot.NET/HubSpot.NET.csproj": {
-                "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/ThirdParty/HubSpot.NET/HubSpot.NET.csproj"
+              "E:\\FIL\\ThirdParty\\HubSpot.NET\\HubSpot.NET.csproj": {
+                "projectPath": "E:\\FIL\\ThirdParty\\HubSpot.NET\\HubSpot.NET.csproj"
               }
             }
           }
@@ -300,29 +308,31 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Http/FIL.Http.csproj": {
+    "E:\\FIL\\FIL.Http\\FIL.Http.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Http/FIL.Http.csproj",
+        "projectUniqueName": "E:\\FIL\\FIL.Http\\FIL.Http.csproj",
         "projectName": "FIL.Http",
-        "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Http/FIL.Http.csproj",
-        "packagesPath": "/Users/sanjiv/.nuget/packages/",
-        "outputPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Http/obj/",
+        "projectPath": "E:\\FIL\\FIL.Http\\FIL.Http.csproj",
+        "packagesPath": "C:\\Users\\kz_tech\\.nuget\\packages\\",
+        "outputPath": "E:\\FIL\\FIL.Http\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/sanjiv/.config/NuGet/NuGet.Config"
+          "C:\\Users\\kz_tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -368,36 +378,38 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Logging/FIL.Logging.csproj": {
+    "E:\\FIL\\FIL.Logging\\FIL.Logging.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Logging/FIL.Logging.csproj",
+        "projectUniqueName": "E:\\FIL\\FIL.Logging\\FIL.Logging.csproj",
         "projectName": "FIL.Logging",
-        "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Logging/FIL.Logging.csproj",
-        "packagesPath": "/Users/sanjiv/.nuget/packages/",
-        "outputPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Logging/obj/",
+        "projectPath": "E:\\FIL\\FIL.Logging\\FIL.Logging.csproj",
+        "packagesPath": "C:\\Users\\kz_tech\\.nuget\\packages\\",
+        "outputPath": "E:\\FIL\\FIL.Logging\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/sanjiv/.config/NuGet/NuGet.Config"
+          "C:\\Users\\kz_tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Contracts/FIL.Contracts.csproj": {
-                "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Contracts/FIL.Contracts.csproj"
+              "E:\\FIL\\FIL.Contracts\\FIL.Contracts.csproj": {
+                "projectPath": "E:\\FIL\\FIL.Contracts\\FIL.Contracts.csproj"
               }
             }
           }
@@ -448,42 +460,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Utilities/FIL.Utilities.csproj": {
+    "E:\\FIL\\FIL.Utilities\\FIL.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Utilities/FIL.Utilities.csproj",
+        "projectUniqueName": "E:\\FIL\\FIL.Utilities\\FIL.Utilities.csproj",
         "projectName": "FIL.Utilities",
-        "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Utilities/FIL.Utilities.csproj",
-        "packagesPath": "/Users/sanjiv/.nuget/packages/",
-        "outputPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Utilities/obj/",
+        "projectPath": "E:\\FIL\\FIL.Utilities\\FIL.Utilities.csproj",
+        "packagesPath": "C:\\Users\\kz_tech\\.nuget\\packages\\",
+        "outputPath": "E:\\FIL\\FIL.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/sanjiv/.config/NuGet/NuGet.Config"
+          "C:\\Users\\kz_tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration/FIL.Configuration.csproj": {
-                "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration/FIL.Configuration.csproj"
+              "E:\\FIL\\FIL.Configuration\\FIL.Configuration.csproj": {
+                "projectPath": "E:\\FIL\\FIL.Configuration\\FIL.Configuration.csproj"
               },
-              "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Contracts/FIL.Contracts.csproj": {
-                "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Contracts/FIL.Contracts.csproj"
+              "E:\\FIL\\FIL.Contracts\\FIL.Contracts.csproj": {
+                "projectPath": "E:\\FIL\\FIL.Contracts\\FIL.Contracts.csproj"
               },
-              "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Logging/FIL.Logging.csproj": {
-                "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Logging/FIL.Logging.csproj"
+              "E:\\FIL\\FIL.Logging\\FIL.Logging.csproj": {
+                "projectPath": "E:\\FIL\\FIL.Logging\\FIL.Logging.csproj"
               }
             }
           }
@@ -518,30 +532,32 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/ThirdParty/HubSpot.NET/HubSpot.NET.csproj": {
+    "E:\\FIL\\ThirdParty\\HubSpot.NET\\HubSpot.NET.csproj": {
       "version": "0.5.1",
       "restore": {
-        "projectUniqueName": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/ThirdParty/HubSpot.NET/HubSpot.NET.csproj",
+        "projectUniqueName": "E:\\FIL\\ThirdParty\\HubSpot.NET\\HubSpot.NET.csproj",
         "projectName": "SquaredUp.HubSpot.NET",
-        "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/ThirdParty/HubSpot.NET/HubSpot.NET.csproj",
-        "packagesPath": "/Users/sanjiv/.nuget/packages/",
-        "outputPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/ThirdParty/HubSpot.NET/obj/",
+        "projectPath": "E:\\FIL\\ThirdParty\\HubSpot.NET\\HubSpot.NET.csproj",
+        "packagesPath": "C:\\Users\\kz_tech\\.nuget\\packages\\",
+        "outputPath": "E:\\FIL\\ThirdParty\\HubSpot.NET\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/sanjiv/.config/NuGet/NuGet.Config"
+          "C:\\Users\\kz_tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -595,7 +611,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
