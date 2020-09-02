@@ -1,3 +1,19 @@
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Logging/obj/Debug/netstandard2.0/FIL.Logging.AssemblyInfoInputs.cache
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Logging/obj/Debug/netstandard2.0/FIL.Logging.AssemblyInfo.cs
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Logging/obj/Debug/netstandard2.0/FIL.Logging.csproj.CoreCompileInputs.cache
+E:\FIL\FIL.Logging\bin\Debug\netstandard2.0\FIL.Logging.deps.json
+E:\FIL\FIL.Logging\bin\Debug\netstandard2.0\FIL.Logging.dll
+E:\FIL\FIL.Logging\bin\Debug\netstandard2.0\FIL.Logging.pdb
+E:\FIL\FIL.Logging\bin\Debug\netstandard2.0\FIL.Caching.Contracts.dll
+E:\FIL\FIL.Logging\bin\Debug\netstandard2.0\FIL.Contracts.dll
+E:\FIL\FIL.Logging\bin\Debug\netstandard2.0\HubSpot.NET.dll
+E:\FIL\FIL.Logging\bin\Debug\netstandard2.0\FIL.Contracts.pdb
+E:\FIL\FIL.Logging\bin\Debug\netstandard2.0\FIL.Caching.Contracts.pdb
+E:\FIL\FIL.Logging\bin\Debug\netstandard2.0\HubSpot.NET.pdb
+E:\FIL\FIL.Logging\obj\Debug\netstandard2.0\FIL.Logging.csprojAssemblyReference.cache
+E:\FIL\FIL.Logging\obj\Debug\netstandard2.0\FIL.Logging.AssemblyInfoInputs.cache
+E:\FIL\FIL.Logging\obj\Debug\netstandard2.0\FIL.Logging.AssemblyInfo.cs
+E:\FIL\FIL.Logging\obj\Debug\netstandard2.0\FIL.Logging.csproj.CoreCompileInputs.cache
+E:\FIL\FIL.Logging\obj\Debug\netstandard2.0\FIL.Logging.csproj.CopyComplete
+E:\FIL\FIL.Logging\obj\Debug\netstandard2.0\FIL.Logging.dll
+E:\FIL\FIL.Logging\obj\Debug\netstandard2.0\FIL.Logging.pdb

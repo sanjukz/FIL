@@ -6,3 +6,12 @@
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Http/obj/Debug/netstandard2.0/FIL.Http.csproj.CoreCompileInputs.cache
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Http/obj/Debug/netstandard2.0/FIL.Http.dll
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Http/obj/Debug/netstandard2.0/FIL.Http.pdb
+E:\FIL\FIL.Http\bin\Debug\netstandard2.0\FIL.Http.deps.json
+E:\FIL\FIL.Http\bin\Debug\netstandard2.0\FIL.Http.dll
+E:\FIL\FIL.Http\bin\Debug\netstandard2.0\FIL.Http.pdb
+E:\FIL\FIL.Http\obj\Debug\netstandard2.0\FIL.Http.csprojAssemblyReference.cache
+E:\FIL\FIL.Http\obj\Debug\netstandard2.0\FIL.Http.AssemblyInfoInputs.cache
+E:\FIL\FIL.Http\obj\Debug\netstandard2.0\FIL.Http.AssemblyInfo.cs
+E:\FIL\FIL.Http\obj\Debug\netstandard2.0\FIL.Http.csproj.CoreCompileInputs.cache
+E:\FIL\FIL.Http\obj\Debug\netstandard2.0\FIL.Http.dll
+E:\FIL\FIL.Http\obj\Debug\netstandard2.0\FIL.Http.pdb

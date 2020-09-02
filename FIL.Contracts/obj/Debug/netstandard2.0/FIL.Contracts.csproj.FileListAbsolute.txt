@@ -2,3 +2,17 @@
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Contracts/obj/Debug/netstandard2.0/FIL.Contracts.AssemblyInfoInputs.cache
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Contracts/obj/Debug/netstandard2.0/FIL.Contracts.AssemblyInfo.cs
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Contracts/obj/Debug/netstandard2.0/FIL.Contracts.csproj.CoreCompileInputs.cache
+E:\FIL\FIL.Contracts\bin\Debug\netstandard2.0\FIL.Contracts.deps.json
+E:\FIL\FIL.Contracts\bin\Debug\netstandard2.0\FIL.Contracts.dll
+E:\FIL\FIL.Contracts\bin\Debug\netstandard2.0\FIL.Contracts.pdb
+E:\FIL\FIL.Contracts\bin\Debug\netstandard2.0\FIL.Caching.Contracts.dll
+E:\FIL\FIL.Contracts\bin\Debug\netstandard2.0\HubSpot.NET.dll
+E:\FIL\FIL.Contracts\bin\Debug\netstandard2.0\HubSpot.NET.pdb
+E:\FIL\FIL.Contracts\bin\Debug\netstandard2.0\FIL.Caching.Contracts.pdb
+E:\FIL\FIL.Contracts\obj\Debug\netstandard2.0\FIL.Contracts.csprojAssemblyReference.cache
+E:\FIL\FIL.Contracts\obj\Debug\netstandard2.0\FIL.Contracts.AssemblyInfoInputs.cache
+E:\FIL\FIL.Contracts\obj\Debug\netstandard2.0\FIL.Contracts.AssemblyInfo.cs
+E:\FIL\FIL.Contracts\obj\Debug\netstandard2.0\FIL.Contracts.csproj.CoreCompileInputs.cache
+E:\FIL\FIL.Contracts\obj\Debug\netstandard2.0\FIL.Contracts.csproj.CopyComplete
+E:\FIL\FIL.Contracts\obj\Debug\netstandard2.0\FIL.Contracts.dll
+E:\FIL\FIL.Contracts\obj\Debug\netstandard2.0\FIL.Contracts.pdb

@@ -2,3 +2,29 @@
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Messaging/obj/Debug/netstandard2.0/FIL.Messaging.AssemblyInfoInputs.cache
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Messaging/obj/Debug/netstandard2.0/FIL.Messaging.AssemblyInfo.cs
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Messaging/obj/Debug/netstandard2.0/FIL.Messaging.csproj.CoreCompileInputs.cache
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Messaging.deps.json
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Messaging.dll
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Messaging.pdb
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Caching.Contracts.dll
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Configuration.Contracts.dll
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Configuration.dll
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Contracts.dll
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Http.dll
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Logging.dll
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Utilities.dll
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\HubSpot.NET.dll
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Configuration.pdb
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Logging.pdb
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Utilities.pdb
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Configuration.Contracts.pdb
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Http.pdb
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Caching.Contracts.pdb
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\FIL.Contracts.pdb
+E:\FIL\FIL.Messaging\bin\Debug\netstandard2.0\HubSpot.NET.pdb
+E:\FIL\FIL.Messaging\obj\Debug\netstandard2.0\FIL.Messaging.csprojAssemblyReference.cache
+E:\FIL\FIL.Messaging\obj\Debug\netstandard2.0\FIL.Messaging.AssemblyInfoInputs.cache
+E:\FIL\FIL.Messaging\obj\Debug\netstandard2.0\FIL.Messaging.AssemblyInfo.cs
+E:\FIL\FIL.Messaging\obj\Debug\netstandard2.0\FIL.Messaging.csproj.CoreCompileInputs.cache
+E:\FIL\FIL.Messaging\obj\Debug\netstandard2.0\FIL.Messaging.csproj.CopyComplete
+E:\FIL\FIL.Messaging\obj\Debug\netstandard2.0\FIL.Messaging.dll
+E:\FIL\FIL.Messaging\obj\Debug\netstandard2.0\FIL.Messaging.pdb

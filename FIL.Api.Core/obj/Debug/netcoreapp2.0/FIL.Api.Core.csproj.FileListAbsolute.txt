@@ -2,3 +2,19 @@
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api.Core/obj/Debug/netcoreapp2.0/FIL.Api.Core.AssemblyInfoInputs.cache
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api.Core/obj/Debug/netcoreapp2.0/FIL.Api.Core.AssemblyInfo.cs
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api.Core/obj/Debug/netcoreapp2.0/FIL.Api.Core.csproj.CoreCompileInputs.cache
+E:\FIL\FIL.Api.Core\bin\Debug\netcoreapp2.0\FIL.Api.Core.deps.json
+E:\FIL\FIL.Api.Core\bin\Debug\netcoreapp2.0\FIL.Api.Core.dll
+E:\FIL\FIL.Api.Core\bin\Debug\netcoreapp2.0\FIL.Api.Core.pdb
+E:\FIL\FIL.Api.Core\bin\Debug\netcoreapp2.0\FIL.Caching.Contracts.dll
+E:\FIL\FIL.Api.Core\bin\Debug\netcoreapp2.0\FIL.Contracts.dll
+E:\FIL\FIL.Api.Core\bin\Debug\netcoreapp2.0\HubSpot.NET.dll
+E:\FIL\FIL.Api.Core\bin\Debug\netcoreapp2.0\FIL.Contracts.pdb
+E:\FIL\FIL.Api.Core\bin\Debug\netcoreapp2.0\FIL.Caching.Contracts.pdb
+E:\FIL\FIL.Api.Core\bin\Debug\netcoreapp2.0\HubSpot.NET.pdb
+E:\FIL\FIL.Api.Core\obj\Debug\netcoreapp2.0\FIL.Api.Core.csprojAssemblyReference.cache
+E:\FIL\FIL.Api.Core\obj\Debug\netcoreapp2.0\FIL.Api.Core.AssemblyInfoInputs.cache
+E:\FIL\FIL.Api.Core\obj\Debug\netcoreapp2.0\FIL.Api.Core.AssemblyInfo.cs
+E:\FIL\FIL.Api.Core\obj\Debug\netcoreapp2.0\FIL.Api.Core.csproj.CoreCompileInputs.cache
+E:\FIL\FIL.Api.Core\obj\Debug\netcoreapp2.0\FIL.Api.Core.csproj.CopyComplete
+E:\FIL\FIL.Api.Core\obj\Debug\netcoreapp2.0\FIL.Api.Core.dll
+E:\FIL\FIL.Api.Core\obj\Debug\netcoreapp2.0\FIL.Api.Core.pdb

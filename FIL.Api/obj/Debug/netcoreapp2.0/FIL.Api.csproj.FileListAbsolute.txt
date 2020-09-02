@@ -2,3 +2,50 @@
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api/obj/Debug/netcoreapp2.0/FIL.Api.AssemblyInfoInputs.cache
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api/obj/Debug/netcoreapp2.0/FIL.Api.AssemblyInfo.cs
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api/obj/Debug/netcoreapp2.0/FIL.Api.csproj.CoreCompileInputs.cache
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\appsettings.Development.json
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\appsettings.json
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\appsettings.Production.json
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\appsettings.Test.json
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\Connected Services\KidzaniaService\ConnectedService.json
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\NewRelic\newrelic.config
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\web.config
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\aws-windows-deployment-manifest.json
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\Integrations\Credentials\TestApplication-a335560c3e26.json
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\.ebextensions\00-RenameComputer.config
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\.ebextensions\02-WindowsAuth.config
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\.ebextensions\01-JoinDomain.config
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\.ebextensions\07-AddSystemVariable.config
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Api.deps.json
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Api.runtimeconfig.json
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Api.runtimeconfig.dev.json
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Api.dll
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Api.pdb
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Api.Core.dll
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Caching.Contracts.dll
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Configuration.Contracts.dll
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Configuration.dll
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Contracts.dll
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Http.dll
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Logging.dll
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Utilities.dll
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\HubSpot.NET.dll
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\MCPG.CCA.Util.dll
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\PWAINServerSideSDK-Net.dll
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Api.Core.pdb
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Configuration.pdb
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Logging.pdb
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Utilities.pdb
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Configuration.Contracts.pdb
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Http.pdb
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Contracts.pdb
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\HubSpot.NET.pdb
+E:\FIL\FIL.Api\bin\Debug\netcoreapp2.0\FIL.Caching.Contracts.pdb
+E:\FIL\FIL.Api\obj\Debug\netcoreapp2.0\FIL.Api.csprojAssemblyReference.cache
+E:\FIL\FIL.Api\obj\Debug\netcoreapp2.0\FIL.Api.AssemblyInfoInputs.cache
+E:\FIL\FIL.Api\obj\Debug\netcoreapp2.0\FIL.Api.AssemblyInfo.cs
+E:\FIL\FIL.Api\obj\Debug\netcoreapp2.0\FIL.Api.csproj.CoreCompileInputs.cache
+E:\FIL\FIL.Api\obj\Debug\netcoreapp2.0\FIL.Api.csproj.CopyComplete
+E:\FIL\FIL.Api\obj\Debug\netcoreapp2.0\FIL.Api.dll
+E:\FIL\FIL.Api\obj\Debug\netcoreapp2.0\FIL.Api.pdb
+E:\FIL\FIL.Api\obj\Debug\netcoreapp2.0\FIL.Api.genruntimeconfig.cache

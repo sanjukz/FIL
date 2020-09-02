@@ -180,29 +180,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/sanjiv/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\kz_tech\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Caching.Contracts/FIL.Caching.Contracts.csproj",
+      "projectUniqueName": "E:\\FIL\\FIL.Caching.Contracts\\FIL.Caching.Contracts.csproj",
       "projectName": "FIL.Caching.Contracts",
-      "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Caching.Contracts/FIL.Caching.Contracts.csproj",
-      "packagesPath": "/Users/sanjiv/.nuget/packages/",
-      "outputPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Caching.Contracts/obj/",
+      "projectPath": "E:\\FIL\\FIL.Caching.Contracts\\FIL.Caching.Contracts.csproj",
+      "packagesPath": "C:\\Users\\kz_tech\\.nuget\\packages\\",
+      "outputPath": "E:\\FIL\\FIL.Caching.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/sanjiv/.config/NuGet/NuGet.Config"
+        "C:\\Users\\kz_tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -236,7 +238,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

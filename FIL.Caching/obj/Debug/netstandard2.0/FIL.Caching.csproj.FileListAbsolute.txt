@@ -1,3 +1,27 @@
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Caching/obj/Debug/netstandard2.0/FIL.Caching.AssemblyInfoInputs.cache
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Caching/obj/Debug/netstandard2.0/FIL.Caching.AssemblyInfo.cs
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Caching/obj/Debug/netstandard2.0/FIL.Caching.csproj.CoreCompileInputs.cache
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Caching.deps.json
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Caching.dll
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Caching.pdb
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Caching.Contracts.dll
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Configuration.Contracts.dll
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Configuration.dll
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Contracts.dll
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Http.dll
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Logging.dll
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\HubSpot.NET.dll
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Caching.Contracts.pdb
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Contracts.pdb
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\HubSpot.NET.pdb
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Configuration.pdb
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Logging.pdb
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Configuration.Contracts.pdb
+E:\FIL\FIL.Caching\bin\Debug\netstandard2.0\FIL.Http.pdb
+E:\FIL\FIL.Caching\obj\Debug\netstandard2.0\FIL.Caching.csprojAssemblyReference.cache
+E:\FIL\FIL.Caching\obj\Debug\netstandard2.0\FIL.Caching.AssemblyInfoInputs.cache
+E:\FIL\FIL.Caching\obj\Debug\netstandard2.0\FIL.Caching.AssemblyInfo.cs
+E:\FIL\FIL.Caching\obj\Debug\netstandard2.0\FIL.Caching.csproj.CoreCompileInputs.cache
+E:\FIL\FIL.Caching\obj\Debug\netstandard2.0\FIL.Caching.csproj.CopyComplete
+E:\FIL\FIL.Caching\obj\Debug\netstandard2.0\FIL.Caching.dll
+E:\FIL\FIL.Caching\obj\Debug\netstandard2.0\FIL.Caching.pdb
