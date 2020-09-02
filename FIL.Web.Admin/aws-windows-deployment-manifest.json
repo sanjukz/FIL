@@ -3,7 +3,7 @@
     "deployments": {
         "aspNetCoreWeb": [
         {
-            "name": "Kz.Web.Kitms.Feel",
+            "name": "FIL.Web.Admin",
             "parameters": {
                 "appBundle": ".",
                 "iisPath": "/",

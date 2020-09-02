@@ -1,46 +1,89 @@
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.AssemblyInfoInputs.cache
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.AssemblyInfo.cs
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.csproj.CoreCompileInputs.cache
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\web.config
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\appsettings.Development.json
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\appsettings.json
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\appsettings.Production.json
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\appsettings.Test.json
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\mono_crash.11a6748113.0.json
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\mono_crash.11a6748113.1.json
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\Properties\launchSettings.json
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\aws-windows-deployment-manifest.json
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\.ebextensions\00-RenameComputer.config
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\.ebextensions\02-WindowsAuth.config
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\.ebextensions\01-JoinDomain.config
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Configuration.Api.deps.json
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Configuration.Api.runtimeconfig.json
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Configuration.Api.runtimeconfig.dev.json
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Configuration.Api.dll
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Configuration.Api.pdb
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Api.Core.dll
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Caching.Contracts.dll
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Configuration.Contracts.dll
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Configuration.dll
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Contracts.dll
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Http.dll
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Logging.dll
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Utilities.dll
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\HubSpot.NET.dll
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Api.Core.pdb
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Configuration.Contracts.pdb
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Configuration.pdb
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Logging.pdb
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Utilities.pdb
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Http.pdb
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Caching.Contracts.pdb
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\FIL.Contracts.pdb
-E:\FIL\FIL.Configuration.Api\bin\Debug\netcoreapp2.0\HubSpot.NET.pdb
-E:\FIL\FIL.Configuration.Api\obj\Debug\netcoreapp2.0\FIL.Configuration.Api.csprojAssemblyReference.cache
-E:\FIL\FIL.Configuration.Api\obj\Debug\netcoreapp2.0\FIL.Configuration.Api.AssemblyInfoInputs.cache
-E:\FIL\FIL.Configuration.Api\obj\Debug\netcoreapp2.0\FIL.Configuration.Api.AssemblyInfo.cs
-E:\FIL\FIL.Configuration.Api\obj\Debug\netcoreapp2.0\FIL.Configuration.Api.csproj.CoreCompileInputs.cache
-E:\FIL\FIL.Configuration.Api\obj\Debug\netcoreapp2.0\FIL.Configuration.Api.csproj.CopyComplete
-E:\FIL\FIL.Configuration.Api\obj\Debug\netcoreapp2.0\FIL.Configuration.Api.dll
-E:\FIL\FIL.Configuration.Api\obj\Debug\netcoreapp2.0\FIL.Configuration.Api.pdb
-E:\FIL\FIL.Configuration.Api\obj\Debug\netcoreapp2.0\FIL.Configuration.Api.genruntimeconfig.cache
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/web.config
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/appsettings.Development.json
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/appsettings.json
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/appsettings.Production.json
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/appsettings.Test.json
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/mono_crash.11a6748113.0.json
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/mono_crash.11a6748113.1.json
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/Properties/launchSettings.json
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/aws-windows-deployment-manifest.json
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/.ebextensions/00-RenameComputer.config
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/.ebextensions/02-WindowsAuth.config
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/.ebextensions/01-JoinDomain.config
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.Api.deps.json
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.Api.runtimeconfig.json
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.Api.runtimeconfig.dev.json
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.Api.dll
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.Api.pdb
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Api.Core.dll
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Caching.Contracts.dll
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.Contracts.dll
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.dll
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Contracts.dll
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Http.dll
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Logging.dll
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Utilities.dll
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/HubSpot.NET.dll
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Api.Core.pdb
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.Contracts.pdb
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.pdb
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Logging.pdb
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Utilities.pdb
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Http.pdb
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Caching.Contracts.pdb
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Contracts.pdb
+E:/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/HubSpot.NET.pdb
+E:/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.csprojAssemblyReference.cache
+E:/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.AssemblyInfoInputs.cache
+E:/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.AssemblyInfo.cs
+E:/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.csproj.CoreCompileInputs.cache
+E:/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.csproj.CopyComplete
+E:/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.dll
+E:/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.pdb
+E:/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.genruntimeconfig.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/web.config
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/appsettings.Development.json
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/appsettings.json
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/appsettings.Production.json
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/appsettings.Test.json
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/mono_crash.11a6748113.0.json
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/mono_crash.11a6748113.1.json
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/Properties/launchSettings.json
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/aws-windows-deployment-manifest.json
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/.ebextensions/00-RenameComputer.config
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/.ebextensions/02-WindowsAuth.config
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/.ebextensions/01-JoinDomain.config
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.Api.deps.json
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.Api.runtimeconfig.json
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.Api.runtimeconfig.dev.json
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.Api.dll
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.Api.pdb
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Api.Core.dll
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Caching.Contracts.dll
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.Contracts.dll
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.dll
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Contracts.dll
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Http.dll
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Logging.dll
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Utilities.dll
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/HubSpot.NET.dll
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Api.Core.pdb
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.Contracts.pdb
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Configuration.pdb
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Logging.pdb
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Utilities.pdb
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Http.pdb
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Caching.Contracts.pdb
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/FIL.Contracts.pdb
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/bin/Debug/netcoreapp2.0/HubSpot.NET.pdb
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.csprojAssemblyReference.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.AssemblyInfoInputs.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.AssemblyInfo.cs
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.csproj.CoreCompileInputs.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.csproj.CopyComplete
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.dll
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.pdb
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL.Configuration.Api/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.genruntimeconfig.cache

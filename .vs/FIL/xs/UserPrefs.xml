@@ -1,20 +1,42 @@
-﻿<Properties StartupConfiguration="{6CEA710B-7F38-40D6-BD32-5277B46FAD35}|Kz.Api">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Http/RestHelper.cs">
+﻿<Properties StartupConfiguration="Multiple Projects">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Web.Admin/Views/Shared/_Layout.cshtml">
     <Files>
-      <File FileName="FIL.Http/RestHelper.cs" Line="3" Column="17" />
+      <File FileName="FIL.Http/RestHelper.cs" Line="13" Column="39" />
+      <File FileName="FIL.Web/Views/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="FIL.Web/Views/_ViewImports.cshtml" Line="4" Column="1" />
+      <File FileName="FIL.Web/Views/PaymentResponse/PaymentResponse.cshtml" Line="24" Column="5" />
+      <File FileName="FIL.Web/Views/Home/Index.cshtml" Line="10" Column="39" />
+      <File FileName="FIL.Web.Admin/aws-windows-deployment-manifest.json" Line="6" Column="22" />
+      <File FileName="FIL.Web/aws-windows-deployment-manifest.json" Line="6" Column="22" />
+      <File FileName="FIL.Web.Admin/Views/_ViewImports.cshtml" Line="4" Column="1" />
+      <File FileName="FIL.Web/Views/Shared/_Layout.cshtml" Line="7" Column="49" />
+      <File FileName="FIL.Web.Admin/Views/Shared/_Layout.cshtml" Line="4" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FIL" expanded="True">
-            <Node name="FIL.Http" expanded="True">
-              <Node name="RestHelper.cs" selected="True" />
+            <Node name="FIL.Web" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="PaymentResponse" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="FIL.Web.Admin" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.FIL.Configuration.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.FIL.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
     <String>FIL.Window.Service/FIL.Window.Service.csproj</String>
@@ -23,6 +45,14 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{6CEA710B-7F38-40D6-BD32-5277B46FAD35}" ItemName="FIL.Api" ConfigurationId="Kz.Api" />
+        <StartupItem ItemId="{767A18D8-C584-41D6-AC46-76BE6D0AC0B7}" ItemName="FIL.Configuration.Api" ConfigurationId="Kz.Configuration.Api" />
+        <StartupItem ItemId="{74FC6647-1218-4BD4-89A8-9EEFA4384E53}" ItemName="FIL.Web" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
   <MonoDevelop.Ide.ItemProperties.FIL.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

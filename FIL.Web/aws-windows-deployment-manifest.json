@@ -3,7 +3,7 @@
     "deployments": {
         "aspNetCoreWeb": [
         {
-            "name": "Kz.Web.Feel",
+            "name": "FIL.Web",
             "parameters": {
                 "appBundle": ".",
                 "iisPath": "/",
