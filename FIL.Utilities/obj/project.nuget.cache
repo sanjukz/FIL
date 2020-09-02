@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "ehnlTVb65W+wN0sLAsNOrNNqgy0bSbNIv3TcxHZcfe4PNUwl5qWS0IMgmDQqAdxvJZQyw10kwPM/U5Zl7m+oag==",
+  "success": true,
+  "projectFilePath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Utilities/FIL.Utilities.csproj",
+  "expectedPackageFiles": [
+    "/Users/sanjiv/.nuget/packages/microsoft.extensions.caching.abstractions/2.2.0/microsoft.extensions.caching.abstractions.2.2.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.extensions.caching.memory/2.2.0/microsoft.extensions.caching.memory.2.2.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.2.0/microsoft.extensions.dependencyinjection.abstractions.2.2.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.extensions.options/2.2.0/microsoft.extensions.options.2.2.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.extensions.primitives/2.2.0/microsoft.extensions.primitives.2.2.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/system.componentmodel.annotations/4.5.0/system.componentmodel.annotations.4.5.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/system.memory/4.5.1/system.memory.4.5.1.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/system.numerics.vectors/4.4.0/system.numerics.vectors.4.4.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.1/system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}

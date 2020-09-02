@@ -1,0 +1,4 @@
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.ExOzConsoleApp/obj/Debug/netcoreapp2.0/FIL.ExOzConsoleApp.csprojAssemblyReference.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.ExOzConsoleApp/obj/Debug/netcoreapp2.0/FIL.ExOzConsoleApp.AssemblyInfoInputs.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.ExOzConsoleApp/obj/Debug/netcoreapp2.0/FIL.ExOzConsoleApp.AssemblyInfo.cs
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.ExOzConsoleApp/obj/Debug/netcoreapp2.0/FIL.ExOzConsoleApp.csproj.CoreCompileInputs.cache

@@ -1,0 +1,4 @@
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Configuration.Api.Tests/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.Tests.csprojAssemblyReference.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Configuration.Api.Tests/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.Tests.AssemblyInfoInputs.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Configuration.Api.Tests/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.Tests.AssemblyInfo.cs
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Configuration.Api.Tests/obj/Debug/netcoreapp2.0/FIL.Configuration.Api.Tests.csproj.CoreCompileInputs.cache

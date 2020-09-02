@@ -1,0 +1,3 @@
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Database.Migration/obj/Debug/netcoreapp2.0/FIL.Database.Migration.AssemblyInfoInputs.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Database.Migration/obj/Debug/netcoreapp2.0/FIL.Database.Migration.AssemblyInfo.cs
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Database.Migration/obj/Debug/netcoreapp2.0/FIL.Database.Migration.csproj.CoreCompileInputs.cache

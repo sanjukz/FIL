@@ -1,0 +1,4 @@
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.MailChimp/obj/Debug/netcoreapp2.0/FIL.MailChimp.csprojAssemblyReference.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.MailChimp/obj/Debug/netcoreapp2.0/FIL.MailChimp.AssemblyInfoInputs.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.MailChimp/obj/Debug/netcoreapp2.0/FIL.MailChimp.AssemblyInfo.cs
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.MailChimp/obj/Debug/netcoreapp2.0/FIL.MailChimp.csproj.CoreCompileInputs.cache

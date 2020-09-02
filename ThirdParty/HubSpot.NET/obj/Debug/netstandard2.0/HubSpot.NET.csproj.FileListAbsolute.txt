@@ -1,0 +1,8 @@
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/ThirdParty/HubSpot.NET/bin/Debug/netstandard2.0/HubSpot.NET.deps.json
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/ThirdParty/HubSpot.NET/bin/Debug/netstandard2.0/HubSpot.NET.dll
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/ThirdParty/HubSpot.NET/bin/Debug/netstandard2.0/HubSpot.NET.pdb
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/ThirdParty/HubSpot.NET/obj/Debug/netstandard2.0/HubSpot.NET.AssemblyInfoInputs.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/ThirdParty/HubSpot.NET/obj/Debug/netstandard2.0/HubSpot.NET.AssemblyInfo.cs
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/ThirdParty/HubSpot.NET/obj/Debug/netstandard2.0/HubSpot.NET.csproj.CoreCompileInputs.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/ThirdParty/HubSpot.NET/obj/Debug/netstandard2.0/HubSpot.NET.dll
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/ThirdParty/HubSpot.NET/obj/Debug/netstandard2.0/HubSpot.NET.pdb

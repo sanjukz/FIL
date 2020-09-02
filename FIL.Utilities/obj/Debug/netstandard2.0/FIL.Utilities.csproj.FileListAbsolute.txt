@@ -1,0 +1,4 @@
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Utilities/obj/Debug/netstandard2.0/FIL.Utilities.csprojAssemblyReference.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Utilities/obj/Debug/netstandard2.0/FIL.Utilities.AssemblyInfoInputs.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Utilities/obj/Debug/netstandard2.0/FIL.Utilities.AssemblyInfo.cs
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Utilities/obj/Debug/netstandard2.0/FIL.Utilities.csproj.CoreCompileInputs.cache

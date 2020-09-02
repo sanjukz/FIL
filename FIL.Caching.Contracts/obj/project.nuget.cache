@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "9YuQot9+J9XpIncKaiXfqV5olbISZqhe4k0LhUw44nGKsPOyA885o/ynpxxc2fAnyHwpTMRVTH5MGW9/jrJ9OA==",
+  "success": true,
+  "projectFilePath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Caching.Contracts/FIL.Caching.Contracts.csproj",
+  "expectedPackageFiles": [
+    "/Users/sanjiv/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

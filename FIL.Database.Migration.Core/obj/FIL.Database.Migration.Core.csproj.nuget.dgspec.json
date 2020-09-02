@@ -1,0 +1,92 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Database.Migration.Core/FIL.Database.Migration.Core.csproj": {}
+  },
+  "projects": {
+    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Database.Migration.Core/FIL.Database.Migration.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Database.Migration.Core/FIL.Database.Migration.Core.csproj",
+        "projectName": "FIL.Database.Migration.Core",
+        "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Database.Migration.Core/FIL.Database.Migration.Core.csproj",
+        "packagesPath": "/Users/sanjiv/.nuget/packages/",
+        "outputPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Database.Migration.Core/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/sanjiv/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "CommandLineParser": {
+              "target": "Package",
+              "version": "[2.1.1-beta, )"
+            },
+            "Humanizer.Core": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            },
+            "Serenity.FluentMigrator": {
+              "target": "Package",
+              "version": "[1.6.904, )"
+            },
+            "Serenity.FluentMigrator.Runner": {
+              "target": "Package",
+              "version": "[1.6.904, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "WpxDJigg26EX5GEBexgyOEHnIp27k2VUol+8MCXit10SOmv+ljg3cTC3Yx1bJuOmHKcrem/RErMQQt0w+Qu0ug==",
+  "success": true,
+  "projectFilePath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.MailChimp/FIL.MailChimp.csproj",
+  "expectedPackageFiles": [
+    "/Users/sanjiv/.nuget/packages/autofac/5.2.0/autofac.5.2.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/mailchimp.net.v3/4.2.1/mailchimp.net.v3.4.2.1.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.0/microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.extensions.configuration/1.1.1/microsoft.extensions.configuration.1.1.1.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.extensions.configuration.abstractions/1.1.1/microsoft.extensions.configuration.abstractions.1.1.1.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/1.1.1/microsoft.extensions.dependencyinjection.abstractions.1.1.1.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.extensions.options/1.1.2/microsoft.extensions.options.1.1.2.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.extensions.primitives/1.1.1/microsoft.extensions.primitives.1.1.1.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.netcore.app/2.0.0/microsoft.netcore.app.2.0.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.netcore.dotnetapphost/2.0.0/microsoft.netcore.dotnetapphost.2.0.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.netcore.dotnethostpolicy/2.0.0/microsoft.netcore.dotnethostpolicy.2.0.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.netcore.dotnethostresolver/2.0.0/microsoft.netcore.dotnethostresolver.2.0.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.netcore.platforms/2.0.0/microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/system.componentmodel/4.3.0/system.componentmodel.4.3.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.2/system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "/Users/sanjiv/.nuget/packages/system.threading.tasks.extensions/4.5.2/system.threading.tasks.extensions.4.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}

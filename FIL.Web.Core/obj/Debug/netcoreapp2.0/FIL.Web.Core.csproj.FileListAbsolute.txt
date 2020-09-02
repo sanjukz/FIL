@@ -1,0 +1,3 @@
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Web.Core/obj/Debug/netcoreapp2.0/FIL.Web.Core.AssemblyInfoInputs.cache
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Web.Core/obj/Debug/netcoreapp2.0/FIL.Web.Core.AssemblyInfo.cs
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Web.Core/obj/Debug/netcoreapp2.0/FIL.Web.Core.csproj.CoreCompileInputs.cache

@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Messaging/FIL.Messaging.csproj": {}
+  },
+  "projects": {
+    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Messaging/FIL.Messaging.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Messaging/FIL.Messaging.csproj",
+        "projectName": "FIL.Messaging",
+        "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Messaging/FIL.Messaging.csproj",
+        "packagesPath": "/Users/sanjiv/.nuget/packages/",
+        "outputPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Messaging/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/sanjiv/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.3.21.20, )"
+            },
+            "AWSSDK.SimpleEmail": {
+              "target": "Package",
+              "version": "[3.3.6.4, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[4.6.2, )"
+            },
+            "Mandrill": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Twilio": {
+              "target": "Package",
+              "version": "[5.9.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

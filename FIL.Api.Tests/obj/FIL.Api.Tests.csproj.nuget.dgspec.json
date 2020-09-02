@@ -1,0 +1,92 @@
+{
+  "format": 1,
+  "restore": {
+    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api.Tests/FIL.Api.Tests.csproj": {}
+  },
+  "projects": {
+    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api.Tests/FIL.Api.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api.Tests/FIL.Api.Tests.csproj",
+        "projectName": "FIL.Api.Tests",
+        "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api.Tests/FIL.Api.Tests.csproj",
+        "packagesPath": "/Users/sanjiv/.nuget/packages/",
+        "outputPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api.Tests/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/sanjiv/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            },
+            "Autofac.Extras.Moq": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.6.0-preview-20171211-02, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.8.0-rc1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.9.0, )"
+            },
+            "Shouldly": {
+              "target": "Package",
+              "version": "[3.0.0-beta0003, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
