@@ -1,0 +1,9 @@
+E:\FIL\FIL\ThirdParty\HubSpot.NET\bin\Debug\netstandard2.0\HubSpot.NET.deps.json
+E:\FIL\FIL\ThirdParty\HubSpot.NET\bin\Debug\netstandard2.0\HubSpot.NET.dll
+E:\FIL\FIL\ThirdParty\HubSpot.NET\bin\Debug\netstandard2.0\HubSpot.NET.pdb
+E:\FIL\FIL\ThirdParty\HubSpot.NET\obj\Debug\netstandard2.0\HubSpot.NET.csprojAssemblyReference.cache
+E:\FIL\FIL\ThirdParty\HubSpot.NET\obj\Debug\netstandard2.0\HubSpot.NET.AssemblyInfoInputs.cache
+E:\FIL\FIL\ThirdParty\HubSpot.NET\obj\Debug\netstandard2.0\HubSpot.NET.AssemblyInfo.cs
+E:\FIL\FIL\ThirdParty\HubSpot.NET\obj\Debug\netstandard2.0\HubSpot.NET.csproj.CoreCompileInputs.cache
+E:\FIL\FIL\ThirdParty\HubSpot.NET\obj\Debug\netstandard2.0\HubSpot.NET.dll
+E:\FIL\FIL\ThirdParty\HubSpot.NET\obj\Debug\netstandard2.0\HubSpot.NET.pdb

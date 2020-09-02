@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "allowJs": false,
+    "moduleResolution": "node",
+    "target": "ES5",
+    "module": "CommonJS",
+    "jsx": "react",
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "keyofStringsOnly": true,
+    "removeComments": true,
+    "noErrorTruncation": true,
+    "noEmit": false,
+    "paths": {
+      "*": [
+        "./node_modules/*"
+      ],
+      "shared/*": [
+        "../shared/*"
+      ]
+    },
+    "types": [
+      "aspnet-webpack-react"
+    ]
+  },
+  "include": [
+    "ClientApp"
+  ],
+  "exclude": [
+    "node_modules",
+    "./dist"
+  ]
+}
