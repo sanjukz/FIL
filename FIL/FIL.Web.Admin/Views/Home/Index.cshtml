@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Home Page";
+    dynamic data = new {
+        sentryDsn = ViewBag.SentryDsn,
+        googleTagManagerAccountId = ViewBag.GoogleTagManagerAccountId,
+        stripeConnectClientId = ViewBag.stripeConnectClientId,
+        urls = ViewBag.Urls
+    };
+}
+
+<environment names="Development">
+    <div id="react-app"></div>
+</environment>
+<environment names="Staging,Production">
+    <cache expires-after="@TimeSpan.FromMinutes(10)" vary-by-user="true" vary-by="@this.Context.Request.Path">
+        <div id="react-app"></div>
+    </cache>
+</environment>
+
+@section init_Keys {
+    <script >
+        var sentryDsn = '@data.sentryDsn',
+            googleTagManagerAccountId = "@($"{ ViewBag.GoogleTagManagerAccountId}")",
+            stripeConnectClientId = '@data.stripeConnectClientId',
+            urls = '@data.urls';
+    </script>
+}
+
+

@@ -1,0 +1,136 @@
+.signup-form {
+    .ant-modal {
+        width: 98% !important;
+        max-width: 1000px;
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            margin: -25px 0 0 -30px;
+            content: "or";
+            background: #fff;
+            text-align: center;
+            border-radius: 50%;
+        }
+
+        .signup-form-left,
+        .signup-form-right {
+            padding: 40px 30px;
+
+            .sign-up-inner-form {
+                overflow: auto;
+
+                .form-row {
+                    margin: 0 !important;
+                }
+            }
+        }
+
+        .signup-form-left {
+            &::after {
+                background: url(https://feelaplace-cdn.s3-us-west-2.amazonaws.com/images/logos/divider.png) no-repeat right;
+                content: "";
+                position: absolute;
+                right: -48px;
+                top: 0;
+                width: 50px;
+                height: 100%;
+            }
+
+            .sign-up-inner-form {
+                max-height: 300px;
+                overflow: auto;
+            }
+
+            .inputStyle {
+                width: 40px !important;
+                height: 40px;
+                margin: 0 3px;
+                font-size: 16px;
+                border-radius: 4px;
+                border: 1px solid rgba(0, 0, 0, 0.3);
+            }
+
+            .error {
+                border: 1px solid red !important;
+            }
+        }
+
+        .signup-form-right {
+            .sign-up-inner-form {
+                position: absolute;
+                width: 75%;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+                top: 34%;
+            }
+        }
+
+        .ant-modal-header {
+            border-radius: 5px 5px 0 0;
+        }
+
+        .ant-modal-content {
+            border-radius: 5px;
+        }
+    }
+
+
+
+    .btn-link {
+        color: #572483 !important;
+        font-weight: bold;
+        text-decoration: underline !important;
+    }
+
+    .show-pass {
+        cursor: pointer;
+        right: 10px;
+        bottom: 10px;
+    }
+
+
+}
+
+.ant-modal-root {
+    position: relative;
+    z-index: 99999;
+}
+
+@media only screen and (max-width: 576px) {
+    .signup-form {
+        .ant-modal {
+            &:after {
+                display: none;
+            }
+
+            .signup-form-left {
+                &:after {
+                    display: none;
+                }
+
+                .sign-up-inner-form {
+                    max-height: inherit;
+                }
+            }
+
+            .signup-form-right {
+                padding-top: 0 !important;
+
+                .sign-up-inner-form {
+                    position: relative;
+                    top: inherit;
+                }
+            }
+        }
+
+        .sign-up-inner-form {
+            width: 100%;
+        }
+    }
+}

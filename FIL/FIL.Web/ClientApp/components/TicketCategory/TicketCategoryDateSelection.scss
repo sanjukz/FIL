@@ -1,0 +1,14 @@
+﻿.calendar-picker {
+  button.react-calendar__tile:disabled {
+    color: rgba(0,0,0,.3);
+  }
+  .react-calendar__month-view__days__day--weekend {
+    color: black;
+  }
+}
+
+.selected-pickup-loc{
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d;
+}

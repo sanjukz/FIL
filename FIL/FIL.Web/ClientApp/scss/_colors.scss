@@ -1,0 +1,25 @@
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+// Start with assigning color names to specific hex values.
+/* Colors variables */
+$gray-color: #333;
+$black-color: #000;
+$white-color: #ffffff;
+$red-color: #dc3545;
+$pink-color: #be1522;
+$site-primery-color: #572483;
+$site-secondary-color: #1d63b2;
+$blue-light: #1d63b2;
+$yellow-color: #d59446;
+$purple-color: #572483;
+
+
+.badge-primary {
+    background: $purple-color !important;
+}
+
+.text-purple {
+    color: $purple-color
+}

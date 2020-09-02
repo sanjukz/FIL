@@ -1,0 +1,157 @@
+@import "../_color.scss";
+
+.trans-report {
+  .filters {
+    .btn.margin-top {
+      margin-top: 25px;
+    }
+
+    .popover-content {
+      table {
+        tr {
+          td {
+            padding: 5px 7px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*.Select-clear {
+	display: none !important;
+}*/
+
+@media screen and (max-width: 768px) {
+  .trans-report {
+    .filters {
+      h3 {
+        font-size: 18px;
+      }
+      .btn.margin-top {
+        margin-top: 1px;
+      }
+    }
+  }
+}
+
+.pagination-input {
+  max-width: 40px;
+  text-align: center;
+  padding: 0 3px;
+  display: inline;
+}
+
+select.pagination-input {
+  min-width: 90px;
+}
+/* SEAT LAYOUT */
+.seat-layout-tbl table tr:first-child td,
+.seat-layout-tbl table tr td:first-child {
+  background: #f2f2f2;
+  line-height: 35px;
+}
+.seat-layout-sec {
+  padding: 0 20px;
+}
+.seat-layout-head {
+  padding-top: 25px;
+}
+.seat-layout-head dl dd {
+  display: inline-block;
+  font-size: 12px;
+}
+.seat-layout-head dl dd svg {
+  float: left;
+  height: 20px;
+  line-height: 1px;
+}
+.seat-layout-head dl dd .svg-txt {
+  float: left;
+  line-height: 20px;
+  padding: 0 25px 0 5px;
+  white-space: nowrap;
+}
+
+.seat-layout-tbl .table td {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 14px;
+  background: #fff;
+}
+.seat-layout-tbl .table svg {
+  height: 24px;
+  line-height: 1px;
+}
+.seat-layout-tbl .table svg {
+  cursor: pointer;
+}
+.seat-layout-tbl .table svg:hover path {
+  fill: #46ab40;
+}
+.seat-layout-contener {
+  position: relative;
+}
+.seat-layout-contener .top-tbl-dtl {
+  position: absolute;
+  top: 15px;
+  left: 30px;
+}
+.seat-layout-contener .popover {
+  font-size: 12px;
+  text-align: center;
+  color: #333;
+}
+.seat-layout-contener .popover small {
+  font-size: 10px;
+}
+.seat-layout-head center img {
+  max-width: 400px;
+}
+.seat-layout-tbl td .svg-txt {
+  font-size: 10px;
+}
+.seat-layout-head img {
+  width: 12px;
+}
+.seat-table input[type="text"] {
+  width: 70px;
+}
+.flex-head {
+  background-color: #f2f2f2;
+  background-image: linear-gradient(#f2f2f2, #ffffff);
+}
+
+.col-chkbox {
+  width: 20px;
+}
+
+.col-section {
+  width: 400px;
+}
+
+.col-capacity {
+  width: 90px;
+}
+
+.col-gate {
+  width: 200px;
+}
+
+.col-seating {
+  width: 100px;
+}
+
+.col-price {
+  width: 100px;
+}
+.mv-btn {
+  width: 110px;
+}
+
+.sepr-line {
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #dddddd;
+  margin: 10px 0;
+}

@@ -1,0 +1,32 @@
+@import "../color.scss";
+
+.header-shadow {
+  @include header-shadow;
+
+  .brand-text {
+    display: inline-block;
+    line-height: 40px;
+    font-size: 18px;
+    border-left: 1px solid #e8eaeb;
+
+    sup {
+      font-size: 6px;
+      top: -14px;
+    }
+  }
+}
+img.user-profile {
+  width: 35px;
+  margin-right: 10px;
+  height: 35px;
+  border-radius: 50%;
+}
+.site-nav {
+  li {
+    &:first-child {
+      a {
+        padding-left: 0px;
+      }
+    }
+  }
+}

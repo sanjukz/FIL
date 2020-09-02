@@ -1,0 +1,4 @@
+dist/
+daemon/
+node_modules/
+wwwroot/**

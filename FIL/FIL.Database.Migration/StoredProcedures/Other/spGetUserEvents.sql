@@ -1,0 +1,12 @@
+CREATE PROCEDURE [dbo].[spGetUserEvents]
+(
+	@UserId BIGINT
+)
+AS
+BEGIN
+	SELECT DISTINCT ECD.Id AS EventCatId,ECD.Name AS EventCatName
+	FROM Events ECD WITH(NOLOCK)
+	INNER JOIN EventDetails ED WITH(NOLOCK) ON ED.EventId=ECD.Id 	
+	WHERE ECD.Id IN(535) --AND ED.EventEndDate >= GETDATE()
+	ORDER BY ECD.Id DESC
+END

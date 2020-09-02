@@ -1,0 +1,273 @@
+﻿@using Kz.Web.Core.Utilities
+@{
+    var hasStaticCdnUrl = !string.IsNullOrWhiteSpace(ViewBag.BaseStaticUrl);
+    var shouldIndex = ViewBag.ShouldIndex;
+    var isPlacePage = ViewBag.IsPlacePage;
+    var currentPathUrl = ViewBag.currentPathUrl;
+    var oneSignalAppId = ViewBag.OneSignalAppId;
+    var isLiveOnline = ViewBag.IsLiveOnline;
+    bool IsLiveStream = ViewBag.isLiveStream ?? false;
+    var userAltId = ViewBag.userAltId;
+    var userFirstName = ViewBag.userFirstName;
+    var userLastName = ViewBag.userLastName;
+    var userEmail = ViewBag.userEmail;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="@($"{ViewBag.Description}")" />
+    <meta property="og:title" content="@($"{ViewBag.Title}")" />
+    <meta property="og:description" content="@($"{ViewBag.Description}")">
+    <meta property="og:site_name" content="FeelitLIVE">
+    <meta property="og:image" content="@($"{ViewBag.OgImg}")">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="@($"{ViewBag.FullUrl}")">
+    <meta name="twitter:title" content="@($"{ViewBag.Title}")">
+    <meta name="twitter:description" content="@($"{ViewBag.Description}")">
+    <meta name="twitter:image" content="@($"{ViewBag.OgImg}")">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@@FeelitLIVE" />
+    <meta name="keywords" content="feel, places, visit, itineraries, itinerary, plan a trip, holiday, vacation, travel, tourism, monuments, museums, attractions, parks and sanctuaries, wildlife, castles, forts, galleries, spiritual, temples, see and do, eat and drink, shop, experience, explore, rides, monument tickets, museum tickets, attraction tickets, audio guides, light and sound show, local delicacies, cafes, nightlife, circuits, souvenirs, memorabilia, hidden gems, hotels, hotel, maps, map, restaurants, beaches, shopping, flights, resorts, tourist places, flight tickets, resort, air ticket, tours and travels, honeymoon packages, tour, holidays, tour packages, holiday packages, review, sightseeing, airfare, travel package, trip, holiday packages, reviews, tours, trips, holiday, hill stations, local traditions, cruises, private taxi, b&b, bed and breakfast, local hosts, train, royal trains" />
+    <title>@($"{ViewBag.Title}")</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    @* <link rel="icon" sizes="192x192" href="https://static6.feelitlive.com/images/logos/feel-bug-192px-192px.png"> *@
+    <link rel='shortcut icon' type='image/x-icon' href='https://static6.feelitlive.com/images/feel-faveicon.ico' />
+    @* <link rel="apple-touch-icon" type='image/x-icon' href='https://static6.feelitlive.com/images/logos/feel-faveicon.svg' /> *@
+    <link rel="mask-icon" href="https://static6.feelitlive.com/images/feel-faveicon.ico" />
+    <link rel="apple-touch-icon" sizes="57x57" href="https://static6.feelitlive.com/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://static6.feelitlive.com/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://static6.feelitlive.com/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://static6.feelitlive.com/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://static6.feelitlive.com/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://static6.feelitlive.com/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://static6.feelitlive.com/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://static6.feelitlive.com/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://static6.feelitlive.com/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://static6.feelitlive.com/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://static6.feelitlive.com/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://static6.feelitlive.com/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://static6.feelitlive.com/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://static6.feelitlive.com/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="canonical" href="@($"{ViewBag.FullUrl}")" />
+      
+    <link rel="alternate" href="@($"https://www.feelitlive.com{ViewBag.Path}")" hrefLang="en" />
+    <link rel="alternate" href="@($"https://www.feelitlive.co.in{ViewBag.Path}")" hrefLang="en-in" />
+    <link rel="alternate" href="@($"https://www.feelitlive.com.au{ViewBag.Path}")" hrefLang="en-AU" />
+    <link rel="alternate" href="@($"https://www.feelitlive.es{ViewBag.Path}")" hreflang="es-ES" />
+    @* <link rel="alternate" href="@($"https://www.feelitlive.fr{ViewBag.Path}")" hrefLang="en-FR" /> *@
+    <link rel="alternate" href="@($"https://www.feelitlive.co.nz{ViewBag.Path}")" hrefLang="en-NZ" />
+    <link rel="alternate" href="@($"https://www.feelitlive.co.uk{ViewBag.Path}")" hrefLang="en-GB" />
+    <link rel="alternate" href="@($"https://www.feelitlive.de{ViewBag.Path}")" hreflang="de" />
+    @if (shouldIndex == false)
+    {
+        <meta name="robots" content="noindex, nofollow" />
+    }
+
+    <base href="~/" />
+
+    @if (!isLiveOnline)
+    {
+        @if (!hasStaticCdnUrl)
+        {
+            <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+            <link rel="stylesheet" href="~/dist/site.css" asp-append-version="true" />
+        }
+        else
+        {
+            <link rel="stylesheet" href="@($"{ViewBag.BaseStaticUrl}{this.AddFileVersionToPath("/dist/vendor.css")}")" />
+            <link rel="stylesheet" href="@($"{ViewBag.BaseStaticUrl}{this.AddFileVersionToPath("/dist/site.css")}")" />
+        }
+    }
+    else if (isLiveOnline)
+    {
+        <link type="text/css" rel="stylesheet" href="https://source.zoom.us/1.7.7/css/bootstrap.css" />
+        <link type="text/css" rel="stylesheet" href="https://source.zoom.us/1.7.7/css/react-select.css" />
+    }
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script type="application/ld+json">
+        {
+        "@@context": "http://schema.org/",
+        "@@type": "website",
+        "url":"@($"{ViewBag.Orgin}")",
+        "logo": "https://static6.feelitlive.com/images/logos/feel-bug-192px-192px.png"
+        }
+    </script>
+    
+    @if (currentPathUrl == "/")
+    {
+        @* <script type="application/ld+json">
+                {
+                "@@context": "https://schema.org",
+                "@@type": "WebSite",
+                "url":"@($"{ViewBag.Orgin}")",
+                "potentialAction": {
+                "@@type": "SearchAction",
+                "target":"@($"{ViewBag.Orgin}/advance-search/"){search_term_string}",
+                "query-input": "required name=search_term_string"
+                }
+                }
+            </script> *@
+        <script type="application/ld+json">
+            {
+            "@@context": "https://schema.org",
+            "@@type": "Organization",
+            "name": "FeelitLive",
+            "url": "https://www.feelitlive.com",
+            "logo": "https://static6.feelitlive.com/images/logos/feel-bug-192px-192px.png",
+            "sameAs": [
+            "https://www.facebook.com/feelitlivecom/",
+            "https://twitter.com/feelit_LIVE",
+            "https://www.instagram.com/feelit_live/",
+            "https://www.linkedin.com/company/feelitlive"
+            ]
+            }
+        </script>
+    }
+    @if (isPlacePage == true)
+    {
+        <script type="application/ld+json">
+            {
+            "@@context": "https://schema.org",
+            "@@type": "BreadcrumbList",
+            "itemListElement": [{
+            "@@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "@($"{ViewBag.Orgin}")"
+            },{
+            "@@type": "ListItem",
+            "position": 2,
+            "name": "@($"{ViewBag.ParentCategoryName}")",
+            "item":  "@($"{ViewBag.Orgin}{ViewBag.ParentCategoryUrl}")"
+            },{
+            "@@type": "ListItem",
+            "position": 3,
+            "name": "@($"{ViewBag.SubCategoryName}")",
+            "item": "@($"{ViewBag.Orgin}{ViewBag.SubCategoryUrl}")"
+            }]
+            }
+        </script>
+
+        <script type="application/ld+json">
+            {
+            "@@context": "http://www.schema.org",
+            "@@type": "Product",
+            "name": "@($"{ViewBag.PlaceName}")",
+            "url": "@($"{ViewBag.Orgin}{ViewBag.Path}")",
+            "image":"@($"{ViewBag.PlaceImage}")",
+            "logo": "https://static6.feelitlive.com/images/logos/feel-bug-192px-192px.png",
+            "Description": "@($"{ViewBag.Description}")",
+            "offers":@Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.markupString,
+            Newtonsoft.Json.Formatting.Indented).Replace("type", "@type"))
+            }
+        </script>
+    }
+        
+</head>
+<body>
+    @RenderBody()
+
+    @if (!hasStaticCdnUrl)
+    {
+        <script src="~/dist/vendor.js" asp-append-version="true"></script>
+    }
+    else
+    {
+        <script src="@($"{ViewBag.BaseStaticUrl}{this.AddFileVersionToPath("/dist/vendor.js")}")"></script>
+    }
+    @if (!String.IsNullOrWhiteSpace(oneSignalAppId))
+    {
+        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+        <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function () {
+            OneSignal.init({
+                appId: "@($"{ViewBag.OneSignalAppId}")",
+            });
+        });
+        </script>
+    }
+    @if (isLiveOnline)
+    {
+        <link rel="stylesheet" href="~/dist/zoom.css" />
+        <script src="https://source.zoom.us/1.7.7/lib/vendor/jquery.min.js"></script>
+    }
+    <script src="//fast.appcues.com/74175.js"></script>
+    @if (!String.IsNullOrWhiteSpace(userEmail))
+    {
+        <script>
+        function identifyUser(userID, firstName, lastName, email) {
+            console.log("inside identifyUser")
+            // if window.Appcues is not undefined or null..
+            if (window.Appcues != undefined && window.Appcues != null) {
+                console.log("inside appcues")
+                // set up the identity of the user
+                window.Appcues.identify(userID, { // Unique identifier for current user
+                    firstName: firstName,   // Current user's name
+                    lastName: lastName,   // Current user's name
+                    email: email, // Current user's email
+                });
+                // else...
+            } else {
+                console.log("inside else block")
+                console.log(`${userID} ${firstName} ${lastName} ${email}`);
+                //identifyUser(userID, name, email, createdAt);
+            }
+        }
+        let sessionData = "@(ViewBag.userAltId)";
+        console.log("Calling identifyUser logged in");
+        console.log("session= " + sessionData);
+        identifyUser("@(ViewBag.userAltId)", "@(ViewBag.userFirstName)", "@(ViewBag.userLastName)", "@(ViewBag.userEmail)")
+                                                                   //Appcues.identify('testUserId', { userName: 'Test Testerson' });
+        </script>
+    }
+    else
+    {
+        <script>
+            function identifyUser(userID, firstName, lastName, email) {
+                console.log("inside identifyUser - Anonymous")
+                console.log(`${userID} ${firstName} ${lastName} ${email}`);
+                // if window.Appcues is not undefined or null..
+                if (window.Appcues != undefined && window.Appcues != null) {
+                    console.log("inside appcues - Anonymous")
+                    // set up the identity of the user
+                    window.Appcues.identify(userID, { // Unique identifier for current user
+                        firstName: firstName,   // Current user's name
+                        lastName: lastName,   // Current user's name
+                        email: email, // Current user's email
+                    });
+                    // else...
+                } else {
+                    console.log("inside else block - Anonymous")
+                    console.log(`${userID} ${firstName} ${lastName} ${email}`);
+                    //identifyUser(userID, name, email, createdAt);
+                }
+            }
+            console.log("Calling identifyUser - Anonymous");
+            identifyUser('Anonymous UserId', 'Anonymous firstname', 'Anonymous lastname', 'Anonymous email')                          //Appcues.identify('testUserId', { userName: 'Test Testerson' });
+        </script>
+    }
+    @if (currentPathUrl == "/careers")
+    {
+        <script data-startup="feelaplace" src="https://angel.co/javascripts/embed_jobs.js" id="angellist_embed" async></script>
+
+    }
+
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+.cust-editor {
+    height: 120px;
+}
+.place-listing {
+    span {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 35px;
+        margin: 0 10px 0 0;
+        border-color: $purple-color !important;
+    }
+
+    &[aria-expanded="true"],
+    &.active {
+        background: inherit;
+
+        span {
+            background: $purple-color;
+            border-color: $purple-color !important;
+            color: $white-color;
+        }
+    }
+}
+
+.align-middle-box {
+    vertical-align: middle;
+    padding-top: 75px;
+}

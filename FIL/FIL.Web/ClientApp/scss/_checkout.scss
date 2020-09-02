@@ -1,0 +1,32 @@
+@import "../scss/_colors.scss";
+@import "../scss/_mixins.scss";
+@import "../scss/_variables.scss";
+
+.checkout-card {
+    counter-reset: section;
+
+    h5 {
+        position: relative;
+        padding: 10px 10px 10px 50px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        margin: 0;
+        padding: 10px;
+
+        &:before {
+            border: 1px solid #323232;
+            border-radius: 50%;
+            content: "" counter(section, decimal);
+            counter-increment: section;
+            height: 30px;
+            left: 8px;
+            top: 5px;
+            line-height: 30px;
+            position: absolute;
+            text-align: center;
+            vertical-align: middle;
+            width: 30px;
+            font-size: 16px;
+            display: none;
+        }
+    }
+}

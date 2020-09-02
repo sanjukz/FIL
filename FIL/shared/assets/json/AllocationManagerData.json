@@ -1,0 +1,115 @@
+{
+	"AllocationsData": [{			
+            "Stand": "Stand A",
+            "Block": "Block A",
+			"Level": "North Level",
+			"TicketsAvailable": "550",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand B",
+            "Block": "Block B",
+			"Level": "North Level",
+			"TicketsAvailable": "250",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand C",
+            "Block": "Block C",
+			"Level": "North Level",
+			"TicketsAvailable": "600",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand D",
+            "Block": "Block D",
+			"Level": "North Level",
+			"TicketsAvailable": "700",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand A",
+            "Block": "Block A",
+			"Level": "South Level",
+			"TicketsAvailable": "550",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand B",
+            "Block": "Block B",
+			"Level": "South Level",
+			"TicketsAvailable": "250",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand C",
+            "Block": "Block C",
+			"Level": "South Level",
+			"TicketsAvailable": "600",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand D",
+            "Block": "Block D",
+			"Level": "South Level",
+			"TicketsAvailable": "700",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand A",
+            "Block": "Block A",
+			"Level": "East Level",
+			"TicketsAvailable": "550",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand B",
+            "Block": "Block B",
+			"Level": "East Level",
+			"TicketsAvailable": "250",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand C",
+            "Block": "Block C",
+			"Level": "East Level",
+			"TicketsAvailable": "600",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand D",
+            "Block": "Block D",
+			"Level": "East Level",
+			"TicketsAvailable": "700",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand A",
+            "Block": "Block A",
+			"Level": "West Level",
+			"TicketsAvailable": "550",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand B",
+            "Block": "Block B",
+			"Level": "West Level",
+			"TicketsAvailable": "250",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand C",
+            "Block": "Block C",
+			"Level": "West Level",
+			"TicketsAvailable": "600",
+			"TBD": "TBD"
+        },
+        {			
+            "Stand": "Stand D",
+            "Block": "Block D",
+			"Level": "West Level",
+			"TicketsAvailable": "700",
+			"TBD": "TBD"
+        }	
+	]
+}

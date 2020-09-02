@@ -1,0 +1,99 @@
+@using Kz.Web.Core.Utilities
+@{
+  var userAltId = ViewBag.userAltId;
+  var userFirstName = ViewBag.userFirstName;
+  var userLastName = ViewBag.userLastName;
+  var userEmail = ViewBag.userEmail;
+}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel='shortcut icon' type='image/x-icon' href='https://s3-us-west-2.amazonaws.com/feelaplace-cdn/images/feel-faveicon.ico' />
+  <link rel="apple-touch-icon" type='image/x-icon' href='https://s3-us-west-2.amazonaws.com/feelaplace-cdn/images/feel-faveicon.ico' />
+  <link rel="mask-icon" href="https://s3-us-west-2.amazonaws.com/feelaplace-cdn/images/feel-faveicon.ico" />
+  <title>Feel Admin</title>
+  <base href="~/" />
+  <!-- Our main CSS -->
+  <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+  <link rel="stylesheet" href="~/dist/site.css" asp-append-version="true" />
+  <!--Third party library-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>
+    (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/hpmkhsil';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+  </script>
+</head>
+<body>
+  @RenderBody()
+  @RenderSection("init_Keys")
+  <script src="~/dist/library.js"></script>
+  <script src="~/dist/vendor.js"></script>
+  <script src="//fast.appcues.com/74175.js"></script>
+  @if (!String.IsNullOrWhiteSpace(userEmail))
+  {
+    <script>
+        function identifyUser(userID, firstName, lastName, email) {
+            console.log("inside identifyUser")
+            // if window.Appcues is not undefined or null..
+            if (window.Appcues != undefined && window.Appcues != null) {
+                console.log("inside appcues")
+                // set up the identity of the user
+                window.Appcues.identify(userID, { // Unique identifier for current user
+                    firstName: firstName,   // Current user's name
+                    lastName: lastName,   // Current user's name
+                    email: email, // Current user's email
+                });
+                // else...
+            } else {
+                console.log("inside else block")
+                console.log(`${userID} ${firstName} ${lastName} ${email}`);
+                //identifyUser(userID, name, email, createdAt);
+            }
+        }
+        let sessionData = "@(ViewBag.userAltId)";
+        console.log("Calling identifyUser logged in");
+        console.log("session= " + sessionData);
+        identifyUser("@(ViewBag.userAltId)", "@(ViewBag.userFirstName)", "@(ViewBag.userLastName)", "@(ViewBag.userEmail)")
+                                                                   //Appcues.identify('testUserId', { userName: 'Test Testerson' });
+    </script>
+  }
+  else
+  {
+    <script>
+      function identifyUser(userID, firstName, lastName, email) {
+        console.log("inside identifyUser - Anonymous")
+        console.log(`${userID} ${firstName} ${lastName} ${email}`);
+        // if window.Appcues is not undefined or null..
+        if (window.Appcues != undefined && window.Appcues != null) {
+          console.log("inside appcues - Anonymous")
+          // set up the identity of the user
+          window.Appcues.identify(userID, { // Unique identifier for current user
+            firstName: firstName,   // Current user's name
+            lastName: lastName,   // Current user's name
+            email: email, // Current user's email
+          });
+          // else...
+        } else {
+          console.log("inside else block - Anonymous")
+          console.log(`${userID} ${firstName} ${lastName} ${email}`);
+          //identifyUser(userID, name, email, createdAt);
+        }
+      }
+      console.log("Calling identifyUser - Anonymous");
+      identifyUser('Anonymous UserId', 'Anonymous firstname', 'Anonymous lastname', 'Anonymous email')                          //Appcues.identify('testUserId', { userName: 'Test Testerson' });
+    </script>
+  }
+
+
+
+  <script src="~/dist/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ4Ik7ENzLWY1tLh1ul8NxhWBdWGK6tQU&libraries=places" async defer></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

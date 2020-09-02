@@ -1,0 +1,270 @@
+.fil-exp-landing-page {
+  section {
+    &:nth-child(odd) {
+      background-color: #f8f8f8;
+    }
+  }
+  .review-sec {
+    h6 {
+      font-size: 18px !important;
+    }
+
+    .rating {
+      .rating {
+        padding: 0;
+      }
+    }
+  }
+
+  .fil-sharethis {
+    .dropdown-menu {
+      button {
+        margin-right: 7px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  h4,
+  .h4 {
+    font-size: 22px !important;
+  }
+
+  .exp-sec-pad {
+    padding: 60px 0;
+  }
+
+  .fil-cust-breadcrumb {
+    position: absolute;
+    z-index: 2;
+    left: 2px;
+
+    .breadcrumb-item + .breadcrumb-item:before {
+      color: #ffffff;
+    }
+
+    ol {
+      padding: 5px 15px;
+      margin: 15px 0 0 0;
+      min-width: 300px;
+      background: rgba(0, 0, 0, 0.7);
+
+      li {
+        font-size: 12px;
+        color: #fff;
+
+        a {
+          color: #fff;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .card-deck {
+    .card {
+      background: transparent;
+      border: 0 !important;
+      border-radius: 0;
+    }
+  }
+
+  .fil-inner-banner {
+    .card-deck {
+      &.fil-inner-banner-images {
+        .card {
+          img {
+            height: inherit !important;
+            width: 100%;
+          }
+        }
+      }
+
+      .card {
+        .star-rating {
+          a {
+            display: inline-block;
+            line-height: 17px;
+
+            .rating {
+              font-size: 24px;
+              height: 20px;
+              line-height: 17px;
+              padding-top: 2px;
+
+              span {
+                margin-left: 12px;
+              }
+            }
+          }
+        }
+      }
+
+      &.fil-event-detail {
+        font-size: 14px;
+
+        .card {
+          border-radius: 0 !important;
+
+          .fil-event-detail-right {
+            .d-inline-block {
+              min-width: 32%;
+
+              .fil-btn {
+                min-width: 166px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .fil-exp-list-sec {
+    .fil-exp-list {
+      ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+          list-style: none;
+          background: url(https://static1.feelitlive.com/images/admin-images/icons/sub-menu/nav-checked.svg)
+            5px 7px no-repeat;
+          padding: 0 0 10px 35px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .fil-exp-landing-page {
+    .container {
+      .card-deck {
+        margin-right: -4px !important;
+        margin-left: -4px !important;
+
+        .card {
+          margin-right: 6px !important;
+          margin-left: 6px !important;
+          overflow: hidden;
+
+          &:first-child {
+            min-width: 507px;
+            max-width: 507px;
+          }
+        }
+      }
+    }
+
+    .fil-inner-banner {
+      .container {
+        .card-deck {
+          .card {
+            &:first-child {
+              border-radius: 15px 0 0 15px;
+            }
+
+            &:last-child {
+              border-radius: 0 15px 15px 0;
+            }
+          }
+        }
+      }
+    }
+
+    .review-sec {
+      .feel-comment {
+        margin: 10px 0 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .fil-exp-landing-page {
+    .container {
+      .card-deck {
+        .card:first-child {
+          min-width: 418px;
+          max-width: 418px;
+        }
+      }
+    }
+
+    .fil-inner-banner {
+      .card-deck {
+        &.fil-event-detail {
+          .card {
+            .fil-event-detail-right {
+              .d-inline-block {
+                width: inherit;
+
+                &:first-child {
+                  padding-left: 20px;
+                }
+
+                .fil-btn {
+                  min-width: inherit !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .fil-exp-landing-page {
+    .container {
+      .card-deck {
+        .card:first-child {
+          min-width: 310px;
+          max-width: 310px;
+        }
+      }
+    }
+
+    .exp-sec-pad {
+      padding: 30px 0;
+    }
+
+    .fil-event-detail {
+      .fil-exp-head {
+        .d-inline-block.ml-5 {
+          margin: 10px 0 0 0 !important;
+        }
+      }
+
+      .fil-exp-btn {
+        display: block !important;
+        text-align: left !important;
+        width: 100% !important;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .fil-exp-landing-page {
+    .container {
+      .card-deck {
+        .card {
+          width: 100%;
+          min-width: 100%;
+
+          &:first-child {
+            min-width: 100%;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

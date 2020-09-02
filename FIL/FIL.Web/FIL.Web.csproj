@@ -1,0 +1,142 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <IsPackable>false</IsPackable>
+	<TypeScriptJSXEmit>react</TypeScriptJSXEmit>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'FIL.Web' " />
+  <ItemGroup>
+    <PackageReference Include="MailChimp.Net.V3" Version="4.2.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3"><PrivateAssets Condition="'%(PackageReference.Version)' == ''">all</PrivateAssets>
+<Publish Condition="'%(PackageReference.Version)' == ''">true</Publish>
+</PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
+    <PackageReference Include="morelinq" Version="3.1.0" />
+    <PackageReference Include="SimpleMvcSitemap" Version="3.1.0" />
+    <PackageReference Include="Stripe.net" Version="35.11.1" />
+    <PackageReference Include="System.Device.Location.Portable" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
+    <Content Remove="ClientApp\**" />
+  </ItemGroup>
+  
+<ItemGroup>
+    <None Include=".ebextensions\00-RenameComputer.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include=".ebextensions\02-WindowsAuth.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include=".ebextensions\01-JoinDomain.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include=".ebextensions\04-Env.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include=".ebextensions\03-Node.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include=".ebextensions\05-Gzip.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include=".ebextensions\06-Securelistener.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp\document\" />
+    <Folder Include="ClientApp\images\" />
+    <Folder Include="ClientApp\views\" />
+    <Folder Include="ClientApp\services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FIL.Configuration\FIL.Configuration.csproj" />
+    <ProjectReference Include="..\FIL.Contracts\FIL.Contracts.csproj" />
+    <ProjectReference Include="..\FIL.Foundation\FIL.Foundation.csproj" />
+    <ProjectReference Include="..\FIL.Logging\FIL.Logging.csproj" />
+    <ProjectReference Include="..\FIL.MailChimp\FIL.MailChimp.csproj" />
+    <ProjectReference Include="..\FIL.Messaging\FIL.Messaging.csproj" />
+    <ProjectReference Include="..\FIL.Utilities\FIL.Utilities.csproj" />
+    <ProjectReference Include="..\FIL.Web.Core\FIL.Web.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="aws-windows-deployment-manifest.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ClientApp\models\CategoryPageResponseViewModel.ts">
+      <CustomToolNamespace>ViewModels\Category\CategoryPageResponseViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\CategoryResponseViewModel.ts">
+      <CustomToolNamespace>ViewModels\Category\CategoryResponseViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\CategoryDataModel.ts">
+      <CustomToolNamespace>ViewModels\Category\CategoryViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\CategoryViewModel.ts">
+      <CustomToolNamespace>ViewModels\Category\CategoryViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\EventLearnPageResponseViewModel.ts">
+      <CustomToolNamespace>ViewModels\EventLearnPage\EventLearnPageResponseViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\PaymentFormResponseViewModel.ts">
+      <CustomToolNamespace>ViewModels\Payment\PaymentFormResponseViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\PaymentResponseViewModel.ts">
+      <CustomToolNamespace>ViewModels\Payment\PaymentResponseViewModel.cs</CustomToolNamespace>
+    </None>
+  </ItemGroup>
+
+  <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+
+    <!-- In development, the dist files won't exist on the first run or when cloning to
+         a different machine, so rebuild them if not already present. -->
+    <Message Importance="high" Text="Performing first-run Webpack build..." />
+    <Exec Command="node --max-old-space-size=4096 node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js" />
+    <Exec Command="node --max-old-space-size=4096 node_modules/webpack/bin/webpack.js" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec Command="npm install" />
+    <Exec Command="node --max-old-space-size=4096 node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js --env.prod" />
+    <Exec Command="node --max-old-space-size=4096 node_modules/webpack/bin/webpack.js --env.prod" />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="wwwroot\dist\**; ClientApp\dist\**" />
+      <ResolvedFileToPublish Include="@(DistFiles-&gt;'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>

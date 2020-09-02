@@ -1,0 +1,23 @@
+ALTER TABLE DeliveryTypes
+DROP COLUMN Base
+GO
+
+ALTER TABLE FeeTypes
+DROP COLUMN Base
+GO
+
+ALTER TABLE SignUpMethods
+DROP COLUMN Base
+GO
+
+ALTER TABLE EventTicketAttributes
+DROP COLUMN LocalPrice
+GO
+
+ALTER TABLE TicketCategories 
+ALTER COLUMN Name NVARCHAR(200)
+GO
+
+ALTER TABLE EventAttributes 
+ALTER COLUMN TicketHtml NVARCHAR(20)
+GO

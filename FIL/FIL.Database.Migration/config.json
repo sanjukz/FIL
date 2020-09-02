@@ -1,0 +1,4 @@
+﻿{
+  "connectionString": "Server=localhost;Database=KzOLTP;Integrated Security=True;Trusted_Connection=True;",
+  "configSetName": "Default"
+}

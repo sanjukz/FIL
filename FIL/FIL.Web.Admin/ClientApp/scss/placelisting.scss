@@ -1,0 +1,50 @@
+﻿.main-search {
+    &:hover {
+        .search-dropdown {
+            display: block !important;
+        }
+    }
+
+    .search-dropdown {
+        display: none;
+
+        .searchbox {
+            &:first-child {
+                border-radius: 0;
+                border-top: 0;
+                border-bottom: 0;
+            }
+
+            &:last-child {
+                border-radius: 0 0 4px 4px;
+            }
+
+            .categorylist {
+                font-size: 13px;
+                padding: 12px;
+
+                &:hover {
+                    background: #572483;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.place-listing-edit .card-body {
+    border-radius: 4px;
+    background: #f8f8f8;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+
+    &:hover {
+        background: #f2f2f2;
+        position: relative;
+        @include zoom-effact;
+    }
+
+    h6.card-title span {
+        font-size: 16px !important;
+    }
+}

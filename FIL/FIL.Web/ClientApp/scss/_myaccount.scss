@@ -1,0 +1,57 @@
+@import "../scss/_colors.scss";
+@import "../scss/_mixins.scss";
+@import "../scss/_variables.scss";
+
+.my-acnt-content {
+    .user-img {
+        max-width: 100px;
+    }
+
+    .list-group {
+        li {
+            .form-group {
+                input {
+                    max-width: 350px;
+
+                    &.mobile-num {
+                        max-width: 229px;
+                    }
+                }
+            }
+
+            .list-group-deta {
+                width: 100%;
+            }
+
+            .badge-pill {
+                cursor: pointer;
+                float: right;
+            }
+        }
+    }
+
+    .left-act-pnl {
+        .btn {
+            border: 0;
+            padding-left: 0;
+
+            &.active,
+            &:hover,
+            &:focus {
+                background: none;
+                color: #572483 !important;
+                box-shadow: none !important;
+            }
+
+            &.pl-3 {
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+.user-address {
+    .list-group {
+        font-size: 12px;
+    }
+}

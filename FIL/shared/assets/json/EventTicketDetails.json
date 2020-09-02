@@ -1,0 +1,31 @@
+{
+	"Venues": [{
+			"Block": "D",
+			"Stand": "VIP",
+			"Level": "Level 1",
+			"Capacity": "50",
+			"TBD": "foo"
+		},
+		{
+			"Block": "E",
+			"Stand": "East",
+			"Level": "Level 3",
+			"Capacity": "100",
+			"TBD": "bar"
+		},
+		{
+			"Block": "F",
+			"Stand": "West",
+			"Level": "Level 3",
+			"Capacity": "100",
+			"TBD": "baz"
+		},
+		{
+			"Block": "G",
+			"Stand": "Hospitality",
+			"Level": "Level 1",
+			"Capacity": "30",
+			"TBD": "foobar"
+		}
+	]
+}

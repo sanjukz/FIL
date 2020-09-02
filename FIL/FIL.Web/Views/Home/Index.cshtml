@@ -1,0 +1,58 @@
+@using Kz.Web.Core.Utilities
+@{
+    // can use asp-prerender-data=data to pass data into view.
+    // see: https://medium.com/@MaartenSikkema/using-react-redux-and-webpack-with-dotnet-core-to-build-a-modern-web-frontend-7e2d091b3ba
+    dynamic data = new
+    {
+        sentryDsn = ViewBag.SentryDsn,
+        googleTagManagerAccountId = ViewBag.GoogleTagManagerAccountId,
+        siteId = ViewBag.SiteId,
+        stripePublicToken = ViewBag.StripePublicToken,
+        stripeIndiaPublicToken = ViewBag.StripeIndiaPublicToken,
+        stripeAustraliaPublicToken = ViewBag.StripeAustraliaPublicToken,
+        urls = ViewBag.Urls,
+
+    };
+    var hasStaticCdnUrl = !string.IsNullOrWhiteSpace(ViewBag.BaseStaticUrl);
+    var currentPathUrl = ViewBag.currentPathUrl;
+
+}
+
+<environment names="Development">
+    <div id="react-app" class="@((ViewBag.isLiveStream!= null && ViewBag.isLiveStream)?"":"react-main-app" )" asp-prerender-module="ClientApp/dist/main-server" asp-prerender-data=data>Loading...</div>
+</environment>
+<environment names="Staging,Production">
+    <cache expires-after="@TimeSpan.FromMinutes(10)" vary-by-user="true" vary-by="@this.Context.Request.Path">
+        <div id="react-app" class="@((ViewBag.isLiveStream!= null && ViewBag.isLiveStream)?"":"react-main-app" )" asp-prerender-module="ClientApp/dist/main-server" asp-prerender-data=data>Loading...</div>
+    </cache>
+</environment>
+
+@section scripts {
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZ4Ik7ENzLWY1tLh1ul8NxhWBdWGK6tQU&libraries=places"
+            async defer></script>
+
+    @if (!hasStaticCdnUrl)
+    {
+        <script src="~/dist/main-client.js" asp-append-version="true"></script>
+    }
+    else
+    {
+        <script src="@($"{ViewBag.BaseStaticUrl}{this.AddFileVersionToPath("/dist/main-client.js")}")"></script>
+    }
+
+
+
+    <script type="text/javascript" src="https://js.stripe.com/v3/"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/webshim/1.12.4/extras/modernizr-custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/webshim/1.12.4/polyfiller.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,pt,hi,ar,es,fr,de,bn,gu,kn,mr,ne,pa,sd,ta,te,ur,ga,nl,sv,el' }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+}
+
+

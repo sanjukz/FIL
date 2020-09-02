@@ -1,0 +1,13 @@
+$purple-color: #572483;
+$white-color: #ffffff;
+
+.border-primary {
+    border-color: $purple-color !important;
+}
+.text-purple {
+    color: $purple-color;
+}
+
+.bg-purple {
+    background: $purple-color;
+}

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.50.4" />
+    <PackageReference Include="Dapper.FastCrud" Version="2.4.1" />
+    <PackageReference Include="EnterpriseLibrary.Data.NetCore" Version="6.0.1310" />
+    <PackageReference Include="Z.Dapper.Plus" Version="3.0.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kz.Contracts\Kz.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

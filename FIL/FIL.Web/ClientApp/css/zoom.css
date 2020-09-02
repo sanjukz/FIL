@@ -1,0 +1,271 @@
+html,
+body {
+    min-width: inherit !important;
+}
+
+.site-loader {
+    font-size: 60px;
+    color: white;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 18%;
+    width: 100%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    top: 0;
+    text-align: center;
+    z-index: 9999;
+}
+
+.loader-content {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 35%;
+}
+
+.meeting-client-inner {
+    padding-top: 50px;
+}
+
+.zoom-video-head {
+    background: #fff;
+    position: relative;
+    display: block;
+    z-index: 2;
+    padding: 10px;
+    height: auto !important;
+}
+
+.heat-title {
+    color: #633d94;
+    padding: 0 22px 0;
+}
+
+.meeting-info-icon__icon-wrap {
+    display: none !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #572483;
+    border-color: #572483;
+    cursor: pointer;
+}
+
+/* CSS For Add Minus */
+.add-to-cart-btns {
+    display: inline-block;
+}
+
+.add-to-cart-btns a.rounded-circle {
+    border: 1px solid #dedede;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    border-radius: 50%;
+    color: #333;
+    line-height: 18px;
+}
+
+.add-to-cart-btns input.form-control {
+    border: 0;
+    box-shadow: none;
+    width: 40px;
+    display: inline;
+    text-align: center;
+}
+
+span.drop-price {
+    color: #572483;
+    font-weight: bold;
+    padding: 0 10px 0 0;
+}
+
+.zoom-video-head .dropdown-menu {
+    min-width: 320px;
+    width: inherit !important;
+    padding: 5px 15px;
+}
+
+span.drop-name {
+    display: inline-block;
+    min-width: 92px;
+    font-size: 12px;
+}
+
+.zoom-video-head .dropdown-menu>li {
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.zoom-video-head .dropdown-menu>li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.btn-primary:hover {
+    background-color: #8442bc;
+    border-color: #8442bc;
+}
+
+img.card-img-top {
+    display: inline-block;
+    margin: 3px 5px 10px 0;
+    border: 1px solid #dedede;
+}
+
+a#join_text {
+    pointer-events: none !important;
+}
+
+@media only screen and (max-width:768px) {
+    .video-vimio iframe {
+        width: 480px;
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .video-vimio iframe {
+        width: 320px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    #dialog-join .tab,
+    #dialog-invite .tab {
+        width: 100%;
+    }
+
+    #dialog-join .tab-button,
+    #dialog-invite .tab-button {
+        font-size: 14px;
+    }
+
+    .dropdown-menu {
+        right: 0;
+    }
+
+    .ReactModal__Overlay--after-open {
+        margin: 20px;
+    }
+
+    .ReactModal__Content {
+        width: 100%;
+    }
+
+    .common-window {
+        width: 100% !important;
+    }
+
+    .ReactVirtualized__List {
+        width: 100% !important;
+    }
+
+    .chat-content>div {
+        height: inherit !important;
+        width: inherit !important;
+    }
+
+    .heat-title {
+        color: #633d94;
+        padding: 0 22px 0;
+        max-width: 200px;
+        display: inline-block;
+    }
+}
+
+
+.container-style {
+    display: inline-block;
+    max-width: 210px;
+    vertical-align: top;
+}
+
+
+
+
+
+/* Live Stream Starts here... */
+
+.main-site .fil-banner h1 {
+    margin: -46px 0 0 0;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.main-site .fil-banner img {
+    opacity: 0.5;
+}
+
+.main-site .video-vimio .btn-group {
+    max-width: 750px;
+}
+
+.main-site .btn-outline-primary {
+    border-color: #572483;
+    color: #572483;
+}
+
+.main-site .btn-outline-primary:hover,
+.main-site .btn-outline-primary:not(:disabled):not(.disabled):active {
+    background-color: #572483;
+    border-color: #572483;
+    color: #fff;
+}
+
+.main-site .filTabs .nav-pills .nav-link,
+.main-site .filTabs .nav-pills>.nav-link {
+    background-color: #f2f2f2 !important;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 5px;
+    position: relative;
+}
+
+.main-site .filTabs .nav-pills .nav-link img,
+.main-site .filTabs .nav-pills>.nav-link img {
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.main-site .filTabs .nav-pills .nav-link.active:before,
+.main-site .filTabs .nav-pills .show>.nav-link:before {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    content: "";
+    position: absolute;
+    bottom: -44px;
+    border-bottom: 15px solid #f8f9fa;
+    left: 21px;
+}
+
+.primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #572483;
+    border-color: #572483;
+}

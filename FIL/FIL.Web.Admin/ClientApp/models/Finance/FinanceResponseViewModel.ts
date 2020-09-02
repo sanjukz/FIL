@@ -1,0 +1,32 @@
+export class FinanceResponseViewModel {
+  id: number;
+  currencyId: number;
+  countryId: any;
+  accountType: string;
+  stateId: number;
+  firstName: string;
+  lastName: string;
+  bankAcountType: string;
+  isBankAccountGST: any;
+  bankName: string;
+  routingNo: string;
+  gstNo: string;
+  accountNo: string;
+  panNo: string;
+  accountNickName: string;
+  financialsAccountBankAccountGSTInfo: string;
+  ishaveGST: string;
+  isUpdatLater: any;
+  placename: string;
+  location: string;
+  street: string;
+  address1: string;
+  address2: string;
+  city: string;
+  state: string;
+  zip: string;
+  country: string;
+  eventId: number;
+  eventDetailId: number;
+  altId:number;
+}

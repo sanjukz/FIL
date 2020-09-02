@@ -1,0 +1,19 @@
+@import "../scss/_colors.scss";
+@import "../scss/_mixins.scss";
+@import "../scss/_variables.scss";
+
+.payment-opp{
+  ul{
+    li{
+      a{
+        border: 0;
+        color: #333;
+        &.active, &:hover{
+          border: 0;
+          @include gradient-bg-invers;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "../scss/_colors.scss";
+@import "../scss/_mixins.scss";
+@import "../scss/_variables.scss";
+
+.cat-selection{
+  .col-auto{
+    font-size: 13px;
+    .input-group {
+      width: 250px;
+      .input-group-prepend{
+        cursor: pointer;
+      }
+    }
+  }
+}

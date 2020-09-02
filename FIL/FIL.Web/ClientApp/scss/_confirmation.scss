@@ -1,0 +1,39 @@
+.confirmation-page{
+  .spread-word{
+    display: inline-block;
+    i.fab{
+      font-size: 26px;
+      margin: 0 0 0 5px;
+    }
+  }
+  .conf-imp-info{
+    p{
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+
+/* NEW STYLING */
+
+.confirmPageNew{
+  .confirm-qr-box {
+    .confirm-qr {
+      position: relative;
+      margin-top: -110px;
+      border: 10px solid #fff;
+    }
+  }
+}
+
+
+@media (max-width: 575.95px) {
+  .confirmPageNew{
+    .confirm-qr-box {
+      .confirm-qr {
+        margin-top: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+API Env Vars
+KZ_CONFIGURATION_API_ENDPOINT=<config endpoint for env>
+KZ_CONFIGURATION_SETTING_EXPIRATION_MINUTES=15
+ASPNETCORE_ENVIRONMENT=<config set name or leave empty>
+
+
+Config Env Vars
+KZ_CONFIGURATION_CONNECTION_STRING=<db conn string>
+
+
+LOCALLY RUNNING Kz.Api
+upgrade .net core CLI https://github.com/dotnet/cli/tree/release/2.0.0#installers-and-binaries
+Build all
+Make sure the DBs are existing:
+    /scripts/Database/CreateDatabase.ps1 'localhost' 'KzOLTP' 'IIS APPPOOL\\api.kz'
+    /scripts/Database/CreateDatabase.ps1 'localhost' 'KzConfiguration' 'IIS APPPOOL\\configuration.kz'
+Run Migrators (scripts/Database folder.  They both rely on C:\kyazoonga\kz being your path unless you pass the argument)
+Run Basic_Configuration_Insert.sql
+cmd to Kz.Configuration.Api and run "dotnet run"
+set the configurationApiEndpoint to where configuration api is running
+Run Kz.Api in visual studio

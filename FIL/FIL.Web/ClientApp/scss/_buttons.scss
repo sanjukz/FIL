@@ -1,0 +1,71 @@
+@import "../scss/_variables.scss";
+@import "../scss/_mixins.scss";
+@import "../scss/_colors.scss";
+
+.site-primery-btn {
+    color: $white-color;
+    background-color: $purple-color;
+    border-color: $purple-color;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.9;
+    }
+}
+
+.btn.btn-light {
+    background: #fff;
+    border-color: #fff;
+    border-radius: 3px;
+}
+
+.fb-btn {
+    background: #4267b2 !important;
+}
+
+.badge-danger {
+    background-color: $pink-color !important;
+}
+
+.btn-danger {
+    background-color: #be1522 !important;
+}
+
+.btn-primary {
+    border: #572483!important;
+    color: #fff !important;
+    background: #572483!important;
+	&:hover {
+		background-color: #642997!important;
+	}
+}
+.text-primary {
+    color: #6C63FF!important;
+}
+
+.btn-outline-danger {
+    color: #be1522;
+    border-color: #be1522;
+
+    &:hover {
+        background-color: #be1522;
+        border-color: #be1522;
+    }
+}
+
+.btn-host-outline, .btn-outline-primary {
+    color: #633d94 !important;
+    border-color: #633d94 !important;
+
+    &:hover {
+        color: #ffffff !important;
+        background-color: #633d94 !important;
+    }
+
+    &:active {
+        color: #ffffff !important;
+        background-color: #633d94 !important;
+    }
+}

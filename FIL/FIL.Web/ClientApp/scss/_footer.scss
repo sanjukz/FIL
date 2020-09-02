@@ -1,0 +1,190 @@
+@import "../scss/_colors.scss";
+@import "../scss/_mixins.scss";
+@import "../scss/_variables.scss";
+
+.support-sec {
+  padding: 25px 0 0;
+  line-height: 18px;
+
+  .col-sm-12 {
+    padding-left: 70px;
+
+    img {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+
+    img.feel-pass-logo {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.site-footer {
+  background: #fff;
+  padding: 30px 0 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  dl {
+    dt {
+      margin-bottom: 10px;
+
+      &.footer-social {
+        margin-top: -5px;
+        padding-bottom: 6px;
+        margin-bottom: 0;
+
+        a {
+          color: $purple-color;
+          font-size: 30px;
+          line-height: 30px;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+
+      .feel-app-icon {
+        margin-top: -4px;
+      }
+    }
+
+    dd {
+      margin: 0;
+      font-size: 13px;
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: 10px 0;
+
+    a {
+      color: inherit;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .support-sec {
+    .border-right.col-sm-12 {
+      border-right: 0 !important;
+    }
+  }
+
+  #react-app {
+    padding-bottom: 352px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .support-sec,
+  .site-footer>.container>.row:first-child {
+    display: none;
+  }
+
+  .site-footer {
+    padding-top: 0;
+
+    .footer-bottom.border-top.row {
+      border: 0 !important;
+    }
+  }
+
+  #react-app {
+    padding-bottom: 130px;
+
+    section.ticket-details.bg-light.pt-5.pb-5,
+    ul.bg-light.tab-pane.fade.show.active.p-3.text-center {
+      background: #fff !important;
+    }
+  }
+
+  .feel-subscribe {
+    padding: 0 30px;
+  }
+
+  .site-footer {
+    position: relative;
+  }
+
+  .appFooter {
+    display: block !important;
+    background: $purple-color !important;
+    font-size: 10px;
+    padding: 8px 15px 5px 15px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 16;
+
+    .build-itin {
+      min-width: 105px;
+
+      .itin-AppIcon-link {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -45px;
+        font-size: 12px;
+
+        .itin-AppIcon {
+          background: $white-color;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          display: inline-block;
+          line-height: 58px;
+
+          img {
+            max-width: 32px;
+          }
+        }
+      }
+    }
+  }
+
+  .card-img-overlay .breadcrumb {
+    display: none !important;
+  }
+
+  #google_translate_element select.goog-te-combo {
+    margin: 0;
+    padding: .375rem 1px !important;
+  }
+}
+
+
+// FOOTER GOOGLE TRANSLATION
+
+#google_translate_element select.goog-te-combo {
+  border-radius: 3px;
+  padding: 0.375rem 0.75rem;
+  border-color: #6c757d !important;
+  color: #6C757D;
+  font-size: 0.875rem;
+}
+
+div#google_translate_element>div {
+  font-size: 0px;
+  color: #fff;
+}
+
+div#google_translate_element>div>span {
+  display: none;
+}
+
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}

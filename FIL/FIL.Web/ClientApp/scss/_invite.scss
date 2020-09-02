@@ -1,0 +1,109 @@
+.invite
+{
+    margin-top: 100px;
+}
+
+
+  
+  .emailarea {
+    border: 1px solid #fdc8c8;
+    width: 100%;
+    padding: 5px !important;
+    margin: 0 auto;
+    min-height: 30px;
+ margin-bottom: 15px;
+ border-radius: 10px;
+
+    height: auto;
+  }
+  .useremailinput {
+    width: 100% !important;
+    border: 0px !important;
+    width: auto;
+    padding: 0px !important;
+  }
+  
+  .useremail-valid {
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #dadce0;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 20px;
+    line-height: 20px;
+  
+    margin-left: 4px;
+    padding-left: 8px;
+    padding-right: 4px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+      0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    -webkit-font-smoothing: auto;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #5f6368;
+  
+    font-weight: bold;
+    max-height: 20px;
+    margin-bottom: 5px;
+  }
+  .useremail-invalid {
+    -webkit-align-items: center;
+    align-items: center;
+    background-color: #e61010b0;
+    border: 1px solid #e61010b0;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 20px;
+    line-height: 20px;
+  
+    margin-left: 4px;
+    padding-left: 8px;
+    padding-right: 4px;
+    -webkit-font-smoothing: auto;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+  
+    font-weight: bold;
+    max-height: 20px;
+    margin-bottom: 5px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+      0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  }
+  .useremailinput:focus {
+    border: 0px !important;
+    outline-offset: 0px !important;
+    outline: -webkit-focus-ring-color auto 0px !important;
+    box-shadow:none !important;
+  }
+  
+  .vM {
+    height: 16px;
+    opacity: .54;
+    width: 16px;
+    background-image: url(https://www.gstatic.com/images/icons/material/system/1x/close_black_16dp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    margin-left: 4px;
+    cursor: pointer;
+}

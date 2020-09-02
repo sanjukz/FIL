@@ -1,0 +1,33 @@
+﻿@import "../scss/_colors.scss";
+@import "../scss/_mixins.scss";
+@import "../scss/_variables.scss";
+
+.custum-accordian {
+    .card-body {
+        padding: 10px 10px;
+    }
+
+    .accord_arrow {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 20px;
+        color: #007bff;
+        -webkit-animation: minus 0.5s;
+    }
+
+    [aria-expanded="false"] > .expanded, [aria-expanded="true"] > .collapsed {
+        display: none;
+    }
+}
+
+@keyframes minus {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+

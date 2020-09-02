@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "PaymentResponse";
+}
+
+<style type="text/css">
+    .payment-loader-page p {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+        .payment-loader-page p small {
+            font-size: 18px;
+            color: #3c3c3c;
+        }
+
+    .payment-loader-page {
+        left: 0;
+        margin: 0 auto;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+    }
+</style>
+<div class="payment-loader-page">
+    <img src="https://static1.feelitlive.com/images/logos/feel-india.png" alt="">
+    <p>
+        Please be patient while your transaction is being processed.<br />
+        <small>Do not "close the window" or press "refresh" or "browser back/forward button"</small>
+    </p>
+</div>

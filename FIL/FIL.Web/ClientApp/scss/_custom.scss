@@ -1,0 +1,833 @@
+@import "../scss/_colors.scss";
+@import "../scss/_mixins.scss";
+@import "../scss/_variables.scss";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,700");
+
+
+/*Search Categories*/
+
+.online-tag-irl {
+    position: relative;
+    border-radius: 8px;
+    font-size: 10px;
+    padding: 2px 7px;
+    line-height: normal;
+    margin: 0 auto;
+    color: #6C63FF;
+    border: 1px solid #6C63FF;
+}
+
+.online-tag {
+    background: #6C63FF;
+    position: relative;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 7px;
+    line-height: normal;
+    margin: 0 auto;
+}
+
+/* Hompage Main Categorization */
+.fil-home-tab {
+    margin-bottom: 6px;
+
+    .btn {
+        color: #112433 !important;
+        font-size: 20px;
+        position: relative;
+
+        &:first-child {
+            margin-right: 90px;
+        }
+
+        &.active {
+            &:before {
+                content: "";
+                height: 4px;
+                width: 100%;
+                background: #6C63FF;
+                position: absolute;
+                bottom: -3px;
+            }
+        }
+    }
+
+    .new-tag {
+        &:after {
+            content: "new";
+            position: absolute;
+            background: #6C63FF;
+            border-radius: 3px;
+            font-size: 11px;
+            color: #fff;
+            padding: 0px 5px;
+            text-transform: uppercase;
+            top: 7px;
+            right: -50px;
+        }
+    }
+}
+
+/* Live Stream Starts here... */
+
+.main-site .fil-banner h1 {
+    margin: -46px 0 0 0;
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.main-site .fil-banner img {
+    opacity: 0.5;
+}
+
+.main-site .video-vimio .btn-group {
+    max-width: 750px;
+}
+
+.main-site .btn-outline-primary {
+    border-color: #572483;
+    color: #572483;
+}
+
+.main-site .btn-outline-primary:hover,
+.main-site .btn-outline-primary:not(:disabled):not(.disabled):active {
+    background-color: #572483;
+    border-color: #572483;
+    color: #fff;
+}
+
+.main-site .filTabs .nav-pills .nav-link,
+.main-site .filTabs .nav-pills>.nav-link {
+    background-color: #f2f2f2 !important;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    line-height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 5px;
+    position: relative;
+}
+
+.main-site .filTabs .nav-pills .nav-link img,
+.main-site .filTabs .nav-pills>.nav-link img {
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.main-site .filTabs .nav-pills .nav-link.active:before,
+.main-site .filTabs .nav-pills .show>.nav-link:before {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    content: "";
+    position: absolute;
+    bottom: -44px;
+    border-bottom: 15px solid #f8f9fa;
+    left: 21px;
+}
+
+.primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #572483;
+    border-color: #572483;
+}
+
+@media only screen and (max-width:768px) {
+    .video-vimio iframe {
+        width: 480px;
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width:520px) {
+    .video-vimio iframe {
+        width: 320px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    #dialog-join .tab,
+    #dialog-invite .tab {
+        width: 100%;
+    }
+
+    #dialog-join .tab-button,
+    #dialog-invite .tab-button {
+        font-size: 14px;
+    }
+
+    .dropdown-menu {
+        right: 0;
+    }
+
+    .ReactModal__Overlay--after-open {
+        margin: 20px;
+    }
+
+    .ReactModal__Content {
+        width: 100%;
+    }
+
+    .common-window {
+        width: 100% !important;
+    }
+
+    .ReactVirtualized__List {
+        width: 100% !important;
+    }
+
+    .chat-content>div {
+        height: inherit !important;
+        width: inherit !important;
+    }
+
+    .heat-title {
+        color: #633d94;
+        padding: 0 22px 0;
+        max-width: 200px;
+        display: inline-block;
+    }
+
+    .main-site .fil-banner h1 {
+        font-size: 18px;
+        margin: -18px 0 0 0 !important;
+    }
+}
+
+/*... Live stream End */
+
+.close-popup {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #fff !important;
+}
+
+.cart-items {
+    max-height: 252px;
+    overflow: auto;
+}
+
+.upArrow {
+    bottom: -8px;
+    display: none;
+    position: relative;
+    left: 10px;
+}
+
+.stretched-link.show {
+    .upArrow {
+        display: block;
+    }
+}
+
+.text-decoration-none:hover {
+    text-decoration: none;
+}
+
+.sec-spacing {
+    // margin-bottom: 60px;
+    padding: 50px 0;
+}
+
+.btn,
+.btn {
+
+    &:disabled,
+    &.disabled {
+        cursor: not-allowed;
+
+        &:hover {
+            background: #666 !important;
+        }
+    }
+}
+
+.page-content-text {
+    max-height: 437px;
+    overflow: hidden;
+
+    &.lean-more-txt {
+        max-height: 300px;
+    }
+
+    .ShowLink {
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 15px;
+        bottom: 0;
+        min-height: 170px;
+        background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 18%, rgba(255, 255, 255, 1) 74%);
+        background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 18%, rgba(255, 255, 255, 1) 74%);
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 18%, rgba(255, 255, 255, 1) 74%);
+
+        a {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+
+/* HOHO Syyling Start */
+.hoho-content {
+    a {
+        background: transparent !important;
+        color: #572483;
+
+        &:hover {
+            text-decoration: none;
+            color: #666;
+        }
+    }
+
+    ul {
+        li {
+            ol {
+                padding: 0 0 0 15px;
+
+                li {
+                    float: left;
+                    padding: 0 50px 10px 0;
+                }
+            }
+        }
+    }
+}
+
+/* HOHO Styling End */
+.feelr-dates {
+    .ml-3 {
+        position: relative;
+
+        &:hover {
+            .dropdown-menu {
+                display: block;
+            }
+        }
+
+        .dropdown-menu {
+            min-width: 180px;
+        }
+    }
+}
+
+.currencyDropdown {
+    .dropdown-menu {
+        max-height: 260px;
+        overflow: auto;
+    }
+}
+
+.StripeElement.StripeElement--empty {
+    padding: 15px;
+    border: 1px solid #d2d2d2;
+}
+
+.mob-app-noti {
+    background: $purple-color !important;
+    color: $white-color;
+    padding-left: 40px !important;
+    position: relative;
+
+    .logo-app-noti {
+        width: 55px;
+        height: 41px;
+    }
+
+    .media-body {
+        position: relative;
+        margin-top: 1px;
+
+        .btn-warning {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+    }
+
+    .close {
+        top: 2px;
+        left: -4px;
+        font-size: 28px;
+        color: #fff;
+        text-shadow: none;
+        opacity: 1;
+        font-family: serif;
+        right: initial;
+    }
+}
+
+.angellist_jobs {
+    display: none;
+}
+
+.feel-career {
+    height: auto;
+    position: relative;
+
+    .react-main-app {
+        padding-bottom: 0;
+
+        .careers-page {
+            padding-bottom: 220px;
+        }
+
+        .site-footer {
+            position: relative;
+        }
+    }
+
+    .angellist_jobs {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 280px;
+        margin: 0 auto;
+        padding: 15px;
+        border: 1px solid #828282;
+        display: block;
+    }
+}
+
+/* FOR PAGE FULL height */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+/*
+.full-height-div{
+  height: 100%;
+  width: 100%;
+  position: relative;
+}*/
+.type-info {
+    background-color: $purple-color !important;
+
+    &.place-left:after {
+        border-left-color: #572483 !important;
+    }
+}
+
+.LazyLoad {
+    display: inline;
+}
+
+.react-main-app {
+    position: relative;
+    padding-bottom: 225px;
+    min-height: 100%;
+    padding-top: 54px;
+}
+
+.draggable {
+    width: 24.25%;
+}
+
+body,
+html {
+    top: 0 !important;
+    height: 100%;
+    width: 100%;
+    font-family: 'Nunito Sans', sans-serif !important;
+    font-size: 14px;
+    color: #303030;
+    font-weight: 400 !important;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        font-weight: 600 !important;
+        font-family: 'Nunito Sans', sans-serif !important;
+    }
+}
+
+.custom-control-label:before {
+    border: 1px solid #007bff;
+    background-color: #f5f5f5;
+}
+
+.gradient-bg {
+    @include gradient-bg;
+}
+
+.auto-height {
+    height: auto !important;
+}
+
+.modal-dialog-full {
+    width: 100% !important;
+    max-width: 95% !important;
+
+    .close {
+        right: 15px;
+        top: 15px;
+        opacity: 1;
+    }
+}
+
+.visible-none {
+    visibility: hidden;
+}
+
+.site-primery-color {
+    background: $site-primery-color;
+}
+
+.site-txt-primery-color {
+    color: $site-primery-color;
+}
+
+.site-secondary-color {
+    background: $site-secondary-color;
+}
+
+.pink-color {
+    color: $purple-color;
+}
+
+.site-txt-secondary-color {
+    color: $site-secondary-color;
+}
+
+.opacity-disabled {
+    opacity: 0.5;
+}
+
+.heartplus-list {
+    li {
+        padding-left: 35px;
+        // background: url('https://static1.feelitlive.com/images/logos/feel-hear-bulets.png') left -1px no-repeat;
+    }
+}
+
+.heart-list {
+    li {
+        padding-left: 25px;
+        // background: url('https://static1.feelitlive.com/images/logos/hear-bulets.png') left -1px no-repeat;
+    }
+}
+
+.inner-banner {
+    position: relative;
+
+    .breadcrumb {
+        li {
+            color: #212529;
+            float: left;
+
+            a,
+            &:before {
+                color: #212529;
+            }
+        }
+    }
+
+    .btn.btn-light {
+        position: absolute;
+        bottom: 30px;
+        right: 50px;
+    }
+}
+
+ul.ticket-flow {
+    margin: 0 !important;
+
+    .nav-item {
+        a {
+            color: #112433;
+            border-bottom: 2px solid #9c9c9c;
+            border-radius: 0;
+            margin-right: 15px;
+            font-size: 13px;
+
+            &.active {
+                background: $white-color;
+                border-color: #6C63FF;
+            }
+        }
+    }
+}
+
+/* ADDD REMOVE ITEM */
+.add-to-cart-btns {
+    display: inline-block;
+
+    a.rounded-circle {
+        width: 22px;
+        height: 22px;
+        line-height: 20px;
+        display: inline-block;
+        text-align: center;
+        background: #fff;
+        color: #393939;
+
+        &:hover {
+            text-decoration: none;
+            background-color: #572483;
+            color: #fff;
+        }
+    }
+
+    input {
+        display: inline-block;
+        max-width: 30px;
+        text-align: center;
+        height: 22px;
+        font-size: 12px;
+        border: 0;
+        background: transparent;
+        padding: 0;
+
+        &:focus {
+            border-color: transparent;
+            box-shadow: none;
+            background: transparent;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .feel-career .angellist_jobs {
+        bottom: 430px;
+    }
+
+    .page-content-text {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .payment-opp .row .col-sm-6 {
+        margin-top: 15px !important;
+    }
+
+    .feel-career .angellist_jobs {
+        left: 15px;
+        right: 15px;
+        bottom: 190px;
+    }
+
+    .inner-banner {
+        .card-img-overlay {
+            padding: 5px 15px;
+            background: #303030;
+        }
+
+        .breadcrumb {
+            padding: 0;
+            margin: 0;
+
+            li {
+                font-weight: 300;
+                font-size: 13px;
+                color: $white-color;
+            }
+        }
+
+        .btn.btn-light {
+            bottom: 20%;
+            right: inherit;
+            left: 15px;
+            margin: auto;
+        }
+    }
+
+    .pb-5.mb-5 {
+        margin-bottom: 0 !important;
+    }
+
+    .intercom-lightweight-app-launcher {
+        bottom: 55px !important;
+    }
+    .fil-site{
+        .fil-btn {
+            min-width: auto;
+            padding: 7px 30px !important;
+        }
+    
+        .slick-prev {
+            left: 0;
+        }
+    
+        .slick-next {
+            right: 0;
+        }    
+    }
+}
+
+
+
+@media only screen and (max-width: 570px) {
+    .sec-spacing {
+        margin-bottom: 60px;
+    }
+
+    .form-row {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .itinerary-form .modal-dialog .rdt,
+    .itinerary-form .modal-dialog .rdt.ml-3 {
+        width: 100% !important;
+        padding-bottom: 5px;
+        margin: 0 !important;
+    }
+
+    .feelr-dates .ml-3:hover .dropdown-menu {
+        left: 0 !important;
+    }
+}
+
+
+//For Live Stream Tiles Tag
+// .liveTag {
+//   right: 10px;
+//   bottom: 20px;
+//   padding: 3px 10px;
+// }
+
+
+//For Live Stream Place Page
+
+.fapTabs {
+    padding-top: 50px;
+
+    .nav-pills .nav-link,
+    .nav-pills>.nav-link {
+        background-color: #F2F2F2 !important;
+        width: 70px;
+        height: 70px;
+        padding: 0px;
+        line-height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 5px;
+    }
+
+    .nav-pills .nav-link img,
+    .nav-pills>.nav-link img {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        padding: 2px;
+        position: relative;
+    }
+
+    .nav-pills .nav-link.active:before,
+    .nav-pills .show>.nav-link:before {
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        content: "";
+        position: absolute;
+        bottom: -40px;
+        border-bottom: 15px solid #F2F2F2;
+        left: 21px;
+    }
+
+    .resp-tabs-list,
+    .scroll-tab,
+    .tab-content .tab-pane {
+        white-space: inherit;
+        background: #F2F2F2;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .fapTabName {
+        font-size: 12px;
+    }
+}
+
+
+//For Home Page Search Category And SubCategory
+.search-cat-main {
+    &>div {
+        vertical-align: middle;
+    }
+
+    .search-cat {
+        width: 140px;
+        text-align: center;
+    }
+
+    .tabs-icon {
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
+    }
+
+    .search-sub-cab {
+        width: calc(100% - 140px);
+        float: right;
+    }
+}
+
+//ticket-purchase-selection color change for calender css
+.ant-picker-cell-disabled:before {
+    background: #FCFCFC !important;
+}
+.ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single):before, .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single):before {
+    background: #EBEDEE !important;
+}
+.ant-picker-cell-in-view.ant-picker-cell-in-range:before {
+    background: #EBEDEE !important;
+}
+.ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+    background: #6C63FF!important;
+	    border-radius: 50% !important;
+}
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner:before {
+    border: 0 !important;
+}
+.ant-picker-date-panel .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end .ant-picker-cell-inner:after, .ant-picker-date-panel .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start .ant-picker-cell-inner:after {
+    background: #EBEDEE !important;
+}
+.ant-picker-range .ant-picker-active-bar {
+    background: #6C63FF !important;
+}

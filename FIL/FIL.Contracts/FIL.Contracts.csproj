@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Queries\Event\**" />
+    <EmbeddedResource Remove="Queries\Event\**" />
+    <None Remove="Queries\Event\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Enums\Amenity.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="FluentValidation" Version="7.3.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ThirdParty\HubSpot.NET\HubSpot.NET.csproj" />
+    <ProjectReference Include="..\FIL.Caching.Contracts\FIL.Caching.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

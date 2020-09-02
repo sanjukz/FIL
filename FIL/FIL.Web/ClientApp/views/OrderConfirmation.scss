@@ -1,0 +1,23 @@
+﻿.confirmation-page {
+    .spread-word {
+        display: inline-block;
+
+        i.fab {
+            font-size: 26px;
+            margin: 0 0 0 5px;
+        }
+    }
+
+    .conf-imp-info {
+        p {
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+
+//For hiding day in Order Conf.
+.before-none:before {
+    display: none;
+  }

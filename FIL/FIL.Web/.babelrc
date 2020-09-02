@@ -1,0 +1,21 @@
+﻿{
+  "presets": [ "es2015", "react", "stage-0" ],
+  "env": {
+    "development": {
+        "plugins": [
+            "transform-react-jsx-source",
+            ["module-resolver", {
+                "root": ["./"],
+                "alias": {
+                    "underscore": "lodash",
+                    "components": "./ClientApp/components",
+                    "styles": "./ClientApp/styles",
+                    "stores": "./ClientApp/stores",
+                    "shared": "../shared"
+                },
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }]
+        ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "./color.scss";
+
+.btn-primary {
+    background-color: $purple-color !important;
+    border: $purple-color !important;
+    &:hover {
+        opacity: 0.8;
+        background-color: $purple-color !important;
+    }
+}
+
+.btn-host-outline,
+.btn-outline-primary {
+    color: #633d94 !important;
+    border-color: #633d94 !important;
+    &:hover {
+        color: #ffffff !important;
+        background-color: #633d94 !important;
+    }
+    &:active {
+        color: #ffffff !important;
+        background-color: #633d94 !important;
+    }
+    &:disabled {
+        cursor: not-allowed;
+        &:hover {
+            background-color: grey !important;
+        }
+    }
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+    color: #fff !important;
+    background-color: #572483;
+    border-color: #572483;
+}

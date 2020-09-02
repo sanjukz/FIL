@@ -1,0 +1,161 @@
+﻿@import "../scss/_colors.scss";
+@import "../scss/_mixins.scss";
+@import "../scss/_variables.scss";
+
+
+.place-tags .badge-primary {
+    background: $purple-color;
+}
+
+.feel-subscribe {
+    .card-title {
+        text-shadow: $text-shadow;
+        font-size: 30px;
+        line-height: 36px;
+
+        small {
+            font-size: 22px;
+            line-height: 30px;
+            display: block;
+            max-width: 50%;
+        }
+    }
+}
+#welcome
+{
+    display: none;
+}
+
+.search-hidden {
+    display: none;
+}
+
+.page-navigation {
+    ul.resp-tabs-list {
+        text-align: center;
+        padding: 0;
+        margin: 0 auto;
+        display: inline-block;
+
+        li {
+            display: inline-block;
+            list-style: none;
+            padding: 0;
+            padding: 0 10px;
+            font-size: 13px;
+            cursor: pointer;
+            color: #6c757d;
+            min-width: 140px;
+
+            span {
+                display: block;
+            }
+
+            .tabs-icon {
+                width: 70px;
+                height: 70px;
+                line-height: 65px;
+                border-radius: 50%;
+                border: 1px solid #adadad;
+                margin: 0 auto;
+
+                img {
+                    max-width: 35px;
+                }
+            }
+
+            &.active {
+                background: none;
+                color: #6c757d;
+
+                .tabs-icon {
+                    background: $gray-color;
+                }
+            }
+        }
+    }
+
+    .tab-pane {
+        li {
+            margin: 0 1px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .page-navigation {
+        ul.resp-tabs-list {
+            li {
+                a {
+                    min-width: 80px;
+
+                    .tabs-icon {
+                        width: 50px;
+                        height: 50px;
+                        line-height: 45px;
+
+                        img {
+                            max-width: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .feel-subscribe {
+        .card-title {
+            font-size: 28px;
+            line-height: 34px;
+
+            small {
+                font-size: 20px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .page-navigation {
+        ul.resp-tabs-list {
+            li {
+                a {
+                    min-width: 80px;
+                    font-size: 10px;
+
+                    .tabs-icon {
+                        width: 40px;
+                        height: 40px;
+                        line-height: 35px;
+
+                        img {
+                            max-width: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card-img-overlay {
+        position: relative;
+    }
+
+    .feel-subscribe {
+        .card-title {
+            font-size: 22px;
+            line-height: 30px;
+
+            small {
+                font-size: 18px;
+                line-height: 22px;
+                max-width: inherit;
+            }
+        }
+    }
+}

@@ -1,0 +1,305 @@
+@import "./button";
+
+.ant-calendar table,
+.ant-calendar th,
+.ant-calendar td {
+  padding: inherit !important;
+}
+
+.ant-drawer.ant-drawer-open .ant-drawer-mask {
+  opacity: 0 !important;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.circle-btn {
+  background: #f8f8f8;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  line-height: 17px;
+  font-size: 12px;
+  border: 0;
+  padding: 5px;
+  font-weight: 600;
+  text-align: center;
+  
+  &.active {
+    color: #fff;
+    background: #6C63FF;
+  }
+}
+
+body {
+  background: #f8f8f8 !important;
+
+  .fa-2 {
+    font-size: 2em;
+  }
+
+  .fa-3 {
+    font-size: 4em;
+  }
+
+  .fa-4 {
+    font-size: 7em;
+  }
+
+  .fa-5 {
+    font-size: 12em;
+  }
+
+  .fa-6 {
+    font-size: 20em;
+  }
+
+  .fa-1,
+  .fa-2,
+  .fa-3,
+  .fa-4,
+  .fa-5,
+  .fa-6 {
+    margin-right: 0.07142857em;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  .rdtPicker {
+    position: relative;
+  }
+
+  .myplaces {
+    top: -12px;
+
+    ol {
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.7);
+      margin: 0;
+    }
+  }
+
+  .form-group {
+    .input-group-append {
+      cursor: pointer;
+    }
+  }
+
+  .editor-check {
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .fee-tab {
+    .nav-item {
+      position: relative;
+      margin: 0 2px;
+      z-index: 2;
+      color: #cacaca;
+
+      &:before {
+        content: "";
+        background: #cacaca;
+        height: 2px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        -webkit-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        transition: all 1s ease-in-out;
+        z-index: -1;
+        border-radius: 5px 5px 0 0;
+      }
+
+      &.active {
+        color: #fff;
+
+        &:before {
+          height: 100%;
+          position: absolute;
+          z-index: -1;
+          background: $purple-color;
+        }
+      }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .menutoggle {
+    background: #ccc;
+    border-radius: 50%;
+    color: $white-color !important;
+    cursor: pointer;
+    font-size: 18px;
+    height: 43px;
+    line-height: 33px;
+    margin: 5px 20px 0 -15px;
+    text-align: center;
+    width: 43px;
+  }
+
+  a,
+  a:hover,
+  a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+
+  .line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+  }
+
+  i,
+  span {
+    display: inline-block;
+  }
+
+  ul.CTAs {
+    padding: 20px;
+  }
+
+  ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  a.download {
+    background: $white-color;
+    color: #7386d5;
+  }
+
+  /* ---------------------------------------------------
+          CONTENT STYLE
+      ----------------------------------------------------- */
+  #content {
+    padding: 0 15px 15px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    width: calc(100% - 295px) !important;
+
+    .right-content-area {
+      padding-top: 20px;
+    }
+
+    .page-banner {
+      margin-top: auto;
+      border-radius: 5px;
+      overflow: hidden;
+      max-height: 210px;
+    }
+  }
+
+  .breadcrumb-custom {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 1;
+  }
+
+  .approve-tbl {
+    .ReactTable {
+      .rt-tbody {
+        min-height: 210px;
+
+        .rt-tr-group {
+          .rt-tr {
+            .rt-td {
+              &:last-child {
+                overflow: inherit !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.text-primary {
+  color: #673ab7 !important;
+}
+
+.ant-switch-checked {
+  background-color: #6C63FF !important;
+}
+
+.ant-btn-primary {
+  background-color: #572483 !important;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.dropdown-menu .btn-link {
+  color: #007bff;
+}
+
+.ant-spin-dot {
+  font-size: 10px !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+/*for side menu*/
+.ant-menu,
+.ant-menu-submenu>.ant-menu,
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: transparent !important;
+}
+
+.ant-menu-inline .ant-menu-selected::after,
+.ant-menu-inline .ant-menu-item-selected::after {
+  display: none;
+}
+
+.ant-menu-item-selected>a,
+.ant-menu-item-selected>a:hover,
+.ant-menu-submenu-open>.ant-menu-submenu-title span {
+  color: #572483 !important;
+  font-weight: bold;
+}
+
+.ReactTable .pagination-bottom .-pagination .select-wrap.-pageSizeOptions select {
+  width: auto;
+}
+
+@media only screen and (max-width: 991px) {
+  .ant-drawer-right .ant-drawer-content-wrapper {
+    max-width: 600px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  div#content {
+    width: auto !important;
+    padding: 0 25px;
+  }
+
+  .ant-drawer-right .ant-drawer-content-wrapper {
+    max-width: 330px !important;
+  }
+}

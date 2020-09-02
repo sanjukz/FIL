@@ -1,0 +1,71 @@
+﻿.navbar {
+    .navbar-brand > img {
+        max-height: 100%;
+    }
+}
+
+.fil-admin-right-nav {
+  .dropdown-item{
+    white-space: normal;
+  }
+}
+// .site-header {
+
+//     nav.navbar {
+//         margin: 0;
+//     }
+//     .site-logo {
+//         max-width: 130px;
+//         margin-right: 50px;
+//     }
+//     .badge.label-danger {
+//         width: 15px;
+//         height: 15px;
+//         padding: 0;
+//         border-radius: 50%;
+//         background: red;
+//         text-align: center;
+//         font-size: 8px;
+//         line-height: 15px;
+//     }
+// }
+
+// .sub-head {
+//     background-color: #393939;
+//     color: #fff;
+//     font-size: 22px;
+//     line-height: 26px;
+//     padding-top: 20px;
+//     padding-bottom: 20px; //background-image: url(../images/logo-arena-head.png);
+//     background-repeat: no-repeat;
+//     background-position: right;
+//     background-size: auto 100%;
+//     span {
+//         display: block;
+//         font-size: 14px;
+//         line-height: 16px;
+//     }
+//     .btn-custom {
+//         border-radius: 2px;
+//         border: 2px solid #fff;
+//         background-color: rgba(57, 57, 57, 0.5);
+//         display: inline-block;
+//         font-size: 12px;
+//         &:hover {
+//             background-color: #000;
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 768px) {
+//     .site-header {
+//         .navbar-header {
+//             padding-left: 15px;
+//         }
+//         .btn-group {
+//             float: left;
+//             padding-top: 10px;
+//             text-align: left;
+//         }
+//     }
+// }

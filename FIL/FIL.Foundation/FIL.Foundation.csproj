@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kz.Caching\Kz.Caching.csproj" />
+    <ProjectReference Include="..\Kz.Configuration\Kz.Configuration.csproj" />
+    <ProjectReference Include="..\Kz.Http\Kz.Http.csproj" />
+    <ProjectReference Include="..\Kz.Logging\Kz.Logging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.6.2" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.2.0" />
+    <PackageReference Include="Flurl.Signed" Version="2.3.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+
+</Project>

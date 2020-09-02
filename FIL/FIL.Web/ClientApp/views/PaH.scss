@@ -1,0 +1,183 @@
+﻿#PAH .container {
+    max-width: 786px !important;
+}
+
+.border-prpl {
+    border: 6px solid #633d94 !important;
+}
+
+.text-etkt {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.ticket-bg {
+    background: url("../images/ticket-bg.gif") no-repeat;
+}
+
+.ticket-bg span {
+    display: block;
+}
+
+.place, .price {
+    font-size: 22px;
+}
+
+.address, .date {
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.category {
+    font-size: 17px;
+}
+
+
+.qr-code {
+    margin: 10px 0;
+    font-size: 12px;
+    display: block;
+}
+
+.qr-code span {
+    display: block;
+}
+
+.qr-code g-name {
+    font-size: 13px;
+}
+
+.qr-code img {
+    display: inline-block;
+}
+
+.qr-code-mob {
+    display: none;
+}
+
+.tnc {
+    padding: 10px;
+    font-size: 10px;
+    line-height: 1.2;
+    margin-top: 8px;
+}
+
+.tnc p:first-child {
+    font-size: 13px;
+}
+
+.cutter {
+    border-top: 1px dashed #868686;
+    margin-top: 20px;
+}
+
+.cutter .icon {
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    position: relative;
+    top: -14px;
+}
+
+.bottom {
+    font-size: 12px;
+    display: block;
+}
+
+.bottom span {
+    display: block;
+}
+
+.bottom .address {
+    font-size: 12px;
+    line-height: 1.1;
+}
+
+.tnc-icon {
+    display: none;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .ticket-bg {
+        background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.7)), url("../images/ticket-bg.gif") no-repeat bottom right;
+        background-size: contain;
+    }
+
+    .bottom {
+        font-size: 12px;
+        // display: none;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .content .f-logo {
+        max-width: 70% !important;
+    }
+
+    .text-etkt {
+        font-size: 24px;
+    }
+
+    .place, .price {
+        font-size: 18px;
+    }
+
+    .address, .date {
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    .category {
+        font-size: 15px;
+    }
+
+    .qr-code {
+        display: none;
+    }
+
+    .qr-code-mob {
+        font-size: 11px;
+        display: block;
+    }
+
+    .qr-code-mob .qr-img {
+        padding: 8px 0;
+    }
+
+    .qr-code-mob img {
+        display: inline-block;
+    }
+
+    .qr-code-mob hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .qr-code g-name {
+        font-size: 13px;
+    }
+
+    .collapse:not(.show) {
+        display: none;
+    }
+
+    .tnc-icon {
+        height: 15px;
+        width: 15px;
+        border: none;
+        margin-left: 20px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 422px) {
+    .tnc p:first-child {
+        font-size: 9px;
+    }
+}

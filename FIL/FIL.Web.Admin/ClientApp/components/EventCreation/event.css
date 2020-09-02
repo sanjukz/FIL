@@ -1,0 +1,33 @@
+.hyperref {
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.remove-button {
+  position: absolute;
+  margin-top: -12px;
+  margin-left: -4px;
+}
+.rounded-circle {
+  font-size: 25px;
+}
+.disable-cke {
+  pointer-events: none;
+  opacity: 0.8;
+}
+.desc-page-bnr {
+  width: 300px;
+  height: 89px;
+}
+.inv-page-bnr {
+  width: 300px;
+  height: 54px;
+}
+
+@media (max-width: 357.95px) {
+  .desc-page-bnr,
+  .inv-page-bnr {
+    width: 285px;
+  }
+}

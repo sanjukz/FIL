@@ -1,0 +1,106 @@
+@import "../scss/_colors.scss";
+@import "../scss/_mixins.scss";
+@import "../scss/_variables.scss";
+
+.fa-google-cus:before {
+  content: "\F0D5";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  margin-right: .5rem !important;
+}
+
+.sign-form {
+  .card {
+    @include box-shadow;
+
+    .card-body {
+      background: url(../images/sign-divider.jpg) center center no-repeat;
+
+      .sign-form-left {
+        padding: 60px 50px;
+      }
+
+      .sign-form-right {
+        padding: 153px 50px;
+        text-align: center;
+
+        .btn {
+          max-width: 330px;
+          margin: 5px auto;
+        }
+      }
+
+      &:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 30px;
+        height: 50px;
+        line-height: 50px;
+        margin: -25px 0 0 -20px;
+        content: 'or';
+        background: $white-color;
+        text-align: center;
+      }
+    }
+
+    .card-footer {
+      @include gradient-bg;
+    }
+  }
+}
+
+.forgot-password {
+  .card {
+    .card-body {
+      .sign-form-left {
+        padding: 120px 50px;
+      }
+
+      .sign-form-right {
+        padding: 120px 50px;
+      }
+    }
+  }
+}
+
+.sign-up-form {
+  .card {
+    .card-body {
+      .sign-form-left {
+        padding: 0 50px;
+      }
+
+      .sign-form-right {
+        padding: 190px 50px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .sign-form {
+    .card {
+      .card-body {
+        min-height: auto;
+        background-image: none !important;
+
+        .sign-form-left {
+          padding: 10px 20px;
+        }
+
+        .sign-form-right {
+          border-top: 1px solid rgba(0, 0, 0, 0.125);
+          padding: 10px 20px;
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}

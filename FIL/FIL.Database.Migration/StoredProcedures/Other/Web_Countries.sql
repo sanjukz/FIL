@@ -1,0 +1,5 @@
+CREATE PROC [dbo].[Web_Countries] --2238
+AS
+BEGIN
+	SELECT * FROm Countries WITH(NOLOCK) ORDER By Name ASC
+END

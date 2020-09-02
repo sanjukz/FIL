@@ -1,0 +1,154 @@
+﻿@import "../scss/_colors.scss";
+@import "../scss/_mixins.scss";
+@import "../scss/_variables.scss";
+@import "../scss/image-gallery.scss";
+@import "../css/image-gallery.css";
+
+
+.feel-comment {
+    margin: 10px -70px 0;
+    font-size: 14px;
+}
+
+.review-flag {
+    position: absolute;
+    right: 0;
+}
+
+.comment-box {
+    border-bottom: 1px solid #ced4da !important;
+    border: 0px;
+}
+
+.rating {
+    font-size:10px;
+
+    .rating {
+        line-height: 13px;
+        vertical-align: top;
+        padding-left: 5px;
+        font-size: 14px;
+    }
+}
+
+.learn-more-page {
+    /* .rating {
+        .rating, .d-inline-block {
+            line-height: 20px;
+            vertical-align: top;
+        }
+    }*/
+    .right-head {
+        i {
+            font-size: 26px;
+            cursor: pointer;
+        }
+
+        .tinerary-box {
+            position: relative;
+
+            .add-tinerary {
+                position: absolute;
+                right: -5px;
+                top: -5px;
+
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .amenities-sec {
+        ul {
+            li {
+                width: 33%;
+                margin: 0;
+                padding: 0 15px 15px;
+                vertical-align: middle;
+
+                img {
+                    max-width: 20px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .near-by {
+        ul.nav-pills {
+            margin: 0 !important;
+
+            .nav-item {
+                a {
+                    color: #9c9c9c;
+                    border-bottom: 2px solid #9c9c9c;
+                    border-radius: 0;
+                    margin-right: 15px;
+                    font-size: 13px;
+
+                    &.active {
+                        background: $white-color;
+                        color: #393939;
+                        border-color: $pink-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .more-checklist {
+        span {
+            display: inline-block;
+            min-width: 20px;
+            text-align: center;
+            line-height: 18px;
+        }
+    }
+
+    .popup-with-slide {
+        .popup-text {
+            overflow: auto;
+            max-height: 247px;
+        }
+    }
+}
+
+.review-sec {
+    .user-reviews {
+        position: relative;
+        padding-left: 70px;
+        padding-bottom: 15px;
+
+        img {
+            position: absolute;
+            left: 0;
+            top: 15px;
+            width: 50px;
+            height: 50px;
+        }
+
+        p {
+            color: #7f7f7f;
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .learn-more-page .amenities-sec ul li {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .learn-more-page .amenities-sec ul li {
+        width: 90%;
+    }
+
+    .review-sec {
+        padding: 0 15px;
+        padding-top: 0px;
+    }
+}

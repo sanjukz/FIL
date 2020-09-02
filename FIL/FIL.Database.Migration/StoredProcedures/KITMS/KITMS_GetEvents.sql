@@ -1,0 +1,15 @@
+CREATE PROCEDURE [dbo].[KITMS_GetEvents] --4753
+(
+	@UserId BIGINT
+)
+AS
+BEGIN
+	SELECT DISTINCT E.Id AS EventCatId, E.Name AS EventCatName FROM UserVenueMappings UVM WITH (NOLOCK)
+	INNER JOIN EventDetails ED WITH (NOLOCK) ON ED.VenueId = UVM.VenueId
+	INNER JOIN Events E  WITH (NOLOCK) ON E.Id = ED.EventId
+	WHERE UVM.UserId = @UserId AND E.Id NOT IN(1688) AND ED.StartDateTime>=(GETUTCDATE()-90)
+	UNION
+	SELECT DISTINCT E.Id AS EventCatId, E.Name AS EventCatName FROM EventDetails ED WITH (NOLOCK)
+	INNER JOIN Events E  WITH (NOLOCK) ON E.Id = ED.EventId WHERE E.Id >=2150 ORDER BY E.Name ASC
+END
+

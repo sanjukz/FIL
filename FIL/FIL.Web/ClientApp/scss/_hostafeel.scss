@@ -1,0 +1,254 @@
+.hostAfeel-page {
+  section {
+    padding-top: 85px;
+    padding-bottom: 60px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #572483;
+  }
+
+  h1 {
+    font-size: 46px;
+    margin-bottom: 46px;
+  }
+
+  .purple-txt {
+    color: #572483;
+  }
+
+  .head-sec p {
+    font-size: 18px;
+  }
+
+  .head-sec svg {
+    fill: #572483;
+  }
+
+  .head-sec .btnGroup {
+    margin-top: 50px;
+  }
+
+  .head-sec .btnGroup .btn {
+    font-size: 20px;
+    min-width: 300px;
+    position: relative;
+  }
+
+  .head-sec .btnGroup .btn small {
+    font-size: 10px;
+    display: block;
+  }
+
+  .head-sec .btnGroup .btn span.NewLBL {
+    background: #fff;
+    color: #333;
+    font-size: 13px;
+    position: absolute;
+    left: -22px;
+    top: 10px;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 80px;
+  }
+
+  .host-box-dtl {
+    margin-top: 30px;
+  }
+
+  .host-box-dtl .host-boxes {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .host-box-dtl .host-boxes > div {
+    width: 150px;
+    height: 150px;
+    line-height: 95px;
+  }
+
+  .host-box-dtl .host-boxes {
+    color: #572483 !important;
+  }
+
+  .host-box-dtl .host-boxes .border {
+    border-color: #572483 !important;
+  }
+
+  // .host-box-dtl .host-boxes:nth-child(even) > .border {
+  //   border-color: #333333 !important;
+  // }
+  // .host-box-dtl .host-boxes:hover > .border {
+  //   background: #572483 !important;
+  //   img {-webkit-filter: brightness(0) invert(1);
+  //     filter: brightness(0) invert(1);}
+  // }
+  .card {
+    border-color: #572483 !important;
+  }
+
+  section .card-deck .card-body h5 span {
+    color: #fff;
+    background: #572483;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 37px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  div#ScrollText {
+    min-width: 210px;
+    text-align: left;
+
+    img {
+      margin-right: 5px !important;
+    }
+  }
+}
+
+// For FIL Online Landing page
+.fil-landing-page h2 {
+  position: relative;
+}
+
+.fil-landing-page {
+  .host-icon-txt {
+    h5 {
+      min-height: 50px;
+    }
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  font-size: 16px;
+  line-height: 24px;
+
+  h5 {
+    font-size: 20px;
+  }
+
+  .head-sec {
+    .h5 {
+      font-size: 20px;
+      font-weight: 400 !important;
+      line-height: 30px;
+    }
+  }
+
+  .all-feels {
+    font-size: 14px;
+    line-height: 1.5715;
+  }
+
+  h2:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -25px;
+    background: #ff3354;
+    height: 8px;
+    width: 60px;
+  }
+}
+
+.fil-about-us .shadow.border {
+  max-width: 90%;
+  margin-top: 44px;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 990px) {
+  .hostAfeel-page {
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .hostAfeel-page {
+    h1 {
+      font-size: 36px;
+      margin-bottom: 36px;
+    }
+
+    section {
+      padding-top: 60px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .fil-landing-page {
+    font-size: 15px;
+    line-height: 22px;
+
+    .head-sec {
+      .h5 {
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+
+    h5 {
+      font-size: 18px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hostAfeel-page {
+    h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    section {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  .fil-about-us .shadow.border {
+    max-width: 100%;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .fil-about-us .testimonial img {
+    position: absolute;
+    left: -44px;
+    top: -44px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .fil-landing-page h1 {
+    font-size: 26px;
+  }
+
+  .fil-landing-page .head-sec img {
+    margin-top: 25px;
+  }
+}

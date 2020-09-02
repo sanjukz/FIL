@@ -1,0 +1,196 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <TypeScriptToolsVersion>3.8</TypeScriptToolsVersion>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Kz.Web.Kitms.Feel' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection.Redis" Version="0.3.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SpaServices" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="2.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.BrowserLink" Version="2.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
+    <PackageReference Include="morelinq" Version="3.1.0" />
+    <PackageReference Include="System.Device.Location.Portable" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0-*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\store\Session.ts" />
+    <None Remove="yarn.lock" />
+    <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
+    <Content Remove="ClientApp\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".ebextensions\00-RenameComputer.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include=".ebextensions\02-WindowsAuth.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include=".ebextensions\01-JoinDomain.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include=".ebextensions\04-Env.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include=".ebextensions\03-Node.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include=".ebextensions\05-Gzip.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include=".ebextensions\06-Securelistener.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Kz.Configuration\Kz.Configuration.csproj" />
+    <ProjectReference Include="..\Kz.Contracts\Kz.Contracts.csproj" />
+    <ProjectReference Include="..\Kz.Foundation\Kz.Foundation.csproj" />
+    <ProjectReference Include="..\Kz.Logging\Kz.Logging.csproj" />
+    <ProjectReference Include="..\Kz.MailChimp\Kz.MailChimp.csproj" />
+    <ProjectReference Include="..\Kz.Messaging\Kz.Messaging.csproj" />
+    <ProjectReference Include="..\Kz.Web.Core\Kz.Web.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="aws-windows-deployment-manifest.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ClientApp\models\AllocationManagerDataViewModel.ts">
+      <CustomToolNamespace>ViewModels\Event\AllocationManagerDataViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\AllocationManagerVenueDataViewModel.ts">
+      <CustomToolNamespace>ViewModels\Event\AllocationManagerVenueDataViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\CountryFormDataViewModel.ts">
+      <CustomToolNamespace>ViewModels\Common\CountryFormataViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\CreateEventFormDataViewModel.ts">
+      <CustomToolNamespace>ViewModels\Event\CreateEventFormDataViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\CreateEventFormResponceViewModel.ts">
+      <CustomToolNamespace>ViewModels\Event\CreateEventFormResponceViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\Description\CityCountryDescriptionResponseViewModel.ts">
+      <CustomToolNamespace>ViewModels\CustomerIpDetails\IPDetailViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\Description\DescriptionResponseViewModel.ts">
+      <CustomToolNamespace>ViewModels\CustomerIpDetails\IPDetailViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\Description\DescriptionInputViewModel.ts">
+      <CustomToolNamespace>ViewModels\CustomerIpDetails\IPDetailViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\Description\CitiesResponseViewModel.ts">
+      <CustomToolNamespace>ViewModels\CustomerIpDetails\IPDetailViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\CustomerIpDetails\IPDetailViewModel.ts">
+      <CustomToolNamespace>ViewModels\CustomerIpDetails\IPDetailViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\SaveCountryResponseViewModel.ts">
+      <CustomToolNamespace>ViewModels\Common\SaveCountryResponseViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\CountryViewDataModel.ts">
+      <CustomToolNamespace>ViewModels\Event\CountryViewDataModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\CountryViewModel.ts">
+      <CustomToolNamespace>ViewModels\Event\CountryViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\EventDataViewModel.ts">
+      <CustomToolNamespace>ViewModels\Event\EventDataViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\LoginFormDataViewModel.ts">
+      <CustomToolNamespace>ViewModels\Login\LoginFormDataViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\LoginResponseViewModel.ts">
+      <CustomToolNamespace>ViewModels\Login\LoginResponseViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\RegistrationFormDataViewModel.ts">
+      <CustomToolNamespace>ViewModels\Login\RegistrationFormDataViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\models\RegistrationResponseViewModel.ts">
+      <CustomToolNamespace>ViewModels\Login\RegistrationResponseViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\server\LoginFormDataViewModel.ts">
+      <CustomToolNamespace>ViewModels\Login\LoginFormDataViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\server\LoginResponseViewModel.ts">
+      <CustomToolNamespace>ViewModels\Login\LoginResponseViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\server\RegistrationFormDataViewModel.ts">
+      <CustomToolNamespace>ViewModels\Login\RegistrationFormDataViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\server\RegistrationResponseViewModel.ts">
+      <CustomToolNamespace>ViewModels\Login\RegistrationResponseViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\server\SessionViewModel.ts">
+      <CustomToolNamespace>ViewModels\SessionViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="ClientApp\server\UserViewModel.ts">
+      <CustomToolNamespace>ViewModels\UserViewModel.cs</CustomToolNamespace>
+    </None>
+    <None Update="keys\key-e3999e3f-77a2-475a-8d99-c4707888404f.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
+    <!-- Ensure Node.js is installed -->
+    <Exec Command="node --version" ContinueOnError="true">
+      <Output TaskParameter="ExitCode" PropertyName="ErrorCode" />
+    </Exec>
+    <Error Condition="'$(ErrorCode)' != '0'" Text="Node.js is required to build and run this project. To continue, please install Node.js from https://nodejs.org/, and then restart your command prompt or IDE." />
+
+    <!-- In development, the dist files won't exist on the first run or when cloning to
+         a different machine, so rebuild them if not already present. -->
+    <Message Importance="high" Text="Performing vendor build..." />
+    <Exec Command="node node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js" />
+    <Message Importance="high" Text="Performing app build..." />
+    <Exec Command="node node_modules/webpack/bin/webpack.js" />
+  </Target>
+
+  <Target Name="PublishRunWebpack" AfterTargets="ComputeFilesToPublish">
+    <!-- As part of publishing, ensure the JS resources are freshly built in production mode -->
+    <Exec Command="npm install" />
+    <Exec Command="node node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js --env.prod" />
+    <Exec Command="node node_modules/webpack/bin/webpack.js --env.prod" />
+
+    <!-- Include the newly-built files in the publish output -->
+    <ItemGroup>
+      <DistFiles Include="wwwroot\dist\**; ClientApp\dist\**" />
+      <ResolvedFileToPublish Include="@(DistFiles-&gt;'%(FullPath)')" Exclude="@(ResolvedFileToPublish)">
+        <RelativePath>%(DistFiles.Identity)</RelativePath>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </ResolvedFileToPublish>
+    </ItemGroup>
+  </Target>
+
+</Project>
