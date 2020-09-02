@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Kz.Database.Migration.Core\Kz.Database.Migration.Core.csproj" />
+    <ProjectReference Include="..\FIL.Database.Migration.Core\FIL.Database.Migration.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

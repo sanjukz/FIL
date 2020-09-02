@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Kz.Configuration.Api\Kz.Configuration.Api.csproj" />
+    <ProjectReference Include="..\FIL.Configuration.Api\FIL.Configuration.Api.csproj" />
   </ItemGroup>
 
 </Project>

@@ -5,10 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Kz.Caching\Kz.Caching.csproj" />
-    <ProjectReference Include="..\Kz.Configuration\Kz.Configuration.csproj" />
-    <ProjectReference Include="..\Kz.Http\Kz.Http.csproj" />
-    <ProjectReference Include="..\Kz.Logging\Kz.Logging.csproj" />
+    <ProjectReference Include="..\FIL.Caching\FIL.Caching.csproj" />
+    <ProjectReference Include="..\FIL.Configuration\FIL.Configuration.csproj" />
+    <ProjectReference Include="..\FIL.Http\FIL.Http.csproj" />
+    <ProjectReference Include="..\FIL.Logging\FIL.Logging.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Kz.Configuration.Contracts\Kz.Configuration.Contracts.csproj" />
-    <ProjectReference Include="..\Kz.Http\Kz.Http.csproj" />
+    <ProjectReference Include="..\FIL.Configuration.Contracts\FIL.Configuration.Contracts.csproj" />
+    <ProjectReference Include="..\FIL.Http\FIL.Http.csproj" />
   </ItemGroup>
 
 </Project>

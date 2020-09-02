@@ -1,7 +1,7 @@
 ﻿using FIL.Api.Events.Event.HubSpot;
 using FIL.Api.Repositories;
 using FIL.Contracts.Commands.HubSpot;
-using KZ.Contracts.DataModels;
+using FIL.Contracts.DataModels;
 using MediatR;
 using System.Collections.Generic;
 using System.Linq;

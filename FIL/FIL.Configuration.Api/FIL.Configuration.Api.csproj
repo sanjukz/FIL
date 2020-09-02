@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Kz.Configuration.Api' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'FIL.Configuration.Api' " />
   <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
@@ -32,11 +32,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Kz.Api.Core\Kz.Api.Core.csproj" />
-    <ProjectReference Include="..\Kz.Configuration.Contracts\Kz.Configuration.Contracts.csproj" />
-    <ProjectReference Include="..\Kz.Configuration\Kz.Configuration.csproj" />
-    <ProjectReference Include="..\Kz.Logging\Kz.Logging.csproj" />
-    <ProjectReference Include="..\Kz.Utilities\Kz.Utilities.csproj" />
+    <ProjectReference Include="..\FIL.Api.Core\FIL.Api.Core.csproj" />
+    <ProjectReference Include="..\FIL.Configuration.Contracts\FIL.Configuration.Contracts.csproj" />
+    <ProjectReference Include="..\FIL.Configuration\FIL.Configuration.csproj" />
+    <ProjectReference Include="..\FIL.Logging\FIL.Logging.csproj" />
+    <ProjectReference Include="..\FIL.Utilities\FIL.Utilities.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="appsettings.json">

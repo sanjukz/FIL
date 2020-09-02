@@ -8,7 +8,7 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Kz.Web.Kitms.Feel' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'FIL.Web.Admin' " />
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.0.1" />
@@ -66,13 +66,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Kz.Configuration\Kz.Configuration.csproj" />
-    <ProjectReference Include="..\Kz.Contracts\Kz.Contracts.csproj" />
-    <ProjectReference Include="..\Kz.Foundation\Kz.Foundation.csproj" />
-    <ProjectReference Include="..\Kz.Logging\Kz.Logging.csproj" />
-    <ProjectReference Include="..\Kz.MailChimp\Kz.MailChimp.csproj" />
-    <ProjectReference Include="..\Kz.Messaging\Kz.Messaging.csproj" />
-    <ProjectReference Include="..\Kz.Web.Core\Kz.Web.Core.csproj" />
+    <ProjectReference Include="..\FIL.Configuration\FIL.Configuration.csproj" />
+    <ProjectReference Include="..\FIL.Contracts\FIL.Contracts.csproj" />
+    <ProjectReference Include="..\FIL.Foundation\FIL.Foundation.csproj" />
+    <ProjectReference Include="..\FIL.Logging\FIL.Logging.csproj" />
+    <ProjectReference Include="..\FIL.MailChimp\FIL.MailChimp.csproj" />
+    <ProjectReference Include="..\FIL.Messaging\FIL.Messaging.csproj" />
+    <ProjectReference Include="..\FIL.Web.Core\FIL.Web.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

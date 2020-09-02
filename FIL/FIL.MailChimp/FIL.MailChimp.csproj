@@ -10,10 +10,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Kz.Configuration\Kz.Configuration.csproj" />
-    <ProjectReference Include="..\Kz.Logging\Kz.Logging.csproj" />
-    <ProjectReference Include="..\Kz.Utilities\Kz.Utilities.csproj" />
-    <ProjectReference Include="..\Kz.Web.Core\Kz.Web.Core.csproj" />
+    <ProjectReference Include="..\FIL.Configuration\FIL.Configuration.csproj" />
+    <ProjectReference Include="..\FIL.Logging\FIL.Logging.csproj" />
+    <ProjectReference Include="..\FIL.Utilities\FIL.Utilities.csproj" />
+    <ProjectReference Include="..\FIL.Web.Core\FIL.Web.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

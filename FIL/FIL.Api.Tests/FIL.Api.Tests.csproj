@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Kz.Api\Kz.Api.csproj" />
-    <ProjectReference Include="..\Kz.Utilities\Kz.Utilities.csproj" />
+    <ProjectReference Include="..\FIL.Api\FIL.Api.csproj" />
+    <ProjectReference Include="..\FIL.Utilities\FIL.Utilities.csproj" />
   </ItemGroup>
 
 </Project>

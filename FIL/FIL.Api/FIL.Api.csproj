@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Kz.Api' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'FIL.Api' " />
   <ItemGroup>
     <Compile Remove="wwwroot\**" />
     <Content Remove="wwwroot\**" />
@@ -70,11 +70,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Kz.Api.Core\Kz.Api.Core.csproj" />
-    <ProjectReference Include="..\Kz.Configuration\Kz.Configuration.csproj" />
-    <ProjectReference Include="..\Kz.Contracts\Kz.Contracts.csproj" />
-    <ProjectReference Include="..\Kz.Logging\Kz.Logging.csproj" />
-    <ProjectReference Include="..\Kz.Utilities\Kz.Utilities.csproj" />
+    <ProjectReference Include="..\FIL.Api.Core\FIL.Api.Core.csproj" />
+    <ProjectReference Include="..\FIL.Configuration\FIL.Configuration.csproj" />
+    <ProjectReference Include="..\FIL.Contracts\FIL.Contracts.csproj" />
+    <ProjectReference Include="..\FIL.Logging\FIL.Logging.csproj" />
+    <ProjectReference Include="..\FIL.Utilities\FIL.Utilities.csproj" />
     <ProjectReference Include="..\ThirdParty\HubSpot.NET\HubSpot.NET.csproj" />
   </ItemGroup>
   <ItemGroup>
