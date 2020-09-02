@@ -1,9 +1,0 @@
-E:\FIL\FIL\FIL.Caching.Contracts\bin\Debug\netstandard2.0\FIL.Caching.Contracts.deps.json
-E:\FIL\FIL\FIL.Caching.Contracts\bin\Debug\netstandard2.0\FIL.Caching.Contracts.dll
-E:\FIL\FIL\FIL.Caching.Contracts\bin\Debug\netstandard2.0\FIL.Caching.Contracts.pdb
-E:\FIL\FIL\FIL.Caching.Contracts\obj\Debug\netstandard2.0\FIL.Caching.Contracts.csprojAssemblyReference.cache
-E:\FIL\FIL\FIL.Caching.Contracts\obj\Debug\netstandard2.0\FIL.Caching.Contracts.AssemblyInfoInputs.cache
-E:\FIL\FIL\FIL.Caching.Contracts\obj\Debug\netstandard2.0\FIL.Caching.Contracts.AssemblyInfo.cs
-E:\FIL\FIL\FIL.Caching.Contracts\obj\Debug\netstandard2.0\FIL.Caching.Contracts.csproj.CoreCompileInputs.cache
-E:\FIL\FIL\FIL.Caching.Contracts\obj\Debug\netstandard2.0\FIL.Caching.Contracts.dll
-E:\FIL\FIL\FIL.Caching.Contracts\obj\Debug\netstandard2.0\FIL.Caching.Contracts.pdb

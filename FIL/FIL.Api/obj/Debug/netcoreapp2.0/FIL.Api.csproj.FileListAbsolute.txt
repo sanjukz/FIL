@@ -1,4 +1,0 @@
-E:\FIL\FIL\FIL.Api\obj\Debug\netcoreapp2.0\FIL.Api.csprojAssemblyReference.cache
-E:\FIL\FIL\FIL.Api\obj\Debug\netcoreapp2.0\FIL.Api.AssemblyInfoInputs.cache
-E:\FIL\FIL\FIL.Api\obj\Debug\netcoreapp2.0\FIL.Api.AssemblyInfo.cs
-E:\FIL\FIL\FIL.Api\obj\Debug\netcoreapp2.0\FIL.Api.csproj.CoreCompileInputs.cache

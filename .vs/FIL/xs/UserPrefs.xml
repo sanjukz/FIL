@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{6CEA710B-7F38-40D6-BD32-5277B46FAD35}|Kz.Api">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Http/RestHelper.cs">
+    <Files>
+      <File FileName="FIL.Http/RestHelper.cs" Line="3" Column="17" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FIL" expanded="True">
+            <Node name="FIL.Http" expanded="True">
+              <Node name="RestHelper.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <DisabledProjects>
+    <String>FIL.Window.Service/FIL.Window.Service.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.FIL.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
