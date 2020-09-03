@@ -7,7 +7,7 @@ import { checkIsLiveOnlineEvents } from "../../ClientApp/utils/TicketCategory/It
 import { IApplicationState } from "../stores";
 import * as TicketCategoryPageStore from "../stores/TicketCategory";
 import * as CategoryPageStore from "../stores/AllCategories";
-import KzLoader from "../components/Loader/KzLoader";
+import FilLoader from "../components/Loader/FilLoader";
 import Metatag from "../components/Metatags/Metatag";
 import TicketCategorySelection from "../components/TicketCategory/TicketCategorySelection";
 import TicketCategorySelectionMoveAround from "../components/TicketCategory/TicketCategorySelectionMoveAround";
@@ -139,7 +139,7 @@ class TicketPurchaseSelection extends React.Component<TicketCategoryComponentPro
             </div>
         }
         else {
-            return <div><KzLoader /></div>
+            return <div><FilLoader /></div>
         }
     }
 }

@@ -331,7 +331,7 @@ namespace FIL.Web.Feel.Controllers
             catch
             {
                 _logger.Log(Logging.Enums.LogCategory.Warn, $"account profile picture does not load for {session.User.AltId.ToString()}");
-                return "https://s3-us-west-2.amazonaws.com/kz-cdn/Images/ProfilePictures/default.jpg";
+                return "https://static5.feelitlive.com/Images/ProfilePictures/default.jpg";
             }
         }
 

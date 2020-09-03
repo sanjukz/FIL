@@ -2,7 +2,7 @@
 import { connect } from "react-redux";
 import { IApplicationState } from "../stores";
 import * as ActivateUserStore from "../stores/ActivateUser";
-import KzLoader from "../components/Loader/KzLoader";
+import FilLoader from "../components/Loader/FilLoader";
 
 export class Activate extends React.Component<any, any> {
 
@@ -32,7 +32,7 @@ export class Activate extends React.Component<any, any> {
             }
         } else {
             return <div>
-                <KzLoader />
+                <FilLoader />
             </div>;
         }
     }

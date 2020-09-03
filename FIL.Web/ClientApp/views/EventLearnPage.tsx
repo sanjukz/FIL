@@ -14,7 +14,7 @@ import ReviewsRatingResponseViewModel from "../models/ReviewsRating/ReviewsRatin
 import * as EventLearnPageStore from "../stores/EventLearnPage";
 import { connect } from "react-redux";
 import Metatag from "../components/Metatags/Metatag";
-import KzLoader from "../components/Loader/KzLoader";
+import FilLoader from "../components/Loader/FilLoader";
 import "./EventLearnPage.scss";
 import * as numeral from "numeral";
 import { StickyContainer, Sticky } from "react-sticky";
@@ -217,7 +217,7 @@ class EventLearnPage extends React.Component<
                 this.props.eventLearnPage.eventDetails.event.altId.toLowerCase() !=
                 this.state.eventAltId
             ) {
-                return <KzLoader />;
+                return <FilLoader />;
             }
             var isPurase = false,
                 data,
@@ -372,7 +372,7 @@ class EventLearnPage extends React.Component<
         } else {
             return (
                 <div>
-                    <KzLoader />
+                    <FilLoader />
                 </div>
             );
         }

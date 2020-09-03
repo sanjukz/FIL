@@ -11,7 +11,7 @@ import Metatag from "../components/Metatags/Metatag";
 import * as PubSub from "pubsub-js";
 import ItineraryComponent from "../components/ReviewItinerary/ItineraryComponent";
 import BespokeItinerary from "../components/ReviewItinerary/BespokeItinerary";
-import KzLoader from "../components/Loader/KzLoader";
+import FilLoader from "../components/Loader/FilLoader";
 import { gets3BaseUrl } from "../utils/imageCdn";
 import "../scss/_buttons.scss";
 import "../scss/_custom.scss";
@@ -106,7 +106,7 @@ export class Itinerary extends React.Component<sessionProps, any> {
     } else {
       return (
         <div>
-          <KzLoader />
+          <FilLoader />
         </div>
       );
     }

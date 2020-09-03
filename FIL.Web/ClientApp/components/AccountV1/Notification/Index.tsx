@@ -3,7 +3,7 @@ import {
     Link, RouteComponentProps, Route,
 } from "react-router-dom";
 import * as AccountStore from "../../../stores/Account";
-import KzLoader from "../../../components/Loader/KzLoader";
+import FilLoader from "../../../components/Loader/FilLoader";
 import {
     actionCreators as sessionActionCreators,
     ISessionProps
@@ -66,7 +66,7 @@ class Notification extends React.PureComponent<AccountProps, any>{
     }
     render() {
         if (!this.props.session.isAuthenticated || this.state.isLoading) {
-            return <KzLoader />
+            return <FilLoader />
         }
         return <>
             <div className="container">

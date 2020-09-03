@@ -10918,19 +10918,19 @@ var __extends = undefined && undefined.__extends || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 __webpack_require__(498);
-var KzLoader = /** @class */function (_super) {
-    __extends(KzLoader, _super);
-    function KzLoader() {
+var FilLoader = /** @class */function (_super) {
+    __extends(FilLoader, _super);
+    function FilLoader() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    KzLoader.prototype.render = function () {
+    FilLoader.prototype.render = function () {
         return React.createElement("div", { className: "site-loader" }, React.createElement("div", { className: "loader-content" }, React.createElement("i", { className: "fa fa-circle-o-notch fa-spin" }), React.createElement("p", { style: { fontSize: "13px" } }, " Please wait... ")));
     };
-    return KzLoader;
+    return FilLoader;
 }(React.Component);
-exports.default = KzLoader;
+exports.default = FilLoader;
 
- ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : module.exports; /* eslint-enable camelcase, no-undef */ if (typeof webpackExports === 'function') { __REACT_HOT_LOADER__.register(webpackExports, 'module.exports', "C:\\kyazoonga\\Kz\\Kz.Web.Feel\\ClientApp\\components\\Loader\\KzLoader.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "C:\\kyazoonga\\Kz\\Kz.Web.Feel\\ClientApp\\components\\Loader\\KzLoader.tsx"); } } })();
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : module.exports; /* eslint-enable camelcase, no-undef */ if (typeof webpackExports === 'function') { __REACT_HOT_LOADER__.register(webpackExports, 'module.exports', "C:\\kyazoonga\\Kz\\Kz.Web.Feel\\ClientApp\\components\\Loader\\FilLoader.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "C:\\kyazoonga\\Kz\\Kz.Web.Feel\\ClientApp\\components\\Loader\\FilLoader.tsx"); } } })();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
@@ -16702,17 +16702,17 @@ var __extends = undefined && undefined.__extends || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 __webpack_require__(497);
-var KzLoader = /** @class */function (_super) {
-    __extends(KzLoader, _super);
-    function KzLoader() {
+var FilLoader = /** @class */function (_super) {
+    __extends(FilLoader, _super);
+    function FilLoader() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    KzLoader.prototype.render = function () {
+    FilLoader.prototype.render = function () {
         return React.createElement("div", { className: "site-loader" }, React.createElement("div", { className: "loader-content" }, React.createElement("i", { className: "fa fa-circle-o-notch fa-spin" }), React.createElement("p", { style: { fontSize: "13px" } }, " Please wait... ")));
     };
-    return KzLoader;
+    return FilLoader;
 }(React.Component);
-exports.default = KzLoader;
+exports.default = FilLoader;
 
  ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : module.exports; /* eslint-enable camelcase, no-undef */ if (typeof webpackExports === 'function') { __REACT_HOT_LOADER__.register(webpackExports, 'module.exports', "C:\\kyazoonga\\Kz\\Kz.Web.Feel\\ClientApp\\components\\Loader\\FeelLoader.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "C:\\kyazoonga\\Kz\\Kz.Web.Feel\\ClientApp\\components\\Loader\\FeelLoader.tsx"); } } })();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
@@ -35591,28 +35591,28 @@ var __extends = undefined && undefined.__extends || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var react_bootstrap_1 = __webpack_require__(32);
-var KzAlert = /** @class */function (_super) {
-    __extends(KzAlert, _super);
-    function KzAlert() {
+var FilAlert = /** @class */function (_super) {
+    __extends(FilAlert, _super);
+    function FilAlert() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     //public componentWillMount() {
     //    this.setState({ visible: true });        
     //}
-    KzAlert.prototype.componentDidMount = function () {
+    FilAlert.prototype.componentDidMount = function () {
         var that = this;
         setTimeout(function () {
             that.setState({ visible: false });
         }, 3000);
     };
-    KzAlert.prototype.render = function () {
+    FilAlert.prototype.render = function () {
         return React.createElement("div", { className: "static-modal" }, React.createElement(react_bootstrap_1.Modal, { show: this.props.visible }, React.createElement(react_bootstrap_1.Modal.Body, null, this.props.children)));
     };
-    return KzAlert;
+    return FilAlert;
 }(React.Component);
-exports.default = KzAlert;
+exports.default = FilAlert;
 
- ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : module.exports; /* eslint-enable camelcase, no-undef */ if (typeof webpackExports === 'function') { __REACT_HOT_LOADER__.register(webpackExports, 'module.exports', "C:\\kyazoonga\\Kz\\Kz.Web.Feel\\ClientApp\\components\\Alert\\KzAlert.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "C:\\kyazoonga\\Kz\\Kz.Web.Feel\\ClientApp\\components\\Alert\\KzAlert.tsx"); } } })();
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : module.exports; /* eslint-enable camelcase, no-undef */ if (typeof webpackExports === 'function') { __REACT_HOT_LOADER__.register(webpackExports, 'module.exports', "C:\\kyazoonga\\Kz\\Kz.Web.Feel\\ClientApp\\components\\Alert\\FilAlert.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "C:\\kyazoonga\\Kz\\Kz.Web.Feel\\ClientApp\\components\\Alert\\FilAlert.tsx"); } } })();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
@@ -81365,7 +81365,7 @@ var __extends = undefined && undefined.__extends || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var react_router_dom_1 = __webpack_require__(10);
-var KzLoader_1 = __webpack_require__(40);
+var FilLoader_1 = __webpack_require__(40);
 var SaveAddressForm_1 = __webpack_require__(822);
 var UserAddresses = /** @class */function (_super) {
     __extends(UserAddresses, _super);
@@ -81418,7 +81418,7 @@ var UserAddresses = /** @class */function (_super) {
         } else if (this.props.updateSuccess) {
             return React.createElement("div", null);
         } else {
-            return React.createElement("div", null, React.createElement(KzLoader_1.default, null));
+            return React.createElement("div", null, React.createElement(FilLoader_1.default, null));
         }
     };
     return UserAddresses;
@@ -81495,7 +81495,7 @@ var __extends = undefined && undefined.__extends || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var react_router_dom_1 = __webpack_require__(10);
-var KzLoader_1 = __webpack_require__(40);
+var FilLoader_1 = __webpack_require__(40);
 var numeral = __webpack_require__(38);
 var UserOrders = /** @class */function (_super) {
     __extends(UserOrders, _super);
@@ -81526,7 +81526,7 @@ var UserOrders = /** @class */function (_super) {
             });
             return React.createElement("div", { className: "col-sm-9 right-act-pnl" }, React.createElement("h4", { className: "mb-3 mt-3" }, "My Orders"), cardList);
         } else {
-            return React.createElement("div", null, React.createElement(KzLoader_1.default, null));
+            return React.createElement("div", null, React.createElement(FilLoader_1.default, null));
         }
     };
     return UserOrders;
@@ -81561,7 +81561,7 @@ var __extends = undefined && undefined.__extends || function () {
 }();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var KzLoader_1 = __webpack_require__(40);
+var FilLoader_1 = __webpack_require__(40);
 var ChangeNameForm_1 = __webpack_require__(819);
 var ChangePasswordForm_1 = __webpack_require__(820);
 var ChangePrimaryPhoneForm_1 = __webpack_require__(821);
@@ -81588,7 +81588,7 @@ var UserProfile = /** @class */function (_super) {
         } else if (this.props.updateSuccess) {
             return React.createElement("div", null);
         } else {
-            return React.createElement("div", null, React.createElement(KzLoader_1.default, null));
+            return React.createElement("div", null, React.createElement(FilLoader_1.default, null));
         }
     };
     return UserProfile;
@@ -81624,7 +81624,7 @@ var __extends = undefined && undefined.__extends || function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var react_router_dom_1 = __webpack_require__(10);
-var KzLoader_1 = __webpack_require__(40);
+var FilLoader_1 = __webpack_require__(40);
 var SaveCardForm_1 = __webpack_require__(823);
 var UserSavedCards = /** @class */function (_super) {
     __extends(UserSavedCards, _super);
@@ -81656,7 +81656,7 @@ var UserSavedCards = /** @class */function (_super) {
         } else if (this.props.updateSuccess) {
             return React.createElement("div", null);
         } else {
-            return React.createElement("div", null, React.createElement(KzLoader_1.default, null));
+            return React.createElement("div", null, React.createElement(FilLoader_1.default, null));
         }
     };
     return UserSavedCards;
@@ -83620,7 +83620,7 @@ var __assign = undefined && undefined.__assign || Object.assign || function (t) 
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(21);
 var react_bootstrap_1 = __webpack_require__(32);
-var KzForm_1 = __webpack_require__(900);
+var FilForm_1 = __webpack_require__(900);
 var yup_1 = __webpack_require__(26);
 var formik_1 = __webpack_require__(13);
 var Notifyme = /** @class */function (_super) {
@@ -83630,7 +83630,7 @@ var Notifyme = /** @class */function (_super) {
     }
     Notifyme.prototype.render = function () {
         var schema = this.getSchema();
-        return React.createElement(KzForm_1.default, __assign({}, this.props, { hideSubmit: true, validationSchema: schema, initialValues: {} }), React.createElement("div", { className: "bg-light" }, React.createElement("div", { className: "container sign-form pt-3 pb-5 text-center" }, React.createElement("img", { src: "https://static1.feelaplace.com/images/logos/coming-soon-logo.jpg", alt: "", className: "rounded-circle" }), React.createElement("h2", { className: "mt-2 text-danger" }, "Coming Soon"), React.createElement("p", { className: "m-0" }, "We're laying the foundation that'll change the way you ", React.createElement("img", { src: "https://static1.feelaplace.com/images/footer/feel-heart-logo.png", alt: "", width: "15" }), " a place."), React.createElement("p", null, "Sign up to get notified when we launch this ", React.createElement("img", { src: "https://static1.feelaplace.com/images/footer/feel-heart-logo.png", alt: "", width: "15" })), React.createElement("div", { className: "form-inline" }, React.createElement("div", { className: "form-group m-auto" }, React.createElement(formik_1.Field, { type: "email", name: "email", placeholder: "Email", className: "form-control rounded-0", required: true }), React.createElement(react_bootstrap_1.Button, { type: "submit", className: "btn btn-primary rounded-0" }, "Subscribe"))), React.createElement("div", { className: "social-link h3 mt-3" }, React.createElement("a", { href: "https://www.instagram.com/feelaplace/", target: "_blank" }, React.createElement("i", { className: "fa fa-instagram site-txt-primery-color" })), React.createElement("a", { href: "https://www.facebook.com/feel.aplace.1", target: "_blank" }, React.createElement("i", { className: "fa fa-facebook-square site-txt-primery-color mr-1 ml-1" })), React.createElement("a", { href: "https://twitter.com/feelaplace", target: "_blank" }, React.createElement("i", { className: "fa fa-twitter-square site-txt-primery-color" }))))));
+        return React.createElement(FilForm_1.default, __assign({}, this.props, { hideSubmit: true, validationSchema: schema, initialValues: {} }), React.createElement("div", { className: "bg-light" }, React.createElement("div", { className: "container sign-form pt-3 pb-5 text-center" }, React.createElement("img", { src: "https://static1.feelaplace.com/images/logos/coming-soon-logo.jpg", alt: "", className: "rounded-circle" }), React.createElement("h2", { className: "mt-2 text-danger" }, "Coming Soon"), React.createElement("p", { className: "m-0" }, "We're laying the foundation that'll change the way you ", React.createElement("img", { src: "https://static1.feelaplace.com/images/footer/feel-heart-logo.png", alt: "", width: "15" }), " a place."), React.createElement("p", null, "Sign up to get notified when we launch this ", React.createElement("img", { src: "https://static1.feelaplace.com/images/footer/feel-heart-logo.png", alt: "", width: "15" })), React.createElement("div", { className: "form-inline" }, React.createElement("div", { className: "form-group m-auto" }, React.createElement(formik_1.Field, { type: "email", name: "email", placeholder: "Email", className: "form-control rounded-0", required: true }), React.createElement(react_bootstrap_1.Button, { type: "submit", className: "btn btn-primary rounded-0" }, "Subscribe"))), React.createElement("div", { className: "social-link h3 mt-3" }, React.createElement("a", { href: "https://www.instagram.com/feelaplace/", target: "_blank" }, React.createElement("i", { className: "fa fa-instagram site-txt-primery-color" })), React.createElement("a", { href: "https://www.facebook.com/feel.aplace.1", target: "_blank" }, React.createElement("i", { className: "fa fa-facebook-square site-txt-primery-color mr-1 ml-1" })), React.createElement("a", { href: "https://twitter.com/feelaplace", target: "_blank" }, React.createElement("i", { className: "fa fa-twitter-square site-txt-primery-color" }))))));
     };
     Notifyme.prototype.getSchema = function () {
         return yup_1.default.object().shape({
@@ -85855,7 +85855,7 @@ var __assign = undefined && undefined.__assign || Object.assign || function (t) 
 Object.defineProperty(exports, "__esModule", { value: true });
 var formik_1 = __webpack_require__(13);
 var React = __webpack_require__(0);
-var ResetPasswordKzForm_1 = __webpack_require__(901);
+var ResetPasswordFilForm_1 = __webpack_require__(901);
 var yup_1 = __webpack_require__(26);
 var ResetPasswordForm = /** @class */function (_super) {
     __extends(ResetPasswordForm, _super);
@@ -85864,7 +85864,7 @@ var ResetPasswordForm = /** @class */function (_super) {
     }
     ResetPasswordForm.prototype.render = function () {
         var schema = this.getSchema();
-        return React.createElement("div", null, React.createElement(ResetPasswordKzForm_1.default, __assign({}, this.props, { validationSchema: schema, initialValues: {} }), React.createElement("div", { className: "form-group" }, React.createElement(formik_1.Field, { type: "password", name: "password", placeholder: "Enter password", className: "form-control", required: true })), React.createElement("div", { className: "form-group" }, React.createElement(formik_1.Field, { type: "password", name: "confirmPassword", placeholder: "Confirm password", className: "form-control", required: true }))));
+        return React.createElement("div", null, React.createElement(ResetPasswordFilForm_1.default, __assign({}, this.props, { validationSchema: schema, initialValues: {} }), React.createElement("div", { className: "form-group" }, React.createElement(formik_1.Field, { type: "password", name: "password", placeholder: "Enter password", className: "form-control", required: true })), React.createElement("div", { className: "form-group" }, React.createElement(formik_1.Field, { type: "password", name: "confirmPassword", placeholder: "Confirm password", className: "form-control", required: true }))));
     };
     ResetPasswordForm.prototype.getSchema = function () {
         return yup_1.default.object().shape({
@@ -86650,7 +86650,7 @@ var UserAddresses_1 = __webpack_require__(811);
 var UserOrders_1 = __webpack_require__(813);
 var UserProfile_1 = __webpack_require__(814);
 var UserSavedCards_1 = __webpack_require__(815);
-var KzAlert_1 = __webpack_require__(342);
+var FilAlert_1 = __webpack_require__(342);
 var AccountStore = __webpack_require__(352);
 __webpack_require__(496);
 var react_redux_1 = __webpack_require__(14);
@@ -86681,7 +86681,7 @@ var Account = /** @class */function (_super) {
         });
     };
     Account.prototype.render = function () {
-        return React.createElement("div", { className: "container my-acnt-content pt-2 pb-3" }, React.createElement(KzAlert_1.default, { visible: this.props.updateSuccess }, this.props.alertMessage.body), React.createElement("div", { className: "my-acnt-header text-center" }, React.createElement("h3", null, "My Account"), React.createElement("p", { className: "text-gray text-muted" }, "Modify an order, track a shipment, and update your account info.", React.createElement("br", null), "All in one place. All with a few simple clicks.")), React.createElement("hr", null), React.createElement("div", { className: "row" }, React.createElement("div", { className: "col-sm-3 left-act-pnl text-left" }, React.createElement("h4", { className: "mb-3 mt-3 text-muted" }, React.createElement("i", { className: "fa fa-gift", "aria-hidden": "true" }), " Orders"), React.createElement(react_router_dom_1.Link, { className: "btn btn-block btn-outline-secondary", to: "#", onClick: this.setView.bind(this, "userOrders"), rel: "nofollow" }, "My Orders"), React.createElement(react_router_dom_1.Link, { className: "btn btn-block btn-outline-secondary", to: "http://www.bluedart.com/maintracking.html", rel: "nofollow", target: "_blank" }, "Track Shipment"), React.createElement("h4", { className: "mb-3 mt-4 text-muted" }, React.createElement("i", { className: "fa fa-cog", "aria-hidden": "true" }), " Settings"), React.createElement(react_router_dom_1.Link, { className: "btn btn-block btn-outline-secondary active", to: "#", onClick: this.setView.bind(this, "userProfile"), rel: "nofollow" }, "Account"), React.createElement(react_router_dom_1.Link, { className: "btn btn-block btn-outline-secondary", to: "#", onClick: this.setView.bind(this, "userAddresses"), rel: "nofollow" }, "Addresses"), React.createElement(react_router_dom_1.Link, { className: "btn btn-block btn-outline-secondary", to: "#", onClick: this.setView.bind(this, "userSavedCards"), rel: "nofollow" }, "Saved Cards")), this.state.currentView === "userAddresses" && React.createElement(UserAddresses_1.UserAddresses, { countryData: this.props.countryList, requesting: this.props.requesting, fetchSuccess: this.props.fetchSuccess, updateSuccess: this.props.updateSuccess, error: this.props.errors, addressList: this.props.userAddresses, getAddressList: this.props.getAddressListAction.bind(this), submitDeleteAddress: this.onSubmitDeleteAddress.bind(this), submitSaveAddress: this.onSubmitSaveAddress.bind(this), submitSetDefaultAddress: this.onSubmitSetDefaultAddress.bind(this), onCancel: this.props.getAddressListAction.bind(this) }), this.state.currentView === "userOrders" && React.createElement(UserOrders_1.UserOrders, { requesting: this.props.requesting, fetchSuccess: this.props.fetchOrderSuccess, updateSuccess: this.props.updateSuccess, error: this.props.errors, userOrders: this.props.getUserOrdertData, orderList: this.props.userOrders }), this.state.currentView === "userProfile" && React.createElement(UserProfile_1.UserProfile, { countryData: this.props.countryList, requesting: this.props.requesting, fetchSuccess: this.props.fetchSuccess, updateSuccess: this.props.updateSuccess, error: this.props.errors, userProfile: this.props.userProfile, getUserProfile: this.props.getUserProfileAction.bind(this), submitChangeName: this.onSubmitChangeName.bind(this), submitChangePassword: this.onSubmitChangePassword.bind(this), submitChangePhone: this.onSubmitChangePhone.bind(this), onCancel: this.props.getUserProfileAction.bind(this), invalidPassword: this.props.invalidPassword, userToken: this.state.userToken }), this.props.changeNameSuccess === true && React.createElement("div", null, " Name updated successfully"), this.props.changePhoneSuccess === true && React.createElement("div", null, " Phone number updated successfully"), this.props.changePasswordSuccess === true && React.createElement("div", null, " Password updated successfully"), this.state.currentView === "userSavedCards" && React.createElement(UserSavedCards_1.UserSavedCards, { requesting: this.props.requesting, fetchSuccess: this.props.fetchSuccess, updateSuccess: this.props.updateSuccess, error: this.props.errors, cardList: this.props.userCards, getCardList: this.props.getCardListAction.bind(this), submitDeleteCard: this.onSubmitDeleteCard.bind(this), submitSaveCard: this.onSubmitSaveCard.bind(this), onCancel: this.props.getCardListAction.bind(this) })));
+        return React.createElement("div", { className: "container my-acnt-content pt-2 pb-3" }, React.createElement(FilAlert_1.default, { visible: this.props.updateSuccess }, this.props.alertMessage.body), React.createElement("div", { className: "my-acnt-header text-center" }, React.createElement("h3", null, "My Account"), React.createElement("p", { className: "text-gray text-muted" }, "Modify an order, track a shipment, and update your account info.", React.createElement("br", null), "All in one place. All with a few simple clicks.")), React.createElement("hr", null), React.createElement("div", { className: "row" }, React.createElement("div", { className: "col-sm-3 left-act-pnl text-left" }, React.createElement("h4", { className: "mb-3 mt-3 text-muted" }, React.createElement("i", { className: "fa fa-gift", "aria-hidden": "true" }), " Orders"), React.createElement(react_router_dom_1.Link, { className: "btn btn-block btn-outline-secondary", to: "#", onClick: this.setView.bind(this, "userOrders"), rel: "nofollow" }, "My Orders"), React.createElement(react_router_dom_1.Link, { className: "btn btn-block btn-outline-secondary", to: "http://www.bluedart.com/maintracking.html", rel: "nofollow", target: "_blank" }, "Track Shipment"), React.createElement("h4", { className: "mb-3 mt-4 text-muted" }, React.createElement("i", { className: "fa fa-cog", "aria-hidden": "true" }), " Settings"), React.createElement(react_router_dom_1.Link, { className: "btn btn-block btn-outline-secondary active", to: "#", onClick: this.setView.bind(this, "userProfile"), rel: "nofollow" }, "Account"), React.createElement(react_router_dom_1.Link, { className: "btn btn-block btn-outline-secondary", to: "#", onClick: this.setView.bind(this, "userAddresses"), rel: "nofollow" }, "Addresses"), React.createElement(react_router_dom_1.Link, { className: "btn btn-block btn-outline-secondary", to: "#", onClick: this.setView.bind(this, "userSavedCards"), rel: "nofollow" }, "Saved Cards")), this.state.currentView === "userAddresses" && React.createElement(UserAddresses_1.UserAddresses, { countryData: this.props.countryList, requesting: this.props.requesting, fetchSuccess: this.props.fetchSuccess, updateSuccess: this.props.updateSuccess, error: this.props.errors, addressList: this.props.userAddresses, getAddressList: this.props.getAddressListAction.bind(this), submitDeleteAddress: this.onSubmitDeleteAddress.bind(this), submitSaveAddress: this.onSubmitSaveAddress.bind(this), submitSetDefaultAddress: this.onSubmitSetDefaultAddress.bind(this), onCancel: this.props.getAddressListAction.bind(this) }), this.state.currentView === "userOrders" && React.createElement(UserOrders_1.UserOrders, { requesting: this.props.requesting, fetchSuccess: this.props.fetchOrderSuccess, updateSuccess: this.props.updateSuccess, error: this.props.errors, userOrders: this.props.getUserOrdertData, orderList: this.props.userOrders }), this.state.currentView === "userProfile" && React.createElement(UserProfile_1.UserProfile, { countryData: this.props.countryList, requesting: this.props.requesting, fetchSuccess: this.props.fetchSuccess, updateSuccess: this.props.updateSuccess, error: this.props.errors, userProfile: this.props.userProfile, getUserProfile: this.props.getUserProfileAction.bind(this), submitChangeName: this.onSubmitChangeName.bind(this), submitChangePassword: this.onSubmitChangePassword.bind(this), submitChangePhone: this.onSubmitChangePhone.bind(this), onCancel: this.props.getUserProfileAction.bind(this), invalidPassword: this.props.invalidPassword, userToken: this.state.userToken }), this.props.changeNameSuccess === true && React.createElement("div", null, " Name updated successfully"), this.props.changePhoneSuccess === true && React.createElement("div", null, " Phone number updated successfully"), this.props.changePasswordSuccess === true && React.createElement("div", null, " Password updated successfully"), this.state.currentView === "userSavedCards" && React.createElement(UserSavedCards_1.UserSavedCards, { requesting: this.props.requesting, fetchSuccess: this.props.fetchSuccess, updateSuccess: this.props.updateSuccess, error: this.props.errors, cardList: this.props.userCards, getCardList: this.props.getCardListAction.bind(this), submitDeleteCard: this.onSubmitDeleteCard.bind(this), submitSaveCard: this.onSubmitSaveCard.bind(this), onCancel: this.props.getCardListAction.bind(this) })));
     };
     Account.prototype.onSubmitChangeName = function (values) {
         var _this = this;
@@ -86857,7 +86857,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var react_redux_1 = __webpack_require__(14);
 var ActivateUserStore = __webpack_require__(353);
-var KzLoader_1 = __webpack_require__(40);
+var FilLoader_1 = __webpack_require__(40);
 var Activate = /** @class */function (_super) {
     __extends(Activate, _super);
     function Activate() {
@@ -86875,7 +86875,7 @@ var Activate = /** @class */function (_super) {
                 return React.createElement("div", { className: "text-center text-danger" }, React.createElement("small", null, " Please contact customer support."), " ");
             }
         } else {
-            return React.createElement("div", null, React.createElement(KzLoader_1.default, null));
+            return React.createElement("div", null, React.createElement(FilLoader_1.default, null));
         }
     };
     return Activate;
@@ -87194,7 +87194,7 @@ var React = __webpack_require__(0);
 var react_redux_1 = __webpack_require__(14);
 var Notifyme_1 = __webpack_require__(843);
 var FooterStore = __webpack_require__(355);
-var KzAlert_1 = __webpack_require__(342);
+var FilAlert_1 = __webpack_require__(342);
 var ComingSoon = /** @class */function (_super) {
     __extends(ComingSoon, _super);
     function ComingSoon() {
@@ -87206,7 +87206,7 @@ var ComingSoon = /** @class */function (_super) {
         }
     };
     ComingSoon.prototype.render = function () {
-        return React.createElement("div", null, React.createElement(Notifyme_1.default, { onSubmit: this.onSubmitSignUp }), this.props.registered && React.createElement(KzAlert_1.default, { visible: this.props.alertVisible }, "Successfully signed up to our newsletters."), this.props.subscriptionExists && React.createElement(KzAlert_1.default, { visible: this.props.alertVisible }, "Already signed up to our newsletters."));
+        return React.createElement("div", null, React.createElement(Notifyme_1.default, { onSubmit: this.onSubmitSignUp }), this.props.registered && React.createElement(FilAlert_1.default, { visible: this.props.alertVisible }, "Successfully signed up to our newsletters."), this.props.subscriptionExists && React.createElement(FilAlert_1.default, { visible: this.props.alertVisible }, "Already signed up to our newsletters."));
     };
     ComingSoon.prototype.onSubmitSignUp = function (values) {
         var _this = this;
@@ -87271,7 +87271,7 @@ var core_decorators_1 = __webpack_require__(20);
 var React = __webpack_require__(0);
 var react_redux_1 = __webpack_require__(14);
 var DeliveryPickupOptions_1 = __webpack_require__(829);
-var KzLoader_1 = __webpack_require__(40);
+var FilLoader_1 = __webpack_require__(40);
 var PickupDetails_1 = __webpack_require__(831);
 var Checkoutstore = __webpack_require__(200);
 __webpack_require__(56);
@@ -87301,7 +87301,7 @@ var DeliveryOptions = /** @class */function (_super) {
         if (this.props.fetchCountriesSuccess) {
             return React.createElement("div", null, " ", React.createElement(Metatag_1.default, { url: this.props.location.pathname, title: "Delivery Options" }), React.createElement("div", { className: "container checkout-pages pt-3 pb-5" }, React.createElement("div", { className: "card checkout-card" }, React.createElement("h5", null, " Delivery & Pickup Options", React.createElement("small", { className: "float-right text-muted" }, React.createElement("i", { className: "fa fa-lock text-success" }), " Secure")), (this.state.currentPage == "deliveryOptions" || this.state.currentPage == "pickupDetails" || this.state.currentPage == "payment") && React.createElement(DeliveryPickupOptions_1.default, { switchPage: this.switchPage.bind(this), showButtons: this.state.currentPage == "deliveryOptions" }), React.createElement("hr", null), React.createElement("h5", null, "Pickup Details"), (this.state.currentPage == "pickupDetails" || this.state.currentPage == "payment") && React.createElement(PickupDetails_1.default, { onSubmit: this.onSubmitPickupDetails, countryData: this.props.countryList }), React.createElement("h5", null, "Payment"), React.createElement("div", { className: "card-footer gradient-bg" }, React.createElement("small", null, "By clicking continue, you accept and agree to all terms of feel india policy. A receipt will be provided to you electronically that contains these terms and an itemized list of your purchase including taxes and shipping charges, if any.")))));
         } else {
-            return React.createElement("div", null, React.createElement(KzLoader_1.default, null));
+            return React.createElement("div", null, React.createElement(FilLoader_1.default, null));
         }
     };
     DeliveryOptions.prototype.onSubmitPickupDetails = function (values) {
@@ -87396,7 +87396,7 @@ var ReviewsRatingViewModel_1 = __webpack_require__(870);
 var EventLearnPageStore = __webpack_require__(201);
 var react_redux_1 = __webpack_require__(14);
 var Metatag_1 = __webpack_require__(45);
-var KzLoader_1 = __webpack_require__(40);
+var FilLoader_1 = __webpack_require__(40);
 __webpack_require__(506);
 var numeral = __webpack_require__(38);
 var react_sticky_1 = __webpack_require__(371);
@@ -87522,7 +87522,7 @@ var EventLearnPage = /** @class */function (_super) {
                 return React.createElement("header", { className: _this.state.className }, React.createElement(EventTitle_1.default, { goToLoginPage: _this.goToLogin.bind(_this), isAthenticated: _this.props.session.isAuthenticated, currencyCode: Data.currencyType.code, minPrice: minPrice, maxPrice: maxPrice, event: Data.eventDetail, reviews: Data.rating, eventId: _this.props.match.params.eventId, fbLink: _this.fbURL(Data), fbMessengerLink: _this.fbMessengerURL(Data), twitterLink: _this.twitterURL(Data), linkedinLink: _this.linkedinURL(Data) }));
             }), React.createElement("hr", null), React.createElement(EventInfoAndMap_1.default, { eventInfo: Data.event, city: Data.city.name, country: Data.country.name }), React.createElement("hr", null), React.createElement(EventDetails_1.default, { phoneCode: Data.country.phonecode, clientPointOfContact: Data.clientPointOfContact, ticketCategory: Data.ticketCategory, eventTicketAttribute: Data.eventTicketAttribute, eventDetails: Data.eventDetail, cityName: Data.city.name, stateName: Data.state.name, countryName: Data.country.name, venueName: Data.venue.name, eventTicketDetail: Data.eventTicketDetail }), React.createElement("div", { className: "learn-contect-detail row pt-3" }, Data.eventLearnMoreAttributes.length > 0 && React.createElement(InDepth_1.default, { historyData: historyData, highlightsData: highlightsData, timelineData: timelineData, architectureData: architectureData, mapPlanData: mapPlanData, immersiveData: immersiveData }), React.createElement(Checklist_1.default, { cityName: Data.city.name, stateName: Data.state.name, countryName: Data.country.name, venueName: Data.venue.name, eventDetails: Data.eventDetail })), React.createElement("hr", null), React.createElement(EventAmenities_1.default, { amenities: Data.eventAmenitiesList }), React.createElement("hr", null), React.createElement(NearByEvent_1.default, { eventInfo: Data.event, city: Data.city.name, country: Data.country.name }), React.createElement("hr", null), React.createElement(EventReviews_1.default, { UserImageMap: Data.userImageMap, minReview: 0, maxReview: 5, reviews: Data.rating, eventInfo: Data.event, goToBookNowPage: this.goToBookNow.bind(this), reDirectUrl: this.props.location.pathname.split('/')[2].toUpperCase(), goToLoginPage: this.goToLogin.bind(this), eventname: Data.event.name, user: Data.user, isPurase: isPurase, isAthenticated: this.props.session.isAuthenticated, onSubmit: this.onSubmitSignIn.bind(this) }), React.createElement("div", { className: "nav-tab-content row pb-4" }, React.createElement("div", { className: "col-sm-12" }, React.createElement("h5", null, "Similar listings"), React.createElement(SimilarListingEvents_1.default, { isAthenticated: this.props.session.isAuthenticated, goToLoginPage: this.goToLogin.bind(this), similarListings: Data.categories }))))));
         } else {
-            return React.createElement("div", null, React.createElement(KzLoader_1.default, null));
+            return React.createElement("div", null, React.createElement(FilLoader_1.default, null));
         }
     };
     EventLearnPage.prototype.onSubmitSignIn = function (review, rating) {
@@ -87711,7 +87711,7 @@ var react_redux_1 = __webpack_require__(14);
 var Metatag_1 = __webpack_require__(45);
 var ItineraryComponent_1 = __webpack_require__(856);
 var BespokeItinerary_1 = __webpack_require__(855);
-var KzLoader_1 = __webpack_require__(40);
+var FilLoader_1 = __webpack_require__(40);
 __webpack_require__(500);
 __webpack_require__(56);
 var Itinerary = /** @class */function (_super) {
@@ -87741,7 +87741,7 @@ var Itinerary = /** @class */function (_super) {
         if (this.state.loaded) {
             return React.createElement("div", null, React.createElement(Metatag_1.default, { url: this.props.location.pathname, title: "Review your itineraries" }), React.createElement("div", { className: "container forgot-password pt-3 pb-5 inner-banner" }, React.createElement("div", { className: "card" }, React.createElement("div", { className: "card-header h5 bg-white" }, "Your Bespoke Itinerary", React.createElement("small", { className: "float-right text-muted" }, React.createElement("i", { className: "fa fa-lock text-success" }), " Secure")), React.createElement(ItineraryComponent_1.default, { disableCheckout: this.disableCheckout.bind(this) }), !this.state.enableCheckout && React.createElement("div", { className: "card-footer gradient-bg text-right" }, React.createElement(react_router_dom_1.Link, { to: "/", className: "btn btn-outline-primary text-uppercase" }, "Go to Home"))), React.createElement("div", { className: "nav-tab-content" }, this.props.session.isAuthenticated && React.createElement(BespokeItinerary_1.default, null))));
         } else {
-            return React.createElement("div", null, React.createElement(KzLoader_1.default, null));
+            return React.createElement("div", null, React.createElement(FilLoader_1.default, null));
         }
     };
     return Itinerary;
@@ -87784,7 +87784,7 @@ var React = __webpack_require__(0);
 var react_redux_1 = __webpack_require__(14);
 var OrderConfirmationStore = __webpack_require__(359);
 var EventItems_1 = __webpack_require__(850);
-var KzLoader_1 = __webpack_require__(40);
+var FilLoader_1 = __webpack_require__(40);
 __webpack_require__(507);
 var numeral = __webpack_require__(38);
 var OrderConfirmation = /** @class */function (_super) {
@@ -87807,7 +87807,7 @@ var OrderConfirmation = /** @class */function (_super) {
             var orderConfirmationData = this.props.orderconfirmations;
             return React.createElement("div", { className: "container confirmation-page pt-3 pb-5 inner-banner" }, React.createElement("div", { className: "card" }, React.createElement("div", { className: "card-header h5 bg-white" }, "Your Order Confirmation ", React.createElement("small", { className: "float-right text-muted" }, React.createElement("i", { className: "fa fa-lock text-success" }), " Secure")), React.createElement("div", { className: "card-body" }, React.createElement("div", { className: "cart-feader text-center" }, React.createElement("h2", null, "Thank You"), React.createElement("p", { className: "text-success" }, "Your order has been processed"), React.createElement("p", { className: "spread-word" }, "Spread the word:", React.createElement("span", { className: "float-right" }, React.createElement("a", { href: "https://www.instagram.com/feelaplace/", target: "_blank" }, React.createElement("i", { className: "fa fa-instagram-square text-danger" })), React.createElement("a", { href: "https://www.facebook.com/feel.aplace.1", target: "_blank" }, React.createElement("i", { className: "fa fa-facebook-square text-primary" })), React.createElement("a", { href: "https://twitter.com/feelaplace", target: "_blank" }, React.createElement("i", { className: "fa fa-twitter-square text-primary" })))), React.createElement("p", null, " ", React.createElement("img", { src: orderConfirmationData.transactionQrcode, width: "120", height: "120", alt: "" }), " "), React.createElement("p", { className: "text-muted clearfix" }, React.createElement("span", { className: "float-sm-left" }, "Your Confirmation ID is:", orderConfirmationData.transaction.id * 5 + "0032-" + "KZ" + orderConfirmationData.transaction.id), React.createElement("span", { className: "float-sm-right" }, "Your Date and Time of Booking: ", new Date(orderConfirmationData.transaction.createdUtc).toDateString().split(' ').join(', ').toUpperCase(), " ", numeral(new Date(orderConfirmationData.transaction.createdUtc).getHours()).format('00') + ":" + numeral(new Date(orderConfirmationData.transaction.createdUtc).getMinutes()).format('00')))), React.createElement("hr", null), React.createElement("div", { className: "row" }, React.createElement("div", { className: "col-sm-6" }, React.createElement("h4", { className: "border-bottom pb-2" }, "User Details"), React.createElement("p", null, React.createElement("span", { className: "h5 d-block" }, "Buyer Name:"), React.createElement("i", { className: "fa fa-user", "aria-hidden": "true" }), " ", orderConfirmationData.transaction.firstName, " ", orderConfirmationData.transaction.lastName), React.createElement("p", null, React.createElement("span", { className: "h5 d-block" }, "Email:"), React.createElement("i", { className: "fa fa-envelope", "aria-hidden": "true" }), " ", orderConfirmationData.transaction.emailId), React.createElement("p", null, React.createElement("span", { className: "h5 d-block" }, "Mobile No:"), React.createElement("i", { className: "fa fa-mobile-alt" }), " +", orderConfirmationData.transaction.phoneCode + " - " + orderConfirmationData.transaction.phoneNumber)), React.createElement("div", { className: "col-sm-6" }, React.createElement("h4", { className: "border-bottom pb-2" }, "Payment Details"), React.createElement("p", null, React.createElement("span", { className: "h5 d-block" }, "Mode of Payment"), orderConfirmationData.paymentOption, " (", orderConfirmationData.userCardDetail.cardTypeId, ")"), React.createElement("p", null, React.createElement("span", { className: "h5 d-block" }, "Name on Card"), orderConfirmationData.userCardDetail.nameOnCard), React.createElement("p", null, React.createElement("span", { className: "h5 d-block" }, "Bag Sub Total"), orderConfirmationData.currencyType.code, " ", numeral(orderConfirmationData.transaction.grossTicketAmount).format('00.00')), React.createElement("p", null, React.createElement("span", { className: "h5 d-block" }, "Delivery Fee"), orderConfirmationData.currencyType.code, " ", numeral(orderConfirmationData.transaction.deliveryCharges).format('00.00')), React.createElement("p", null, React.createElement("span", { className: "h5 d-block" }, "Total Ammount Paid"), orderConfirmationData.currencyType.code, " ", numeral(orderConfirmationData.transaction.netTicketAmount).format('00.00')))), React.createElement(EventItems_1.default, { eventContainer: orderConfirmationData, currency: orderConfirmationData.currencyType })), React.createElement("div", { className: "gradient-bg p-3 pr-4 pl-4 border-top" }, "Should you have any questions regarding your transaction, please email us at ", React.createElement("a", { href: "mailto:customerservice@feelaplace.com" }, "customerservice@feelaplace.com"), " or call us at +91\uFFFD22\uFFFD3348\uFFFD9000 (M-F) 9:30am to 6:00pm IST")));
         } else {
-            return React.createElement("div", null, React.createElement(KzLoader_1.default, null));
+            return React.createElement("div", null, React.createElement(FilLoader_1.default, null));
         }
     };
     return OrderConfirmation;
@@ -87860,7 +87860,7 @@ var react_redux_1 = __webpack_require__(14);
 var formik_1 = __webpack_require__(13);
 var yup_1 = __webpack_require__(26);
 var CardDetailForm_1 = __webpack_require__(854);
-var KzLoader_1 = __webpack_require__(40);
+var FilLoader_1 = __webpack_require__(40);
 var numeral = __webpack_require__(38);
 var PaymentStore = __webpack_require__(360);
 __webpack_require__(56);
@@ -87959,7 +87959,7 @@ var Payment = /** @class */function (_super) {
             }
             return React.createElement("div", null, React.createElement(Metatag_1.default, { url: this.props.location.pathname, title: "Payment Options" }), React.createElement("div", { className: "container checkout-pages pt-3 pb-5" }, React.createElement("div", { className: "card checkout-card" }, React.createElement("div", null, React.createElement("h5", null, "Payment ", React.createElement("small", { className: "float-sm-right text-muted" }, "Time left to complete transaction ", React.createElement("span", { className: "text-danger" }, React.createElement(react_countdown_now_1.default, { date: Date.now() + (this.state.timer - new Date().getTime()), renderer: this.renderer })))), React.createElement("section", null, React.createElement("div", { className: "payment-opp p-3" }, React.createElement("div", { className: "container" }, React.createElement("ul", { className: "nav nav-tabs gradient-bg border rounded" }, React.createElement("li", { className: "nav-item border-right", onClick: this.setPaymentOption.bind(this, "1") }, React.createElement("a", { className: "nav-link active", "data-toggle": "tab", href: "#cc-dc" }, "Credit / Debit Card")))), React.createElement(CardDetailForm_1.default, { onSubmit: this.onSubmitPaymentDetails, validationSchema: schema, initialValues: {} }, React.createElement("div", { className: "container" }, React.createElement("div", { className: "tab-content pt-4 pb-2" }, React.createElement("div", { id: "cc-dc", className: "tab-pane fade active show" }, React.createElement("div", { className: "row" }, React.createElement("div", { className: "col-sm-6" }, React.createElement("h6", { className: "text-muted mb-4" }, "Billing Address"), React.createElement("div", { className: "form-group" }, React.createElement(formik_1.Field, { type: "text", name: "address", className: "form-control", id: "", placeholder: "Apt, Floor, Suite, Street Address, etc.", required: this.state.paymentOption == "1" })), React.createElement("div", { className: "form-group" }, React.createElement(formik_1.Field, { type: "text", name: "city", className: "form-control", id: "", placeholder: "Suburb", required: this.state.paymentOption == "1" })), React.createElement("div", { className: "form-group" }, React.createElement(formik_1.Field, { type: "text", name: "state", className: "form-control", id: "", placeholder: "State/Province/Region", required: this.state.paymentOption == "1" })), React.createElement("div", { className: "form-row" }, React.createElement("div", { className: "col-sm-6 form-group" }, React.createElement("div", { className: "form-group" }, React.createElement(formik_1.Field, { type: "number", pattern: "[0-9]*", name: "zipcode", className: "form-control", id: "", placeholder: "Pin/Zip Code", required: this.state.paymentOption == "1" }))), React.createElement("div", { className: "col-sm-6 form-group" }, React.createElement("div", { className: "form-group" }, React.createElement(formik_1.Field, { name: "country", component: "select", className: "form-control" }, React.createElement("option", null, "Select Country"), countries))))), React.createElement("div", { className: "col-md-6" }, React.createElement("h6", { className: "text-muted mb-4" }, "Payment Method"), React.createElement("form", null, React.createElement("p", null, React.createElement("img", { src: "https://static1.feelaplace.com/images/payment-card/cardTypeId" + this.state.cardTypeId + ".png", alt: "", className: "img-responsive", style: { height: "30px" } })), React.createElement("div", { className: "form-group" }, React.createElement(formik_1.Field, { type: "number", pattern: "[0-9]*", name: "cardNumber", className: "form-control", id: "", onChange: this.checkCardType.bind(this), placeholder: "Credit/Debit Card Number", required: this.state.paymentOption == "1" })), React.createElement("div", { className: "form-group" }, React.createElement(formik_1.Field, { type: "text", name: "nameOnCard", className: "form-control", id: "", placeholder: "Name on Card", required: this.state.paymentOption == "1" })), React.createElement("div", { className: "form-row" }, React.createElement("div", { className: "col-sm-4 form-group" }, React.createElement(formik_1.Field, { type: "number", pattern: "[0-9]*", name: "cvv", className: "form-control cvv-disc", id: "", placeholder: "CVV/Security Code" })), React.createElement("div", { className: "col-sm-4 form-group" }, React.createElement(formik_1.Field, { component: "select", name: "expiryMonth", className: "form-control" }, React.createElement("option", { value: "0" }, "Expiry Month"), React.createElement("option", { value: "01" }, "01"), React.createElement("option", { value: "02" }, "02"), React.createElement("option", { value: "03" }, "03"), React.createElement("option", { value: "04" }, "04"), React.createElement("option", { value: "05" }, "05"), React.createElement("option", { value: "06" }, "06"), React.createElement("option", { value: "07" }, "07"), React.createElement("option", { value: "08" }, "08"), React.createElement("option", { value: "09" }, "09"), React.createElement("option", { value: "10" }, "10"), React.createElement("option", { value: "11" }, "11"), React.createElement("option", { value: "12" }, "12"))), React.createElement("div", { className: "col-sm-4 form-group" }, React.createElement(formik_1.Field, { component: "select", name: "expiryYear", className: "form-control" }, React.createElement("option", { value: "0" }, "Expiry Year"), React.createElement("option", { value: "2018" }, "2018"), React.createElement("option", { value: "2019" }, "2019"), React.createElement("option", { value: "2020" }, "2020"), React.createElement("option", { value: "2021" }, "2021"), React.createElement("option", { value: "2022" }, "2022"), React.createElement("option", { value: "2023" }, "2023"), React.createElement("option", { value: "2024" }, "2024"), React.createElement("option", { value: "2025" }, "2025"), React.createElement("option", { value: "2026" }, "2026"), React.createElement("option", { value: "2027" }, "2027"), React.createElement("option", { value: "2028" }, "2028"), React.createElement("option", { value: "2029" }, "2029"), React.createElement("option", { value: "2030" }, "2030"), React.createElement("option", { value: "2031" }, "2031"), React.createElement("option", { value: "2032" }, "2032"), React.createElement("option", { value: "2033" }, "2033"), React.createElement("option", { value: "2034" }, "2034"), React.createElement("option", { value: "2035" }, "2035"), React.createElement("option", { value: "2036" }, "2036"), React.createElement("option", { value: "2037" }, "2037"), React.createElement("option", { value: "2038" }, "2038")))))))))))))), paymentData, React.createElement("div", { className: "card-footer gradient-bg" }, React.createElement("small", null, "By clicking continue, you accept and agree to all terms of feel india policy. A receipt will be provided to you electronically that contains these terms and an itemized list of your purchase including taxes and shipping charges, if any.")))));
         } else {
-            return React.createElement("div", null, React.createElement(KzLoader_1.default, null));
+            return React.createElement("div", null, React.createElement(FilLoader_1.default, null));
         }
     };
     Payment.prototype.onSubmitPaymentDetails = function (values) {
@@ -88621,7 +88621,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var react_redux_1 = __webpack_require__(14);
 var TicketCategoryPageStore = __webpack_require__(364);
-var KzLoader_1 = __webpack_require__(40);
+var FilLoader_1 = __webpack_require__(40);
 var Metatag_1 = __webpack_require__(45);
 var TicketCategorySelection_1 = __webpack_require__(861);
 __webpack_require__(504);
@@ -88750,7 +88750,7 @@ var TicketPurchaseSelection = /** @class */function (_super) {
                 return React.createElement("header", { className: _this.state.className }, React.createElement("ul", { className: "nav justify-content-center pb-4 ticket-flow" }, React.createElement("li", { className: "nav-item" }, React.createElement("a", { className: "nav-link active" }, ticketCategoryData_1.eventDetail[0].name)), React.createElement("li", { className: "nav-item" }, React.createElement("a", { className: "nav-link disabled" }, "Exhibits")), React.createElement("li", { className: "nav-item" }, React.createElement("a", { className: "nav-link disabled" }, "Rides")), React.createElement("li", { className: "nav-item" }, React.createElement("a", { className: "nav-link disabled" }, "Add-ons"))));
             }), React.createElement("h2", null, "Choose Your Ticket")), React.createElement(TicketCategorySelection_1.default, { ticketCategoryData: ticketCategoryData_1, eventName: ticketCategoryData_1.eventDetail[0].name, eventAltId: this.props.match.params.eventId, goToItinerary: this.goToItinerary.bind(this), countries: this.props.countryList.countries })));
         } else {
-            return React.createElement("div", null, React.createElement(KzLoader_1.default, null));
+            return React.createElement("div", null, React.createElement(FilLoader_1.default, null));
         }
     };
     return TicketPurchaseSelection;
@@ -88788,22 +88788,22 @@ var formik_1 = __webpack_require__(13);
 var React = __webpack_require__(0);
 var react_bootstrap_1 = __webpack_require__(32);
 __webpack_require__(508);
-var KzForm = /** @class */function (_super) {
-    __extends(KzForm, _super);
-    function KzForm() {
+var FilForm = /** @class */function (_super) {
+    __extends(FilForm, _super);
+    function FilForm() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    KzForm.prototype.render = function () {
+    FilForm.prototype.render = function () {
         var _this = this;
         return React.createElement(formik_1.Formik, { onSubmit: this.props.onSubmit, initialValues: this.props.initialValues || {}, validationSchema: this.props.validationSchema }, function (props) {
             return React.createElement(formik_1.Form, null, _this.props.children, !_this.props.hideSubmit && React.createElement(react_bootstrap_1.Button, { type: "submit", className: "btn btn-block btn-primary", disabled: props.isSubmitting }, "Submit"));
         });
     };
-    return KzForm;
+    return FilForm;
 }(React.Component);
-exports.default = KzForm;
+exports.default = FilForm;
 
- ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : module.exports; /* eslint-enable camelcase, no-undef */ if (typeof webpackExports === 'function') { __REACT_HOT_LOADER__.register(webpackExports, 'module.exports', "C:\\kyazoonga\\Kz\\shared\\components\\form\\KzForm.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "C:\\kyazoonga\\Kz\\shared\\components\\form\\KzForm.tsx"); } } })();
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : module.exports; /* eslint-enable camelcase, no-undef */ if (typeof webpackExports === 'function') { __REACT_HOT_LOADER__.register(webpackExports, 'module.exports', "C:\\kyazoonga\\Kz\\shared\\components\\form\\FilForm.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "C:\\kyazoonga\\Kz\\shared\\components\\form\\FilForm.tsx"); } } })();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
@@ -88831,22 +88831,22 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var formik_1 = __webpack_require__(13);
 var React = __webpack_require__(0);
 var react_bootstrap_1 = __webpack_require__(32);
-var ResetPasswordKzForm = /** @class */function (_super) {
-    __extends(ResetPasswordKzForm, _super);
-    function ResetPasswordKzForm() {
+var ResetPasswordFilForm = /** @class */function (_super) {
+    __extends(ResetPasswordFilForm, _super);
+    function ResetPasswordFilForm() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    ResetPasswordKzForm.prototype.render = function () {
+    ResetPasswordFilForm.prototype.render = function () {
         var _this = this;
         return React.createElement(formik_1.Formik, { onSubmit: this.props.onSubmit, initialValues: this.props.initialValues || {}, validationSchema: this.props.validationSchema }, function (props) {
             return React.createElement(formik_1.Form, null, _this.props.children, !_this.props.hideSubmit && React.createElement("div", { className: "row" }, React.createElement("div", { className: "col-sm-6  mb-5" }, React.createElement(react_bootstrap_1.Button, { type: "submit", className: "btn btn-info" }, "Reset Password"))));
         });
     };
-    return ResetPasswordKzForm;
+    return ResetPasswordFilForm;
 }(React.Component);
-exports.default = ResetPasswordKzForm;
+exports.default = ResetPasswordFilForm;
 
- ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : module.exports; /* eslint-enable camelcase, no-undef */ if (typeof webpackExports === 'function') { __REACT_HOT_LOADER__.register(webpackExports, 'module.exports', "C:\\kyazoonga\\Kz\\shared\\components\\form\\ResetPasswordKzForm.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "C:\\kyazoonga\\Kz\\shared\\components\\form\\ResetPasswordKzForm.tsx"); } } })();
+ ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } /* eslint-disable camelcase, no-undef */ var webpackExports = typeof __webpack_exports__ !== 'undefined' ? __webpack_exports__ : module.exports; /* eslint-enable camelcase, no-undef */ if (typeof webpackExports === 'function') { __REACT_HOT_LOADER__.register(webpackExports, 'module.exports', "C:\\kyazoonga\\Kz\\shared\\components\\form\\ResetPasswordFilForm.tsx"); return; } /* eslint-disable no-restricted-syntax */ for (var key in webpackExports) { /* eslint-enable no-restricted-syntax */ if (!Object.prototype.hasOwnProperty.call(webpackExports, key)) { continue; } var namedExport = void 0; try { namedExport = webpackExports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "C:\\kyazoonga\\Kz\\shared\\components\\form\\ResetPasswordFilForm.tsx"); } } })();
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),

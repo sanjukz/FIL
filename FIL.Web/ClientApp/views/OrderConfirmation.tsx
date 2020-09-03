@@ -4,7 +4,7 @@ import { RouteComponentProps } from "react-router-dom";
 import { IApplicationState } from "../stores";
 import * as OrderConfirmationStore from "../stores/OrderConfirmation";
 import { OrderConfirmationFormDataViewModel } from "../models/OrderConfirmationFormDataViewModel";
-import KzLoader from "../components/Loader/KzLoader";
+import FilLoader from "../components/Loader/FilLoader";
 import "./OrderConfirmation.scss";
 import * as numeral from "numeral";
 import * as PubSub from "pubsub-js";
@@ -340,7 +340,7 @@ class OrderConfirmation extends React.PureComponent<
                 </div>
             );
         } else {
-            return <KzLoader />;
+            return <FilLoader />;
         }
     }
 }

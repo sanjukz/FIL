@@ -5,7 +5,7 @@ import { RouteComponentProps } from "react-router-dom";
 import { IApplicationState } from "../stores";
 import Transaction from "../models/Comman/TransactionViewModel";
 import DeliveryPickupOptions from "../components/DeliveryOptions/DeliveryPickupOptions";
-import KzLoader from "../components/Loader/KzLoader";
+import FilLoader from "../components/Loader/FilLoader";
 import { UserDeliveryDetailFormDataViewModel } from "../models/DeliveryOptions/UserDeliveryDetailFormDataViewModel";
 import { DeliveryOptionResponse } from "../utils/CheckoutProvider";
 import { UpdateTransactionResponseViewModel } from "../models/UpdateTransactionResponseViewModel";
@@ -92,7 +92,7 @@ export class DeliveryOptions extends React.Component<DeliveryOptionsComponentPro
             </div>
             );
         } else {
-            return <div><KzLoader /></div>;
+            return <div><FilLoader /></div>;
         }
     }
 

@@ -3,7 +3,7 @@ import {
     Link, RouteComponentProps, Route, Switch
 } from "react-router-dom";
 import * as AccountStore from "../../../stores/Account";
-import KzLoader from "../../../components/Loader/KzLoader";
+import FilLoader from "../../../components/Loader/FilLoader";
 import {
     actionCreators as sessionActionCreators,
     ISessionProps

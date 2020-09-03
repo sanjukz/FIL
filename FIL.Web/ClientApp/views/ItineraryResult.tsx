@@ -14,7 +14,7 @@ import CategorySearchResult from "../components/Search/CategorySearchResult";
 import { gets3BaseUrl } from "../utils/imageCdn";
 import * as isEmpty from "lodash/isEmpty";
 import ImageComponent from "./Comman/ImageComponent";
-import KzLoader from "../components/Loader/KzLoader";
+import FilLoader from "../components/Loader/FilLoader";
 
 var month_names_short = [
   "Jan",
@@ -956,7 +956,7 @@ export default class ItineraryResult extends React.Component<any, any> {
         </div>
       );
     } else {
-      return <KzLoader />;
+      return <FilLoader />;
     }
   }
 }

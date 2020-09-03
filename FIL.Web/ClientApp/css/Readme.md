@@ -1,2 +1,2 @@
-### Kyazoonga CSS and SCSS should be written in ../shared/styles
-### All Kz.Web specific styles should be written in this directory
+### FeelitLIVE CSS and SCSS should be written in ../shared/styles
+### All FIL.Web specific styles should be written in this directory

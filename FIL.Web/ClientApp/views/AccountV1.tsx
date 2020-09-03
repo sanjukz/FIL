@@ -11,7 +11,7 @@ import {
     ISessionProps
 } from "../../../shared/stores/Session";
 import { bindActionCreators } from "redux";
-import KzLoader from "../components/Loader/KzLoader";
+import FilLoader from "../components/Loader/FilLoader";
 import { gets3BaseUrl } from "../utils/imageCdn";
 import { hpDataFeilds } from "../utils/MyAccount/DataProvider";
 import PersonalInfo from "../components/AccountV1/PersonalInfo";
@@ -96,7 +96,7 @@ class AccountV1 extends React.PureComponent<AccountProps, any>{
     render() {
         const { gets3BaseUrl, isLoading } = this.state;
         if (isLoading) {
-            return <KzLoader />
+            return <FilLoader />
         }
 
         return <div className="my-account-flow py-5">

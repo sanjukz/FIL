@@ -83,7 +83,7 @@ namespace FIL.Web.Feel.Controllers
                 string siteUrls = _siteUrlsProvider.GetSiteUrl(_siteIdProvider.GetSiteId());
                 Email email = new Email();
                 email.To = model.Email;
-                email.Bcc = "accounts@kyazoonga.com";
+                email.Bcc = "accounts@feelitlive.com";
                 email.From = "support@feelitLIVE.com";
                 email.TemplateName = "FeelInviteInterestRegistration";
                 email.Variables = new Dictionary<string, object>

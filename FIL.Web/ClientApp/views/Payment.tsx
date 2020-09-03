@@ -8,7 +8,7 @@ import { PaymentFormDataViewModel } from "../models/Payment/PaymentFormDataViewM
 import { PaymentFormResponseViewModel } from "../models/Payment/PaymentFormResponseViewModel";
 import { PromocodeResponseModel } from "../models/Payment/PromocodeResponseModel";
 import { PromoCodeFormViewModel } from "../models/Payment/PromoCodeFormViewModel";
-import KzLoader from "../components/Loader/KzLoader";
+import FilLoader from "../components/Loader/FilLoader";
 import { IApplicationState } from "../stores";
 import * as numeral from "numeral";
 import * as PaymentStore from "../stores/Payment";
@@ -266,7 +266,7 @@ export class Payment extends React.Component<PaymentComponentProps, any> {
             </div >
             );
         } else {
-            return <div><KzLoader /></div>;
+            return <div><FilLoader /></div>;
         }
     }
 

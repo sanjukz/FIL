@@ -8,7 +8,7 @@ import { IApplicationState } from "../../stores";
 import { ReactHTMLConverter } from "react-html-converter/browser";
 import { RouteComponentProps } from "react-router-dom";
 import * as LiveOnlineStore from "../../stores/LiveOnline";
-import KzLoader from "../Loader/KzLoader";
+import FilLoader from "../Loader/FilLoader";
 import { gets3BaseUrl } from "../../utils/imageCdn";
 import { GetUserDetailResponseModel } from "../../models/LiveOnline/GetUserDetailResponseModel";
 import * as TicketCategoryPageStore from "../../stores/TicketCategory";
@@ -325,7 +325,7 @@ export class StreamOnline extends React.Component<StreamOnlineComponentProps, an
             {
                 (this.props.LiveOnline.isLoading || this.props.LiveOnline.userDetails == null) &&
                 <>
-                    <KzLoader />
+                    <FilLoader />
                 </>
             }
         </>);

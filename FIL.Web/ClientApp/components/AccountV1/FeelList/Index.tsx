@@ -3,7 +3,7 @@ import {
     Link, RouteComponentProps
 } from "react-router-dom";
 import * as AccountStore from "../../../stores/Account";
-import KzLoader from "../../../components/Loader/KzLoader";
+import FilLoader from "../../../components/Loader/FilLoader";
 import {
     actionCreators as sessionActionCreators,
     ISessionProps
@@ -109,7 +109,7 @@ function FeelList(props: AccountProps) {
         );
     }
     if (isLoading) {
-        return <KzLoader />
+        return <FilLoader />
     }
     else {
         if (!feelLists.length) {

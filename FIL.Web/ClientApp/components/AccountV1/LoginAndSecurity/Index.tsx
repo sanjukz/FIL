@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { RouteComponentProps } from "react-router-dom";
 import * as AccountStore from "../../../stores/Account";
-import KzLoader from "../../../components/Loader/KzLoader";
+import FilLoader from "../../../components/Loader/FilLoader";
 import {
     actionCreators as sessionActionCreators,
     ISessionProps
@@ -139,7 +139,7 @@ class LoginAndSecurity extends React.PureComponent<AccountProps, any>{
     render() {
         const { user, validateResponse, hasError } = this.state;
         if (!this.props.session.isAuthenticated || this.props.account.isLoading || this.state.isLoading) {
-            return <KzLoader />
+            return <FilLoader />
         }
         return <>
             <div className="container">

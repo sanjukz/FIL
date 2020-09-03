@@ -51,7 +51,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIL.Web.Admin", "FIL.Web.Ad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIL.MailChimp", "FIL.MailChimp\FIL.MailChimp.csproj", "{EF09AF40-84CF-40B4-A16B-238F72730BF4}"
 EndProject
-Project("{9344BDBB-3E7F-41FC-A0DD-8665D75EE146}") = "FIL.Window.Service", "FIL.Window.Service\FIL.Window.Service.csproj", "{82BB0387-8835-4737-AFB4-CB89D50E1D42}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIL.Window.Service", "FIL.Window.Service\FIL.Window.Service.csproj", "{049727F6-8A16-471F-9B46-B94EA7ECBFE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

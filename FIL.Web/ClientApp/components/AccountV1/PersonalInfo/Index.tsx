@@ -2,7 +2,7 @@ import * as React from 'react';
 import { gets3BaseUrl } from "../../../utils/imageCdn";
 import { RouteComponentProps } from "react-router-dom";
 import * as AccountStore from "../../../stores/Account";
-import KzLoader from "../../../components/Loader/KzLoader";
+import FilLoader from "../../../components/Loader/FilLoader";
 import {
     actionCreators as sessionActionCreators,
     ISessionProps
@@ -226,7 +226,7 @@ export default class PersonalInfo extends React.PureComponent<AccountProps, any>
 
         if (this.props.account.isLoadingUserProfile || !this.props.session.isAuthenticated
             || this.props.account.isLoadingCountryList || this.props.account.isLoading) {
-            return <KzLoader />
+            return <FilLoader />
         }
 
         return (<>

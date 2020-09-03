@@ -1,7 +1,7 @@
 ﻿import * as React from "react";
 import { Modal } from "react-bootstrap";
 
-export default class KzAlert extends React.Component<any, any> {
+export default class FilAlert extends React.Component<any, any> {
     //public componentWillMount() {
     //    this.setState({ visible: true });        
     //}

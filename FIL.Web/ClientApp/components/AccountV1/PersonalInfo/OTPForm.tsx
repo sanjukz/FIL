@@ -10,7 +10,7 @@ import * as AccountStore from "../../../stores/Account";
 import * as SignUpStore from "../../../stores/SignUp";
 import { bindActionCreators } from "redux";
 import { SendAndValidateOTPResponseModel } from 'shared/models/SendAndValidateOTPResponseModel';
-import KzLoader from "../../../components/Loader/KzLoader";
+import FilLoader from "../../../components/Loader/FilLoader";
 import UserProfileResponseViewModel, { UserProfile } from '../../../models/Account/UserProfileResponseViewModel';
 
 interface IProps {
@@ -128,7 +128,7 @@ class OTPForm extends React.PureComponent<OtpFormProps, any>{
         const { user } = this.props;
         const { userModel } = this.state;
         if (this.state.isLoading) {
-            return <KzLoader />
+            return <FilLoader />
         }
         return <>
             < Modal

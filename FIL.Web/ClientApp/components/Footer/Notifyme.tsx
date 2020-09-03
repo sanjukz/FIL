@@ -1,7 +1,7 @@
 import * as React from "React";
 import {Button } from "react-bootstrap";
 import { NewsLetterSignupFooterDataViewModel } from "../../models/Footer/NewsLetterSignupFooterDataViewModel";
-import KzForm from "shared/components/form/KzForm";
+import FilForm from "shared/components/form/FilForm";
 import * as Yup from "yup";
 import { Field } from "formik";
 import { gets3BaseUrl } from "../../utils/imageCdn";
@@ -14,7 +14,7 @@ export default class Notifyme extends React.Component<ISubscribeProps, any> {
     public render() {
         const schema = this.getSchema();
         return (
-            <KzForm {...this.props} hideSubmit={true} validationSchema={schema} initialValues={{}}>
+            <FilForm {...this.props} hideSubmit={true} validationSchema={schema} initialValues={{}}>
                 <div className="bg-light">
                     <div className="container sign-form pt-3 pb-5 text-center">
                         <img src={`${gets3BaseUrl()}/logos/coming-soon-logo.jpg`} alt="coming soon logo" className="rounded-circle" />
@@ -34,7 +34,7 @@ export default class Notifyme extends React.Component<ISubscribeProps, any> {
                         </div>
                     </div>
                 </div>
-            </KzForm>
+            </FilForm>
         );
     }
     private getSchema() {

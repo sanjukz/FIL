@@ -96,7 +96,7 @@ class AuthedNavMenuV1 extends React.PureComponent<any, any> {
     } else {
       this.setState({
         profileImage:
-          "https://s3-us-west-2.amazonaws.com/kz-cdn/Images/ProfilePictures/default.jpg",
+          "https://static5.feelitlive.com/Images/ProfilePictures/default.jpg",
       });
     }
     this.setState({ pathName: window.location.pathname });

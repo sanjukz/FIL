@@ -14,7 +14,7 @@ import * as getSymbolFromCurrency from 'currency-symbol-map';
 import { IApplicationState } from "../../stores";
 import ModalDialog from "../ModalDialog/ModalDialog";
 import { autobind } from "core-decorators";
-import KzLoader from "../../components/Loader/KzLoader";
+import FilLoader from "../../components/Loader/FilLoader";
 import ChauffeurServiceBooking from "./ChauffeurServiceBooking";
 import { getDepartureTimes, getDepatureLocations, getFilteredLocation, getReturnTimes } from "../../utils/valueRetail";
 

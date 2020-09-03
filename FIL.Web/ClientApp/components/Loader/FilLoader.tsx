@@ -1,7 +1,7 @@
 ﻿import * as React from "react";
-import "./KzLoader.scss";
+import "./FilLoader.scss";
 
-export default class KzLoader extends React.Component<any, any> {            
+export default class FilLoader extends React.Component<any, any> {            
     public render() {        
         return <div className="site-loader">
             <div className="loader-content">

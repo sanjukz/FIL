@@ -9,7 +9,7 @@ import * as CategoryStore from "../stores/Category";
 import * as ItineraryStore from "../stores/Itinerary";
 import { autobind } from "core-decorators";
 import * as Datetime from "react-datetime";
-import KzLoader from "../components/Loader/KzLoader";
+import FilLoader from "../components/Loader/FilLoader";
 import ItineraryResult from "./ItineraryResult";
 import ItineraryRequestViewModel from "../models/Itinerary/ItineraryRequestViewModel";
 import ItineraryBoardInputViewModel from "../models/Itinerary/ItineraryBoardInputViewModel";
@@ -792,7 +792,7 @@ class ItineraryInputForm extends React.Component<ItineraryComponentProps, any> {
                       )}
                       {this.props.category.isLoadingCategory && (
                         <div>
-                          <KzLoader />
+                          <FilLoader />
                         </div>
                       )}
                     </div>
@@ -866,7 +866,7 @@ class ItineraryInputForm extends React.Component<ItineraryComponentProps, any> {
           )}
         {!this.props.itinerary.fetchItinerarySuccess &&
           !this.state.isShowForm &&
-          !this.props.itinerary.isError && <KzLoader />}
+          !this.props.itinerary.isError && <FilLoader />}
       </div>
     );
   }

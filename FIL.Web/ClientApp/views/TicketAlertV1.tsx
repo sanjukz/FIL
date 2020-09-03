@@ -11,7 +11,7 @@ import { ISessionProps, actionCreators as sessionActionCreators } from "shared/s
 import TicketAlertComponent from "../components/TicketAlert/TicketAlertComponent";
 import * as TicketAlertStore from "../stores/TicketAlert";
 import * as EventLearnPageStore from "../stores/EventLearnPage";
-import KzLoader from "../components/Loader/KzLoader";
+import FilLoader from "../components/Loader/FilLoader";
 import EventLearnPageDataViewModel from "../models/EventLearnPageDataViewModel";
 import * as CheckoutStore from "../stores/Checkout";
 import { TicketAlertRequestViewModel } from "../models/TicketAlert/TicketAlertRequestViewModel";
@@ -77,7 +77,7 @@ class TicketAlertV1 extends React.Component<TicketAlertComponentProps, any> {
                 </>
             );
         } else {
-            return <KzLoader />
+            return <FilLoader />
         }
     }
 }

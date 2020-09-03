@@ -6,7 +6,7 @@ import { IApplicationState } from "../stores";
 import * as FooterStore from "../stores/Footer";
 import { NewsLetterSignupFooterDataViewModel } from "../models/Footer/NewsLetterSignupFooterDataViewModel";
 import { NewsLetterSignupFooterResponseDataViewModel } from "../models/Footer/NewsLetterSignupFooterResponseDataViewModel";
-import KzAlert from "../components/Alert/KzAlert";
+import FilAlert from "../components/Alert/FilAlert";
 import Metatag from "../components/Metatags/Metatag";
 
 type FooterProps = FooterStore.INewsLetterState & typeof FooterStore.actionCreators;
@@ -22,8 +22,8 @@ class ComingSoon extends React.Component<FooterProps, any> {
         return <div>
             <Metatag url={null} title="Coming Soon" />
             <NotifyMe onSubmit={this.onSubmitSignUp} />
-            {this.props.registered && <KzAlert visible={this.props.alertVisible}>Successfully signed up to our newsletters.</KzAlert>}
-            {this.props.subscriptionExists && <KzAlert visible={this.props.alertVisible}>Already signed up to our newsletters.</KzAlert>}
+            {this.props.registered && <FilAlert visible={this.props.alertVisible}>Successfully signed up to our newsletters.</FilAlert>}
+            {this.props.subscriptionExists && <FilAlert visible={this.props.alertVisible}>Already signed up to our newsletters.</FilAlert>}
         </div>;
     }
 
