@@ -1,5 +1,5 @@
 ## Kz_Repo
-**Go check the Github Wiki for the project:-** https://github.com/Kyazoonga/Kz/wiki
+**Go check the Github Wiki for the project:-** https://github.com/Kyazoonga/FIL/wiki
 # Kz Develop Jenkin build status 
 **Build Status    :-**
 [![Build Status][![Build Status](http://34.217.65.13:8080/buildStatus/icon?job=Develop)](http://34.217.65.13:8080/job/Develop/)
