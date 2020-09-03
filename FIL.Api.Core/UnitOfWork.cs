@@ -5,7 +5,7 @@ using System;
 using System.Data;
 using System.Data.Common;
 
-namespace KZ.Api.Core
+namespace FIL.Api.Core
 {
     public interface IUnitOfWork : IDisposable
     {

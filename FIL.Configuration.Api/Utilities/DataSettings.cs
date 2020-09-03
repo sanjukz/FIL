@@ -1,5 +1,5 @@
 ﻿using FIL.Api.Core.Utilities;
-using KZ.Api.Core;
+using FIL.Api.Core;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Practices.EnterpriseLibrary.Data.Sql;
 

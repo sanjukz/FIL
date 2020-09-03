@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/Kz.Api.Core/Kz.Api.Core.csproj": {}
+    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api.Core/FIL.Api.Core.csproj": {}
   },
   "projects": {
-    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/Kz.Api.Core/Kz.Api.Core.csproj": {
+    "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api.Core/FIL.Api.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/Kz.Api.Core/Kz.Api.Core.csproj",
-        "projectName": "Kz.Api.Core",
-        "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/Kz.Api.Core/Kz.Api.Core.csproj",
+        "projectUniqueName": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api.Core/FIL.Api.Core.csproj",
+        "projectName": "FIL.Api.Core",
+        "projectPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api.Core/FIL.Api.Core.csproj",
         "packagesPath": "/Users/sanjiv/.nuget/packages/",
-        "outputPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/Kz.Api.Core/obj/",
+        "outputPath": "/Volumes/Zoonga/Sanjiv/My Proj/FIL/FIL/FIL.Api.Core/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

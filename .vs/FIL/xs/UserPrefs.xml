@@ -1,22 +1,28 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Web.Admin/Modules/AutofacModule.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Configuration.Api/Utilities/DataSettings.cs">
     <Files>
       <File FileName="FIL.Api/QueryHandlers/TransactionReport/TransactionReportQueryHandler.cs" Line="16" Column="1" />
       <File FileName="FIL.Api/Repositories/ReportingRepository.cs" Line="20" Column="1" />
       <File FileName="FIL.Web.Admin/Controllers/Reporting/FeelUserReportController.cs" Line="15" Column="42" />
       <File FileName="FIL.Web.Admin/Modules/AutofacModule.cs" Line="17" Column="80" />
+      <File FileName="FIL.Api/Utilities/DataSettings.cs" Line="10" Column="6" />
+      <File FileName="FIL.Api.Core/Utilities/IDataSettings.cs" Line="3" Column="14" />
+      <File FileName="FIL.Configuration.Api/Utilities/DataSettings.cs" Line="2" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FIL" expanded="True">
             <Node name="FIL.Api" expanded="True">
-              <Node name="QueryHandlers" expanded="True">
-                <Node name="Reporting" expanded="True" />
-                <Node name="TransactionReport" expanded="True" />
-                <Node name="UserAddress" expanded="True" />
+              <Node name="Utilities" expanded="True" />
+            </Node>
+            <Node name="FIL.Api.Core" expanded="True">
+              <Node name="Utilities" expanded="True" />
+            </Node>
+            <Node name="FIL.Configuration.Api" expanded="True">
+              <Node name="Utilities" expanded="True">
+                <Node name="DataSettings.cs" selected="True" />
               </Node>
-              <Node name="Repositories" expanded="True" />
             </Node>
             <Node name="FIL.Contracts" expanded="True">
               <Node name="Queries" expanded="True">
@@ -27,9 +33,7 @@
               <Node name="Controllers" expanded="True">
                 <Node name="Reporting" expanded="True" />
               </Node>
-              <Node name="Modules" expanded="True">
-                <Node name="AutofacModule.cs" selected="True" />
-              </Node>
+              <Node name="Modules" expanded="True" />
             </Node>
           </Node>
         </State>
