@@ -6,9 +6,9 @@ import ReportingSummary from "../../components/ReportingWizard/ReportingSummaryT
 import * as transReportStore from "../../stores/Reporting/Report";
 import TransactionReportResponseViewModel, { TransactionReportViewModel } from "../../models/Report/TransactionReportResponseViewModel";
 import TransactionReportRequestViewModel from "../../models/Report/TransactionReportRequestViewModel";
-import "../../scss/kzsuite/_transaction-report.scss";
+import "../../scss/FILSuite/_transaction-report.scss";
 import { actionCreators as sessionActionCreators, ISessionProps } from "shared/stores/Session";
-import "../../scss/kzsuite/custom-table.scss";
+import "../../scss/FILSuite/custom-table.scss";
 import { bindActionCreators } from "redux";
 import Select from "react-select";
 import "./Report.scss";

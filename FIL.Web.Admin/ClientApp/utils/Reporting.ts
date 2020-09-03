@@ -25,7 +25,7 @@ export const filteredTestTransactions = (data: any) => {
 }
 
 
-const test_users = ['test', 'pratibha.dhage@zoonga.com', 'vivekonline', 'shashikant.pandey'];
+const test_users = ['test', 'pratibha.dhage@', 'vivekonline', 'shashikant.pandey'];
 
 function checkIfPresent(inputString) {
   let flag = true;

@@ -6,7 +6,7 @@ import { NavLink, Link, Redirect, Route, Switch } from 'react-router-dom'
 import { RouteComponentProps } from 'react-router-dom'
 import { IApplicationState } from '../../stores'
 import { bindActionCreators } from 'redux'
-import KzLoader from '../../components/Loader/KzLoader'
+import FILLoader from '../../components/Loader/FILLoader'
 import * as placeCalendarStore from '../../stores/PlaceCalendar'
 import * as EventCreationStore from '../../stores/EventCreation'
 import * as currencyTypeStore from '../../stores/CurrencyType'
@@ -792,7 +792,7 @@ class EventCreation extends React.Component<PlaceCalendarProps, any> {
         )}
         {(this.props.inventory.isEventCreationSaveRequest ||
           this.props.inventory.isInventorySaveRequest ||
-          this.props.inventory.isFinanceSaveRequest) && <KzLoader />}
+          this.props.inventory.isFinanceSaveRequest) && <FILLoader />}
       </div>
     )
   }

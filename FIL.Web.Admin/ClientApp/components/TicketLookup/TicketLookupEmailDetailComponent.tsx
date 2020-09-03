@@ -108,7 +108,6 @@ export default class TicketLookupEmailDetailComponent extends React.Component<an
             var phoneNumber = item.transaction.phoneNumber;
             var currency = item.currencyType.code;
 			var trnasactionDateTme = item.transaction.createdUtc;
-            var pahLink = item.transaction.transactionStatusId == "Success" ? "http://boxoffice.kyazoonga.com/RePrintPrintAtHome.aspx" : "";
             var netTicketAmount = item.transaction.netTicketAmount;
             item.ticketLookupSubContainer.map(function (item) {
                 var event = item.event.name;

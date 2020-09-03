@@ -154,7 +154,7 @@ namespace FIL.Web.Kitms.Feel.Controllers
             }
             catch
             {
-                return "https://s3-us-west-2.amazonaws.com/kz-cdn/Images/ProfilePictures/default.jpg";
+                return "https://static5.feelitlive.com/Images/ProfilePictures/default.jpg";
             }
         }
 

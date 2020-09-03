@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Kz.Web.Kitms.Feel.csproj"
+                "${workspaceFolder}/FIL.Web.Admin.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

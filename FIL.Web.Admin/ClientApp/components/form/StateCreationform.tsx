@@ -1,6 +1,6 @@
 ﻿import { Field } from "formik";
 import * as React from "react";
-import KzForm from "./SharedForm/KzForm";
+import FILForm from "./SharedForm/FILForm";
 import Yup from "yup";
 import { StateFormDataViewModel } from "../../models/StateFormDataViewModel";
 
@@ -12,14 +12,14 @@ export default class CountryCreationForm extends React.Component<IStateFormProps
     public render() {
         const schema = this.getSchema();
         return (
-            <KzForm {...this.props} validationSchema={schema} initialValues={{}}>
+            <FILForm {...this.props} validationSchema={schema} initialValues={{}}>
                 <div className="input-field">
                     <Field type="text" name="name" placeholder="StateName" className="form-control" required />
                 </div>
                 <div className="input-field">
                     <Field type="text" name="abbreviation" placeholder="Abbrevation" className="form-control" required />
                 </div>
-            </KzForm>
+            </FILForm>
         );
     }
     private getSchema() {

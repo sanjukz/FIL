@@ -4,7 +4,7 @@ import { Button } from "react-bootstrap";
 import AddEventTicketDetails from "../components/EventCreation/AddEventTicketDetails";
 import GetTicketDetailViewModel from "../models/eventCreation/GetTicketDetailViewModel";
 import { GetTicketDetailResponseViewModel } from "../models/EventCreation/GetTicketDetailResponseViewModel";
-import KzLoader from "../components/Loader/KzLoader";
+import FILLoader from "../components/Loader/FILLoader";
 
 export default class EventTicketDetail extends React.Component<any, any> {
     constructor(props) {
@@ -130,7 +130,7 @@ export default class EventTicketDetail extends React.Component<any, any> {
                 }
             </div>
         } else {
-            return (<div><KzLoader /></div>);
+            return (<div><FILLoader /></div>);
         }
     }   
 }

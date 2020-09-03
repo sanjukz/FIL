@@ -3,7 +3,7 @@ import * as React from "react";
 import { Button } from "react-bootstrap";
 import { Link, RouteComponentProps } from "react-router-dom";
 
-interface IKzFormProps {
+interface IFILFormProps {
     onSubmit: (values: any) => void;
     initialValues: any;
     validationSchema: any; // TODO: Figure out where yup schema went
@@ -11,7 +11,7 @@ interface IKzFormProps {
     onCancle: () => void;
 }
 
-export default class EventDetailForm extends React.Component<IKzFormProps, {}> {
+export default class EventDetailForm extends React.Component<IFILFormProps, {}> {
     public render() {
         return (
             <Formik

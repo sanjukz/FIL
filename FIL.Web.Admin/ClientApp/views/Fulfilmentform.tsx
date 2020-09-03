@@ -5,7 +5,7 @@ import { IApplicationState } from '../stores';
 import { TransactionLocatorFormData } from '../models/TransactionLocator/TransactionLocatorFormData';
 import { SubmitFulFilmentFormDetails } from '../models/TransactionLocator/SubmitFulFilmentFormDetails';
 import { SubmitFulfilmentResponseModel } from '../models/TransactionLocator/SubmitFulfilmentResponseModel';
-import KzLoader from '../components/Loader/KzLoader';
+import FILLoader from '../components/Loader/FILLoader';
 import * as FulfillmentStore from '../../ClientApp/stores/Fulfillment';
 import TransactionLocatorComponent from '../components/TransactionLocatorComponent';
 import FulFilmentTableComponent from '../components/FulFilmentTableComponent';
@@ -30,7 +30,7 @@ class FulfilmentForm extends React.Component<FulfillmentComponentProps, any> {
   }
   public render() {
     if (this.props.isLoading) {
-      return <KzLoader />;
+      return <FILLoader />;
     }
     if (flag && this.props.fetchOTPStatus) {
       alert("Please enter the One Time Password (OTP) we've just sent to the number you provided.");

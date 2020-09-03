@@ -14,7 +14,7 @@ import Newloader from "../../components/NewLoader/NewLoader";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PlaceAutocomplete from "./PlaceAutocomplete";
-import { AmenityCreationViewModel } from "../../../../Kz.Web.Kitms.Feel/ClientApp/models/EventCreation/AmenityCreationViewModel";
+import { AmenityCreationViewModel } from "../../../ClientApp/models/EventCreation/AmenityCreationViewModel";
 import { gets3BaseUrl } from "../../../ClientApp/utils/imageCdn";
 
 interface ISaveEvent {
@@ -1432,7 +1432,7 @@ export default class AddEvent extends React.Component<ISaveEvent, any> {
                                                                 name="hourTimeDuration"
                                                                 required
                                                             >
-                                                                {(this.state.minHourTimeDuration == "") && <option  value='' selected disabled>Select Hours</option>}
+                                                                {(this.state.minHourTimeDuration == "") && <option value='' selected disabled>Select Hours</option>}
                                                                 {(this.state.minHourTimeDuration != "") && <option>{this.state.minHourTimeDuration}</option>}
                                                                 {hours}
                                                             </Field>
@@ -1446,7 +1446,7 @@ export default class AddEvent extends React.Component<ISaveEvent, any> {
                                                                 name="minuteTimeDuration"
                                                                 required
                                                             >
-                                                                {(this.state.minMinuteTimeDuration == "") && <option value ='' selected disabled>Select Minutes</option>}
+                                                                {(this.state.minMinuteTimeDuration == "") && <option value='' selected disabled>Select Minutes</option>}
                                                                 {(this.state.minMinuteTimeDuration != "") && <option>{this.state.minMinuteTimeDuration}</option>}
                                                                 {minutes}
                                                             </Field>
@@ -1467,7 +1467,7 @@ export default class AddEvent extends React.Component<ISaveEvent, any> {
                                                                 name="hourTimeDuration1"
                                                                 required
                                                             >
-                                                                {(this.state.maxHourTimeDuration == "") && <option value ='' selected disabled>Select Hours</option>}
+                                                                {(this.state.maxHourTimeDuration == "") && <option value='' selected disabled>Select Hours</option>}
                                                                 {(this.state.maxHourTimeDuration != "") && <option>{this.state.maxHourTimeDuration}</option>}
                                                                 {hours}
                                                             </Field>
@@ -1481,7 +1481,7 @@ export default class AddEvent extends React.Component<ISaveEvent, any> {
                                                                 name="minuteTimeDuration1"
                                                                 required
                                                             >
-                                                                {(this.state.maxMinuteTimeDuration == "") && <option value ='' selected disabled>Select Minutes</option>}
+                                                                {(this.state.maxMinuteTimeDuration == "") && <option value='' selected disabled>Select Minutes</option>}
                                                                 {(this.state.maxMinuteTimeDuration != "") && <option>{this.state.maxMinuteTimeDuration}</option>}
                                                                 {minutes}
                                                             </Field>
@@ -1819,7 +1819,7 @@ export default class AddEvent extends React.Component<ISaveEvent, any> {
 
                                                 <small className="form-text text-muted mb-2">
                                                     We recommend using at least a 277px x 175px image that's
-                        no larger than 500kb.
+                                                    no larger than 500kb.
                       </small>
                                             </div>
                                             <div className="form-group">
@@ -1919,7 +1919,7 @@ export default class AddEvent extends React.Component<ISaveEvent, any> {
                                                 </span>
                                                 <small className="form-text text-muted mb-2">
                                                     We recommend using at least a 1920px x 350px image
-                        that's no larger than 1MB.
+                                                    that's no larger than 1MB.
                       </small>
                                             </div>
                                             <div className="form-group">
@@ -2130,7 +2130,7 @@ export default class AddEvent extends React.Component<ISaveEvent, any> {
 
                                                 <small className="form-text text-muted mb-2">
                                                     We recommend using at least a 2160x1080px image that's
-                        no larger than 1MB.
+                                                    no larger than 1MB.
                       </small>
 
                                                 <span

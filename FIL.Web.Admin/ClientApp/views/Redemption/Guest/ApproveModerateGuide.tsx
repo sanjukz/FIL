@@ -5,7 +5,7 @@ import { bindActionCreators } from "redux";
 import { RouteComponentProps } from "react-router-dom";
 import ReportingTableComponent from "../../../../ClientApp/components/TableComponent";
 import { ApproveStatus } from "../../../../ClientApp/models/Redemption/ApproveStatus";
-import KzLoader from "../../../../ClientApp/components/Loader/KzLoader";
+import FILLoader from "../../../../ClientApp/components/Loader/FILLoader";
 import * as numeral from "numeral";
 import classnames from "classnames";
 import * as RedemptionStore from "../../../stores/Redemption";
@@ -248,7 +248,7 @@ class ApproveModerateGuide extends React.Component<approveModerateGuide, any> {
                     {this.getContentHTML(tableData, columns)}
                 </div>}
             </div>
-            {(this.props.Redemption.fetchConfirmRequest || this.props.Redemption.fetchAllGuideRequest) && <KzLoader />}
+            {(this.props.Redemption.fetchConfirmRequest || this.props.Redemption.fetchAllGuideRequest) && <FILLoader />}
         </div>
     }
 }

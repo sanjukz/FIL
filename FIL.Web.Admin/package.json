@@ -1,5 +1,5 @@
 {
-  "name": "kz-web-kitms-feel",
+  "name": "fil-web-admin",
   "version": "0.0.0",
   "dependencies": {
     "@babel/polyfill": "^7.8.3",

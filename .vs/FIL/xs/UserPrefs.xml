@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Web/ClientApp/components/Loader/FeelLoader.tsx">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Web.Admin/ClientApp/components/Loader/FIlLoader.tsx">
     <Files>
       <File FileName="FIL.Contracts/Queries/Account/GetAllGuestUserDetailQuery..cs" Line="10" Column="2" />
       <File FileName="FIL.Contracts/Queries/AdvancedSearch/AdvancedSearchQuery.cs" />
@@ -9,25 +9,23 @@
       <File FileName="FIL.Web/ClientApp/components/Alert/FilAlert.tsx" Line="25" Column="2" />
       <File FileName="FIL.Web/ClientApp/components/Loader/FilLoader.tsx" Line="6" Column="45" />
       <File FileName="FIL.Web/ClientApp/components/Loader/FilLoader.scss" Line="1" Column="1" />
-      <File FileName="FIL.Web/ClientApp/components/Loader/FeelLoader.tsx" Line="13" Column="11" />
+      <File FileName="FIL.Web/ClientApp/components/Loader/FeelLoader.tsx" Line="15" Column="2" />
+      <File FileName="FIL.Web.Admin/ClientApp/components/form/SharedForm/KzForm.tsx" Line="24" Column="34" />
+      <File FileName="FIL.Web.Admin/ClientApp/components/Loader/KzLoader.tsx" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FIL" expanded="True">
-            <Node name="FIL.Web" expanded="True">
+            <Node name="FIL.Web.Admin" expanded="True">
               <Node name="ClientApp" expanded="True">
                 <Node name="components" expanded="True">
-                  <Node name="Alert" expanded="True" />
-                  <Node name="CityCountryLanding" expanded="True" />
                   <Node name="Loader" expanded="True">
-                    <Node name="FeelLoader.tsx" selected="True" />
+                    <Node name="KzLoader.scss" selected="True" />
                   </Node>
                 </Node>
+                <Node name="scss" expanded="True" />
               </Node>
-            </Node>
-            <Node name="FIL.Web.Admin" expanded="True">
-              <Node name="Controllers" expanded="True" />
             </Node>
           </Node>
         </State>

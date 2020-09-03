@@ -16,8 +16,8 @@ class Register extends React.Component<RegistrationProps, {}> {
         return <div className="vertical-center">
 
             <div className="text-center form-box">
-                <img src="http://kitms.kyazoonga.com/images/site-logo-blk.png" alt="" />
-                <h6 className="site-top-title pb-3">Kyazoonga Integrated Ticket Managment
+                <img src="https://static5.feelitlive.com/site-logo-blk.png" alt="" />
+                <h6 className="site-top-title pb-3">FeelitLIVE Integrated Ticket Managment
                                     System (KITMS<sup>TM</sup>)</h6>
                 <div className="card p-3 pt-4 pb-4">
                     <h6 className="pb-3">Create a new account</h6>

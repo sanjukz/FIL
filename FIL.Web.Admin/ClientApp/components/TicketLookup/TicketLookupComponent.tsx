@@ -104,9 +104,8 @@ export default class TicketLookupComponents extends React.Component<any, any> {
         var LastName = data.transaction.lastName;
         var phoneNumber = data.transaction.phoneNumber;
         var currency = data.currencyType.code;
-		var trnasactionDateTme = data.transaction.createdUtc;
-        var pahLink = data.transaction.transactionStatusId == "Success" ? "http://boxoffice.kyazoonga.com/RePrintPrintAtHome.aspx": "";
-		var netTicketAmount = data.transaction.netTicketAmount;
+        var trnasactionDateTme = data.transaction.createdUtc;
+        var netTicketAmount = data.transaction.netTicketAmount;
 
         const ticketData = [];
         this.props.ticketLookup.ticketLookupSubContainer.map(function (item) {
@@ -137,12 +136,12 @@ export default class TicketLookupComponents extends React.Component<any, any> {
                         else {
                             status = 'Not Scanned';
                         }
-                        barcodeStatus = barcodeStatus + a.barcodeNumber + ': ' +status+', ';
+                        barcodeStatus = barcodeStatus + a.barcodeNumber + ': ' + status + ', ';
                     });
-                    var barcodeStatus= barcodeStatus.slice(0, -2)
+                    var barcodeStatus = barcodeStatus.slice(0, -2)
                     ticketBarcodeInfo.push(barcodeStatus);
                 });
-                
+
                 var deliveryToInfo = [];
                 var deliveryTypeInfo = [];
                 val.transactionDeliveryDetail.map(function (item) {
@@ -172,10 +171,10 @@ export default class TicketLookupComponents extends React.Component<any, any> {
                         currency: currency,
                         deliveryType: deliveryTypeInfo[i],
                         pickupBy: deliveryToInfo[i],
-						trnasactionDateTme: trnasactionDateTme,
-						pahLink: pahLink,
-						netTicketAmount: netTicketAmount
-                    }; 
+                        trnasactionDateTme: trnasactionDateTme,
+                        pahLink: pahLink,
+                        netTicketAmount: netTicketAmount
+                    };
                     ticketData.push(newName);
                 }
 

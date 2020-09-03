@@ -1,16 +1,16 @@
 import { Form, Formik, FormikProps } from "formik";
 import * as React from "react";
 import { Button } from "react-bootstrap";
-import "./Kzform.scss";
+import "./FILForm.scss";
 
-interface IKzFormProps {
+interface IFILFormProps {
     onSubmit: (values: any) => void;
     initialValues: any;
     validationSchema: any; // TODO: Figure out where yup schema went
     hideSubmit?: boolean;
 }
 
-export default class KzForm extends React.Component<IKzFormProps, any> {
+export default class FILForm extends React.Component<IFILFormProps, any> {
     public render() {
         return (
             <Formik

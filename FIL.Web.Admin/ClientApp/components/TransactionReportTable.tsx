@@ -2,7 +2,7 @@ import * as React from "react";
 import ReactTable from "react-table";
 import "react-table/react-table.css";
 import { autobind } from "core-decorators";
-import "../scss/kzsuite/_transaction-report.scss";
+import "../scss/FILSuite/_transaction-report.scss";
 import { filteredTestTransactions } from "../utils/Reporting";
 
 export default class TableComponent extends React.Component<any, any> {

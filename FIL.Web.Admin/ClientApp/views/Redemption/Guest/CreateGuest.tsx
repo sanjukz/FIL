@@ -17,7 +17,7 @@ import FinancialDetailForm from "./FinancialDetailForm";
 import { CreateGuideInputModel } from "../../../models/Redemption/GuideViewModel"
 import { GuideResponseModel } from "../../../models/Redemption/GuideViewModel";
 import { CitiesResponseModel } from "../../../stores/States";
-import KzLoader from "../../../components/Loader/KzLoader";
+import FILLoader from "../../../components/Loader/FILLoader";
 import { RouteComponentProps } from "react-router-dom";
 import { CountryTypeViewModel } from "../../../models/Finance/CountryTypeViewModel";
 import { CurrencyTypeViewModel } from "../../../models/CurrencyTypeViewModel";
@@ -307,7 +307,7 @@ class CreateGuest extends React.Component<createGuideStore, any> {
         if ((this.props.Redemption.saveGuideResponse.isSaving && !this.props.Redemption.saveGuideResponse.success) ||
             (this.state.isEditGuide && this.props.Redemption.isLoadingEditGuideDetail)
         ) {
-            return <KzLoader />;
+            return <FILLoader />;
         }
 
         const formatOptionLabel = ({ placeImageUrl, label, city, country }) => (

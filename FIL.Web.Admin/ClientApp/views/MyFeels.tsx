@@ -6,7 +6,7 @@ import { bindActionCreators } from "redux";
 import { Link, RouteComponentProps } from "react-router-dom";
 import ReportingTableComponent from "../../ClientApp/components/TableComponent";
 import * as SellerStore from "../stores/Seller";
-import KzLoader from "../../ClientApp/components/Loader/KzLoader";
+import FILLoader from "../../ClientApp/components/Loader/FILLoader";
 import { autobind } from "core-decorators";
 import * as numeral from "numeral";
 import { Modal } from 'antd';
@@ -216,7 +216,7 @@ class MyFeels extends React.Component<any, any> {
                 </div>
             </div>
         } else {
-            return <KzLoader />
+            return <FILLoader />
         }
     }
 }

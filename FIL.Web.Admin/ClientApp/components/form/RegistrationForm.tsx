@@ -1,6 +1,6 @@
 ﻿import { Field } from "formik";
 import * as React from "react";
-import KzForm from "./SharedForm/KzForm";
+import FILForm from "./SharedForm/FILForm";
 import { RegistrationFormDataViewModel } from "shared/models/RegistrationFormDataViewModel";
 import Yup from "yup";
 
@@ -12,7 +12,7 @@ export class RegistrationForm extends React.Component<IRegistrationFormProps, {}
     public render() {
         const schema = this.getSchema();
         return (
-            <KzForm {...this.props} validationSchema={schema} initialValues={{}}>
+            <FILForm {...this.props} validationSchema={schema} initialValues={{}}>
                 <div className="row pb-2">
                     <div className="col-sm-6 pr-1 input-field">
                         <Field type="firstname"
@@ -57,7 +57,7 @@ export class RegistrationForm extends React.Component<IRegistrationFormProps, {}
                         placeholder="Confirm Password"
                         required />
                 </div>
-           </KzForm>
+           </FILForm>
         );
     }
 

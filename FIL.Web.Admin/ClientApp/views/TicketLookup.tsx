@@ -3,8 +3,8 @@ import * as React from "react";
 import { connect } from "react-redux";
 import { IApplicationState } from "../stores";
 import * as TicketLookupStore from "../stores/TicketLookup";
-import "../scss/kzsuite/_transaction-report.scss";
-import KzLoader from "../components/Loader/KzLoader";
+import "../scss/FILSuite/_transaction-report.scss";
+import FILLoader from "../components/Loader/FILLoader";
 import TicketLookupForm from "../components/TicketLookup/TicketLookupForm";
 import TicketLookupEmailDetailComponent from "../components/TicketLookup/TicketLookupEmailDetailComponent";
 import TicketLookupComponent from "../components/TicketLookup/TicketLookupComponent";
@@ -41,7 +41,7 @@ class TicketLookup extends React.Component<TicketLookupComponentProps, any> {
         }
         else {
             return <div>
-                <KzLoader />
+                <FILLoader />
                 </div>
         }
     }

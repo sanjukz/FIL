@@ -145,7 +145,7 @@ export default class EventCreation extends React.Component<any, any> {
         // }
         // else {
         //     return (
-        //         <div><KzLoader /></div>
+        //         <div><FILLoader /></div>
         //     );
         // }
     }

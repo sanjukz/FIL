@@ -2,14 +2,14 @@ import { Form, Formik } from "formik";
 import * as React from "react";
 import { Button } from "react-bootstrap";
 
-interface IKzFormProps {
+interface IFILFormProps {
     onSubmit: (values: any) => void;
     initialValues: any;
     validationSchema: any; // TODO: Figure out where yup schema went
     hideSubmit?: boolean;
 }
 
-export default class EventTicketDetailForm extends React.Component<IKzFormProps, {}> {
+export default class EventTicketDetailForm extends React.Component<IFILFormProps, {}> {
     public render() {
         return (
             <Formik

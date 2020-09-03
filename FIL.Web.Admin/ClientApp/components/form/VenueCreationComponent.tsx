@@ -1,6 +1,6 @@
 ﻿import { Field } from "formik";
 import * as React from "react";
-import KzForm from "./SharedForm/KzForm";
+import FILForm from "./SharedForm/FILForm";
 import Yup from "yup";
 import { VenueCreationFormDataviewModel } from "../../models/VenueCreationFormDataviewModel"
 
@@ -12,7 +12,7 @@ export default class VenueCreationComponent extends React.Component<IVenueCreati
     public render() {
         const schema = this.getSchema();
         return (
-            <KzForm {...this.props} validationSchema={schema} initialValues={{}}>
+            <FILForm {...this.props} validationSchema={schema} initialValues={{}}>
                 <div className="input-field">
                     <Field type="text" name="name" placeholder="VenueName" className="form-control" required />
                 </div>
@@ -36,7 +36,7 @@ export default class VenueCreationComponent extends React.Component<IVenueCreati
                 <div className="input-field">
                     <Field type="text" name="prefix" placeholder="Prefix" className="form-control" required />
                 </div>
-            </KzForm>
+            </FILForm>
         );
     }
     private getSchema() {

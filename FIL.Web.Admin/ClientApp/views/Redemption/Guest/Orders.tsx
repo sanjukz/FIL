@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { IApplicationState } from "../../../stores";
 import { bindActionCreators } from "redux";
 import { ApproveStatus } from "../../../../ClientApp/models/Redemption/ApproveStatus";
-import KzLoader from "../../../../ClientApp/components/Loader/KzLoader";
+import FILLoader from "../../../../ClientApp/components/Loader/FILLoader";
 import Modal from 'react-awesome-modal';
 import OrderDetailModalComponent from "../../../../ClientApp/components/Redemption/Orders/OrderDetailModalComponent";
 import * as numeral from "numeral";
@@ -218,7 +218,7 @@ class Orders extends React.Component<approveModerateGuide, any> {
                     {this.getContentHTML(orderCards)}
                 </div>
             </div>
-            {(this.props.Redemption.fetchGuideOrdersRequest || this.props.Redemption.fetchConfirmOrderRequest) && <KzLoader />}
+            {(this.props.Redemption.fetchGuideOrdersRequest || this.props.Redemption.fetchConfirmOrderRequest) && <FILLoader />}
         </div>
     }
 }

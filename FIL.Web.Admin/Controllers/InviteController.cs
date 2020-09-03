@@ -113,7 +113,7 @@ namespace FIL.Web.Kitms.Feel.Controllers
                 string siteUrls = _siteUrlsProvider.GetSiteUrl(Contracts.Enums.Site.feelaplaceSite);
                 Email email = new Email();
                 email.To = model.UserEmail;
-                email.Bcc = "accounts@kyazoonga.com";
+                email.Bcc = "accounts@feelitlive.com";
                 email.From = "FeelitLIVE  <no-reply@feelitLIVE.com>";
                 email.TemplateName = "FeelInviteeRegistration";
 
