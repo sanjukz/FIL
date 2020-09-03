@@ -1,25 +1,12 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Contracts/Enums/Modules.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Contracts/QueryResults/City/CitiesQueryResult.cs">
     <Files>
-      <File FileName="FIL.Contracts/Queries/Account/GetAllGuestUserDetailQuery..cs" Line="10" Column="2" />
-      <File FileName="FIL.Contracts/Queries/AdvancedSearch/AdvancedSearchQuery.cs" />
-      <File FileName="FIL.Contracts/Queries/Algolia/GetAllPlacesQuery.cs" />
-      <File FileName="FIL.Contracts/Queries/Description/DescriptionQuery.cs" />
-      <File FileName="FIL.Web.Admin/Controllers/CityCountryDescriptionController.cs" Line="44" Column="10" />
-      <File FileName="FIL.Web/ClientApp/components/Alert/FilAlert.tsx" Line="25" Column="2" />
-      <File FileName="FIL.Web/ClientApp/components/Loader/FilLoader.tsx" Line="6" Column="45" />
-      <File FileName="FIL.Web/ClientApp/components/Loader/FilLoader.scss" Line="1" Column="1" />
-      <File FileName="FIL.Web/ClientApp/components/Loader/FeelLoader.tsx" Line="15" Column="2" />
-      <File FileName="FIL.Web.Admin/ClientApp/components/form/SharedForm/KzForm.tsx" Line="24" Column="34" />
-      <File FileName="FIL.Web.Admin/ClientApp/components/Loader/KzLoader.tsx" Line="14" Column="1" />
-      <File FileName="FIL.Foundation/Modules/AutofacModule.cs" Line="39" Column="34" />
-      <File FileName="FIL.Logging/Extensions/LoggingExtensions.cs" Line="5" Column="33" />
-      <File FileName="FIL.Logging/Middleware/KzLoggingMiddleware.cs" Line="13" Column="36" />
-      <File FileName="FIL.Contracts/Commands/ExOz/SaveExOzCountryCommand.cs" Line="8" Column="18" />
-      <File FileName="FIL.Contracts/QueryResults/BoxOffice/FeatureQueryResult.cs" Line="6" Column="18" />
-      <File FileName="FIL.Contracts/QueryResults/AuthedRoleFeature/AuthedRoleFeatureQueryResult.cs" Line="6" Column="18" />
-      <File FileName="FIL.Api/QueryHandlers/AuthedRoleFeature/AuthedRoleFeatureQueryHandler.cs" Line="29" Column="136" />
-      <File FileName="FIL.Contracts/Enums/Modules.cs" Line="15" Column="6" />
+      <File FileName="FIL.Contracts/Queries/Account/GetAllGuestUserDetailQuery..cs" Line="6" Column="44" />
+      <File FileName="FIL.Web.Core/Providers/TicketContentProvider.cs" Line="134" Column="14" />
+      <File FileName="FIL.Contracts/Queries/AuthedRoleFeature/AuthedRoleFeatureQuery.cs" Line="7" Column="40" />
+      <File FileName="FIL.Contracts/QueryResults/Category/CategoriesByLocationQueryResult.cs" Line="5" Column="49" />
+      <File FileName="FIL.Contracts/QueryResults/Category/CategoryEventQueryResult.cs" Line="10" Column="2" />
+      <File FileName="FIL.Contracts/QueryResults/City/CitiesQueryResult.cs" Line="11" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -27,31 +14,24 @@
           <Node name="FIL" expanded="True">
             <Node name="FIL.Api" expanded="True">
               <Node name="QueryHandlers" expanded="True">
-                <Node name="AuthedRoleFeature" expanded="True" />
+                <Node name="Cities" expanded="True" />
               </Node>
             </Node>
             <Node name="FIL.Contracts" expanded="True">
-              <Node name="Commands" expanded="True">
-                <Node name="ExOz" expanded="True" />
+              <Node name="Queries" expanded="True">
+                <Node name="City" expanded="True" />
               </Node>
-              <Node name="Enums" expanded="True">
-                <Node name="Modules.cs" selected="True" />
-              </Node>
-              <Node name="Interfaces" expanded="True" />
               <Node name="QueryResults" expanded="True">
-                <Node name="AuthedRoleFeature" expanded="True" />
-                <Node name="BoxOffice" expanded="True" />
+                <Node name="City" expanded="True">
+                  <Node name="CitiesQueryResult.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
-            <Node name="FIL.Foundation" expanded="True">
-              <Node name="Modules" expanded="True" />
+            <Node name="FIL.Web" expanded="True">
+              <Node name="Controllers" expanded="True" />
             </Node>
-            <Node name="FIL.Logging" expanded="True">
-              <Node name="Extensions" expanded="True" />
-              <Node name="Middleware" expanded="True" />
-            </Node>
-            <Node name="FIL.Web.Admin" expanded="True">
-              <Node name="Views" expanded="True" />
+            <Node name="FIL.Web.Core" expanded="True">
+              <Node name="Providers" expanded="True" />
             </Node>
           </Node>
         </State>

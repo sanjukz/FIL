@@ -1,4 +1,4 @@
-﻿using FIL.Contracts.Models;
+﻿using Kz.Contracts.Models;
 using System.Collections.Generic;
 
 namespace FIL.Contracts.QueryResults

@@ -106,23 +106,6 @@ namespace FIL.Web.Core.Providers
                         ticketdata = null;
                     }
                 }
-                else
-                {
-                    var queryResult = await _querySender.Send(new ASITicketInfoQuery
-                    {
-                        TransactionId = transactionId,
-                        IsASIQR = (bool)isASIQR,
-                        TransactionIds = transactionIds
-                    });
-                    if (queryResult.ASITicketInfo.Any())
-                    {
-                        ticketdata = GenerateASI(queryResult.ASITicketInfo);
-                    }
-                    else
-                    {
-                        ticketdata = null;
-                    }
-                }
             }
             catch (Exception ex)
             {
