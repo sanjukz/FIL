@@ -93,7 +93,7 @@ const columns = [{
 export default class TicketLookupEmailDetailComponent extends React.Component<any, any>{
     public render() {
         var ticketLookupdata = this.props.ticketLookupEmailDetails;
-        
+
         var ticketData = [];
         this.props.ticketLookupEmailDetails.ticketLookupEmailDetailContainer.map(function (item) {
             var transactionId = item.transaction.id;
@@ -107,7 +107,7 @@ export default class TicketLookupEmailDetailComponent extends React.Component<an
             var LastName = item.transaction.lastName;
             var phoneNumber = item.transaction.phoneNumber;
             var currency = item.currencyType.code;
-			var trnasactionDateTme = item.transaction.createdUtc;
+            var trnasactionDateTme = item.transaction.createdUtc;
             var netTicketAmount = item.transaction.netTicketAmount;
             item.ticketLookupSubContainer.map(function (item) {
                 var event = item.event.name;
@@ -170,9 +170,8 @@ export default class TicketLookupEmailDetailComponent extends React.Component<an
                             currency: currency,
                             deliveryType: deliveryTypeInfo[i],
                             pickupBy: deliveryToInfo[i],
-							trnasactionDateTme: trnasactionDateTme,
-							pahLink: pahLink,
-							netTicketAmount: netTicketAmount
+                            trnasactionDateTme: trnasactionDateTme,
+                            netTicketAmount: netTicketAmount
                         };
                         ticketData.push(newName);
                     }

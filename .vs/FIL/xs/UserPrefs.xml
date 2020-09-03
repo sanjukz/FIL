@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Web.Admin/ClientApp/components/Loader/FIlLoader.tsx">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Web.Admin/Views/_ViewImports.cshtml">
     <Files>
       <File FileName="FIL.Contracts/Queries/Account/GetAllGuestUserDetailQuery..cs" Line="10" Column="2" />
       <File FileName="FIL.Contracts/Queries/AdvancedSearch/AdvancedSearchQuery.cs" />
@@ -11,20 +11,17 @@
       <File FileName="FIL.Web/ClientApp/components/Loader/FilLoader.scss" Line="1" Column="1" />
       <File FileName="FIL.Web/ClientApp/components/Loader/FeelLoader.tsx" Line="15" Column="2" />
       <File FileName="FIL.Web.Admin/ClientApp/components/form/SharedForm/KzForm.tsx" Line="24" Column="34" />
-      <File FileName="FIL.Web.Admin/ClientApp/components/Loader/KzLoader.tsx" Line="1" Column="1" />
+      <File FileName="FIL.Web.Admin/ClientApp/components/Loader/KzLoader.tsx" Line="14" Column="1" />
+      <File FileName="FIL.Foundation/Modules/AutofacModule.cs" Line="39" Column="34" />
+      <File FileName="FIL.Web.Admin/Views/_ViewImports.cshtml" Line="5" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FIL" expanded="True">
             <Node name="FIL.Web.Admin" expanded="True">
-              <Node name="ClientApp" expanded="True">
-                <Node name="components" expanded="True">
-                  <Node name="Loader" expanded="True">
-                    <Node name="KzLoader.scss" selected="True" />
-                  </Node>
-                </Node>
-                <Node name="scss" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="_ViewImports.cshtml" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -34,6 +31,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.FIL.Configuration.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.FIL.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.FIL.Web.Admin PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <DisabledProjects>
     <String>FIL.Window.Service/FIL.Window.Service.csproj</String>
@@ -47,7 +45,8 @@
       <Items>
         <StartupItem ItemId="{6CEA710B-7F38-40D6-BD32-5277B46FAD35}" ItemName="FIL.Api" ConfigurationId="Kz.Api" />
         <StartupItem ItemId="{767A18D8-C584-41D6-AC46-76BE6D0AC0B7}" ItemName="FIL.Configuration.Api" ConfigurationId="Kz.Configuration.Api" />
-        <StartupItem ItemId="{74FC6647-1218-4BD4-89A8-9EEFA4384E53}" ItemName="FIL.Web" />
+        <StartupItem ItemId="{74FC6647-1218-4BD4-89A8-9EEFA4384E53}" ItemName="FIL.Web" ConfigurationId="Default" />
+        <StartupItem ItemId="{02D8D788-8EA6-410A-B08B-AA85C8E51D54}" ItemName="FIL.Web.Admin" ConfigurationId="Default" />
       </Items>
     </MultiItemSolutionRunConfiguration>
   </MultiItemStartupConfigurations>

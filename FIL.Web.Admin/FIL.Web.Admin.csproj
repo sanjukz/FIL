@@ -8,8 +8,7 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'FIL.Web.Admin' " />
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Kz.Web.Kitms.Feel' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Kz.Api' " />
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Cookies" Version="2.0.1" />
@@ -40,6 +39,8 @@
     <None Remove="yarn.lock" />
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
     <Content Remove="ClientApp\**" />
+    <Content Remove="Properties\launchSettings.json" />
+    <Content Remove="Properties\launchSettings.json" />
   </ItemGroup>
 
   <ItemGroup>

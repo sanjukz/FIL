@@ -172,7 +172,6 @@ export default class TicketLookupComponents extends React.Component<any, any> {
                         deliveryType: deliveryTypeInfo[i],
                         pickupBy: deliveryToInfo[i],
                         trnasactionDateTme: trnasactionDateTme,
-                        pahLink: pahLink,
                         netTicketAmount: netTicketAmount
                     };
                     ticketData.push(newName);
