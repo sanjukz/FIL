@@ -53,10 +53,10 @@ namespace FIL.Api.CommandHandlers.ExOz
             var exOzProductOptions = _exOzProductOptionRepository.GetByOptionIds(apiProductOptionIds);
 
             var eventTicketDetailIds = exOzProductOptions.Select(w => w.EventTicketDetailId).ToList();
-            var kzEventTicketDetails = _eventTicketDetailRepository.GetByIds(eventTicketDetailIds);
+            var FilEventTicketDetails = _eventTicketDetailRepository.GetByIds(eventTicketDetailIds);
 
-            var ticketCategoryIds = kzEventTicketDetails.Select(w => w.TicketCategoryId).ToList();
-            var kzTicketCategories = _ticketCategoryRepository.GetByTicketCategoryIds(ticketCategoryIds);
+            var ticketCategoryIds = FilEventTicketDetails.Select(w => w.TicketCategoryId).ToList();
+            var FilTicketCategories = _ticketCategoryRepository.GetByTicketCategoryIds(ticketCategoryIds);
 
             foreach (var item in command.OptionList)
             {
@@ -69,18 +69,18 @@ namespace FIL.Api.CommandHandlers.ExOz
                     ExOzProductSession exOzProductSession = _exOzProductSessionRepository.GetBySessionId(item.SessionId);
                     ExOzProduct exOzProduct = _exOzProductRepository.Get(exOzProductSession.ProductId);
 
-                    EventTicketDetail kzEventTicketDetail = kzEventTicketDetails.Where(w => w.Id == exOzProductOption.EventTicketDetailId).FirstOrDefault();
-                    TicketCategory kzTicketCategory = kzTicketCategories.Where(w => w.Name == TicketCategoryName).FirstOrDefault();
+                    EventTicketDetail FilEventTicketDetail = FilEventTicketDetails.Where(w => w.Id == exOzProductOption.EventTicketDetailId).FirstOrDefault();
+                    TicketCategory FilTicketCategory = FilTicketCategories.Where(w => w.Name == TicketCategoryName).FirstOrDefault();
 
-                    TicketCategory retTicketCategory = UpdateTicketCategory(TicketCategoryName, kzTicketCategory, command.ModifiedBy);
+                    TicketCategory retTicketCategory = UpdateTicketCategory(TicketCategoryName, FilTicketCategory, command.ModifiedBy);
 
-                    EventTicketDetail retEventTicketDetail = UpdateEventTicketDetail(kzEventTicketDetail, exOzProduct.EventDetailId, retTicketCategory.Id, command.ModifiedBy);
+                    EventTicketDetail retEventTicketDetail = UpdateEventTicketDetail(FilEventTicketDetail, exOzProduct.EventDetailId, retTicketCategory.Id, command.ModifiedBy);
 
                     EventTicketAttribute eventTicketAttribute = _eventTicketAttributeRepository.GetByEventTicketDetailId(retEventTicketDetail.Id);
-                    EventTicketAttribute kzTicketAttribute = UpdateEventTicketAttribute(item, eventTicketAttribute, retEventTicketDetail.Id, command.ModifiedBy);
+                    EventTicketAttribute FilTicketAttribute = UpdateEventTicketAttribute(item, eventTicketAttribute, retEventTicketDetail.Id, command.ModifiedBy);
 
-                    TicketFeeDetail ticketFeeDetail = _ticketFeeDetailRepository.GetByEventTicketAttributeId(kzTicketAttribute.EventTicketDetailId);
-                    TicketFeeDetail kzTicketFeedDetail = UpdateTicketFeeDetails(ticketFeeDetail, kzTicketAttribute.Id, command.ModifiedBy);
+                    TicketFeeDetail ticketFeeDetail = _ticketFeeDetailRepository.GetByEventTicketAttributeId(FilTicketAttribute.EventTicketDetailId);
+                    TicketFeeDetail FilTicketFeedDetail = UpdateTicketFeeDetails(ticketFeeDetail, FilTicketAttribute.Id, command.ModifiedBy);
 
                     ExOzProductOption retOption = updateProductOption(item, exOzProductOption, retEventTicketDetail.Id, exOzProductSession.Id, command.ModifiedBy);
                     updatedOptions.OptionList.Add(retOption);
@@ -145,55 +145,55 @@ namespace FIL.Api.CommandHandlers.ExOz
             return exOzProductOptionInserted;
         }
 
-        protected TicketCategory UpdateTicketCategory(string name, TicketCategory kzTicketCategory, Guid ModifiedBy)
+        protected TicketCategory UpdateTicketCategory(string name, TicketCategory FilTicketCategory, Guid ModifiedBy)
         {
-            TicketCategory kzTicketCategoryInserted = new TicketCategory();
-            if (kzTicketCategory == null)
+            TicketCategory FilTicketCategoryInserted = new TicketCategory();
+            if (FilTicketCategory == null)
             {
-                var newKzTicketCategory = new TicketCategory
+                var newFilTicketCategory = new TicketCategory
                 {
                     Name = name,
                     ModifiedBy = ModifiedBy,
                     IsEnabled = true,
                 };
-                kzTicketCategoryInserted = _ticketCategoryRepository.Save(newKzTicketCategory);
+                FilTicketCategoryInserted = _ticketCategoryRepository.Save(newFilTicketCategory);
             }
             else
             {
-                kzTicketCategoryInserted = kzTicketCategory;
+                FilTicketCategoryInserted = FilTicketCategory;
             }
-            return kzTicketCategoryInserted;
+            return FilTicketCategoryInserted;
         }
 
-        protected EventTicketDetail UpdateEventTicketDetail(EventTicketDetail kzEventTicketDetail, long kzEventDetailId, long kzTicketCategoryId, Guid ModifiedBy)
+        protected EventTicketDetail UpdateEventTicketDetail(EventTicketDetail FilEventTicketDetail, long FilEventDetailId, long FilTicketCategoryId, Guid ModifiedBy)
         {
-            EventTicketDetail kzEventTicketDetailInserted = new EventTicketDetail();
-            if (kzEventTicketDetail == null)
+            EventTicketDetail FilEventTicketDetailInserted = new EventTicketDetail();
+            if (FilEventTicketDetail == null)
             {
-                var newKzEventTicketDetail = new EventTicketDetail
+                var newFilEventTicketDetail = new EventTicketDetail
                 {
-                    EventDetailId = kzEventDetailId,
-                    TicketCategoryId = kzTicketCategoryId,
+                    EventDetailId = FilEventDetailId,
+                    TicketCategoryId = FilTicketCategoryId,
                     ModifiedBy = ModifiedBy,
                     IsEnabled = true,
                 };
-                kzEventTicketDetailInserted = _eventTicketDetailRepository.Save(newKzEventTicketDetail);
+                FilEventTicketDetailInserted = _eventTicketDetailRepository.Save(newFilEventTicketDetail);
             }
             else
             {
-                kzEventTicketDetailInserted = kzEventTicketDetail;
+                FilEventTicketDetailInserted = FilEventTicketDetail;
             }
-            return kzEventTicketDetailInserted;
+            return FilEventTicketDetailInserted;
         }
 
-        protected EventTicketAttribute UpdateEventTicketAttribute(ExOzProductOptionResponse item, EventTicketAttribute kzEventTicketAttribute, long kzEventTicketDetailId, Guid ModifiedBy)
+        protected EventTicketAttribute UpdateEventTicketAttribute(ExOzProductOptionResponse item, EventTicketAttribute FilEventTicketAttribute, long FilEventTicketDetailId, Guid ModifiedBy)
         {
-            EventTicketAttribute kzEventTicketAttributeInserted = new EventTicketAttribute();
-            if (kzEventTicketAttribute == null)
+            EventTicketAttribute FilEventTicketAttributeInserted = new EventTicketAttribute();
+            if (FilEventTicketAttribute == null)
             {
-                var newKzEventTicketAttribute = new EventTicketAttribute
+                var newFilEventTicketAttribute = new EventTicketAttribute
                 {
-                    EventTicketDetailId = kzEventTicketDetailId,
+                    EventTicketDetailId = FilEventTicketDetailId,
                     SalesStartDateTime = DateTime.UtcNow,
                     SalesEndDatetime = DateTime.UtcNow,
                     TicketTypeId = Contracts.Enums.TicketType.Regular,
@@ -211,23 +211,23 @@ namespace FIL.Api.CommandHandlers.ExOz
                     ModifiedBy = ModifiedBy,
                     IsEnabled = true,
                 };
-                kzEventTicketAttributeInserted = _eventTicketAttributeRepository.Save(newKzEventTicketAttribute);
+                FilEventTicketAttributeInserted = _eventTicketAttributeRepository.Save(newFilEventTicketAttribute);
             }
             else
             {
-                kzEventTicketAttributeInserted = kzEventTicketAttribute;
+                FilEventTicketAttributeInserted = FilEventTicketAttribute;
             }
-            return kzEventTicketAttributeInserted;
+            return FilEventTicketAttributeInserted;
         }
 
-        protected TicketFeeDetail UpdateTicketFeeDetails(TicketFeeDetail kzTicketFeeDetail, long kzEventTicketAttributeId, Guid ModifiedBy)
+        protected TicketFeeDetail UpdateTicketFeeDetails(TicketFeeDetail FilTicketFeeDetail, long FilEventTicketAttributeId, Guid ModifiedBy)
         {
-            TicketFeeDetail kzTicketFeeDetailInserted = new TicketFeeDetail();
-            if (kzTicketFeeDetail == null)
+            TicketFeeDetail FilTicketFeeDetailInserted = new TicketFeeDetail();
+            if (FilTicketFeeDetail == null)
             {
-                var newKzTicketFeeDetail = new TicketFeeDetail
+                var newFilTicketFeeDetail = new TicketFeeDetail
                 {
-                    EventTicketAttributeId = kzEventTicketAttributeId,
+                    EventTicketAttributeId = FilEventTicketAttributeId,
                     FeeId = 4,
                     DisplayName = "Bank",
                     ValueTypeId = 1,
@@ -236,13 +236,13 @@ namespace FIL.Api.CommandHandlers.ExOz
                     ModifiedBy = ModifiedBy,
                     IsEnabled = true,
                 };
-                kzTicketFeeDetailInserted = _ticketFeeDetailRepository.Save(newKzTicketFeeDetail);
+                FilTicketFeeDetailInserted = _ticketFeeDetailRepository.Save(newFilTicketFeeDetail);
             }
             else
             {
-                kzTicketFeeDetailInserted = kzTicketFeeDetail;
+                FilTicketFeeDetailInserted = FilTicketFeeDetail;
             }
-            return kzTicketFeeDetailInserted;
+            return FilTicketFeeDetailInserted;
         }
     }
 }

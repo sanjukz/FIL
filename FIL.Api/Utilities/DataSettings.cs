@@ -1,7 +1,7 @@
 ﻿using FIL.Api.Core.Utilities;
 using FIL.Configuration;
 using FIL.Configuration.Utilities;
-using KZ.Api.Core;
+using FIL.Api.Core;
 using Microsoft.Practices.EnterpriseLibrary.Data.Sql;
 
 namespace FIL.Api.Utilities

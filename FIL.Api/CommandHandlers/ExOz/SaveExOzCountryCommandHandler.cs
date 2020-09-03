@@ -30,21 +30,21 @@ namespace FIL.Api.CommandHandlers.ExOz
             exOzCountryResultList.CountryList = new List<ExOzCountry>();
 
             var exOzCountries = _exOzCountryRepository.GetAll(null);
-            var kzCountries = _countryRepository.GetByNames(command.Names);
+            var FilCountries = _countryRepository.GetByNames(command.Names);
 
             //Save ExOzCountries
             foreach (var item in command.Names)
             {
                 var existingExOzCountry = exOzCountries.Where(w => w.Name == item).FirstOrDefault();
-                var existingKzCountry = kzCountries.Where(w => w.Name == item).FirstOrDefault();
-                if (existingKzCountry == null)
+                var existingFilCountry = FilCountries.Where(w => w.Name == item).FirstOrDefault();
+                if (existingFilCountry == null)
                 {
-                    Country newKzCountry = new Country
+                    Country newFilCountry = new Country
                     {
                         Name = item,
                         IsEnabled = true,
                     };
-                    Country countrySaved = _countryRepository.Save(newKzCountry);
+                    Country countrySaved = _countryRepository.Save(newFilCountry);
                 }
 
                 ExOzCountry exOzCountryResult = new ExOzCountry();
@@ -53,7 +53,7 @@ namespace FIL.Api.CommandHandlers.ExOz
                     ExOzCountry newExOzCountry = new ExOzCountry
                     {
                         Name = item,
-                        CountryMapId = existingKzCountry.Id,
+                        CountryMapId = existingFilCountry.Id,
                         ModifiedBy = command.ModifiedBy,
                         CreatedUtc = DateTime.UtcNow,
                         IsEnabled = true,

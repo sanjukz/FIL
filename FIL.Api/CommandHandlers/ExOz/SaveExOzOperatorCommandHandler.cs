@@ -52,22 +52,22 @@ namespace FIL.Api.CommandHandlers.ExOz
         {
             List<string> apiOperatorNames = command.OperatorList.Select(w => w.Name).Distinct().ToList();
 
-            var kzEvents = _eventRepository.GetByNames(apiOperatorNames);
+            var FilEvents = _eventRepository.GetByNames(apiOperatorNames);
             var exOzOperators = _exOzOperatorRepository.GetByNames(apiOperatorNames);
             foreach (var item in command.OperatorList)
             {
                 ExOzOperator exOzOperator = exOzOperators.Where(w => w.OperatorId == item.Id).FirstOrDefault();
-                Event kzEvent = kzEvents.Where(w => w.Name == item.Name).FirstOrDefault();
+                Event FilEvent = FilEvents.Where(w => w.Name == item.Name).FirstOrDefault();
 
                 ExOzRegion exOzRegion = _exOzRegionRepository.GetByUrlSegment(item.RegionUrlSegment);
-                City kzCity = _cityRepository.GetByName(exOzRegion.Name);
-                Venue kzVenue = _venueRepository.GetByName(item.Geolocations[0].Address);
+                City FilCity = _cityRepository.GetByName(exOzRegion.Name);
+                Venue FilVenue = _venueRepository.GetByName(item.Geolocations[0].Address);
 
                 //Venue
                 try
                 {
-                    Venue retVenue = UpdateVenue(item, kzVenue, kzCity.Id, command.ModifiedBy);
-                    Event retEvent = UpdateEvent(item, kzEvent, command.ModifiedBy);
+                    Venue retVenue = UpdateVenue(item, FilVenue, FilCity.Id, command.ModifiedBy);
+                    Event retEvent = UpdateEvent(item, FilEvent, command.ModifiedBy);
                     ExOzOperator retOperator = UpdateOperator(item, exOzOperator, retEvent.Id, retVenue.Id, command.ModifiedBy);
                     updatedOperators.OperatorList.Add(retOperator);
                     UpdateAllOperatorImages(item, retOperator.Id, command.ModifiedBy);
@@ -79,7 +79,7 @@ namespace FIL.Api.CommandHandlers.ExOz
             }
         }
 
-        protected Venue UpdateVenue(ExOzOperatorResponse item, Venue kzVenue, int kzCityId, Guid ModifiedBy)
+        protected Venue UpdateVenue(ExOzOperatorResponse item, Venue FilVenue, int FilCityId, Guid ModifiedBy)
         {
             string VenueName = "";
             if (item.Geolocations[0].Label == null)
@@ -87,35 +87,35 @@ namespace FIL.Api.CommandHandlers.ExOz
             else
                 VenueName = item.Geolocations[0].Label;
             //Venue
-            Venue kzVenueInserted = new Venue();
-            if (kzVenue == null)
+            Venue FilVenueInserted = new Venue();
+            if (FilVenue == null)
             {
-                Venue newKzVenue = new Venue
+                Venue newFilVenue = new Venue
                 {
                     AltId = Guid.NewGuid(),
                     Name = VenueName,
                     AddressLineOne = item.Geolocations[0].Address,
-                    CityId = kzCityId,
+                    CityId = FilCityId,
                     Latitude = item.Geolocations[0].Latitude,
                     Longitude = item.Geolocations[0].Longitude,
                     ModifiedBy = ModifiedBy,
                     IsEnabled = true
                 };
-                kzVenueInserted = _venueRepository.Save(newKzVenue);
+                FilVenueInserted = _venueRepository.Save(newFilVenue);
             }
             else
             {
-                kzVenueInserted = kzVenue;
+                FilVenueInserted = FilVenue;
             }
-            return kzVenueInserted;
+            return FilVenueInserted;
         }
 
-        protected Event UpdateEvent(ExOzOperatorResponse item, Event kzEvent, Guid ModifiedBy)
+        protected Event UpdateEvent(ExOzOperatorResponse item, Event FilEvent, Guid ModifiedBy)
         {
-            Event kzEventInserted = new Event();
-            if (kzEvent == null)
+            Event FilEventInserted = new Event();
+            if (FilEvent == null)
             {
-                var newKzEvent = new Event
+                var newFilEvent = new Event
                 {
                     AltId = Guid.NewGuid(),
                     Name = item.Name,
@@ -133,16 +133,16 @@ namespace FIL.Api.CommandHandlers.ExOz
                     ModifiedBy = ModifiedBy,
                     IsEnabled = true
                 };
-                kzEventInserted = _eventRepository.Save(newKzEvent);
+                FilEventInserted = _eventRepository.Save(newFilEvent);
             }
             else
             {
-                kzEventInserted = kzEvent;
+                FilEventInserted = FilEvent;
             }
-            return kzEventInserted;
+            return FilEventInserted;
         }
 
-        protected ExOzOperator UpdateOperator(ExOzOperatorResponse item, ExOzOperator exOzOperator, long kzEventId, int kzVenueId, Guid ModifiedBy)
+        protected ExOzOperator UpdateOperator(ExOzOperatorResponse item, ExOzOperator exOzOperator, long FilEventId, int FilVenueId, Guid ModifiedBy)
         {
             ExOzOperator exOzOperatorInserted = new ExOzOperator();
             if (exOzOperator == null)
@@ -155,8 +155,8 @@ namespace FIL.Api.CommandHandlers.ExOz
                     UrlSegment = item.UrlSegment,
                     CanonicalRegionUrlSegment = item.CanonicalRegionUrlSegment,
                     RegionId = item.RegionId,
-                    EventId = kzEventId,
-                    VenueId = kzVenueId,
+                    EventId = FilEventId,
+                    VenueId = FilVenueId,
                     Title = item.Title,
                     Description = item.Description,
                     Summary = item.Summary,

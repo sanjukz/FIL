@@ -3,7 +3,7 @@ using FIL.Contracts.Interfaces;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Kz.Contracts.DataModels
+namespace FIL.Contracts.DataModels
 {
     public class AccessToken : IId<int>, IAuditable
     {

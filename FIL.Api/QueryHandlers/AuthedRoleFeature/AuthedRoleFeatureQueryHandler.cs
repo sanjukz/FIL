@@ -26,8 +26,7 @@ namespace FIL.Api.QueryHandlers.TransactionReport
             try
             {
                 var user = _userRepository.GetByAltId(query.UserAltId);
-                var featureId = user.RolesId == 1 ? _featureRepository.GetAll().Where(w => w.ModuleId == FIL.Contracts.Enums.Modules.KzSuite).Select(s => s.Id)
-                    : _roleFeatureMappingRepository.GetByRoleId(user.RolesId).Select(s => s.FeatureId).Distinct();
+                var featureId =  _roleFeatureMappingRepository.GetByRoleId(user.RolesId).Select(s => s.FeatureId).Distinct();
                 IEnumerable<FIL.Contracts.DataModels.Feature> featureList = _featureRepository.GetByIds(featureId);
                 return new AuthedRoleFeatureQueryResult
                 {

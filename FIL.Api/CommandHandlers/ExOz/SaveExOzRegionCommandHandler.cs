@@ -38,31 +38,31 @@ namespace FIL.Api.CommandHandlers.ExOz
         protected void UpdateRegions(SaveExOzRegionCommand command)
         {
             List<string> apiRegionNames = command.RegionList.Select(w => w.Name).Distinct().ToList();
-            var kzCities = _cityRepository.GetByNames(apiRegionNames);
+            var FilCities = _cityRepository.GetByNames(apiRegionNames);
             var exOzRegions = _exOzRegionRepository.GetByNames(apiRegionNames);
 
             foreach (var item in command.RegionList)
             {
                 ExOzRegion existingExOzRegion = exOzRegions.Where(w => w.RegionId == item.Id).FirstOrDefault();
-                City existingKzCity = kzCities.Where(w => w.Name == item.Name).FirstOrDefault();
+                City existingFilCity = FilCities.Where(w => w.Name == item.Name).FirstOrDefault();
 
                 ExOzState exOzState = _exOzStateRepository.GetByUrlSegment(item.StateUrlSegment);
-                State kzState = _stateRepository.GetByName(exOzState.Name);
+                State FilState = _stateRepository.GetByName(exOzState.Name);
 
-                City kzCityInserted = new City();
-                if (existingKzCity == null)
+                City FilCityInserted = new City();
+                if (existingFilCity == null)
                 {
-                    var newKzCity = new City
+                    var newFilCity = new City
                     {
                         Name = item.Name,
-                        StateId = kzState.Id,
+                        StateId = FilState.Id,
                         IsEnabled = true,
                     };
-                    kzCityInserted = _cityRepository.Save(newKzCity);
+                    FilCityInserted = _cityRepository.Save(newFilCity);
                 }
                 else
                 {
-                    kzCityInserted = existingKzCity;
+                    FilCityInserted = existingFilCity;
                 }
                 if (existingExOzRegion == null)
                 {
@@ -72,7 +72,7 @@ namespace FIL.Api.CommandHandlers.ExOz
                         Name = item.Name,
                         UrlSegment = item.UrlSegment,
                         StateId = exOzState.Id,
-                        CityId = kzCityInserted.Id,
+                        CityId = FilCityInserted.Id,
                         IsEnabled = true,
                         Offset = item.Offset,
                         TimeStamp = item.Timestamp,

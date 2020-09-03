@@ -38,31 +38,31 @@ namespace FIL.Api.CommandHandlers.ExOz
         protected void UpdateStates(SaveExOzStateCommand command)
         {
             List<string> apiStateNames = command.StateList.Select(w => w.Name).Distinct().ToList();
-            var kzStates = _stateRepository.GetByNames(apiStateNames);
+            var FilStates = _stateRepository.GetByNames(apiStateNames);
             var exOzStates = _exOzStateRepository.GetByNames(apiStateNames);
 
             foreach (var item in command.StateList)
             {
-                State existingKzState = kzStates.Where(w => w.Name == item.Name).FirstOrDefault();
+                State existingFilState = FilStates.Where(w => w.Name == item.Name).FirstOrDefault();
                 ExOzState existingExOzState = exOzStates.Where(w => w.StateId == item.Id).FirstOrDefault();
 
-                Country kzCountry = _countryRepository.GetByName(item.Country);
+                Country FilCountry = _countryRepository.GetByName(item.Country);
                 ExOzCountry exOzCountry = _exOzCountryRepository.GetByName(item.Country);
 
-                State kzStateInserted = new State();
-                if (existingKzState == null)
+                State FilStateInserted = new State();
+                if (existingFilState == null)
                 {
-                    var newKzState = new State
+                    var newFilState = new State
                     {
                         Name = item.Name,
-                        CountryId = kzCountry.Id,
+                        CountryId = FilCountry.Id,
                         IsEnabled = true,
                     };
-                    kzStateInserted = _stateRepository.Save(newKzState);
+                    FilStateInserted = _stateRepository.Save(newFilState);
                 }
                 else
                 {
-                    kzStateInserted = existingKzState;
+                    FilStateInserted = existingFilState;
                 }
                 if (existingExOzState == null)
                 {
@@ -72,7 +72,7 @@ namespace FIL.Api.CommandHandlers.ExOz
                         Name = item.Name,
                         UrlSegment = item.UrlSegment,
                         CountryId = exOzCountry.Id,
-                        StateMapId = kzStateInserted.Id,
+                        StateMapId = FilStateInserted.Id,
                         IsEnabled = true,
                     };
                     ExOzState exOzStateInserted = _exOzStateRepository.Save(newExOzState);
