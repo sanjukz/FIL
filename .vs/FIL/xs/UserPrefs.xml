@@ -1,63 +1,37 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Web.Admin/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Contracts/Queries/Search/SearchQuery.cs">
     <Files>
-      <File FileName="FIL.Contracts/Queries/Account/GetAllGuestUserDetailQuery..cs" Line="6" Column="44" />
-      <File FileName="FIL.Contracts/Queries/AuthedRoleFeature/AuthedRoleFeatureQuery.cs" />
-      <File FileName="FIL.Contracts/QueryResults/Category/CategoriesByLocationQueryResult.cs" />
-      <File FileName="FIL.Contracts/QueryResults/Category/CategoryEventQueryResult.cs" />
-      <File FileName="FIL.Contracts/QueryResults/City/CitiesQueryResult.cs" />
-      <File FileName="FIL.Contracts/QueryResults/City/CitySearchQueryResult.cs" />
-      <File FileName="FIL.Contracts/Queries/CitySearch/CitySearchQuery.cs" Line="3" Column="1" />
-      <File FileName="FIL.Contracts/QueryResults/City/CitiesQueryResult copy.cs" Line="10" Column="2" />
-      <File FileName="FIL.Contracts/QueryResults/CitySearch/CitySearchQueryResult.cs" Line="4" Column="48" />
-      <File FileName="FIL.Api/Repositories/ReportingRepository.cs" Line="116" Column="68" />
-      <File FileName="FIL.Configuration.Api/Startup.cs" Line="45" Column="33" />
-      <File FileName="FIL.Foundation/Modules/AutofacModule.cs" Line="42" Column="22" />
-      <File FileName="FIL.Web.Core/Startup/BaseStartup.cs" Line="209" Column="9" />
-      <File FileName="FIL.Web/Controllers/SearchController.cs" Line="9" Column="35" />
-      <File FileName="FIL.Web.Admin/Controllers/FulfillmentController.cs" Line="32" Column="1" />
-      <File FileName="FIL.Web.Admin/Controllers/Reporting/ReportController.cs" Line="86" Column="1" />
-      <File FileName="FIL.Web.Admin/Program.cs" Line="5" Column="1" />
-      <File FileName="FIL.Web.Admin/Startup.cs" Line="8" Column="24" />
-      <File FileName="FIL.Web.Admin/package.json" Line="1" Column="1" />
+      <File FileName="FIL.Contracts/Queries/CurrentOrderData/CurrentOrderDataQuery.cs" Line="7" Column="39" />
+      <File FileName="FIL.Contracts/Queries/CustomerDocumentType/CurrencyTypesQuery.cs" Line="1" Column="1" />
+      <File FileName="FIL.Contracts/Queries/CustomerInformations/CustomerInformationsQuery.cs" Line="6" Column="43" />
+      <File FileName="FIL.Contracts/Queries/CustomerIpDetails/CustomerIpDetailQuery.cs" Line="6" Column="39" />
+      <File FileName="FIL.Contracts/Queries/CustomerUpdate/CustomerUpdateQuery.cs" Line="7" Column="37" />
+      <File FileName="FIL.Contracts/Queries/DeliveryOptions/DeliveryOptionsQuery.cs" Line="7" Column="38" />
+      <File FileName="FIL.Contracts/Queries/Description/DescriptionQuery.cs" Line="8" Column="41" />
+      <File FileName="FIL.Contracts/Queries/EventLearnPage/EventLearnPageQuery.cs" Line="8" Column="4" />
+      <File FileName="FIL.Contracts/Queries/EventSchedule/EditEventScheduleQuery.cs" Line="10" Column="2" />
+      <File FileName="FIL.Contracts/Queries/EventSchedule/EventScheduleQuery.cs" Line="10" Column="41" />
+      <File FileName="FIL.Contracts/Queries/NewsLetterSignUp/NewsLetterSignUpSearchQuery.cs" Line="6" Column="45" />
+      <File FileName="FIL.Web/Controllers/FooterController.cs" Line="58" Column="44" />
+      <File FileName="FIL.Contracts/Queries/Search/SearchQuery.cs" Line="10" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FIL" expanded="True">
             <Node name="FIL.Api" expanded="True">
-              <Node name="QueryHandlers" expanded="True">
-                <Node name="Cities" expanded="True" />
-              </Node>
-              <Node name="Repositories" expanded="True" />
+              <Node name="QueryHandlers" expanded="True" />
             </Node>
-            <Node name="FIL.Configuration.Api" expanded="True" />
             <Node name="FIL.Contracts" expanded="True">
               <Node name="Queries" expanded="True">
-                <Node name="City" expanded="True" />
-                <Node name="CitySearch" expanded="True" />
+                <Node name="Search" expanded="True">
+                  <Node name="SearchQuery.cs" selected="True" />
+                </Node>
               </Node>
-              <Node name="QueryResults" expanded="True">
-                <Node name="City" expanded="True" />
-                <Node name="CitySearch" expanded="True" />
-                <Node name="CorporateRequest" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="FIL.Foundation" expanded="True">
-              <Node name="Modules" expanded="True" />
+              <Node name="QueryResults" expanded="True" />
             </Node>
             <Node name="FIL.Web" expanded="True">
               <Node name="Controllers" expanded="True" />
-            </Node>
-            <Node name="FIL.Web.Admin" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="Reporting" expanded="True" />
-              </Node>
-              <Node name="Program.cs" selected="True" />
-            </Node>
-            <Node name="FIL.Web.Core" expanded="True">
-              <Node name="Providers" expanded="True" />
-              <Node name="Startup" expanded="True" />
             </Node>
           </Node>
         </State>
