@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using FIL.Contracts.Commands.EventCategoryMapping;
 using FIL.Contracts.Commands.EventSiteIdMapping;
 using FIL.Contracts.Queries.Events;
-using FIL.Contracts.Queries.SiteInfo;
 using FIL.Foundation.Senders;
 using FIL.Web.Core.Providers;
 using FIL.Web.Admin.ViewModels.Event;
@@ -202,26 +201,6 @@ namespace FIL.Web.Admin.Controllers
         siteIdVM.eventsiteidmapping.Add(data);
       }
       return siteIdVM;
-    }
-    //api/event/sitemap
-
-    [HttpGet]
-    [Route("api/event/sitedata")]
-    public async Task<SiteDataViewModel> GetSiteData()
-    {
-      SiteDataViewModel sitedataVM = new SiteDataViewModel();
-      sitedataVM.SiteData = new List<SiteViewModel>();
-      var queryResult = await _querySender.Send(new SiteQuery { Name = "" });
-      foreach (var p in queryResult.SiteData)
-      {
-        SiteViewModel data = new SiteViewModel()
-        {
-          Id = p.Id,
-          SiteName = p.SiteName
-        };
-        sitedataVM.SiteData.Add(data);
-      }
-      return sitedataVM;
     }
 
     [HttpPost]

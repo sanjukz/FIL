@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Contracts/Queries/Search/SearchQuery.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Contracts/Queries/VenueCreation/VenueDataQuery.cs">
     <Files>
       <File FileName="FIL.Contracts/Queries/CurrentOrderData/CurrentOrderDataQuery.cs" Line="7" Column="39" />
       <File FileName="FIL.Contracts/Queries/CustomerDocumentType/CurrencyTypesQuery.cs" Line="1" Column="1" />
@@ -13,7 +13,8 @@
       <File FileName="FIL.Contracts/Queries/EventSchedule/EventScheduleQuery.cs" Line="10" Column="41" />
       <File FileName="FIL.Contracts/Queries/NewsLetterSignUp/NewsLetterSignUpSearchQuery.cs" Line="6" Column="45" />
       <File FileName="FIL.Web/Controllers/FooterController.cs" Line="58" Column="44" />
-      <File FileName="FIL.Contracts/Queries/Search/SearchQuery.cs" Line="10" Column="2" />
+      <File FileName="FIL.Contracts/Queries/Search/SearchQuery.cs" Line="5" Column="2" />
+      <File FileName="FIL.Contracts/Queries/VenueCreation/VenueDataQuery.cs" Line="11" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,13 +25,17 @@
             </Node>
             <Node name="FIL.Contracts" expanded="True">
               <Node name="Queries" expanded="True">
-                <Node name="Search" expanded="True">
-                  <Node name="SearchQuery.cs" selected="True" />
+                <Node name="Search" expanded="True" />
+                <Node name="VenueCreation" expanded="True">
+                  <Node name="VenueDataQuery.cs" selected="True" />
                 </Node>
               </Node>
               <Node name="QueryResults" expanded="True" />
             </Node>
             <Node name="FIL.Web" expanded="True">
+              <Node name="Controllers" expanded="True" />
+            </Node>
+            <Node name="FIL.Web.Admin" expanded="True">
               <Node name="Controllers" expanded="True" />
             </Node>
           </Node>
