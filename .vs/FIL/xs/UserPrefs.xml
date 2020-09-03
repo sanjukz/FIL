@@ -1,25 +1,34 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Web.Admin/Controllers/FulfillmentController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Web.Admin/Modules/AutofacModule.cs">
     <Files>
-      <File FileName="FIL.Contracts/Commands/Discount/ApplyDiscountCommand.cs" Line="10" Column="45" />
-      <File FileName="FIL.Web.Admin/Controllers/EventCreationController.cs" Line="24" Column="38" />
-      <File FileName="FIL.Web.Admin/Controllers/FulfillmentController.cs" Line="10" Column="30" />
+      <File FileName="FIL.Api/QueryHandlers/TransactionReport/TransactionReportQueryHandler.cs" Line="16" Column="1" />
+      <File FileName="FIL.Api/Repositories/ReportingRepository.cs" Line="20" Column="1" />
+      <File FileName="FIL.Web.Admin/Controllers/Reporting/FeelUserReportController.cs" Line="15" Column="42" />
+      <File FileName="FIL.Web.Admin/Modules/AutofacModule.cs" Line="17" Column="80" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FIL" expanded="True">
             <Node name="FIL.Api" expanded="True">
-              <Node name="CommandHandlers" expanded="True" />
+              <Node name="QueryHandlers" expanded="True">
+                <Node name="Reporting" expanded="True" />
+                <Node name="TransactionReport" expanded="True" />
+                <Node name="UserAddress" expanded="True" />
+              </Node>
+              <Node name="Repositories" expanded="True" />
             </Node>
             <Node name="FIL.Contracts" expanded="True">
-              <Node name="Commands" expanded="True">
-                <Node name="Discount" expanded="True" />
+              <Node name="Queries" expanded="True">
+                <Node name="Reporting" expanded="True" />
               </Node>
             </Node>
             <Node name="FIL.Web.Admin" expanded="True">
               <Node name="Controllers" expanded="True">
-                <Node name="FulfillmentController.cs" selected="True" />
+                <Node name="Reporting" expanded="True" />
+              </Node>
+              <Node name="Modules" expanded="True">
+                <Node name="AutofacModule.cs" selected="True" />
               </Node>
             </Node>
           </Node>

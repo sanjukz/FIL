@@ -4,7 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using FIL.Foundation.Senders;
 using FIL.Contracts.Queries.TransactionReport;
 using FIL.Contracts.Commands.TicketAlert;
-using FIL.Web.Providers;
 using FIL.Contracts.Enums;
 using System.Collections.Generic;
 using System.Linq;

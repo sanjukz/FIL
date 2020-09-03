@@ -373,7 +373,7 @@ class TransactionReportSingleDataModel extends React.Component<TransactionReport
           </div>
           <Footer
             isHideCancel={true}
-            isDisabled={!(this.state.selectedEvents && this.state.valFromDate && this.state.valToDate)}
+            isDisabled={!this.state.selectedEvents}
             saveText={this.props.reportEvents.fetchReportSuccess ? 'Update' : 'Submit'}
             isSaveRequest={this.props.reportEvents.isLoading}
             onSubmit={() => { this.getTransactionReport() }} />

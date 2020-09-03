@@ -16,6 +16,7 @@ namespace FIL.Web.Controllers
     {
       _querySender = querySender;
     }
+
     [HttpPost]
     [Route("api/get/reports")]
     public async Task<TransactionReportResponseViewModel> GetTransactionReport([FromBody] TransactionReportRequestViewModel model)

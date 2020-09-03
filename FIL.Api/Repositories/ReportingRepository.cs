@@ -11,17 +11,10 @@ namespace FIL.Api.Repositories
 {
     public interface IReportingRepository : IOrmRepository<Reporting, Reporting>
     {
-        Reporting GetTransactionReportData(TransactionReportZsuiteQuery query);
 
         TransactionReport GetTransactionReportDataAsSingleDataModel(string EventAltId, Guid UserAltId, string EventDetailId, DateTime FromDate, DateTime ToDate, string currencyType);
 
         TransactionReport GetFAPTransactionReport(string EventAltId, DateTime FromDate, DateTime ToDate, string currencyType);
-
-        Reporting GetScanningReportData(ScanningReportQuery query);
-
-        Reporting GetRASVScanningReportData(RASVScanningReportQuery query);
-
-        Reporting GetTransactionReportByDateData(TransactionReportQueryByDate query);
 
         IEnumerable<FIL.Contracts.Models.TransactionReport.FAPAllPlacesResponseModel> GetAllReportEvents(bool isFeel, List<long> EventIds, bool isSuperUser);
 
@@ -40,36 +33,6 @@ namespace FIL.Api.Repositories
     {
         public ReportingRepository(IDataSettings dataSettings) : base(dataSettings)
         {
-        }
-
-        public Reporting GetTransactionReportData(TransactionReportZsuiteQuery query)
-        {
-            Reporting reporting = new Reporting();
-            var reportData = GetCurrentConnection().QueryMultiple("spTransactionReport", new { EventAltId = query.EventAltId, UserAltId = query.UserAltId, EventDetailId = query.EventDetailId, FromDate = query.FromDate, ToDate = query.ToDate }, commandType: CommandType.StoredProcedure);
-
-            reporting.Transaction = reportData.Read<Transaction>();
-            reporting.TransactionDetail = reportData.Read<TransactionDetail>();
-            reporting.TransactionDeliveryDetail = reportData.Read<TransactionDeliveryDetail>();
-            reporting.TransactionPaymentDetail = reportData.Read<TransactionPaymentDetail>();
-            reporting.CurrencyType = reportData.Read<CurrencyType>();
-            reporting.EventTicketAttribute = reportData.Read<EventTicketAttribute>();
-            reporting.EventTicketDetail = reportData.Read<EventTicketDetail>();
-            reporting.TicketCategory = reportData.Read<TicketCategory>();
-            reporting.EventDetail = reportData.Read<EventDetail>();
-            reporting.EventAttribute = reportData.Read<EventAttribute>();
-            reporting.Venue = reportData.Read<Venue>();
-            reporting.City = reportData.Read<City>();
-            reporting.State = reportData.Read<State>();
-            reporting.Country = reportData.Read<Country>();
-            reporting.Event = reportData.Read<Event>();
-            reporting.User = reportData.Read<User>();
-            reporting.UserCardDetail = reportData.Read<UserCardDetail>();
-            reporting.IPDetail = reportData.Read<IPDetail>();
-            reporting.TicketFeeDetail = reportData.Read<TicketFeeDetail>();
-            reporting.ReportingColumnsUserMapping = reportData.Read<ReportingColumnsUserMapping>();
-            reporting.ReportingColumnsMenuMapping = reportData.Read<ReportingColumnsMenuMapping>();
-            reporting.ReportColumns = reportData.Read<ReportingColumn>();
-            return reporting;
         }
 
         public TransactionReport GetTransactionReportDataAsSingleDataModel(string EventAltId, Guid UserAltId, string EventDetailId, DateTime FromDate, DateTime ToDate, string currencyType)
@@ -106,109 +69,6 @@ namespace FIL.Api.Repositories
             reporting.DynamicSummaryColumns = reportData.Read<ReportingColumn>();
             reporting.DynamicSummaryInfoColumns = reportData.Read<ReportingColumn>();
             return reporting;
-        }
-
-        public Reporting GetTransactionReportByDateData(TransactionReportQueryByDate query)
-        {
-            Reporting reporting = new Reporting();
-            var reportData = GetCurrentConnection().QueryMultiple("spTransactionReportByDateRange", new { UserAltId = query.UserAltId, FromDate = query.FromDate, ToDate = query.ToDate }, commandType: CommandType.StoredProcedure);
-
-            reporting.Transaction = reportData.Read<Transaction>();
-            reporting.TransactionDetail = reportData.Read<TransactionDetail>();
-            reporting.TransactionDeliveryDetail = reportData.Read<TransactionDeliveryDetail>();
-            reporting.TransactionPaymentDetail = reportData.Read<TransactionPaymentDetail>();
-            reporting.CurrencyType = reportData.Read<CurrencyType>();
-            reporting.EventTicketAttribute = reportData.Read<EventTicketAttribute>();
-            reporting.EventTicketDetail = reportData.Read<EventTicketDetail>();
-            reporting.TicketCategory = reportData.Read<TicketCategory>();
-            reporting.EventDetail = reportData.Read<EventDetail>();
-            reporting.EventAttribute = reportData.Read<EventAttribute>();
-            reporting.Venue = reportData.Read<Venue>();
-            reporting.City = reportData.Read<City>();
-            reporting.State = reportData.Read<State>();
-            reporting.Country = reportData.Read<Country>();
-            reporting.Event = reportData.Read<Event>();
-            reporting.User = reportData.Read<User>();
-            reporting.UserCardDetail = reportData.Read<UserCardDetail>();
-            reporting.IPDetail = reportData.Read<IPDetail>();
-            reporting.TicketFeeDetail = reportData.Read<TicketFeeDetail>();
-            reporting.ReportingColumnsUserMapping = reportData.Read<ReportingColumnsUserMapping>();
-            reporting.ReportingColumnsMenuMapping = reportData.Read<ReportingColumnsMenuMapping>();
-            reporting.ReportColumns = reportData.Read<ReportingColumn>();
-            return reporting;
-        }
-
-        public Reporting GetScanningReportData(ScanningReportQuery query)
-        {
-            Reporting reporting = new Reporting();
-            if (query.EventAltId.ToString().ToUpper() == "1F0257FA-EEA6-4469-A7BC-B878A215C8A9")
-            {
-                var reportData = GetCurrentConnection().QueryMultiple("spScanningReportRASV2", new { UserAltId = query.UserAltId, EventAltId = query.EventAltId, EventDetailId = query.EventDetailId, FromDate = query.FromDate, ToDate = query.ToDate }, commandType: CommandType.StoredProcedure);
-                reporting.Transaction = reportData.Read<Transaction>();
-                reporting.TransactionDetail = reportData.Read<TransactionDetail>();
-                reporting.MatchSeatTicketDetail = reportData.Read<FIL.Contracts.Models.ScanningDetailModel>();
-                reporting.EventTicketDetail = reportData.Read<EventTicketDetail>();
-                reporting.EventDetail = reportData.Read<EventDetail>();
-                reporting.EventAttribute = reportData.Read<EventAttribute>();
-                reporting.Event = reportData.Read<Event>();
-                reporting.TicketCategory = reportData.Read<TicketCategory>();
-                reporting.ReportingColumnsUserMapping = reportData.Read<ReportingColumnsUserMapping>();
-                reporting.ReportingColumnsMenuMapping = reportData.Read<ReportingColumnsMenuMapping>();
-                reporting.ReportColumns = reportData.Read<ReportingColumn>();
-            }
-            else
-            {
-                var reportData = GetCurrentConnection().QueryMultiple("spScanningReportTemp", new { UserAltId = query.UserAltId, EventAltId = query.EventAltId, EventDetailId = query.EventDetailId, FromDate = query.FromDate, ToDate = query.ToDate }, commandType: CommandType.StoredProcedure);
-                reporting.Transaction = reportData.Read<Transaction>();
-                reporting.TransactionDetail = reportData.Read<TransactionDetail>();
-                reporting.MatchSeatTicketDetail = reportData.Read<FIL.Contracts.Models.ScanningDetailModel>();
-                reporting.EventTicketDetail = reportData.Read<EventTicketDetail>();
-                reporting.EventDetail = reportData.Read<EventDetail>();
-                reporting.EventAttribute = reportData.Read<EventAttribute>();
-                reporting.Event = reportData.Read<Event>();
-                reporting.TicketCategory = reportData.Read<TicketCategory>();
-                reporting.ReportingColumnsUserMapping = reportData.Read<ReportingColumnsUserMapping>();
-                reporting.ReportingColumnsMenuMapping = reportData.Read<ReportingColumnsMenuMapping>();
-                reporting.ReportColumns = reportData.Read<ReportingColumn>();
-            }
-            return reporting;
-        }
-
-        public Reporting GetRASVScanningReportData(RASVScanningReportQuery query)
-        {
-            Reporting reporting = new Reporting();
-            if (query.SearchBarcode)
-            {
-                var reportData = GetCurrentConnection().QueryMultiple("spRideRedemptionBarcodeReport", new { UserAltId = query.UserAltId, EventAltId = query.EventAltId, EventDetailId = query.EventDetailId, FromDate = query.FromDate, ToDate = query.ToDate, query.Barcode }, commandType: CommandType.StoredProcedure);
-                reporting.Transaction = reportData.Read<Transaction>();
-                reporting.TransactionDetail = reportData.Read<TransactionDetail>();
-                reporting.MatchSeatTicketDetail = reportData.Read<FIL.Contracts.Models.ScanningDetailModel>();
-                reporting.EventTicketDetail = reportData.Read<EventTicketDetail>();
-                reporting.EventDetail = reportData.Read<EventDetail>();
-                reporting.EventAttribute = reportData.Read<EventAttribute>();
-                reporting.Event = reportData.Read<Event>();
-                reporting.TicketCategory = reportData.Read<TicketCategory>();
-                reporting.ReportingColumnsUserMapping = reportData.Read<ReportingColumnsUserMapping>();
-                reporting.ReportingColumnsMenuMapping = reportData.Read<ReportingColumnsMenuMapping>();
-                reporting.ReportColumns = reportData.Read<ReportingColumn>();
-                return reporting;
-            }
-            else
-            {
-                var reportData = GetCurrentConnection().QueryMultiple("spRideRedemptionReport", new { UserAltId = query.UserAltId, EventAltId = query.EventAltId, EventDetailId = query.EventDetailId, FromDate = query.FromDate, ToDate = query.ToDate }, commandType: CommandType.StoredProcedure);
-                reporting.Transaction = reportData.Read<Transaction>();
-                reporting.TransactionDetail = reportData.Read<TransactionDetail>();
-                reporting.MatchSeatTicketDetail = reportData.Read<FIL.Contracts.Models.ScanningDetailModel>();
-                reporting.EventTicketDetail = reportData.Read<EventTicketDetail>();
-                reporting.EventDetail = reportData.Read<EventDetail>();
-                reporting.EventAttribute = reportData.Read<EventAttribute>();
-                reporting.Event = reportData.Read<Event>();
-                reporting.TicketCategory = reportData.Read<TicketCategory>();
-                reporting.ReportingColumnsUserMapping = reportData.Read<ReportingColumnsUserMapping>();
-                reporting.ReportingColumnsMenuMapping = reportData.Read<ReportingColumnsMenuMapping>();
-                reporting.ReportColumns = reportData.Read<ReportingColumn>();
-                return reporting;
-            }
         }
 
         public IEnumerable<FIL.Contracts.Models.TransactionReport.FAPAllPlacesResponseModel> GetAllReportEvents(bool isFeel, List<long> eventIds, bool isSuperUser)
