@@ -1,7 +1,7 @@
 ﻿using Autofac;
 using Microsoft.Extensions.Configuration;
 
-namespace Kz.Window.Service
+namespace FIL.Window.Service
 {
     public class AutofacModule : Module
     {

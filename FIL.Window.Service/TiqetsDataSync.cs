@@ -1,11 +1,11 @@
-﻿using Kz.Window.Service.Models;
-using Kz.Window.Service.Services;
+﻿using FIL.Window.Service.Models;
+using FIL.Window.Service.Services;
 using System;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Kz.Window.Service
+namespace FIL.Window.Service
 {
     public class TiqetsDataSync : ITiqetsDataSync
     {
@@ -28,7 +28,7 @@ namespace Kz.Window.Service
                     Uri products_Uri = new Uri("https://www.feelitlive.com/api/sync-tiqets/products/" + skipIndex + "/100/false/" + pageNumber);
                     HttpResponseMessage response_data = await webClient.GetAsync(products_Uri);
                     var product_JsonString = await response_data.Content.ReadAsStringAsync();
-                    var products_Data = Kz.Api.Utilities.Mapper<ProductResponseModel>.MapFromJson(product_JsonString);
+                    var products_Data = FIL.Api.Utilities.Mapper<ProductResponseModel>.MapFromJson(product_JsonString);
                     skipIndex = skipIndex + 100;
                     if (i % 5 == 0)
                     {
@@ -40,7 +40,7 @@ namespace Kz.Window.Service
                 Uri productsUri = new Uri("https://www.feelitlive.com/api/sync-tiqets/products/0/10/true/1");
                 HttpResponseMessage response = await webClient.GetAsync(productsUri);
                 var productJsonString = await response.Content.ReadAsStringAsync();
-                var productsData = Kz.Api.Utilities.Mapper<ProductResponseModel>.MapFromJson(productJsonString);
+                var productsData = FIL.Api.Utilities.Mapper<ProductResponseModel>.MapFromJson(productJsonString);
                 int indx = 1; bool successFlag = true;
                 foreach (var currentProduct in productsData.productResponse.tiqetProducts)
                 {
@@ -50,7 +50,7 @@ namespace Kz.Window.Service
                         string uri = string.Format(uriFormat, currentProduct.productId);
                         HttpResponseMessage update_product_response = await webClient.GetAsync(uri);
                         var jsonStringOfProduct = await update_product_response.Content.ReadAsStringAsync();
-                        var productData = Kz.Api.Utilities.Mapper<ProductUpdateResponseModel>.MapFromJson(jsonStringOfProduct);
+                        var productData = FIL.Api.Utilities.Mapper<ProductUpdateResponseModel>.MapFromJson(jsonStringOfProduct);
                         if (productData.success)
                         {
                             //Console.WriteLine(indx + "Done ..." + currentProduct.productId);
@@ -70,7 +70,7 @@ namespace Kz.Window.Service
                 Uri disable_productsUri = new Uri("https://www.feelitlive.com/api/tiqet/disable-events");
                 HttpResponseMessage disable_response = await webClient.GetAsync(productsUri);
                 var disable_responseString = await disable_response.Content.ReadAsStringAsync();
-                var disableData = Kz.Api.Utilities.Mapper<ProductResponseModel>.MapFromJson(disable_responseString);
+                var disableData = FIL.Api.Utilities.Mapper<ProductResponseModel>.MapFromJson(disable_responseString);
                 Console.Write("Completed -------------------");
                 Task.WaitAll(IntegrateWithSlackAsync("end", successFlag));
             }

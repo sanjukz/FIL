@@ -1,13 +1,13 @@
-﻿using Kz.Foundation.Senders;
+﻿using FIL.Foundation.Senders;
 using Scheduler;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Kz.Logging;
+using FIL.Logging;
 using System.Diagnostics;
 using System.Net.Http;
 
-namespace Kz.Window.Service
+namespace FIL.Window.Service
 {
     public class ValueRetailDataSync : IValueRetailDataSync
     {

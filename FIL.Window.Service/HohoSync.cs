@@ -1,13 +1,13 @@
 ﻿using Algolia.Search.Clients;
-using Kz.Contracts.Commands.CitySightSeeing;
-using Kz.Contracts.Commands.HubSpot;
-using Kz.Contracts.Models;
-using Kz.Contracts.Models.Algolia;
-using Kz.Foundation.Senders;
-using Kz.Messaging.Models.Emails;
-using Kz.Messaging.Senders;
-using Kz.Window.Service.Models;
-using Kz.Window.Service.Services;
+using FIL.Contracts.Commands.CitySightSeeing;
+using FIL.Contracts.Commands.HubSpot;
+using FIL.Contracts.Models;
+using FIL.Contracts.Models.Algolia;
+using FIL.Foundation.Senders;
+using FIL.Messaging.Models.Emails;
+using FIL.Messaging.Senders;
+using FIL.Window.Service.Models;
+using FIL.Window.Service.Services;
 using Scheduler;
 using System;
 using System.Collections.Generic;
@@ -16,7 +16,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kz.Window.Service
+namespace FIL.Window.Service
 {
     public class HohoSync : IHohoSync
     {
@@ -38,7 +38,7 @@ namespace Kz.Window.Service
                 Uri locationsuri = new Uri("https://www.feelitlive.com/api/get-hoho-locations");
                 HttpResponseMessage response = await webClient.GetAsync(locationsuri);
                 var jsonStringLocations = await response.Content.ReadAsStringAsync();
-                var locationsData = Kz.Api.Utilities.Mapper<LocationsResponseModel>.MapFromJson(jsonStringLocations);
+                var locationsData = FIL.Api.Utilities.Mapper<LocationsResponseModel>.MapFromJson(jsonStringLocations);
                 if (locationsData.LocationResponse.Locations != null && locationsData.LocationResponse.Locations.Count > 0)
                 {
                     Console.WriteLine("Locations Synced Successfully " + locationsData.LocationResponse.Locations.Count + "Locations Found");
@@ -49,7 +49,7 @@ namespace Kz.Window.Service
                         string uri = string.Format(uriFormat, location.Name, location.CountryName);
                         HttpResponseMessage location_response = await webClient.GetAsync(uri);
                         var jsonStringOfLocation = await location_response.Content.ReadAsStringAsync();
-                        var locationData = Kz.Api.Utilities.Mapper<SucessResponseModel>.MapFromJson(jsonStringOfLocation);
+                        var locationData = FIL.Api.Utilities.Mapper<SucessResponseModel>.MapFromJson(jsonStringOfLocation);
                         if (locationData.isSuccess)
                         {
                             Console.WriteLine("Done ..." + location.Name + " " + location.CountryName);
@@ -63,7 +63,7 @@ namespace Kz.Window.Service
                     Uri disablinguri = new Uri("https://www.feelitlive.com/api/disable-events");
                     HttpResponseMessage responseOfDisabled = await webClient.GetAsync(disablinguri);
                     var jsonStringOfDisabled = await responseOfDisabled.Content.ReadAsStringAsync();
-                    var locationssData = Kz.Api.Utilities.Mapper<SucessResponseModel>.MapFromJson(jsonStringOfDisabled);
+                    var locationssData = FIL.Api.Utilities.Mapper<SucessResponseModel>.MapFromJson(jsonStringOfDisabled);
                     if (locationssData.isSuccess)
                     {
                         Console.WriteLine("Events Disabling Completed");

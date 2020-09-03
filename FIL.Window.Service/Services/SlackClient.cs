@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kz.Window.Service.Services
+namespace FIL.Window.Service.Services
 {
     public class SlackClient
     {

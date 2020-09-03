@@ -1,13 +1,13 @@
 ﻿using Algolia.Search.Clients;
-using Kz.Contracts.Commands.CitySightSeeing;
-using Kz.Contracts.Commands.HubSpot;
-using Kz.Contracts.Models;
-using Kz.Contracts.Models.Algolia;
-using Kz.Foundation.Senders;
-using Kz.Messaging.Models.Emails;
-using Kz.Messaging.Senders;
-using Kz.Window.Service.Models;
-using Kz.Window.Service.Services;
+using FIL.Contracts.Commands.CitySightSeeing;
+using FIL.Contracts.Commands.HubSpot;
+using FIL.Contracts.Models;
+using FIL.Contracts.Models.Algolia;
+using FIL.Foundation.Senders;
+using FIL.Messaging.Models.Emails;
+using FIL.Messaging.Senders;
+using FIL.Window.Service.Models;
+using FIL.Window.Service.Services;
 using Scheduler;
 using System;
 using System.Collections.Generic;
@@ -16,7 +16,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kz.Window.Service
+namespace FIL.Window.Service
 {
     public class AlgoliaDataSync : IAlgoliaDataSync
     {
@@ -54,7 +54,7 @@ namespace Kz.Window.Service
             Uri uriDisable = new Uri("https://www.feelitlive.com/api/algolia/disable-index");
             HttpResponseMessage responseDisable = await webClient.GetAsync(uriDisable);
             var jsonStringResponseDisable = await responseDisable.Content.ReadAsStringAsync();
-            var responseDisableData = Kz.Api.Utilities.Mapper<PlacesSyncReponseModel>.MapFromJson(jsonStringResponseDisable);
+            var responseDisableData = FIL.Api.Utilities.Mapper<PlacesSyncReponseModel>.MapFromJson(jsonStringResponseDisable);
             if (responseDisableData.IsSuccess)
             {
                 int skipIndex = 0;
@@ -63,7 +63,7 @@ namespace Kz.Window.Service
                     Uri uri = new Uri("https://www.feelitlive.com/api/algolia/sync-places/" + skipIndex + "/500/false");
                     HttpResponseMessage response = await webClient.GetAsync(uri);
                     var jsonStringResponses = await response.Content.ReadAsStringAsync();
-                    var responseData = Kz.Api.Utilities.Mapper<PlacesSyncReponseModel>.MapFromJson(jsonStringResponses);
+                    var responseData = FIL.Api.Utilities.Mapper<PlacesSyncReponseModel>.MapFromJson(jsonStringResponses);
                     skipIndex = i * 500;
 
                 }
@@ -72,7 +72,7 @@ namespace Kz.Window.Service
                 Uri uriUpdate = new Uri("https://www.feelitlive.com/api/algolia/delete-from-index");
                 HttpResponseMessage responseUpdate = await webClient.GetAsync(uriDisable);
                 var jsonStringResponseUpdate = await responseDisable.Content.ReadAsStringAsync();
-                var responseUpdateData = Kz.Api.Utilities.Mapper<PlacesSyncReponseModel>.MapFromJson(jsonStringResponseUpdate);
+                var responseUpdateData = FIL.Api.Utilities.Mapper<PlacesSyncReponseModel>.MapFromJson(jsonStringResponseUpdate);
 
 
                 if (responseUpdateData.IsSuccess)

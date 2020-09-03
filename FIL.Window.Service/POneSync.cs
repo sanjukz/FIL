@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Kz.Window.Service
+namespace FIL.Window.Service
 {
     public class POneSync : IPOneSync
     {

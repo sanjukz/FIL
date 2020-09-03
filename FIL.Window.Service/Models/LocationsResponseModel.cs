@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Kz.Window.Service.Models
+namespace FIL.Window.Service.Models
 {
     public class LocationsResponseModel
     {
@@ -11,6 +11,6 @@ namespace Kz.Window.Service.Models
     public class LocationResponse
     {
         public long Id { get; set; }
-        public List<Kz.Contracts.DataModels.CitySightSeeingLocation> Locations { get; set; }
+        public List<FIL.Contracts.DataModels.CitySightSeeingLocation> Locations { get; set; }
     }
 }

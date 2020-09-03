@@ -1,17 +1,17 @@
 ﻿using Autofac;
-using Kz.Configuration;
-using Kz.Contracts.Commands.ExOz;
-using Kz.Contracts.Commands.NewsLetterSignUp;
-using Kz.Contracts.DataModels;
-using Kz.Contracts.Models.Integrations.ExOz;
-using Kz.Foundation.Senders;
+using FIL.Configuration;
+using FIL.Contracts.Commands.ExOz;
+using FIL.Contracts.Commands.NewsLetterSignUp;
+using FIL.Contracts.DataModels;
+using FIL.Contracts.Models.Integrations.ExOz;
+using FIL.Foundation.Senders;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Scheduler;
-using Kz.Contracts.Commands.CitySightSeeing;
+using FIL.Contracts.Commands.CitySightSeeing;
 
-namespace Kz.Window.Service
+namespace FIL.Window.Service
 {
     public class Synchronizer : ISynchronizer
     {
