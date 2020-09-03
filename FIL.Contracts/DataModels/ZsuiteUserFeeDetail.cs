@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class ZsuiteUserFeeDetailValidator : AbstractValidator<ZsuiteUserFeeDetail>, IKzValidator
+    public class ZsuiteUserFeeDetailValidator : AbstractValidator<ZsuiteUserFeeDetail>, IFILValidator
     {
         public ZsuiteUserFeeDetailValidator()
         {

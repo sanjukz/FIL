@@ -20,7 +20,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class RefillWalletDetailValidator : AbstractValidator<RefillWalletDetail>, IKzValidator
+    public class RefillWalletDetailValidator : AbstractValidator<RefillWalletDetail>, IFILValidator
     {
         public RefillWalletDetailValidator()
         {

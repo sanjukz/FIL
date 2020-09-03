@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class GatewayPaymentOptionMappingValidator : AbstractValidator<GatewayPaymentOptionMapping>, IKzValidator
+    public class GatewayPaymentOptionMappingValidator : AbstractValidator<GatewayPaymentOptionMapping>, IFILValidator
     {
         public GatewayPaymentOptionMappingValidator()
         {

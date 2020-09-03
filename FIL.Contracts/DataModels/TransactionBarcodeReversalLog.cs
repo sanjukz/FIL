@@ -20,7 +20,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class TransactionBarcodeReversalValidator : AbstractValidator<TransactionBarcodeReversalLog>, IKzValidator
+    public class TransactionBarcodeReversalValidator : AbstractValidator<TransactionBarcodeReversalLog>, IFILValidator
     {
         public TransactionBarcodeReversalValidator()
         {

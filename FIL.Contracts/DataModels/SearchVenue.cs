@@ -49,7 +49,7 @@ namespace FIL.Contracts.DataModels
         public string CountryName { get; set; }
     }
 
-    public class SearchVenueValidator : AbstractValidator<SearchVenue>, IKzValidator
+    public class SearchVenueValidator : AbstractValidator<SearchVenue>, IFILValidator
     {
         public SearchVenueValidator()
         {

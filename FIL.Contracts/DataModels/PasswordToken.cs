@@ -20,7 +20,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class PasswordTokenValidator : AbstractValidator<PasswordToken>, IKzValidator
+    public class PasswordTokenValidator : AbstractValidator<PasswordToken>, IFILValidator
     {
         public PasswordTokenValidator()
         {

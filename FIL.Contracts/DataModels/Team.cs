@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class TeamValidator : AbstractValidator<Team>, IKzValidator
+    public class TeamValidator : AbstractValidator<Team>, IFILValidator
     {
         public TeamValidator()
         {

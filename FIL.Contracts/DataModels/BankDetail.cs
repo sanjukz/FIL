@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class BankDetailValidator : AbstractValidator<BankDetail>, IKzValidator
+    public class BankDetailValidator : AbstractValidator<BankDetail>, IFILValidator
     {
         public BankDetailValidator()
         {

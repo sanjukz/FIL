@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class DTCMTransactionBarcodeValidator : AbstractValidator<DTCMTransactionBarcode>, IKzValidator
+    public class DTCMTransactionBarcodeValidator : AbstractValidator<DTCMTransactionBarcode>, IFILValidator
     {
         public DTCMTransactionBarcodeValidator()
         {

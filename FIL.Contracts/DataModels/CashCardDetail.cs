@@ -20,7 +20,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class CashCardDetailValidator : AbstractValidator<CashCardDetail>, IKzValidator
+    public class CashCardDetailValidator : AbstractValidator<CashCardDetail>, IFILValidator
     {
         public CashCardDetailValidator()
         {

@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class FeelBarcodeMappingValidator : AbstractValidator<EventCategoryMapping>, IKzValidator
+    public class FeelBarcodeMappingValidator : AbstractValidator<EventCategoryMapping>, IFILValidator
     {
         public FeelBarcodeMappingValidator()
         {

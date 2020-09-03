@@ -25,7 +25,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class EventGalleryImageValidator : AbstractValidator<EventGalleryImage>, IKzValidator
+    public class EventGalleryImageValidator : AbstractValidator<EventGalleryImage>, IFILValidator
     {
         public EventGalleryImageValidator()
         {

@@ -23,7 +23,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class ZoomMeetingValidator : AbstractValidator<ZoomMeeting>, IKzValidator
+    public class ZoomMeetingValidator : AbstractValidator<ZoomMeeting>, IFILValidator
     {
         public ZoomMeetingValidator()
         {

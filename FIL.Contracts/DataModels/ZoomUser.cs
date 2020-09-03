@@ -26,7 +26,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class ZoomUserValidator : AbstractValidator<ZoomUser>, IKzValidator
+    public class ZoomUserValidator : AbstractValidator<ZoomUser>, IFILValidator
     {
         public ZoomUserValidator()
         {

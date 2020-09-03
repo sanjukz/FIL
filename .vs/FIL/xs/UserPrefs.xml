@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Web.Admin/Views/_ViewImports.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Contracts/Enums/Modules.cs">
     <Files>
       <File FileName="FIL.Contracts/Queries/Account/GetAllGuestUserDetailQuery..cs" Line="10" Column="2" />
       <File FileName="FIL.Contracts/Queries/AdvancedSearch/AdvancedSearchQuery.cs" />
@@ -13,16 +13,45 @@
       <File FileName="FIL.Web.Admin/ClientApp/components/form/SharedForm/KzForm.tsx" Line="24" Column="34" />
       <File FileName="FIL.Web.Admin/ClientApp/components/Loader/KzLoader.tsx" Line="14" Column="1" />
       <File FileName="FIL.Foundation/Modules/AutofacModule.cs" Line="39" Column="34" />
-      <File FileName="FIL.Web.Admin/Views/_ViewImports.cshtml" Line="5" Column="1" />
+      <File FileName="FIL.Logging/Extensions/LoggingExtensions.cs" Line="5" Column="33" />
+      <File FileName="FIL.Logging/Middleware/KzLoggingMiddleware.cs" Line="13" Column="36" />
+      <File FileName="FIL.Contracts/Commands/ExOz/SaveExOzCountryCommand.cs" Line="8" Column="18" />
+      <File FileName="FIL.Contracts/QueryResults/BoxOffice/FeatureQueryResult.cs" Line="6" Column="18" />
+      <File FileName="FIL.Contracts/QueryResults/AuthedRoleFeature/AuthedRoleFeatureQueryResult.cs" Line="6" Column="18" />
+      <File FileName="FIL.Api/QueryHandlers/AuthedRoleFeature/AuthedRoleFeatureQueryHandler.cs" Line="29" Column="136" />
+      <File FileName="FIL.Contracts/Enums/Modules.cs" Line="15" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FIL" expanded="True">
-            <Node name="FIL.Web.Admin" expanded="True">
-              <Node name="Views" expanded="True">
-                <Node name="_ViewImports.cshtml" selected="True" />
+            <Node name="FIL.Api" expanded="True">
+              <Node name="QueryHandlers" expanded="True">
+                <Node name="AuthedRoleFeature" expanded="True" />
               </Node>
+            </Node>
+            <Node name="FIL.Contracts" expanded="True">
+              <Node name="Commands" expanded="True">
+                <Node name="ExOz" expanded="True" />
+              </Node>
+              <Node name="Enums" expanded="True">
+                <Node name="Modules.cs" selected="True" />
+              </Node>
+              <Node name="Interfaces" expanded="True" />
+              <Node name="QueryResults" expanded="True">
+                <Node name="AuthedRoleFeature" expanded="True" />
+                <Node name="BoxOffice" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="FIL.Foundation" expanded="True">
+              <Node name="Modules" expanded="True" />
+            </Node>
+            <Node name="FIL.Logging" expanded="True">
+              <Node name="Extensions" expanded="True" />
+              <Node name="Middleware" expanded="True" />
+            </Node>
+            <Node name="FIL.Web.Admin" expanded="True">
+              <Node name="Views" expanded="True" />
             </Node>
           </Node>
         </State>

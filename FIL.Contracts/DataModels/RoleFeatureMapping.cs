@@ -20,7 +20,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class RoleFeatureMappingValidator : AbstractValidator<RoleFeatureMapping>, IKzValidator
+    public class RoleFeatureMappingValidator : AbstractValidator<RoleFeatureMapping>, IFILValidator
     {
         public RoleFeatureMappingValidator()
         {

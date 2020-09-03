@@ -31,7 +31,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class UserAddressDetailValidator : AbstractValidator<UserAddressDetail>, IKzValidator
+    public class UserAddressDetailValidator : AbstractValidator<UserAddressDetail>, IFILValidator
     {
         public UserAddressDetailValidator()
         {

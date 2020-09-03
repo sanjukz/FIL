@@ -29,7 +29,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class MatchLayoutSectionSeatValidator : AbstractValidator<MatchLayoutSectionSeat>, IKzValidator
+    public class MatchLayoutSectionSeatValidator : AbstractValidator<MatchLayoutSectionSeat>, IFILValidator
     {
         public MatchLayoutSectionSeatValidator()
         {

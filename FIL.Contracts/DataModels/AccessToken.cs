@@ -23,7 +23,7 @@ namespace Kz.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class AccessTokenValidator : AbstractValidator<AccessToken>, IKzValidator
+    public class AccessTokenValidator : AbstractValidator<AccessToken>, IFILValidator
     {
         public AccessTokenValidator()
         {

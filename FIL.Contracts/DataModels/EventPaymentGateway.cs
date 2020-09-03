@@ -20,7 +20,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class EventPaymentGatewayValidator : AbstractValidator<EventPaymentGateway>, IKzValidator
+    public class EventPaymentGatewayValidator : AbstractValidator<EventPaymentGateway>, IFILValidator
     {
         public EventPaymentGatewayValidator()
         {

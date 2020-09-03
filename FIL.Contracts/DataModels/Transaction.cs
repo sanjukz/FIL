@@ -43,7 +43,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class TransactionValidator : AbstractValidator<Transaction>, IKzValidator
+    public class TransactionValidator : AbstractValidator<Transaction>, IFILValidator
     {
         public TransactionValidator()
         {

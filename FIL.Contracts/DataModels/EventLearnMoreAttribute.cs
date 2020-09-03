@@ -24,7 +24,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class EventLearnMoreAttributeValidator : AbstractValidator<EventLearnMoreAttribute>, IKzValidator
+    public class EventLearnMoreAttributeValidator : AbstractValidator<EventLearnMoreAttribute>, IFILValidator
     {
         public EventLearnMoreAttributeValidator()
         {

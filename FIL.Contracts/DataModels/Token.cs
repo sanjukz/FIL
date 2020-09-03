@@ -19,7 +19,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class TokenValidator : AbstractValidator<Token>, IKzValidator
+    public class TokenValidator : AbstractValidator<Token>, IFILValidator
     {
         public TokenValidator()
         {

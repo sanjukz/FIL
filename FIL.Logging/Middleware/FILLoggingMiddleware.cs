@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 
 namespace FIL.Logging.Middleware
 {
-    public class KzLoggingMiddleware
+    public class FILLoggingMiddleware
     {
         private readonly RequestDelegate _next;
         private readonly ILogger _logger;
 
-        public KzLoggingMiddleware(RequestDelegate next, ILogger logger)
+        public FILLoggingMiddleware(RequestDelegate next, ILogger logger)
         {
             _next = next;
             _logger = logger;

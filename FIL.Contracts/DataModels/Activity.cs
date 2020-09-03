@@ -14,7 +14,7 @@ namespace FIL.Contracts.DataModels
         public Guid CreatedBy { get; set; }
     }
 
-    public class ActivityValidator : AbstractValidator<Activity>, IKzValidator
+    public class ActivityValidator : AbstractValidator<Activity>, IFILValidator
     {
         public ActivityValidator()
         {

@@ -1,6 +1,6 @@
 ﻿namespace FIL.Contracts.Interfaces
 {
-    public interface IKzValidator
+    public interface IFILValidator
     {
     }
 }

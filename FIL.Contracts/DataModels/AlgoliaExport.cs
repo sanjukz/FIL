@@ -32,7 +32,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class AlgoliaExportValidator : AbstractValidator<AlgoliaExport>, IKzValidator
+    public class AlgoliaExportValidator : AbstractValidator<AlgoliaExport>, IFILValidator
     {
         public AlgoliaExportValidator()
         {

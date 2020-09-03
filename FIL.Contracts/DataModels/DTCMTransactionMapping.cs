@@ -24,7 +24,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class DTCMTransactionMappingValidator : AbstractValidator<DTCMTransactionMapping>, IKzValidator
+    public class DTCMTransactionMappingValidator : AbstractValidator<DTCMTransactionMapping>, IFILValidator
     {
         public DTCMTransactionMappingValidator()
         {

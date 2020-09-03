@@ -3,7 +3,7 @@
   "deployments": {
     "aspNetCoreWeb": [
       {
-        "name": "Kz.Api",
+        "name": "FIL.Api",
         "parameters": {
           "appBundle": ".",
           "iisPath": "/",

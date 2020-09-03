@@ -23,7 +23,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class ChequeDetailValidator : AbstractValidator<ChequeDetail>, IKzValidator
+    public class ChequeDetailValidator : AbstractValidator<ChequeDetail>, IFILValidator
     {
         public ChequeDetailValidator()
         {

@@ -22,7 +22,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class DynamicStadiumTicketCategoriesDetailsValidator : AbstractValidator<DynamicStadiumTicketCategoriesDetails>, IKzValidator
+    public class DynamicStadiumTicketCategoriesDetailsValidator : AbstractValidator<DynamicStadiumTicketCategoriesDetails>, IFILValidator
     {
         public DynamicStadiumTicketCategoriesDetailsValidator()
         {

@@ -22,7 +22,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class ExOzPickupDetailValidator : AbstractValidator<ExOzPickup>, IKzValidator
+    public class ExOzPickupDetailValidator : AbstractValidator<ExOzPickup>, IFILValidator
     {
         public ExOzPickupDetailValidator()
         {

@@ -20,7 +20,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class ExOzCountryValidator : AbstractValidator<ExOzCountry>, IKzValidator
+    public class ExOzCountryValidator : AbstractValidator<ExOzCountry>, IFILValidator
     {
         public ExOzCountryValidator()
         {

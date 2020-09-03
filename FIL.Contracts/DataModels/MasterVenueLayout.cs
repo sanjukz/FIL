@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class MasterVenueLayoutValidator : AbstractValidator<MasterVenueLayout>, IKzValidator
+    public class MasterVenueLayoutValidator : AbstractValidator<MasterVenueLayout>, IFILValidator
     {
         public MasterVenueLayoutValidator()
         {

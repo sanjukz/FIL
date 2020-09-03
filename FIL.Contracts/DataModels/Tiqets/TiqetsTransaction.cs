@@ -26,7 +26,7 @@ namespace FIL.Contracts.DataModels.Tiqets
         public Guid ModifiedBy { get; set; }
     }
 
-    public class TiqetsTransactionValidator : AbstractValidator<TiqetsTransaction>, IKzValidator
+    public class TiqetsTransactionValidator : AbstractValidator<TiqetsTransaction>, IFILValidator
     {
         public TiqetsTransactionValidator()
         {

@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class EventAmenityValidator : AbstractValidator<EventAmenity>, IKzValidator
+    public class EventAmenityValidator : AbstractValidator<EventAmenity>, IFILValidator
     {
         public EventAmenityValidator()
         {

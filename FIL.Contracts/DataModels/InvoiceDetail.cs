@@ -36,7 +36,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class InvoiceDetailValidator : AbstractValidator<InvoiceDetail>, IKzValidator
+    public class InvoiceDetailValidator : AbstractValidator<InvoiceDetail>, IFILValidator
     {
         public InvoiceDetailValidator()
         {

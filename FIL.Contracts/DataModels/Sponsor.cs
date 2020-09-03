@@ -35,7 +35,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class SponsorsValidator : AbstractValidator<Sponsor>, IKzValidator
+    public class SponsorsValidator : AbstractValidator<Sponsor>, IFILValidator
     {
         public SponsorsValidator()
         {

@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class ExOzDropOffDetailValidator : AbstractValidator<ExOzDropOff>, IKzValidator
+    public class ExOzDropOffDetailValidator : AbstractValidator<ExOzDropOff>, IFILValidator
     {
         public ExOzDropOffDetailValidator()
         {

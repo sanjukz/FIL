@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class MenuUserMappingValidator : AbstractValidator<MenuUserMapping>, IKzValidator
+    public class MenuUserMappingValidator : AbstractValidator<MenuUserMapping>, IFILValidator
     {
         public MenuUserMappingValidator()
         {

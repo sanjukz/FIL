@@ -27,7 +27,7 @@ namespace FIL.Contracts.DataModels
         public bool? IsSeatExists { get; set; }
     }
 
-    public class MasterVenueLayoutSectionValidator : AbstractValidator<MasterVenueLayoutSection>, IKzValidator
+    public class MasterVenueLayoutSectionValidator : AbstractValidator<MasterVenueLayoutSection>, IFILValidator
     {
         public MasterVenueLayoutSectionValidator()
         {

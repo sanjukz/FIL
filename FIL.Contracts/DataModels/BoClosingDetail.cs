@@ -23,7 +23,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class BoClosingDetailValidator : AbstractValidator<BoClosingDetail>, IKzValidator
+    public class BoClosingDetailValidator : AbstractValidator<BoClosingDetail>, IFILValidator
     {
         public BoClosingDetailValidator()
         {

@@ -27,7 +27,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class ReprintRequestValidator : AbstractValidator<ReprintRequest>, IKzValidator
+    public class ReprintRequestValidator : AbstractValidator<ReprintRequest>, IFILValidator
     {
         public ReprintRequestValidator()
         {

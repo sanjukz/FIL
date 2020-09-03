@@ -19,7 +19,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class KeywordValidator : AbstractValidator<Keyword>, IKzValidator
+    public class KeywordValidator : AbstractValidator<Keyword>, IFILValidator
     {
         public KeywordValidator()
         {

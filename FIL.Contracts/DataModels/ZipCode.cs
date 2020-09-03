@@ -22,7 +22,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class ZipcodeValidator : AbstractValidator<Zipcode>, IKzValidator
+    public class ZipcodeValidator : AbstractValidator<Zipcode>, IFILValidator
     {
         public ZipcodeValidator()
         {

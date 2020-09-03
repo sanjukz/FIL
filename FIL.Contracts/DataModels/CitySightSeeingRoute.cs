@@ -29,7 +29,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class CitySightSeeingRoutesValidator : AbstractValidator<CitySightSeeingRoute>, IKzValidator
+    public class CitySightSeeingRoutesValidator : AbstractValidator<CitySightSeeingRoute>, IFILValidator
     {
         public CitySightSeeingRoutesValidator()
         {

@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class CityValidator : AbstractValidator<City>, IKzValidator
+    public class CityValidator : AbstractValidator<City>, IFILValidator
     {
         public CityValidator()
         {

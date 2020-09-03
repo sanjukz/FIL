@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class DiscountPaymentOptionValidator : AbstractValidator<DiscountPaymentOption>, IKzValidator
+    public class DiscountPaymentOptionValidator : AbstractValidator<DiscountPaymentOption>, IFILValidator
     {
         public DiscountPaymentOptionValidator()
         {

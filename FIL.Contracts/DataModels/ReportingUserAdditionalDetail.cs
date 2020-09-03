@@ -22,7 +22,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class ReportingUserAdditionalDetailValidator : AbstractValidator<ReportingUserAdditionalDetail>, IKzValidator
+    public class ReportingUserAdditionalDetailValidator : AbstractValidator<ReportingUserAdditionalDetail>, IFILValidator
     {
         public ReportingUserAdditionalDetailValidator()
         {

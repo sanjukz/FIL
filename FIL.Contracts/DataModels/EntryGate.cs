@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class EntryGateValidator : AbstractValidator<EntryGate>, IKzValidator
+    public class EntryGateValidator : AbstractValidator<EntryGate>, IFILValidator
     {
         public EntryGateValidator()
         {

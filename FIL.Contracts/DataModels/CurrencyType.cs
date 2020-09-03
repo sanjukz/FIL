@@ -23,7 +23,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class CurrencyTypeValidator : AbstractValidator<CurrencyType>, IKzValidator
+    public class CurrencyTypeValidator : AbstractValidator<CurrencyType>, IFILValidator
     {
         public CurrencyTypeValidator()
         {

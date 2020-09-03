@@ -29,7 +29,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class DynamicStadiumCoordinateValidator : AbstractValidator<DynamicStadiumCoordinate>, IKzValidator
+    public class DynamicStadiumCoordinateValidator : AbstractValidator<DynamicStadiumCoordinate>, IFILValidator
     {
         public DynamicStadiumCoordinateValidator()
         {

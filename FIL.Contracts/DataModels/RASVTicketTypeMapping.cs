@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class ExhibitValidator : AbstractValidator<RASVTicketTypeMapping>, IKzValidator
+    public class ExhibitValidator : AbstractValidator<RASVTicketTypeMapping>, IFILValidator
     {
         public ExhibitValidator()
         {

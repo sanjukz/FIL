@@ -6,14 +6,14 @@ namespace FIL.Logging.Extensions
 {
     public static class LoggingExtensions
     {
-        public static IApplicationBuilder UseKzLogging(this IApplicationBuilder app)
+        public static IApplicationBuilder UseFILLogging(this IApplicationBuilder app)
         {
             if (app == null)
             {
                 throw new ArgumentNullException(nameof(app));
             }
 
-            return app.UseMiddleware<KzLoggingMiddleware>();
+            return app.UseMiddleware<FILLoggingMiddleware>();
         }
     }
 }

@@ -22,7 +22,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class CustomerUpdateValidator : AbstractValidator<CustomerUpdate>, IKzValidator
+    public class CustomerUpdateValidator : AbstractValidator<CustomerUpdate>, IFILValidator
     {
         public CustomerUpdateValidator()
         {

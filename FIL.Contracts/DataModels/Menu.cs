@@ -22,7 +22,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class MenuValidator : AbstractValidator<Menu>, IKzValidator
+    public class MenuValidator : AbstractValidator<Menu>, IFILValidator
     {
         public MenuValidator()
         {

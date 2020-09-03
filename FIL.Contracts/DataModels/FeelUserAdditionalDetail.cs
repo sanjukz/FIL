@@ -28,7 +28,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class FeelUserAdditionalDetailValidator : AbstractValidator<FeelUserAdditionalDetail>, IKzValidator
+    public class FeelUserAdditionalDetailValidator : AbstractValidator<FeelUserAdditionalDetail>, IFILValidator
     {
         public FeelUserAdditionalDetailValidator()
         {

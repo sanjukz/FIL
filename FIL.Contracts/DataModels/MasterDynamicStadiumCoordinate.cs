@@ -27,7 +27,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class MasterDynamicStadiumCoordinateValidator : AbstractValidator<MasterDynamicStadiumCoordinate>, IKzValidator
+    public class MasterDynamicStadiumCoordinateValidator : AbstractValidator<MasterDynamicStadiumCoordinate>, IFILValidator
     {
         public MasterDynamicStadiumCoordinateValidator()
         {

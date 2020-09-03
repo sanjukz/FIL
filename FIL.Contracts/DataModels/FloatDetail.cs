@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class FloatDetailValidator : AbstractValidator<FloatDetail>, IKzValidator
+    public class FloatDetailValidator : AbstractValidator<FloatDetail>, IFILValidator
     {
         public FloatDetailValidator()
         {

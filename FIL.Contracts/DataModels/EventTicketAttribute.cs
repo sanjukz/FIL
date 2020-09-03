@@ -49,7 +49,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class EventTicketAttributeValidator : AbstractValidator<EventTicketAttribute>, IKzValidator
+    public class EventTicketAttributeValidator : AbstractValidator<EventTicketAttribute>, IFILValidator
     {
         public EventTicketAttributeValidator()
         {

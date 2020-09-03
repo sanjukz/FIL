@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Kz.Api' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'FIL.Api' " />
   <ItemGroup>
     <Compile Remove="wwwroot\**" />
     <Content Remove="wwwroot\**" />

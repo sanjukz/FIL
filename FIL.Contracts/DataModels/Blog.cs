@@ -20,7 +20,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class BlogValidator : AbstractValidator<Blog>, IKzValidator
+    public class BlogValidator : AbstractValidator<Blog>, IFILValidator
     {
         public BlogValidator()
         {

@@ -19,7 +19,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class TransactionPromoCodeValidator : AbstractValidator<TransactionPromoCode>, IKzValidator
+    public class TransactionPromoCodeValidator : AbstractValidator<TransactionPromoCode>, IFILValidator
     {
         public TransactionPromoCodeValidator()
         {

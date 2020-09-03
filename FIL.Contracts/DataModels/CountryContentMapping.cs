@@ -21,7 +21,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class CountryContentMappingValidator : AbstractValidator<CountryContentMapping>, IKzValidator
+    public class CountryContentMappingValidator : AbstractValidator<CountryContentMapping>, IFILValidator
     {
         public CountryContentMappingValidator()
         {

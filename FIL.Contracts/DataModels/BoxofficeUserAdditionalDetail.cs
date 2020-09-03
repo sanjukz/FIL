@@ -33,7 +33,7 @@ namespace FIL.Contracts.DataModels
         [NotMapped]
         public Guid ModifiedBy { get; set; }
 
-        public class BoxofficeUserAdditionalDetailValidator : AbstractValidator<BoxofficeUserAdditionalDetail>, IKzValidator
+        public class BoxofficeUserAdditionalDetailValidator : AbstractValidator<BoxofficeUserAdditionalDetail>, IFILValidator
         {
             public BoxofficeUserAdditionalDetailValidator()
             {

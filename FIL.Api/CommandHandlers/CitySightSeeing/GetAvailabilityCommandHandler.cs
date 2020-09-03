@@ -1,5 +1,4 @@
-﻿//using Kz.Api.Integrations.HttpHelpers;
-using FIL.Api.Utilities;
+﻿using FIL.Api.Utilities;
 using FIL.Configuration;
 using FIL.Configuration.Utilities;
 using FIL.Contracts.Commands.CitySightSeeing;

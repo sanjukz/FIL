@@ -32,7 +32,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class OfflineBarcodeDetailValidator : AbstractValidator<OfflineBarcodeDetail>, IKzValidator
+    public class OfflineBarcodeDetailValidator : AbstractValidator<OfflineBarcodeDetail>, IFILValidator
     {
         public OfflineBarcodeDetailValidator()
         {

@@ -19,7 +19,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class TicketCategoryValidator : AbstractValidator<TicketCategory>, IKzValidator
+    public class TicketCategoryValidator : AbstractValidator<TicketCategory>, IFILValidator
     {
         public TicketCategoryValidator()
         {

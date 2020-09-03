@@ -20,7 +20,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class ReportingColumnsMenuMappingValidator : AbstractValidator<ReportingColumnsMenuMapping>, IKzValidator
+    public class ReportingColumnsMenuMappingValidator : AbstractValidator<ReportingColumnsMenuMapping>, IFILValidator
     {
         public ReportingColumnsMenuMappingValidator()
         {

@@ -22,7 +22,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class EventSiteIdMappingValidator : AbstractValidator<EventSiteIdMapping>, IKzValidator
+    public class EventSiteIdMappingValidator : AbstractValidator<EventSiteIdMapping>, IFILValidator
     {
         public EventSiteIdMappingValidator()
         {

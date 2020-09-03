@@ -26,7 +26,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class TournamentLayoutSectionSeatValidator : AbstractValidator<TournamentLayoutSectionSeat>, IKzValidator
+    public class TournamentLayoutSectionSeatValidator : AbstractValidator<TournamentLayoutSectionSeat>, IFILValidator
     {
         public TournamentLayoutSectionSeatValidator()
         {

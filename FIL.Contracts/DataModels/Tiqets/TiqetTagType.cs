@@ -20,7 +20,7 @@ namespace FIL.Contracts.DataModels.Tiqets
         public Guid ModifiedBy { get; set; }
     }
 
-    public class TiqetTagTypeValidator : AbstractValidator<TiqetTagType>, IKzValidator
+    public class TiqetTagTypeValidator : AbstractValidator<TiqetTagType>, IFILValidator
     {
         public TiqetTagTypeValidator()
         {

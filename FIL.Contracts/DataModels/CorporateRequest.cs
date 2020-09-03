@@ -36,7 +36,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class CorporateRequestValidator : AbstractValidator<CorporateRequest>, IKzValidator
+    public class CorporateRequestValidator : AbstractValidator<CorporateRequest>, IFILValidator
     {
         public CorporateRequestValidator()
         {

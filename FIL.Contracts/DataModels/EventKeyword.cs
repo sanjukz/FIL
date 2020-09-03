@@ -20,7 +20,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class EventKeywordValidator : AbstractValidator<EventKeyword>, IKzValidator
+    public class EventKeywordValidator : AbstractValidator<EventKeyword>, IFILValidator
     {
         public EventKeywordValidator()
         {

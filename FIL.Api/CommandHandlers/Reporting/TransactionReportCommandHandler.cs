@@ -21,9 +21,7 @@ namespace FIL.Api.QueryHandlers.Transaction
         {
             try
             {
-                //IEnumerable<Kz.Contracts.Commands.Transaction.TransactionReport> transactionReport = _reportingRepository.GetAllTransactionReportData(command);
                 IEnumerable<FIL.Contracts.Commands.Transaction.TransactionReport> transactionReport = null;
-
                 return Task.FromResult<ICommandResult>(new TransactionReportCommandResult
                 {
                     TransactionReport = transactionReport

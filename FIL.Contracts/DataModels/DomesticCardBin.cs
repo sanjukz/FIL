@@ -19,7 +19,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class DomesticCardBinValidator : AbstractValidator<DomesticCardBin>, IKzValidator
+    public class DomesticCardBinValidator : AbstractValidator<DomesticCardBin>, IFILValidator
     {
         public DomesticCardBinValidator()
         {

@@ -25,7 +25,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class CorporateTransactionValidator : AbstractValidator<CorporateRequestDetail>, IKzValidator
+    public class CorporateTransactionValidator : AbstractValidator<CorporateRequestDetail>, IFILValidator
     {
         public CorporateTransactionValidator()
         {

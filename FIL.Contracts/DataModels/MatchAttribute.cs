@@ -24,7 +24,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class MatchAttributeValidator : AbstractValidator<MatchAttribute>, IKzValidator
+    public class MatchAttributeValidator : AbstractValidator<MatchAttribute>, IFILValidator
     {
         public MatchAttributeValidator()
         {

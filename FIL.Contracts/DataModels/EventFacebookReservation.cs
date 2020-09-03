@@ -24,7 +24,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class EventFacebookReservationValidator : AbstractValidator<EventFacebookReservation>, IKzValidator
+    public class EventFacebookReservationValidator : AbstractValidator<EventFacebookReservation>, IFILValidator
     {
         public EventFacebookReservationValidator()
         {

@@ -20,7 +20,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class MatchLayoutCompanionSeatMappingValidator : AbstractValidator<MatchLayoutCompanionSeatMapping>, IKzValidator
+    public class MatchLayoutCompanionSeatMappingValidator : AbstractValidator<MatchLayoutCompanionSeatMapping>, IFILValidator
     {
         public MatchLayoutCompanionSeatMappingValidator()
         {

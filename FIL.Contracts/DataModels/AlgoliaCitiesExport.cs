@@ -26,7 +26,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class AlgoliaCitiesExportValidator : AbstractValidator<AlgoliaCitiesExport>, IKzValidator
+    public class AlgoliaCitiesExportValidator : AbstractValidator<AlgoliaCitiesExport>, IFILValidator
     {
         public AlgoliaCitiesExportValidator()
         {

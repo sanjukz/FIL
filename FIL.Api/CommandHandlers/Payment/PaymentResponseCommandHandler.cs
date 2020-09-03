@@ -104,18 +104,6 @@ namespace FIL.Api.CommandHandlers.Payment
                     });
                 }
 
-                //If transaction Status is sucess
-                //if (paymentResponse.Success)
-                //{
-                //    await Mediator.Publish(new Kz.Api.Events.Event.ValueRetail.TransactionEvent
-                //    {
-                //        TransactionStatus = "",
-                //        TransactionId = 1212,
-                //        EmailId = "",
-                //        ZipCode = ""
-                //    });
-                //}
-
                 return new PaymentResponseCommandResult
                 {
                     PaymentResponse = paymentResponse,

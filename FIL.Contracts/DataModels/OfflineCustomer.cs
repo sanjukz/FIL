@@ -25,7 +25,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class OfflineCustomerValidator : AbstractValidator<OfflineCustomer>, IKzValidator
+    public class OfflineCustomerValidator : AbstractValidator<OfflineCustomer>, IFILValidator
     {
         public OfflineCustomerValidator()
         {

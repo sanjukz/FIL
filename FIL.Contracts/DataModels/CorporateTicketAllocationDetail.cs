@@ -26,7 +26,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class CorporateTicketAllocationDetailValidator : AbstractValidator<CorporateTicketAllocationDetail>, IKzValidator
+    public class CorporateTicketAllocationDetailValidator : AbstractValidator<CorporateTicketAllocationDetail>, IFILValidator
     {
         public CorporateTicketAllocationDetailValidator()
         {

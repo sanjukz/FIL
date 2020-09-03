@@ -27,7 +27,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class ExOzProductSessionValidator : AbstractValidator<ExOzProductSession>, IKzValidator
+    public class ExOzProductSessionValidator : AbstractValidator<ExOzProductSession>, IFILValidator
     {
         public ExOzProductSessionValidator()
         {

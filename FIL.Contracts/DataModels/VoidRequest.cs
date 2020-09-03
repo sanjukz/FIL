@@ -26,7 +26,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class VoidRequestValidator : AbstractValidator<VoidRequest>, IKzValidator
+    public class VoidRequestValidator : AbstractValidator<VoidRequest>, IFILValidator
     {
         public VoidRequestValidator()
         {

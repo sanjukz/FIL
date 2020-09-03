@@ -25,7 +25,7 @@ namespace FIL.Contracts.DataModels
         public Guid ModifiedBy { get; set; }
     }
 
-    public class ExOzVoucherDetailValidator : AbstractValidator<ExOzVoucherDetail>, IKzValidator
+    public class ExOzVoucherDetailValidator : AbstractValidator<ExOzVoucherDetail>, IFILValidator
     {
         public ExOzVoucherDetailValidator()
         {
