@@ -22,7 +22,6 @@ using FIL.Web.Core.Providers;
 using Microsoft.AspNetCore.Http;
 using System.Linq;
 using FIL.Web.Admin.ViewModels.Event;
-using FIL.Contracts.Commands.EventCategoryMapping;
 using FIL.Contracts.Commands.EventSiteIdMapping;
 using FIL.Contracts.Queries.FinanceDetail;
 using FIL.Contracts.Queries.Tags;

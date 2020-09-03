@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using FIL.Contracts.Commands.EventCategoryMapping;
 using FIL.Contracts.Commands.EventSiteIdMapping;
 using FIL.Contracts.Queries.Events;
 using FIL.Foundation.Senders;
@@ -151,30 +150,6 @@ namespace FIL.Web.Admin.Controllers
         categoryVM.eventcatmapping.Add(data);
       }
       return categoryVM;
-    }
-
-    [HttpPost]
-    [Route("api/event/map")]
-    public async Task<IActionResult> UpdateEventCategories([FromBody] UpdateEventCategoryMapViewModel updateVM)
-    {
-      var result = new { Succeeded = true };
-
-      await _commandSender.Send(new EventCategoryMappingCommand()
-      {
-        Categoryid = updateVM.Subcategoryid,
-        Eventid = updateVM.Eventid,
-        Isenabled = updateVM.Isenabled,
-        Id = updateVM.Id
-      });
-      if (result.Succeeded)
-      {
-        return Ok(true);
-      }
-      else
-      {
-
-        return BadRequest(false);
-      }
     }
 
     [HttpGet]
