@@ -5,7 +5,7 @@ using System.Linq;
 using FIL.Contracts.Models;
 using System.Threading.Tasks;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Inventory
+namespace FIL.Web.Admin.ViewModels.Inventory
 {
     public class DocumentTypeResponseViewModel
     {

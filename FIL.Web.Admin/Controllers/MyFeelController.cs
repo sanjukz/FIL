@@ -2,10 +2,10 @@ using System;
 using System.Threading.Tasks;
 using FIL.Contracts.Queries.Creator;
 using FIL.Foundation.Senders;
-using FIL.Web.Kitms.Feel.ViewModels.Creator;
+using FIL.Web.Admin.ViewModels.Creator;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
   public class MyFeelController : Controller
   {

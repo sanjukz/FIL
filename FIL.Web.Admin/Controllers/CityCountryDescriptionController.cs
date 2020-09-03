@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 using FIL.Foundation.Senders;
 using FIL.Web.Core.Providers;
 using Microsoft.Extensions.Caching.Memory;
-using FIL.Web.Kitms.Feel.ViewModels.CityCountryDescription;
+using FIL.Web.Admin.ViewModels.CityCountryDescription;
 using FIL.Contracts.Commands.Description;
 using FIL.Contracts.Queries.Description;
 using Microsoft.AspNetCore.Authorization;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
     public class CityCountryDescriptionController : Controller
     {

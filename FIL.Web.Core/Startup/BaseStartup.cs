@@ -220,7 +220,7 @@ namespace FIL.Web.Core.Startup
             app.UseResponseCompression();
             app.UseAuthentication();
             app.UseAntiforgeryToken();
-            app.UseKzLogging();
+            app.UseFILLogging();
 
             app.Use(async (context, next) =>
             {

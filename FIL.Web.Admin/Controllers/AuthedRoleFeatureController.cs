@@ -7,11 +7,11 @@ using FIL.Contracts.Models;
 using FIL.Contracts.Queries.AuthedRoleFeature;
 using FIL.Contracts.Queries.City;
 using FIL.Foundation.Senders;
-using FIL.Web.Kitms.Feel.ViewModels.AuthedRoleFeature;
+using FIL.Web.Admin.ViewModels.AuthedRoleFeature;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
     public class AuthedRoleFeatureController : Controller
     {

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using FIL.Contracts.Models.CreateEventV1;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.CreateEventV1
+namespace FIL.Web.Admin.ViewModels.CreateEventV1
 {
   public class EventReplayViewModel
   {

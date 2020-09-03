@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.EventWizard
+namespace FIL.Web.Admin.ViewModels.EventWizard
 {
     public class EventWizardResponseModel
     {

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.MyFeel
+namespace FIL.Web.Admin.ViewModels.MyFeel
 {
     public class MyFeelResponseViewModel
     {

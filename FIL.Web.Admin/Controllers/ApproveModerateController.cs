@@ -13,11 +13,11 @@ using FIL.Messaging.Models.Emails;
 using FIL.Messaging.Senders;
 using FIL.Web.Core.Providers;
 using FIL.Web.Core.UrlsProvider;
-using FIL.Web.Kitms.Feel.ViewModels.ApproveModarate;
+using FIL.Web.Admin.ViewModels.ApproveModarate;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
   public class ApproveModerateController : Controller
   {

@@ -7,7 +7,7 @@ using FIL.Contracts.Enums;
 using FIL.Web.Core.Providers;
 using Microsoft.AspNetCore.Http;
 
-namespace FIL.Web.Kitms.Feel.Providers
+namespace FIL.Web.Admin.Providers
 {
     public class SiteIdProvider : BaseSiteIdProvider
     {

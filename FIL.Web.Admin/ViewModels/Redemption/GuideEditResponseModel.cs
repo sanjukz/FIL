@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FIL.Contracts.QueryResults.Redemption;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Redemption
+namespace FIL.Web.Admin.ViewModels.Redemption
 {
     public class GuideEditResponseModel
     {

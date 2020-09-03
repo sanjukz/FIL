@@ -7,7 +7,7 @@ using FIL.Contracts.DataModels;
 using FIL.Contracts.Enums;
 using Microsoft.AspNetCore.Http;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.EventCreation
+namespace FIL.Web.Admin.ViewModels.EventCreation
 {
     public class SaveEventDataViewModel
     {

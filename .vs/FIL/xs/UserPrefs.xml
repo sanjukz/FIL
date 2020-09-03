@@ -1,12 +1,25 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Contracts/QueryResults/City/CitiesQueryResult.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FIL.Web.Admin/Program.cs">
     <Files>
       <File FileName="FIL.Contracts/Queries/Account/GetAllGuestUserDetailQuery..cs" Line="6" Column="44" />
-      <File FileName="FIL.Web.Core/Providers/TicketContentProvider.cs" Line="134" Column="14" />
-      <File FileName="FIL.Contracts/Queries/AuthedRoleFeature/AuthedRoleFeatureQuery.cs" Line="7" Column="40" />
-      <File FileName="FIL.Contracts/QueryResults/Category/CategoriesByLocationQueryResult.cs" Line="5" Column="49" />
-      <File FileName="FIL.Contracts/QueryResults/Category/CategoryEventQueryResult.cs" Line="10" Column="2" />
-      <File FileName="FIL.Contracts/QueryResults/City/CitiesQueryResult.cs" Line="11" Column="2" />
+      <File FileName="FIL.Contracts/Queries/AuthedRoleFeature/AuthedRoleFeatureQuery.cs" />
+      <File FileName="FIL.Contracts/QueryResults/Category/CategoriesByLocationQueryResult.cs" />
+      <File FileName="FIL.Contracts/QueryResults/Category/CategoryEventQueryResult.cs" />
+      <File FileName="FIL.Contracts/QueryResults/City/CitiesQueryResult.cs" />
+      <File FileName="FIL.Contracts/QueryResults/City/CitySearchQueryResult.cs" />
+      <File FileName="FIL.Contracts/Queries/CitySearch/CitySearchQuery.cs" Line="3" Column="1" />
+      <File FileName="FIL.Contracts/QueryResults/City/CitiesQueryResult copy.cs" Line="10" Column="2" />
+      <File FileName="FIL.Contracts/QueryResults/CitySearch/CitySearchQueryResult.cs" Line="4" Column="48" />
+      <File FileName="FIL.Api/Repositories/ReportingRepository.cs" Line="116" Column="68" />
+      <File FileName="FIL.Configuration.Api/Startup.cs" Line="45" Column="33" />
+      <File FileName="FIL.Foundation/Modules/AutofacModule.cs" Line="42" Column="22" />
+      <File FileName="FIL.Web.Core/Startup/BaseStartup.cs" Line="209" Column="9" />
+      <File FileName="FIL.Web/Controllers/SearchController.cs" Line="9" Column="35" />
+      <File FileName="FIL.Web.Admin/Controllers/FulfillmentController.cs" Line="32" Column="1" />
+      <File FileName="FIL.Web.Admin/Controllers/Reporting/ReportController.cs" Line="86" Column="1" />
+      <File FileName="FIL.Web.Admin/Program.cs" Line="5" Column="1" />
+      <File FileName="FIL.Web.Admin/Startup.cs" Line="8" Column="24" />
+      <File FileName="FIL.Web.Admin/package.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,22 +29,35 @@
               <Node name="QueryHandlers" expanded="True">
                 <Node name="Cities" expanded="True" />
               </Node>
+              <Node name="Repositories" expanded="True" />
             </Node>
+            <Node name="FIL.Configuration.Api" expanded="True" />
             <Node name="FIL.Contracts" expanded="True">
               <Node name="Queries" expanded="True">
                 <Node name="City" expanded="True" />
+                <Node name="CitySearch" expanded="True" />
               </Node>
               <Node name="QueryResults" expanded="True">
-                <Node name="City" expanded="True">
-                  <Node name="CitiesQueryResult.cs" selected="True" />
-                </Node>
+                <Node name="City" expanded="True" />
+                <Node name="CitySearch" expanded="True" />
+                <Node name="CorporateRequest" expanded="True" />
               </Node>
+            </Node>
+            <Node name="FIL.Foundation" expanded="True">
+              <Node name="Modules" expanded="True" />
             </Node>
             <Node name="FIL.Web" expanded="True">
               <Node name="Controllers" expanded="True" />
             </Node>
+            <Node name="FIL.Web.Admin" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="Reporting" expanded="True" />
+              </Node>
+              <Node name="Program.cs" selected="True" />
+            </Node>
             <Node name="FIL.Web.Core" expanded="True">
               <Node name="Providers" expanded="True" />
+              <Node name="Startup" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -52,9 +78,9 @@
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
       <Items>
-        <StartupItem ItemId="{6CEA710B-7F38-40D6-BD32-5277B46FAD35}" ItemName="FIL.Api" ConfigurationId="Kz.Api" />
+        <StartupItem ItemId="{6CEA710B-7F38-40D6-BD32-5277B46FAD35}" ItemName="FIL.Api" />
         <StartupItem ItemId="{767A18D8-C584-41D6-AC46-76BE6D0AC0B7}" ItemName="FIL.Configuration.Api" ConfigurationId="Kz.Configuration.Api" />
-        <StartupItem ItemId="{74FC6647-1218-4BD4-89A8-9EEFA4384E53}" ItemName="FIL.Web" ConfigurationId="Default" />
+        <StartupItem ItemId="{74FC6647-1218-4BD4-89A8-9EEFA4384E53}" ItemName="FIL.Web" />
         <StartupItem ItemId="{02D8D788-8EA6-410A-B08B-AA85C8E51D54}" ItemName="FIL.Web.Admin" ConfigurationId="Default" />
       </Items>
     </MultiItemSolutionRunConfiguration>

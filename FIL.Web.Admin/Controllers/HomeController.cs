@@ -3,7 +3,7 @@ using FIL.Web.Core.Controllers;
 using FIL.Web.Core.Providers;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
   public class HomeController : BaseHomeController
   {

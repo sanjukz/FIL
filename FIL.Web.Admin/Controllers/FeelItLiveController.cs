@@ -2,9 +2,9 @@
 using FIL.Foundation.Senders;
 using Microsoft.AspNetCore.Mvc;
 using FIL.Contracts.Queries;
-using FIL.Web.Kitms.Feel.ViewModels;
+using FIL.Web.Admin.ViewModels;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
     public class FeelItLiveController : Controller
     {

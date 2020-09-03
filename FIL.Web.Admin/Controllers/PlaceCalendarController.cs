@@ -6,12 +6,12 @@ using FIL.Contracts.Commands.Common;
 using FIL.Contracts.Models;
 using FIL.Contracts.Queries.Zipcode;
 using FIL.Foundation.Senders;
-using FIL.Web.Kitms.Feel.ViewModels.PlaceCalendar;
+using FIL.Web.Admin.ViewModels.PlaceCalendar;
 using FIL.Contracts.Commands.PlaceCalendar;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
     public class PlaceCalendarController : Controller
     {

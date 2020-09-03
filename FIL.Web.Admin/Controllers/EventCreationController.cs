@@ -1,6 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using FIL.Web.Kitms.Feel.ViewModels.EventCreation;
+using FIL.Web.Admin.ViewModels.EventCreation;
 using Microsoft.AspNetCore.Mvc;
 using FIL.Contracts.Commands.EventCreation;
 using Microsoft.AspNetCore.Authorization;
@@ -12,8 +12,8 @@ using FIL.Contracts.Queries.VenueCreation;
 using FIL.Contracts.Commands.Common;
 using FIL.Contracts.Queries.Country;
 using FIL.Contracts.Commands.Location;
-using FIL.Web.Kitms.Feel.ViewModels.Finance;
-using FIL.Web.Kitms.Feel.ViewModels.Tag;
+using FIL.Web.Admin.ViewModels.Finance;
+using FIL.Web.Admin.ViewModels.Tag;
 using FIL.Contracts.Commands.FinanceDetails;
 using FIL.Web.Core;
 using System.Drawing;
@@ -21,7 +21,7 @@ using System.IO;
 using FIL.Web.Core.Providers;
 using Microsoft.AspNetCore.Http;
 using System.Linq;
-using FIL.Web.Kitms.Feel.ViewModels.Event;
+using FIL.Web.Admin.ViewModels.Event;
 using FIL.Contracts.Commands.EventCategoryMapping;
 using FIL.Contracts.Commands.EventSiteIdMapping;
 using FIL.Contracts.Queries.FinanceDetail;
@@ -29,8 +29,8 @@ using FIL.Contracts.Queries.Tags;
 using Microsoft.AspNetCore.Hosting;
 using System.Text;
 using FIL.Contracts.DataModels;
-using FIL.Web.Kitms.Feel.ViewModels.CustomerIpDetails;
-using FIL.Web.Kitms.Feel.ViewModels.Search;
+using FIL.Web.Admin.ViewModels.CustomerIpDetails;
+using FIL.Web.Admin.ViewModels.Search;
 using FIL.Contracts.QueryResults;
 using FIL.Contracts.Queries.Venue;
 using System.Net;
@@ -41,7 +41,7 @@ using FIL.Configuration;
 using MoreLinq;
 using System.Device.Location;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
   public class EventCreationController : Controller
   {

@@ -1,5 +1,5 @@
 ﻿
-namespace FIL.Web.Kitms.Feel.ViewModels.CityCountryDescription
+namespace FIL.Web.Admin.ViewModels.CityCountryDescription
 {
     public class CityCountryDescriptionResponseViewModel
     {

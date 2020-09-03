@@ -5,10 +5,10 @@ using FIL.Foundation.Senders;
 using FIL.Contracts.Queries.TicketAlert;
 using FIL.Web.Core.UrlsProvider;
 using FIL.Web.Core.Providers;
-using FIL.Web.Kitms.Feel.ViewModels.TicketAlert;
+using FIL.Web.Admin.ViewModels.TicketAlert;
 using FIL.Contracts.Queries.Reporting;
 
-namespace FIL.Web.Kitms.Feel.Controllers.Reporting
+namespace FIL.Web.Admin.Controllers.Reporting
 {
   public class TicketAlertController : Controller
   {

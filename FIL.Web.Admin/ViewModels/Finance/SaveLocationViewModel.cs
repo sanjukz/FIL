@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FIL.Contracts.Enums;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Finance
+namespace FIL.Web.Admin.ViewModels.Finance
 {
     public class SaveLocationViewModel
     {

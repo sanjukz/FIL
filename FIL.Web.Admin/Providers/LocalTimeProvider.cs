@@ -1,6 +1,6 @@
 using System;
 
-namespace FIL.Web.Kitms.Feel.Providers
+namespace FIL.Web.Admin.Providers
 {
   public interface ILocalTimeProvider
   {

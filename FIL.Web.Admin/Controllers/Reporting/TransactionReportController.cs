@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using FIL.Foundation.Senders;
 using FIL.Contracts.Queries.TransactionReport;
 using FIL.Web.Kitms.ViewModels.TransactionReport;
-using FIL.Web.Kitms.Feel.ViewModels.TransactionReport;
+using FIL.Web.Admin.ViewModels.TransactionReport;
 
 namespace FIL.Web.Controllers
 {

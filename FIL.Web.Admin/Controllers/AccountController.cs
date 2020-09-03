@@ -8,8 +8,8 @@ using FIL.Contracts.Commands.Users;
 using FIL.Contracts.Queries.UserProfile;
 using FIL.Foundation.Senders;
 using FIL.Web.Core.Providers;
-using FIL.Web.Kitms.Feel.ViewModels.Account;
-using FIL.Web.Kitms.Feel.ViewModels.Login;
+using FIL.Web.Admin.ViewModels.Account;
+using FIL.Web.Admin.ViewModels.Login;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -17,7 +17,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Hosting;
 using FIL.Web.Core;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
     public class AccountController : Controller
     {

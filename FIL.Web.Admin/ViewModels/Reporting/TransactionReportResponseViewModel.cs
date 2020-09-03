@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Reporting
+namespace FIL.Web.Admin.ViewModels.Reporting
 {
     public class TransactionReportResponseViewModel
     {

@@ -11,15 +11,15 @@ using FIL.Contracts.Queries.CustomerInformations;
 using FIL.Contracts.Queries.PlaceInventory;
 using FIL.Contracts.Queries.TicketCategoryTypes;
 using FIL.Foundation.Senders;
-using FIL.Web.Kitms.Feel.ViewModels.Inventory;
-using FIL.Web.Kitms.Feel.ViewModels.TicketCategoryTypes;
+using FIL.Web.Admin.ViewModels.Inventory;
+using FIL.Web.Admin.ViewModels.TicketCategoryTypes;
 using FIL.Contracts.Commands.PlaceInventory;
 using FIL.Contracts.Commands.CustomerIdType;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using FIL.Contracts.Enums;
 using FIL.Contracts.Commands.PlaceCalendar;
-using FIL.Web.Kitms.Feel.ViewModels.PlaceCalendar;
+using FIL.Web.Admin.ViewModels.PlaceCalendar;
 using FIL.Contracts.Commands.EventCreation;
 using FIL.Web.Core.Providers;
 using FIL.Contracts.Commands.Location;
@@ -29,12 +29,12 @@ using FIL.Web.Core.UrlsProvider;
 using FIL.Messaging.Models.Emails;
 using System.Text;
 using Gma.QrCodeNet.Encoding.DataEncodation;
-using FIL.Web.Kitms.Feel.ViewModels.Finance;
+using FIL.Web.Admin.ViewModels.Finance;
 using FIL.Contracts.Commands.FinanceDetails;
 using FIL.Contracts.Commands.CreateEventV1;
-using FIL.Web.Kitms.Feel.ViewModels.CreateEventV1;
+using FIL.Web.Admin.ViewModels.CreateEventV1;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
   public class InventoryController : Controller
   {

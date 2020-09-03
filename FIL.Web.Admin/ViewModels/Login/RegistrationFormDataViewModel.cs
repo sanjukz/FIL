@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Login
+namespace FIL.Web.Admin.ViewModels.Login
 {
     public class RegistrationFormDataViewModel
     {

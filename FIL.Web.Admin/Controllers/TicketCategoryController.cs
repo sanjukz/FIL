@@ -6,11 +6,11 @@ using FIL.Contracts.Commands.Common;
 using FIL.Contracts.Models;
 using FIL.Contracts.Queries.TicketCategory;
 using FIL.Foundation.Senders;
-using FIL.Web.Kitms.Feel.ViewModels.Zipcode;
+using FIL.Web.Admin.ViewModels.Zipcode;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
     public class TicketCategoryController : Controller
     {

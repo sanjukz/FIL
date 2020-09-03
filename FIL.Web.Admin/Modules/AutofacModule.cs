@@ -1,11 +1,11 @@
 using Autofac;
 using FIL.Web.Core;
-using FIL.Web.Kitms.Feel.Providers;
+using FIL.Web.Admin.Providers;
 using FIL.Web.Providers.Reporting;
 using FIL.Messaging.Senders;
 using FIL.MailChimp;
 
-namespace FIL.Web.Kitms.Feel.Modules
+namespace FIL.Web.Admin.Modules
 {
   public class AutofacModule : Module
   {

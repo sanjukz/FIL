@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Venue
+namespace FIL.Web.Admin.ViewModels.Venue
 {
     public class SaveVenueResponseViewModel
     {

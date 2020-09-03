@@ -13,8 +13,6 @@ namespace FIL.Api.Repositories
     {
         Reporting GetTransactionReportData(TransactionReportZsuiteQuery query);
 
-        Reporting GetBOTransactionReportData(FIL.Contracts.Queries.BoxOffice.TransactionReportQuery query);
-
         TransactionReport GetTransactionReportDataAsSingleDataModel(string EventAltId, Guid UserAltId, string EventDetailId, DateTime FromDate, DateTime ToDate, string currencyType);
 
         TransactionReport GetFAPTransactionReport(string EventAltId, DateTime FromDate, DateTime ToDate, string currencyType);
@@ -107,36 +105,6 @@ namespace FIL.Api.Repositories
             reporting.SummaryColumns = reportData.Read<ReportingColumn>();
             reporting.DynamicSummaryColumns = reportData.Read<ReportingColumn>();
             reporting.DynamicSummaryInfoColumns = reportData.Read<ReportingColumn>();
-            return reporting;
-        }
-
-        public Reporting GetBOTransactionReportData(FIL.Contracts.Queries.BoxOffice.TransactionReportQuery query)
-        {
-            Reporting reporting = new Reporting();
-            var reportData = GetCurrentConnection().QueryMultiple("spBoxOfficeTransactionReport", new { UserAltId = query.UserAltId, EventAltId = query.EventAltId, EventDetailId = query.EventDetailId, FromDate = query.FromDate, ToDate = query.ToDate }, commandType: CommandType.StoredProcedure);
-            reporting.Transaction = reportData.Read<Transaction>();
-            reporting.TransactionDetail = reportData.Read<TransactionDetail>();
-            reporting.TransactionDeliveryDetail = reportData.Read<TransactionDeliveryDetail>();
-            reporting.TransactionPaymentDetail = reportData.Read<TransactionPaymentDetail>();
-            reporting.CurrencyType = reportData.Read<CurrencyType>();
-            reporting.EventTicketAttribute = reportData.Read<EventTicketAttribute>();
-            reporting.EventTicketDetail = reportData.Read<EventTicketDetail>();
-            reporting.TicketCategory = reportData.Read<TicketCategory>();
-            reporting.EventDetail = reportData.Read<EventDetail>();
-            reporting.EventAttribute = reportData.Read<EventAttribute>();
-            reporting.Venue = reportData.Read<Venue>();
-            reporting.City = reportData.Read<City>();
-            reporting.State = reportData.Read<State>();
-            reporting.Country = reportData.Read<Country>();
-            reporting.Event = reportData.Read<Event>();
-            reporting.User = reportData.Read<User>();
-            reporting.UserCardDetail = reportData.Read<UserCardDetail>();
-            reporting.IPDetail = reportData.Read<IPDetail>();
-            reporting.TicketFeeDetail = reportData.Read<TicketFeeDetail>();
-            reporting.ReportingColumnsUserMapping = reportData.Read<ReportingColumnsUserMapping>();
-            reporting.ReportingColumnsMenuMapping = reportData.Read<ReportingColumnsMenuMapping>();
-            reporting.ReportColumns = reportData.Read<ReportingColumn>();
-            reporting.BOCustomerDetail = reportData.Read<FIL.Contracts.Models.BOCustomerDetail>();
             return reporting;
         }
 

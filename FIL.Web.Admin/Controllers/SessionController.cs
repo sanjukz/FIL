@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using FIL.Web.Kitms.Feel.ViewModels.Login;
+using FIL.Web.Admin.ViewModels.Login;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using FIL.Foundation.Senders;
-using FIL.Web.Kitms.Feel.ViewModels;
+using FIL.Web.Admin.ViewModels;
 using FIL.Contracts.Enums;
 using Microsoft.AspNetCore.Identity;
 using FIL.Web.Core.Helpers;
@@ -17,7 +17,7 @@ using FIL.Contracts.Queries.FeelAdminPlaces;
 using System.Text;
 using System.Security.Cryptography;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
   public class SessionController : Controller
   {

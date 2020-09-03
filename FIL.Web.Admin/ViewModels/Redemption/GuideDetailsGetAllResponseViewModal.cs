@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using FIL.Contracts.Models;
 using FIL.Contracts.QueryResults.Redemption;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Redemption
+namespace FIL.Web.Admin.ViewModels.Redemption
 {
     public class GuideDetailsGetAllResponseViewModal
     {

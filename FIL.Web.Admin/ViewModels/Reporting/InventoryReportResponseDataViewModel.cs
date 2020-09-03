@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Reporting
+namespace FIL.Web.Admin.ViewModels.Reporting
 {
     public class InventoryReportResponseDataViewModel
     { 

@@ -3,11 +3,11 @@ using System.Threading.Tasks;
 using FIL.Foundation.Senders;
 using Microsoft.AspNetCore.Mvc;
 using FIL.Web.Core.Providers;
-using FIL.Web.Kitms.Feel.ViewModels.CreateEventV1;
+using FIL.Web.Admin.ViewModels.CreateEventV1;
 using FIL.Contracts.Queries.CreateEventV1;
 using FIL.Contracts.Commands.CreateEventV1;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
   public class StepController : Controller
   {

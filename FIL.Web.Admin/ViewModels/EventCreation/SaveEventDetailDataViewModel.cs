@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.EventCreation
+namespace FIL.Web.Admin.ViewModels.EventCreation
 {
     public class SaveEventDetailDataViewModel
     {

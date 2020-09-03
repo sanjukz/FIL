@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Country
+namespace FIL.Web.Admin.ViewModels.Country
 {
     public class CountryFormDataViewModel
     {

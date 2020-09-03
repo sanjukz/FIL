@@ -6,7 +6,7 @@ using FIL.Foundation.Senders;
 using FIL.MailChimp.Models;
 using FIL.Messaging.Senders;
 using FIL.Web.Core.Providers;
-using FIL.Web.Kitms.Feel.ViewModels.CreateEventV1;
+using FIL.Web.Admin.ViewModels.CreateEventV1;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -14,7 +14,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using FIL.Logging;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
   public class EventReplayController : Controller
   {

@@ -10,10 +10,10 @@ using FIL.Messaging.Models.Emails;
 using FIL.Messaging.Senders;
 using FIL.Web.Core.Providers;
 using FIL.Web.Core.UrlsProvider;
-using FIL.Web.Kitms.Feel.ViewModels.Invite;
+using FIL.Web.Admin.ViewModels.Invite;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
     public class InviteController : Controller
     {

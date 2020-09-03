@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using FIL.Contracts.Enums;
-namespace FIL.Web.Kitms.Feel.ViewModels.Event
+namespace FIL.Web.Admin.ViewModels.Event
 {
     public class EventDataViewModel
     {

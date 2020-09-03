@@ -23,3 +23,4 @@ E:/FIL/ThirdParty/HubSpot.NET/obj/Debug/netstandard2.0/HubSpot.NET.pdb
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/ThirdParty/HubSpot.NET/obj/Debug/netstandard2.0/HubSpot.NET.csproj.CoreCompileInputs.cache
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/ThirdParty/HubSpot.NET/obj/Debug/netstandard2.0/HubSpot.NET.dll
 /Volumes/Zoonga/Sanjiv/My Proj/FIL/ThirdParty/HubSpot.NET/obj/Debug/netstandard2.0/HubSpot.NET.pdb
+/Volumes/Zoonga/Sanjiv/My Proj/FIL/ThirdParty/HubSpot.NET/obj/Debug/netstandard2.0/HubSpot.NET.csprojAssemblyReference.cache

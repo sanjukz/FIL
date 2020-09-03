@@ -2,7 +2,7 @@ using System.IO;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace FIL.Web.Kitms.Feel
+namespace FIL.Web.Admin
 {
     public class Program
     {

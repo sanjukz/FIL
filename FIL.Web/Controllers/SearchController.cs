@@ -7,7 +7,6 @@ using FIL.Web.Feel.ViewModels.Search;
 using FIL.Contracts.Queries.CitySearch;
 using FIL.Foundation.Senders;
 using FIL.Contracts.Queries.State;
-using FIL.Contracts.Queries.CategoryEventSearch;
 using FIL.Contracts.Queries.FeelSearch;
 using FIL.Contracts.Enums;
 using FIL.Logging.Enums;

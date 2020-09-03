@@ -4,11 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using FIL.Contracts.Commands.EventWizard;
 using FIL.Foundation.Senders;
-using FIL.Web.Kitms.Feel.ViewModels.EventWizard;
+using FIL.Web.Admin.ViewModels.EventWizard;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
     public class EventWizardController : Controller
     {

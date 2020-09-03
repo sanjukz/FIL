@@ -42,7 +42,7 @@ namespace FIL.Configuration.Api
             });
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-            app.UseKzLogging();
+            app.UseFILLogging();
             app.UseMvc();
         }
     }

@@ -1,7 +1,7 @@
 using FIL.Web.Core.ViewModels;
 using Newtonsoft.Json;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Login
+namespace FIL.Web.Admin.ViewModels.Login
 {
     public class LoginResponseViewModel  : IResponseViewModel
     {

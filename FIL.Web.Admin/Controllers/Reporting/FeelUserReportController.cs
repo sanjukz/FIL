@@ -13,7 +13,7 @@ using FIL.Web.Core.UrlsProvider;
 using FIL.Web.Core.Providers;
 using FIL.Web.Kitms.ViewModels.TransactionReport;
 using FIL.Contracts.Queries.Reporting;
-using FIL.Web.Kitms.Feel.ViewModels.Reporting;
+using FIL.Web.Admin.ViewModels.Reporting;
 using FIL.Caching.Contracts.Interfaces;
 
 namespace FIL.Web.Controllers

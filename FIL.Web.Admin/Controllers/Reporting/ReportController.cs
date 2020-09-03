@@ -4,16 +4,15 @@ using System.Threading.Tasks;
 using FIL.Contracts.Enums;
 using FIL.Contracts.Queries.Reporting;
 using FIL.Contracts.Queries.TransactionReport;
-using FIL.Contracts.Queries.BoxOffice;
 using FIL.Foundation.Senders;
-using FIL.Web.Kitms.Feel.ViewModels.Reporting;
+using FIL.Web.Admin.ViewModels.Reporting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
 using FIL.Web.Core.Providers;
 using FIL.Contracts.Queries.Creator;
-using FIL.Web.Kitms.Feel.ViewModels.Creator;
+using FIL.Web.Admin.ViewModels.Creator;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
   public class TransactionReportController : Controller
   {
@@ -91,14 +90,14 @@ namespace FIL.Web.Kitms.Feel.Controllers
     {
       var session = await _sessionProvider.Get();
       userAltId = session.User.AltId;
-      var queryResult = await _querySender.Send(new FIL.Contracts.Queries.BoxOffice.ReportSubEventsQuery
+      /*var queryResult = await _querySender.Send(new FIL.Contracts.Queries.BoxOffice.ReportSubEventsQuery
       {
         UserAltId = userAltId,
         EventAltId = altId
-      });
+      }); */
       return new ReportSubEventsResponseDataViewModel
       {
-        SubEvents = queryResult.SubEvents
+        //SubEvents = queryResult.SubEvents
       };
     }
 

@@ -12,11 +12,11 @@ using FIL.Logging;
 using FIL.Logging.Enums;
 using FIL.Web.Core.Helpers;
 using FIL.Web.Core.Providers;
-using FIL.Web.Kitms.Feel.ViewModels.Redemption;
+using FIL.Web.Admin.ViewModels.Redemption;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
     public class RedemptionController : Controller
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using FIL.Contracts.Enums;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Reporting
+namespace FIL.Web.Admin.ViewModels.Reporting
 {
     public class FailedTransactionReportFormDataViewModel
     {

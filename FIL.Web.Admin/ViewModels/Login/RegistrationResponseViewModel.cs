@@ -1,4 +1,4 @@
-﻿namespace FIL.Web.Kitms.Feel.ViewModels.Login
+﻿namespace FIL.Web.Admin.ViewModels.Login
 {
     public class RegistrationResponseViewModel
     {

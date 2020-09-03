@@ -2,16 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using FIL.Foundation.Senders;
-using FIL.Web.Kitms.Feel.ViewModels.Inventory;
+using FIL.Web.Admin.ViewModels.Inventory;
 using FIL.Contracts.Commands.PlaceInventory;
 using Microsoft.AspNetCore.Mvc;
 using FIL.Web.Core.Providers;
 using FIL.Messaging.Senders;
 using FIL.Contracts.Commands.CreateEventV1;
-using FIL.Web.Kitms.Feel.ViewModels.CreateEventV1;
+using FIL.Web.Admin.ViewModels.CreateEventV1;
 using FIL.Contracts.Queries.CreateEventV1;
 using System.Linq;
-using FIL.Web.Kitms.Feel.ViewModels.Finance;
+using FIL.Web.Admin.ViewModels.Finance;
 using FIL.Contracts.Commands.Payment;
 using FIL.Contracts.Enums;
 using System.Text;
@@ -19,7 +19,7 @@ using FIL.Messaging.Models.Emails;
 using FIL.Contracts.Commands.FinanceDetails;
 using Gma.QrCodeNet.Encoding.DataEncodation;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
   public class FinanceController : Controller
   {

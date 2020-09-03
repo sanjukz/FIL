@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.AuthedRoleFeature
+namespace FIL.Web.Admin.ViewModels.AuthedRoleFeature
 {
     public class AuthedFeatureResponseViewModel
     {

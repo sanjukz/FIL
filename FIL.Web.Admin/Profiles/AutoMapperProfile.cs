@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace FIL.Web.Kitms.Feel.Profiles
+namespace FIL.Web.Admin.Profiles
 {
     public class AutoMapperProfile : Profile
     {

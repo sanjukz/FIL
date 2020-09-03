@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FIL.Contracts.Enums;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Reporting
+namespace FIL.Web.Admin.ViewModels.Reporting
 {
     public class PaymentGatewayResponseViewMaodel
     {

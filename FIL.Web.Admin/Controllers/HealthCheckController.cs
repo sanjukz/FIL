@@ -2,7 +2,7 @@
 using FIL.Web.Core.Controllers;
 using Microsoft.AspNetCore.Mvc;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
     public class HealthCheckController : BaseHealthCheckController
     {

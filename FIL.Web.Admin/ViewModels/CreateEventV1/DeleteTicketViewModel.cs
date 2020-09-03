@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.CreateEventV1
+namespace FIL.Web.Admin.ViewModels.CreateEventV1
 {
   public class DeleteTicketViewModel
   {

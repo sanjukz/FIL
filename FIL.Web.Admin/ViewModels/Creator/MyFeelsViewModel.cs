@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Creator
+namespace FIL.Web.Admin.ViewModels.Creator
 {
   public class MyFeelsViewModel
   {

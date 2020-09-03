@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
-using FIL.Contracts.Queries.BoxOffice;
 using FIL.Foundation.Senders;
-using FIL.Web.Kitms.Feel.ViewModels.Home;
-using FIL.Web.Kitms.Feel.ViewModels.Fulfilment;
+using FIL.Web.Admin.ViewModels.Home;
+using FIL.Web.Admin.ViewModels.Fulfilment;
 using Microsoft.AspNetCore.Mvc;
 using FIL.Messaging.Senders;
 using FIL.Messaging.Models.TextMessages;
@@ -11,7 +10,7 @@ using FIL.Web.Core.Providers;
 using FIL.Contracts.Commands.BoxOffice;
 using FIL.Contracts.Queries.FulFilment;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
 
     public class FulfillmentController : Controller
@@ -31,38 +30,6 @@ namespace FIL.Web.Kitms.Feel.Controllers
             _gupShupTextMessageSender = gupShupTextMessageSender;
         }
 
-        [HttpPost]
-        [Route("api/fulfillment/getfulfilmemtData")]
-        public async Task<TransactionLocatorResponseViewModel> GetFulfilmentDetails([FromBody]TransactionLocatorFormDataViewModel model)
-        {
-            TransactionLocatorResponseViewModel transactionLocatorResponseViewModel = new TransactionLocatorResponseViewModel();
-            try
-            {
-                var QueryResult = await _querySender.Send(new TransactionLocatorQuery
-                {
-                    TransactionId = model.ConfirmationNumber,
-                    FirstName = model.FirstName,
-                    LastName = model.LastName,
-                    EmailId = model.EmailId,
-                    UserMobileNo = model.UserMobileNo,
-                    BarcodeNumber = model.BarcodeNumber,
-                    IsFulfilment = true
-                });
-                if (QueryResult.TransactionInfos != null)
-                {
-                    transactionLocatorResponseViewModel.transactionInfos = QueryResult.TransactionInfos;
-                }
-                else
-                {
-                    transactionLocatorResponseViewModel.transactionInfos = null;
-                }
-            }
-            catch (Exception ex)
-            {
-                transactionLocatorResponseViewModel.transactionInfos = null;
-            }
-            return transactionLocatorResponseViewModel;
-        }
         [HttpGet]
         [Route("api/fulfillment/generate-otp/{phoneCode}/{phoneNumber}/{transDetailAltId}")]
         public async Task<GenerateOTPResponseViewModel> GenerateOTP(string phoneCode, string phoneNumber, Guid transDetailAltId)

@@ -2,14 +2,14 @@
 using FIL.Contracts.Enums;
 using FIL.Foundation.Senders;
 using Microsoft.AspNetCore.Mvc;
-using FIL.Web.Kitms.Feel.ViewModels.TicketLookup;
+using FIL.Web.Admin.ViewModels.TicketLookup;
 using FIL.Contracts.Queries.TicketLookup;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
     public class TicketLookupController
     {

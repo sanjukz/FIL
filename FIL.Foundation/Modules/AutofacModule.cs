@@ -52,7 +52,7 @@ namespace FIL.Foundation.Modules
 
             // Register all the validators.
             AssemblyScanner
-                .FindValidatorsInAssembly(typeof(IKzValidator).GetTypeInfo().Assembly)
+                .FindValidatorsInAssembly(typeof(IFILValidator).GetTypeInfo().Assembly)
                 .ForEach(result => builder.RegisterType(result.ValidatorType));
         }
 

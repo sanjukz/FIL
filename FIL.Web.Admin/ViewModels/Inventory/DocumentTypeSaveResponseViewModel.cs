@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Inventory
+namespace FIL.Web.Admin.ViewModels.Inventory
 {
     public class DocumentTypeSaveResponseViewModel
     {

@@ -1,10 +1,10 @@
-﻿using FIL.Web.Kitms.Feel.ViewModels.Default;
+﻿using FIL.Web.Admin.ViewModels.Default;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FIL.Web.Kitms.Feel.ViewModels.Account
+namespace FIL.Web.Admin.ViewModels.Account
 {
     public class ChangePasswordResponseViewModel : ResponseViewModel
     {

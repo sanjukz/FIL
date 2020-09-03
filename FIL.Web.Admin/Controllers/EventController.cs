@@ -10,12 +10,12 @@ using FIL.Contracts.Queries.Events;
 using FIL.Contracts.Queries.SiteInfo;
 using FIL.Foundation.Senders;
 using FIL.Web.Core.Providers;
-using FIL.Web.Kitms.Feel.ViewModels.Event;
-using FIL.Web.Kitms.Feel.ViewModels.SiteInfo;
+using FIL.Web.Admin.ViewModels.Event;
+using FIL.Web.Admin.ViewModels.SiteInfo;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace FIL.Web.Kitms.Feel.Controllers
+namespace FIL.Web.Admin.Controllers
 {
   public class EventController : Controller
   {

@@ -2,10 +2,10 @@ using Microsoft.AspNetCore.Hosting;
 using FIL.Web.Core.Startup;
 using Autofac;
 using AutoMapper;
-using FIL.Web.Kitms.Feel.Profiles;
+using FIL.Web.Admin.Profiles;
 using Microsoft.Extensions.Configuration;
 
-namespace FIL.Web.Kitms.Feel
+namespace FIL.Web.Admin
 {
     public class Startup : BaseStartup
     {
